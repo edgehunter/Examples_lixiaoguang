@@ -1,0 +1,38 @@
+﻿Build started 2018/1/26 16:56:52.
+     1>Project "D:\lixiaoguang_works\ogl-master\build\external\bullet-2.81-rev2613\src\LinearMath\LinearMath.vcxproj" on node 4 (Rebuild target(s)).
+     1>CustomBuild:
+         Building Custom Rule D:/lixiaoguang_works/ogl-master/external/bullet-2.81-rev2613/src/LinearMath/CMakeLists.txt
+         CMake does not need to re-run because D:/lixiaoguang_works/ogl-master/build/external/bullet-2.81-rev2613/src/LinearMath/CMakeFiles/generate.stamp is up-to-date.
+       ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\CL.exe /c /I"D:\lixiaoguang_works\ogl-master\external\glfw-3.1.2\include\GLFW" /I"D:\lixiaoguang_works\ogl-master\external\glew-1.13.0\include" /I"D:\lixiaoguang_works\ogl-master\external\AntTweakBar-1.16\include" /I"D:\lixiaoguang_works\ogl-master\external\assimp-3.0.1270\code\BoostWorkaround" /I"D:\lixiaoguang_works\ogl-master\external\bullet-2.81-rev2613\src" /I\src /Zi /nologo /W3 /WX- /MP /Od /Ob0 /D WIN32 /D _WINDOWS /D TW_STATIC /D TW_NO_LIB_PRAGMA /D TW_NO_DIRECT3D /D GLEW_STATIC /D _CRT_SECURE_NO_WARNINGS /D ASSIMP_BUILD_BOOST_WORKAROUND /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /GR /Fo"LinearMath.dir\Debug\\" /Fd"LinearMath.dir\Debug\vc120.pdb" /Gd /TP /errorReport:prompt "D:\lixiaoguang_works\ogl-master\external\bullet-2.81-rev2613\src\LinearMath\btAlignedAllocator.cpp" "D:\lixiaoguang_works\ogl-master\external\bullet-2.81-rev2613\src\LinearMath\btConvexHull.cpp" "D:\lixiaoguang_works\ogl-master\external\bullet-2.81-rev2613\src\LinearMath\btConvexHullComputer.cpp" "D:\lixiaoguang_works\ogl-master\external\bullet-2.81-rev2613\src\LinearMath\btGeometryUtil.cpp" "D:\lixiaoguang_works\ogl-master\external\bullet-2.81-rev2613\src\LinearMath\btPolarDecomposition.cpp" "D:\lixiaoguang_works\ogl-master\external\bullet-2.81-rev2613\src\LinearMath\btQuickprof.cpp" "D:\lixiaoguang_works\ogl-master\external\bullet-2.81-rev2613\src\LinearMath\btSerializer.cpp" "D:\lixiaoguang_works\ogl-master\external\bullet-2.81-rev2613\src\LinearMath\btVector3.cpp"
+         btAlignedAllocator.cpp
+         btConvexHull.cpp
+         btConvexHullComputer.cpp
+         btGeometryUtil.cpp
+         btPolarDecomposition.cpp
+         btQuickprof.cpp
+         btSerializer.cpp
+         btVector3.cpp
+     1>D:\lixiaoguang_works\ogl-master\external\bullet-2.81-rev2613\src\LinearMath\btVector3.cpp(171): warning C4267: '=' : conversion from 'size_t' to 'long', possible loss of data
+     1>D:\lixiaoguang_works\ogl-master\external\bullet-2.81-rev2613\src\LinearMath\btVector3.cpp(176): warning C4267: '-=' : conversion from 'size_t' to 'unsigned long', possible loss of data
+     1>D:\lixiaoguang_works\ogl-master\external\bullet-2.81-rev2613\src\LinearMath\btVector3.cpp(419): warning C4267: '=' : conversion from 'size_t' to 'long', possible loss of data
+     1>D:\lixiaoguang_works\ogl-master\external\bullet-2.81-rev2613\src\LinearMath\btVector3.cpp(556): warning C4267: '=' : conversion from 'size_t' to 'long', possible loss of data
+     1>D:\lixiaoguang_works\ogl-master\external\bullet-2.81-rev2613\src\LinearMath\btVector3.cpp(561): warning C4267: '-=' : conversion from 'size_t' to 'unsigned long', possible loss of data
+     1>D:\lixiaoguang_works\ogl-master\external\bullet-2.81-rev2613\src\LinearMath\btVector3.cpp(807): warning C4267: '=' : conversion from 'size_t' to 'long', possible loss of data
+     1>D:\lixiaoguang_works\ogl-master\external\bullet-2.81-rev2613\src\LinearMath\btPolarDecomposition.cpp(63): warning C4244: 'initializing' : conversion from 'double' to 'const btScalar', possible loss of data
+     1>D:\lixiaoguang_works\ogl-master\external\bullet-2.81-rev2613\src\LinearMath\btPolarDecomposition.cpp(66): warning C4244: 'argument' : conversion from 'double' to 'const btScalar', possible loss of data
+       Lib:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\Lib.exe /OUT:"D:\lixiaoguang_works\ogl-master\build\external\bullet-2.81-rev2613\src\LinearMath\Debug\LinearMath.lib" /NOLOGO /MACHINE:X64  /machine:x64 LinearMath.dir\Debug\btAlignedAllocator.obj
+         LinearMath.dir\Debug\btConvexHull.obj
+         LinearMath.dir\Debug\btConvexHullComputer.obj
+         LinearMath.dir\Debug\btGeometryUtil.obj
+         LinearMath.dir\Debug\btPolarDecomposition.obj
+         LinearMath.dir\Debug\btQuickprof.obj
+         LinearMath.dir\Debug\btSerializer.obj
+         LinearMath.dir\Debug\btVector3.obj
+         LinearMath.vcxproj -> D:\lixiaoguang_works\ogl-master\build\external\bullet-2.81-rev2613\src\LinearMath\Debug\LinearMath.lib
+     1>Done Building Project "D:\lixiaoguang_works\ogl-master\build\external\bullet-2.81-rev2613\src\LinearMath\LinearMath.vcxproj" (Rebuild target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:07.28

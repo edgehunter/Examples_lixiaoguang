@@ -1,0 +1,17 @@
+﻿Build started 2017/12/29 17:14:42.
+     1>Project "C:\Users\lixiaoguang\Desktop\IOCP_UDP_C_MultipleThread\IOCP_UDP_C_MultipleThread\IOCP_UDP_C_MultipleThread.vcxproj" on node 2 (Rebuild target(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /Zi /nologo /W3 /WX- /Od /Oi /Oy- /GL /D WIN32 /D NDEBUG /D _CONSOLE /D _LIB /D _UNICODE /D UNICODE /Gm- /EHsc /MD /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Release\\" /Fd"Release\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt ClientIOCP.cpp stdafx.cpp
+         ClientIOCP.cpp
+         stdafx.cpp
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\lixiaoguang\Desktop\IOCP_UDP_C_MultipleThread\Release\IOCP_UDP_C_MultipleThread.exe" /INCREMENTAL:NO /NOLOGO ws2_32.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Users\lixiaoguang\Desktop\IOCP_UDP_C_MultipleThread\Release\IOCP_UDP_C_MultipleThread.pdb" /SUBSYSTEM:CONSOLE /OPT:REF /OPT:ICF /LTCG /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\lixiaoguang\Desktop\IOCP_UDP_C_MultipleThread\Release\IOCP_UDP_C_MultipleThread.lib" /MACHINE:X86 /SAFESEH Release\ClientIOCP.obj
+         Release\stdafx.obj
+         Generating code
+         Finished generating code
+         IOCP_UDP_C_MultipleThread.vcxproj -> C:\Users\lixiaoguang\Desktop\IOCP_UDP_C_MultipleThread\Release\IOCP_UDP_C_MultipleThread.exe
+     1>Done Building Project "C:\Users\lixiaoguang\Desktop\IOCP_UDP_C_MultipleThread\IOCP_UDP_C_MultipleThread\IOCP_UDP_C_MultipleThread.vcxproj" (Rebuild target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:00.62

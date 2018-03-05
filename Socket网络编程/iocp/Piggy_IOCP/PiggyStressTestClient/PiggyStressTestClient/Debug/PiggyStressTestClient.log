@@ -1,0 +1,27 @@
+﻿生成启动时间为 2017/12/18 星期一 下午 9:38:27。
+     1>项目“C:\Users\Administrator\Downloads\PiggyStressTestClient\PiggyStressTestClient\PiggyStressTestClient.vcxproj”在节点 2 上(Rebuild 个目标)。
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _WINDOWS /D _DEBUG /D _UNICODE /D UNICODE /D _AFXDLL /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yc"stdafx.h" /Fp"Debug\PiggyStressTestClient.pch" /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt stdafx.cpp
+         stdafx.cpp
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _WINDOWS /D _DEBUG /D _UNICODE /D UNICODE /D _AFXDLL /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yu"stdafx.h" /Fp"Debug\PiggyStressTestClient.pch" /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt Client.cpp MainDlg.cpp PiggyStressTestClient.cpp
+         PiggyStressTestClient.cpp
+         MainDlg.cpp
+         Client.cpp
+         正在生成代码...
+       ResourceCompile:
+         C:\Program Files (x86)\Windows Kits\8.1\bin\x86\rc.exe /D _DEBUG /D _UNICODE /D UNICODE /D _AFXDLL /l"0x0804" /IDebug\ /nologo /fo"Debug\PiggyStressTestClient.res" PiggyStressTestClient.rc 
+       ManifestResourceCompile:
+         C:\Program Files (x86)\Windows Kits\8.1\bin\x86\rc.exe /nologo /fo"Debug\PiggyStressTestClient.exe.embed.manifest.res" Debug\PiggyStressTestClient_manifest.rc 
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\Administrator\Downloads\PiggyStressTestClient\Debug\PiggyStressTestClient.exe" /INCREMENTAL /NOLOGO /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /manifestinput:XPStyle.manifest /manifestinput:"C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\Include\Manifest\dpiaware.manifest" /DEBUG /PDB:"C:\Users\Administrator\Downloads\PiggyStressTestClient\Debug\PiggyStressTestClient.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /ENTRY:"wWinMainCRTStartup" /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\Administrator\Downloads\PiggyStressTestClient\Debug\PiggyStressTestClient.lib" /MACHINE:X86 /SAFESEH Debug\PiggyStressTestClient.res
+         Debug\Client.obj
+         Debug\MainDlg.obj
+         Debug\PiggyStressTestClient.obj
+         Debug\stdafx.obj
+     1>Client.obj : warning LNK4075: 忽略“/EDITANDCONTINUE”(由于“/SAFESEH”规范)
+         PiggyStressTestClient.vcxproj -> C:\Users\Administrator\Downloads\PiggyStressTestClient\Debug\PiggyStressTestClient.exe
+     1>已完成生成项目“C:\Users\Administrator\Downloads\PiggyStressTestClient\PiggyStressTestClient\PiggyStressTestClient.vcxproj”(Rebuild 个目标)的操作。
+
+生成成功。
+
+已用时间 00:00:03.86

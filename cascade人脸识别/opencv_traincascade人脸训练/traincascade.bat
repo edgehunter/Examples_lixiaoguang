@@ -1,0 +1,1 @@
+opencv_traincascade.exe -data xml -vec pos.vec -bg neg_image.txt -numPos 900 -numNeg 450 -numStages 7 -featureType HAAR -w 20 -h 20 -precalcValBufSize 1 -minHitRate 0.999

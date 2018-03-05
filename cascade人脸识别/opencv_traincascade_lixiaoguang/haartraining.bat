@@ -1,0 +1,1 @@
+opencv_haartraining.exe -data xml -vec pos.vec -bg neg_image.txt -nsplits 1 -men 1280 -w 20 -h 20 -mode all -npos 150 -nneg 200

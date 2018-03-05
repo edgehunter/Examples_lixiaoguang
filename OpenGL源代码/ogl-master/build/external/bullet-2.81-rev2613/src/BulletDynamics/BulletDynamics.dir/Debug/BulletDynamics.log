@@ -1,0 +1,56 @@
+﻿Build started 2018/1/26 16:56:52.
+     1>Project "D:\lixiaoguang_works\ogl-master\build\external\bullet-2.81-rev2613\src\BulletDynamics\BulletDynamics.vcxproj" on node 8 (Rebuild target(s)).
+     1>CustomBuild:
+         Building Custom Rule D:/lixiaoguang_works/ogl-master/external/bullet-2.81-rev2613/src/BulletDynamics/CMakeLists.txt
+         CMake does not need to re-run because D:/lixiaoguang_works/ogl-master/build/external/bullet-2.81-rev2613/src/BulletDynamics/CMakeFiles/generate.stamp is up-to-date.
+       ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\CL.exe /c /I"D:\lixiaoguang_works\ogl-master\external\glfw-3.1.2\include\GLFW" /I"D:\lixiaoguang_works\ogl-master\external\glew-1.13.0\include" /I"D:\lixiaoguang_works\ogl-master\external\AntTweakBar-1.16\include" /I"D:\lixiaoguang_works\ogl-master\external\assimp-3.0.1270\code\BoostWorkaround" /I"D:\lixiaoguang_works\ogl-master\external\bullet-2.81-rev2613\src" /I\src /Zi /nologo /W3 /WX- /MP /Od /Ob0 /D WIN32 /D _WINDOWS /D TW_STATIC /D TW_NO_LIB_PRAGMA /D TW_NO_DIRECT3D /D GLEW_STATIC /D _CRT_SECURE_NO_WARNINGS /D ASSIMP_BUILD_BOOST_WORKAROUND /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /GR /Fo"BulletDynamics.dir\Debug\\" /Fd"BulletDynamics.dir\Debug\vc120.pdb" /Gd /TP /errorReport:prompt "D:\lixiaoguang_works\ogl-master\external\bullet-2.81-rev2613\src\BulletDynamics\Character\btKinematicCharacterController.cpp" "D:\lixiaoguang_works\ogl-master\external\bullet-2.81-rev2613\src\BulletDynamics\ConstraintSolver\btConeTwistConstraint.cpp" "D:\lixiaoguang_works\ogl-master\external\bullet-2.81-rev2613\src\BulletDynamics\ConstraintSolver\btContactConstraint.cpp" "D:\lixiaoguang_works\ogl-master\external\bullet-2.81-rev2613\src\BulletDynamics\ConstraintSolver\btGearConstraint.cpp" "D:\lixiaoguang_works\ogl-master\external\bullet-2.81-rev2613\src\BulletDynamics\ConstraintSolver\btGeneric6DofConstraint.cpp" "D:\lixiaoguang_works\ogl-master\external\bullet-2.81-rev2613\src\BulletDynamics\ConstraintSolver\btGeneric6DofSpringConstraint.cpp" "D:\lixiaoguang_works\ogl-master\external\bullet-2.81-rev2613\src\BulletDynamics\ConstraintSolver\btHinge2Constraint.cpp" "D:\lixiaoguang_works\ogl-master\external\bullet-2.81-rev2613\src\BulletDynamics\ConstraintSolver\btHingeConstraint.cpp" "D:\lixiaoguang_works\ogl-master\external\bullet-2.81-rev2613\src\BulletDynamics\ConstraintSolver\btPoint2PointConstraint.cpp" "D:\lixiaoguang_works\ogl-master\external\bullet-2.81-rev2613\src\BulletDynamics\ConstraintSolver\btSequentialImpulseConstraintSolver.cpp" "D:\lixiaoguang_works\ogl-master\external\bullet-2.81-rev2613\src\BulletDynamics\ConstraintSolver\btSliderConstraint.cpp" "D:\lixiaoguang_works\ogl-master\external\bullet-2.81-rev2613\src\BulletDynamics\ConstraintSolver\btSolve2LinearConstraint.cpp" "D:\lixiaoguang_works\ogl-master\external\bullet-2.81-rev2613\src\BulletDynamics\ConstraintSolver\btTypedConstraint.cpp" "D:\lixiaoguang_works\ogl-master\external\bullet-2.81-rev2613\src\BulletDynamics\ConstraintSolver\btUniversalConstraint.cpp" "D:\lixiaoguang_works\ogl-master\external\bullet-2.81-rev2613\src\BulletDynamics\Dynamics\btDiscreteDynamicsWorld.cpp" "D:\lixiaoguang_works\ogl-master\external\bullet-2.81-rev2613\src\BulletDynamics\Dynamics\btRigidBody.cpp" "D:\lixiaoguang_works\ogl-master\external\bullet-2.81-rev2613\src\BulletDynamics\Dynamics\btSimpleDynamicsWorld.cpp" "D:\lixiaoguang_works\ogl-master\external\bullet-2.81-rev2613\src\BulletDynamics\Dynamics\Bullet-C-API.cpp" "D:\lixiaoguang_works\ogl-master\external\bullet-2.81-rev2613\src\BulletDynamics\Vehicle\btRaycastVehicle.cpp" "D:\lixiaoguang_works\ogl-master\external\bullet-2.81-rev2613\src\BulletDynamics\Vehicle\btWheelInfo.cpp"
+         btKinematicCharacterController.cpp
+         btConeTwistConstraint.cpp
+         btContactConstraint.cpp
+         btGearConstraint.cpp
+         btGeneric6DofConstraint.cpp
+         btGeneric6DofSpringConstraint.cpp
+         btHinge2Constraint.cpp
+         btHingeConstraint.cpp
+         btPoint2PointConstraint.cpp
+         btSequentialImpulseConstraintSolver.cpp
+         btSliderConstraint.cpp
+         btSolve2LinearConstraint.cpp
+         btTypedConstraint.cpp
+         btUniversalConstraint.cpp
+         btDiscreteDynamicsWorld.cpp
+     1>D:\lixiaoguang_works\ogl-master\external\bullet-2.81-rev2613\src\BulletDynamics\Character\btKinematicCharacterController.cpp(133): warning C4305: '=' : truncation from 'double' to 'btScalar'
+     1>D:\lixiaoguang_works\ogl-master\external\bullet-2.81-rev2613\src\BulletDynamics\Character\btKinematicCharacterController.cpp(144): warning C4305: '=' : truncation from 'double' to 'btScalar'
+         btRigidBody.cpp
+         btSimpleDynamicsWorld.cpp
+         Bullet-C-API.cpp
+         btRaycastVehicle.cpp
+         btWheelInfo.cpp
+       Lib:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\Lib.exe /OUT:"D:\lixiaoguang_works\ogl-master\build\external\bullet-2.81-rev2613\src\BulletDynamics\Debug\BulletDynamics.lib" /NOLOGO /MACHINE:X64  /machine:x64 BulletDynamics.dir\Debug\btKinematicCharacterController.obj
+         BulletDynamics.dir\Debug\btConeTwistConstraint.obj
+         BulletDynamics.dir\Debug\btContactConstraint.obj
+         BulletDynamics.dir\Debug\btGearConstraint.obj
+         BulletDynamics.dir\Debug\btGeneric6DofConstraint.obj
+         BulletDynamics.dir\Debug\btGeneric6DofSpringConstraint.obj
+         BulletDynamics.dir\Debug\btHinge2Constraint.obj
+         BulletDynamics.dir\Debug\btHingeConstraint.obj
+         BulletDynamics.dir\Debug\btPoint2PointConstraint.obj
+         BulletDynamics.dir\Debug\btSequentialImpulseConstraintSolver.obj
+         BulletDynamics.dir\Debug\btSliderConstraint.obj
+         BulletDynamics.dir\Debug\btSolve2LinearConstraint.obj
+         BulletDynamics.dir\Debug\btTypedConstraint.obj
+         BulletDynamics.dir\Debug\btUniversalConstraint.obj
+         BulletDynamics.dir\Debug\btDiscreteDynamicsWorld.obj
+         BulletDynamics.dir\Debug\btRigidBody.obj
+         BulletDynamics.dir\Debug\btSimpleDynamicsWorld.obj
+         "BulletDynamics.dir\Debug\Bullet-C-API.obj"
+         BulletDynamics.dir\Debug\btRaycastVehicle.obj
+         BulletDynamics.dir\Debug\btWheelInfo.obj
+         BulletDynamics.vcxproj -> D:\lixiaoguang_works\ogl-master\build\external\bullet-2.81-rev2613\src\BulletDynamics\Debug\BulletDynamics.lib
+     1>Done Building Project "D:\lixiaoguang_works\ogl-master\build\external\bullet-2.81-rev2613\src\BulletDynamics\BulletDynamics.vcxproj" (Rebuild target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:16.57

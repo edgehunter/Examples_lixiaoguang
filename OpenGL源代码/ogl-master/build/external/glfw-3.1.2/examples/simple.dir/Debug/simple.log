@@ -1,0 +1,16 @@
+﻿Build started 2018/1/26 16:57:16.
+     1>Project "D:\lixiaoguang_works\ogl-master\build\external\glfw-3.1.2\examples\simple.vcxproj" on node 2 (Rebuild target(s)).
+     1>CustomBuild:
+         Building Custom Rule D:/lixiaoguang_works/ogl-master/external/glfw-3.1.2/examples/CMakeLists.txt
+         CMake does not need to re-run because D:/lixiaoguang_works/ogl-master/build/external/glfw-3.1.2/examples/CMakeFiles/generate.stamp is up-to-date.
+       ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\CL.exe /c /I"D:\lixiaoguang_works\ogl-master\external\glfw-3.1.2\include" /I"D:\lixiaoguang_works\ogl-master\external\glfw-3.1.2\deps" /Zi /nologo /W3 /WX- /MP /Od /Ob0 /D WIN32 /D _WINDOWS /D TW_STATIC /D TW_NO_LIB_PRAGMA /D TW_NO_DIRECT3D /D GLEW_STATIC /D _CRT_SECURE_NO_WARNINGS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"simple.dir\Debug\\" /Fd"simple.dir\Debug\vc120.pdb" /Gd /TC /errorReport:prompt "D:\lixiaoguang_works\ogl-master\external\glfw-3.1.2\examples\simple.c"
+         simple.c
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\link.exe /ERRORREPORT:PROMPT /OUT:"D:\lixiaoguang_works\ogl-master\build\external\glfw-3.1.2\examples\Debug\simple.exe" /INCREMENTAL /NOLOGO ..\src\Debug\glfw3.lib opengl32.lib kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:/lixiaoguang_works/ogl-master/build/external/glfw-3.1.2/examples/Debug/simple.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /ENTRY:"mainCRTStartup" /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:/lixiaoguang_works/ogl-master/build/external/glfw-3.1.2/examples/Debug/simple.lib" /MACHINE:X64  /machine:x64 simple.dir\Debug\simple.obj
+         simple.vcxproj -> D:\lixiaoguang_works\ogl-master\build\external\glfw-3.1.2\examples\Debug\simple.exe
+     1>Done Building Project "D:\lixiaoguang_works\ogl-master\build\external\glfw-3.1.2\examples\simple.vcxproj" (Rebuild target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:01.77

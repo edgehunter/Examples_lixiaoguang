@@ -1,0 +1,300 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Unknown language: 0x1E, 0x1 resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_THA)
+#ifdef _WIN32
+LANGUAGE 0x1E, 0x1
+#pragma code_page(874)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\SerialApp.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""         // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\SerialApp.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDR_ACCELERATOR1 ACCELERATORS DISCARDABLE 
+BEGIN
+    VK_RETURN,      IDC_SEND_DATA,          VIRTKEY, NOINVERT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_BITMAP1             BITMAP  DISCARDABLE     "res\\DSC00612.bmp"
+#endif    // Unknown language: 0x1E, 0x1 resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOG DISCARDABLE  0, 0, 235, 55
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "About SerialApp"
+FONT 8, "MS Sans Serif"
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,17,20,20
+    LTEXT           "SerialApp Version 1.0",IDC_STATIC,40,10,119,8,
+                    SS_NOPREFIX
+    LTEXT           "Copyright (C) 2002",IDC_STATIC,40,25,119,8
+    DEFPUSHBUTTON   "OK",IDOK,178,7,50,14,WS_GROUP
+END
+
+IDD_SERIALAPP_DIALOG DIALOGEX 0, 0, 267, 204
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "Aboho Serial Communication"
+FONT 8, "MS Sans Serif"
+BEGIN
+    PUSHBUTTON      "&Open Port",IDC_OPEN_PORT,203,49,50,14
+    PUSHBUTTON      "&Close Port",IDC_CLOSE_PORT,203,65,50,14
+    PUSHBUTTON      "&Exit Program",IDC_EXIT,204,97,50,14
+    EDITTEXT        IDC_MONITOR_REC,7,12,177,92,ES_MULTILINE | 
+                    ES_AUTOVSCROLL | ES_AUTOHSCROLL | ES_READONLY | 
+                    ES_NUMBER | WS_VSCROLL,WS_EX_DLGMODALFRAME | 
+                    WS_EX_CLIENTEDGE | WS_EX_STATICEDGE
+    GROUPBOX        "Serial Control",IDC_STATIC,196,39,64,78
+    LTEXT           "Monitor Receiving Messages:",IDC_STATIC,7,4,94,8
+    EDITTEXT        IDC_MONITOR_SEND,7,119,177,83,ES_MULTILINE | 
+                    ES_AUTOVSCROLL | ES_AUTOHSCROLL | ES_WANTRETURN | 
+                    WS_VSCROLL | WS_HSCROLL,WS_EX_DLGMODALFRAME | 
+                    WS_EX_CLIENTEDGE | WS_EX_STATICEDGE
+    LTEXT           "Monitor Sending Messages:",IDC_STATIC,7,110,88,8
+    PUSHBUTTON      "&Send Data",IDC_SEND_DATA,204,81,50,14
+    COMBOBOX        IDC_NAME_PORT,205,137,48,45,CBS_DROPDOWN | WS_VSCROLL | 
+                    WS_TABSTOP,WS_EX_STATICEDGE
+    COMBOBOX        IDC_BOUDRATE,205,118,48,45,CBS_DROPDOWN | WS_VSCROLL | 
+                    WS_TABSTOP,WS_EX_STATICEDGE
+    GROUPBOX        "Status Port",IDC_STATIC,195,0,64,29
+    EDITTEXT        IDC_STATUS_PORT,201,9,51,14,ES_AUTOHSCROLL | WS_DISABLED,
+                    WS_EX_DLGMODALFRAME
+    CONTROL         135,IDC_STATIC,"Static",SS_BITMAP,193,153,71,49,
+                    WS_EX_DLGMODALFRAME
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904B0"
+        BEGIN
+            VALUE "CompanyName", "\0"
+            VALUE "FileDescription", "SerialApp MFC Application\0"
+            VALUE "FileVersion", "1, 0, 0, 1\0"
+            VALUE "InternalName", "SerialApp\0"
+            VALUE "LegalCopyright", "Copyright (C) 2002\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "SerialApp.EXE\0"
+            VALUE "ProductName", "SerialApp Application\0"
+            VALUE "ProductVersion", "1, 0, 0, 1\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 48
+    END
+
+    IDD_SERIALAPP_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 260
+        VERTGUIDE, 7
+        BOTTOMMARGIN, 202
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+IDD_SERIALAPP_DIALOG DLGINIT
+BEGIN
+    IDC_NAME_PORT, 0x403, 5, 0
+0x4f43, 0x314d, "\000" 
+    IDC_NAME_PORT, 0x403, 5, 0
+0x4f43, 0x324d, "\000" 
+    IDC_NAME_PORT, 0x403, 5, 0
+0x4f43, 0x334d, "\000" 
+    IDC_BOUDRATE, 0x403, 5, 0
+0x3131, 0x2030, "\000" 
+    IDC_BOUDRATE, 0x403, 4, 0
+0x3033, 0x0030, 
+    IDC_BOUDRATE, 0x403, 4, 0
+0x3036, 0x0030, 
+    IDC_BOUDRATE, 0x403, 5, 0
+0x3231, 0x3030, "\000" 
+    IDC_BOUDRATE, 0x403, 5, 0
+0x3432, 0x3030, "\000" 
+    IDC_BOUDRATE, 0x403, 5, 0
+0x3834, 0x3030, "\000" 
+    IDC_BOUDRATE, 0x403, 5, 0
+0x3639, 0x3030, "\000" 
+    IDC_BOUDRATE, 0x403, 6, 0
+0x3431, 0x3034, 0x0030, 
+    IDC_BOUDRATE, 0x403, 8, 0
+0x3931, 0x3032, 0x2030, 0x0020, 
+    IDC_BOUDRATE, 0x403, 7, 0
+0x3833, 0x3034, 0x2030, "\000" 
+    IDC_BOUDRATE, 0x403, 7, 0
+0x3635, 0x3030, 0x2030, "\000" 
+    IDC_BOUDRATE, 0x403, 6, 0
+0x3735, 0x3036, 0x0030, 
+    IDC_BOUDRATE, 0x403, 8, 0
+0x3131, 0x3235, 0x3030, 0x0020, 
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_ABOUTBOX            "&About SerialApp..."
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE 9, 1
+#pragma code_page(1252)
+#endif //_WIN32
+#include "res\SerialApp.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"         // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

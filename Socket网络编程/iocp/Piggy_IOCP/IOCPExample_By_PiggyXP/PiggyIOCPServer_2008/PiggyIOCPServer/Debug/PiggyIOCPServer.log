@@ -1,0 +1,47 @@
+﻿生成启动时间为 2017/12/18 星期一 下午 9:49:40。
+     1>项目“C:\Users\Administrator\Downloads\IOCPExample_By_PiggyXP\PiggyIOCPServer_2008\PiggyIOCPServer\PiggyIOCPServer.vcxproj”在节点 2 上(Rebuild 个目标)。
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _WINDOWS /D _DEBUG /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MTd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yc"stdafx.h" /Fp"Debug\PiggyIOCPServer.pch" /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt stdafx.cpp
+         stdafx.cpp
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _WINDOWS /D _DEBUG /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MTd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yu"stdafx.h" /Fp"Debug\PiggyIOCPServer.pch" /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt IOCPModel.cpp MainDlg.cpp PiggyIOCPServer.cpp
+         PiggyIOCPServer.cpp
+         MainDlg.cpp
+         IOCPModel.cpp
+     1>c:\users\administrator\downloads\iocpexample_by_piggyxp\piggyiocpserver_2008\piggyiocpserver\iocpmodel.cpp(101): warning C4996: 'inet_ntoa': Use inet_ntop() or InetNtop() instead or define _WINSOCK_DEPRECATED_NO_WARNINGS to disable deprecated API warnings
+                 c:\program files (x86)\windows kits\8.1\include\um\winsock2.h(1868) : 参见“inet_ntoa”的声明
+     1>c:\users\administrator\downloads\iocpexample_by_piggyxp\piggyiocpserver_2008\piggyiocpserver\iocpmodel.cpp(330): warning C4996: 'inet_addr': Use inet_pton() or InetPton() instead or define _WINSOCK_DEPRECATED_NO_WARNINGS to disable deprecated API warnings
+                 c:\program files (x86)\windows kits\8.1\include\um\winsock2.h(1850) : 参见“inet_addr”的声明
+     1>c:\users\administrator\downloads\iocpexample_by_piggyxp\piggyiocpserver_2008\piggyiocpserver\iocpmodel.cpp(501): warning C4996: 'inet_ntoa': Use inet_ntop() or InetNtop() instead or define _WINSOCK_DEPRECATED_NO_WARNINGS to disable deprecated API warnings
+                 c:\program files (x86)\windows kits\8.1\include\um\winsock2.h(1868) : 参见“inet_ntoa”的声明
+     1>c:\users\administrator\downloads\iocpexample_by_piggyxp\piggyiocpserver_2008\piggyiocpserver\iocpmodel.cpp(502): warning C4996: 'inet_ntoa': Use inet_ntop() or InetNtop() instead or define _WINSOCK_DEPRECATED_NO_WARNINGS to disable deprecated API warnings
+                 c:\program files (x86)\windows kits\8.1\include\um\winsock2.h(1868) : 参见“inet_ntoa”的声明
+     1>c:\users\administrator\downloads\iocpexample_by_piggyxp\piggyiocpserver_2008\piggyiocpserver\iocpmodel.cpp(577): warning C4996: 'inet_ntoa': Use inet_ntop() or InetNtop() instead or define _WINSOCK_DEPRECATED_NO_WARNINGS to disable deprecated API warnings
+                 c:\program files (x86)\windows kits\8.1\include\um\winsock2.h(1868) : 参见“inet_ntoa”的声明
+     1>c:\users\administrator\downloads\iocpexample_by_piggyxp\piggyiocpserver_2008\piggyiocpserver\iocpmodel.cpp(674): warning C4996: 'gethostbyname': Use getaddrinfo() or GetAddrInfoW() instead or define _WINSOCK_DEPRECATED_NO_WARNINGS to disable deprecated API warnings
+                 c:\program files (x86)\windows kits\8.1\include\um\winsock2.h(2238) : 参见“gethostbyname”的声明
+     1>c:\users\administrator\downloads\iocpexample_by_piggyxp\piggyiocpserver_2008\piggyiocpserver\iocpmodel.cpp(686): warning C4996: 'inet_ntoa': Use inet_ntop() or InetNtop() instead or define _WINSOCK_DEPRECATED_NO_WARNINGS to disable deprecated API warnings
+                 c:\program files (x86)\windows kits\8.1\include\um\winsock2.h(1868) : 参见“inet_ntoa”的声明
+         正在生成代码...
+       ResourceCompile:
+         C:\Program Files (x86)\Windows Kits\8.1\bin\x86\rc.exe /D _DEBUG /D _UNICODE /D UNICODE /l"0x0804" /IDebug\ /nologo /fo"Debug\PiggyIOCPServer.res" PiggyIOCPServer.rc 
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\Administrator\Downloads\IOCPExample_By_PiggyXP\PiggyIOCPServer_2008\Debug\PiggyIOCPServer.exe" /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /manifestinput:XPStyle.manifest /manifestinput:"C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\Include\Manifest\dpiaware.manifest" /DEBUG /PDB:"C:\Users\Administrator\Downloads\IOCPExample_By_PiggyXP\PiggyIOCPServer_2008\Debug\PiggyIOCPServer.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /ENTRY:"wWinMainCRTStartup" /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\Administrator\Downloads\IOCPExample_By_PiggyXP\PiggyIOCPServer_2008\Debug\PiggyIOCPServer.lib" /MACHINE:X86 /SAFESEH Debug\PiggyIOCPServer.res
+         Debug\IOCPModel.obj
+         Debug\MainDlg.obj
+         Debug\PiggyIOCPServer.obj
+         Debug\stdafx.obj
+         Microsoft (R) Incremental Linker Version 12.00.40629.0
+         Copyright (C) Microsoft Corporation.  All rights reserved.
+         
+         "/OUT:C:\Users\Administrator\Downloads\IOCPExample_By_PiggyXP\PiggyIOCPServer_2008\Debug\PiggyIOCPServer.exe" /MANIFEST "/MANIFESTUAC:level='asInvoker' uiAccess='false'" /manifest:embed /manifestinput:XPStyle.manifest "/manifestinput:C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\Include\Manifest\dpiaware.manifest" /DEBUG "/PDB:C:\Users\Administrator\Downloads\IOCPExample_By_PiggyXP\PiggyIOCPServer_2008\Debug\PiggyIOCPServer.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 "/ENTRY:wWinMainCRTStartup" /DYNAMICBASE /NXCOMPAT "/IMPLIB:C:\Users\Administrator\Downloads\IOCPExample_By_PiggyXP\PiggyIOCPServer_2008\Debug\PiggyIOCPServer.lib" /MACHINE:X86 /SAFESEH Debug\PiggyIOCPServer.res 
+         Debug\IOCPModel.obj 
+         Debug\MainDlg.obj 
+         Debug\PiggyIOCPServer.obj 
+         Debug\stdafx.obj 
+     1>IOCPModel.obj : warning LNK4075: 忽略“/EDITANDCONTINUE”(由于“/SAFESEH”规范)
+         PiggyIOCPServer.vcxproj -> C:\Users\Administrator\Downloads\IOCPExample_By_PiggyXP\PiggyIOCPServer_2008\Debug\PiggyIOCPServer.exe
+     1>已完成生成项目“C:\Users\Administrator\Downloads\IOCPExample_By_PiggyXP\PiggyIOCPServer_2008\PiggyIOCPServer\PiggyIOCPServer.vcxproj”(Rebuild 个目标)的操作。
+
+生成成功。
+
+已用时间 00:00:05.83

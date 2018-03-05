@@ -1,0 +1,32 @@
+﻿Build started 2018/2/28 17:28:56.
+     1>Project "E:\lixiaoguang_works\Examples_lixiaoguang\Win32 Thread Pool\threadpool_src\ThreadPoolApp.vcxproj" on node 2 (Rebuild target(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /Zi /nologo /W3 /WX- /O2 /Ob1 /Oy- /D WIN32 /D NDEBUG /D _WINDOWS /D _VC80_UPGRADE=0x0600 /D _UNICODE /D UNICODE /D _AFXDLL /GF /Gm- /EHsc /MD /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Yc"stdafx.h" /Fp".\Release/ThreadPoolApp.pch" /Fo".\Release/" /Fd".\Release/vc120.pdb" /Gd /TP /analyze- /errorReport:prompt StdAfx.cpp
+         StdAfx.cpp
+         _WIN32_WINNT not defined. Defaulting to _WIN32_WINNT_MAXVER (see WinSDKVer.h)
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /Zi /nologo /W3 /WX- /O2 /Ob1 /Oy- /D WIN32 /D NDEBUG /D _WINDOWS /D _VC80_UPGRADE=0x0600 /D _UNICODE /D UNICODE /D _AFXDLL /GF /Gm- /EHsc /MD /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Yu"stdafx.h" /Fp".\Release/ThreadPoolApp.pch" /Fo".\Release/" /Fd".\Release/vc120.pdb" /Gd /TP /analyze- /errorReport:prompt ThreadPool.cpp ThreadPoolApp.cpp ThreadPoolAppDlg.cpp
+         ThreadPool.cpp
+     1>ThreadPool.cpp(157): warning C4996: '_swprintf': This function or variable may be unsafe. Consider using _swprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\wchar.h(787) : see declaration of '_swprintf'
+     1>ThreadPool.cpp(176): warning C4996: '_swprintf': This function or variable may be unsafe. Consider using _swprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\wchar.h(787) : see declaration of '_swprintf'
+     1>ThreadPool.cpp(294): warning C4101: 'ThreadData' : unreferenced local variable
+         ThreadPoolApp.cpp
+     1>ThreadPoolApp.cpp(52): warning C4996: 'CWinApp::Enable3dControls': CWinApp::Enable3dControls is no longer needed. You should remove this call.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\atlmfc\include\afxwin.h(5178) : see declaration of 'CWinApp::Enable3dControls'
+         ThreadPoolAppDlg.cpp
+         Generating Code...
+       ResourceCompile:
+         C:\Program Files (x86)\Windows Kits\8.1\bin\x86\rc.exe /D NDEBUG /D _VC80_UPGRADE=0x0600 /D _UNICODE /D UNICODE /D _AFXDLL /l"0x0409" /nologo /fo".\Release\ThreadPoolApp.res" ThreadPoolApp.rc 
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:".\Release/ThreadPoolApp.exe" /INCREMENTAL:NO /NOLOGO /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /manifestinput:"C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\Include\Manifest\dpiaware.manifest" /PDB:".\Release/ThreadPoolApp.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /ENTRY:"wWinMainCRTStartup" /DYNAMICBASE:NO /IMPLIB:".\Release\ThreadPoolApp.lib" /MACHINE:X86 /SAFESEH .\Release\ThreadPoolApp.res
+         .\Release/StdAfx.obj
+         .\Release/ThreadPool.obj
+         .\Release/ThreadPoolApp.obj
+         .\Release/ThreadPoolAppDlg.obj
+         ThreadPoolApp.vcxproj -> E:\lixiaoguang_works\Examples_lixiaoguang\Win32 Thread Pool\threadpool_src\.\Release\ThreadPoolApp.exe
+     1>Done Building Project "E:\lixiaoguang_works\Examples_lixiaoguang\Win32 Thread Pool\threadpool_src\ThreadPoolApp.vcxproj" (Rebuild target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:02.44

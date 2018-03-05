@@ -1,0 +1,39 @@
+﻿Build started 2018/1/26 16:57:21.
+     1>Project "D:\lixiaoguang_works\ogl-master\build\misc05_picking_BulletPhysics.vcxproj" on node 4 (Rebuild target(s)).
+     1>CustomBuild:
+         Building Custom Rule D:/lixiaoguang_works/ogl-master/CMakeLists.txt
+         CMake does not need to re-run because D:/lixiaoguang_works/ogl-master/build/CMakeFiles/generate.stamp is up-to-date.
+       ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\CL.exe /c /I"D:\lixiaoguang_works\ogl-master\external\AntTweakBar-1.16\include" /I"D:\lixiaoguang_works\ogl-master\external\glfw-3.1.2\include\GLFW" /I"D:\lixiaoguang_works\ogl-master\external\glm-0.9.7.1" /I"D:\lixiaoguang_works\ogl-master\external\glew-1.13.0\include" /I"D:\lixiaoguang_works\ogl-master\external\assimp-3.0.1270\include" /I"D:\lixiaoguang_works\ogl-master\external\bullet-2.81-rev2613\src" /I"D:\lixiaoguang_works\ogl-master\." /Zi /nologo /W3 /WX- /MP /Od /Ob0 /D WIN32 /D _WINDOWS /D TW_STATIC /D TW_NO_LIB_PRAGMA /D TW_NO_DIRECT3D /D GLEW_STATIC /D _CRT_SECURE_NO_WARNINGS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /GR /Fo"misc05_picking_BulletPhysics.dir\Debug\\" /Fd"misc05_picking_BulletPhysics.dir\Debug\vc120.pdb" /Gd /TP /errorReport:prompt "D:\lixiaoguang_works\ogl-master\misc05_picking\misc05_picking_BulletPhysics.cpp" "D:\lixiaoguang_works\ogl-master\common\shader.cpp" "D:\lixiaoguang_works\ogl-master\common\controls.cpp" "D:\lixiaoguang_works\ogl-master\common\texture.cpp" "D:\lixiaoguang_works\ogl-master\common\objloader.cpp" "D:\lixiaoguang_works\ogl-master\common\vboindexer.cpp"
+         misc05_picking_BulletPhysics.cpp
+         shader.cpp
+         controls.cpp
+         texture.cpp
+         objloader.cpp
+         vboindexer.cpp
+     1>D:\lixiaoguang_works\ogl-master\misc05_picking\misc05_picking_BulletPhysics.cpp(289): warning C4244: 'initializing' : conversion from 'double' to 'float', possible loss of data
+     1>D:\lixiaoguang_works\ogl-master\misc05_picking\misc05_picking_BulletPhysics.cpp(416): warning C4267: 'argument' : conversion from 'size_t' to 'GLsizei', possible loss of data
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\link.exe /ERRORREPORT:PROMPT /OUT:"D:\lixiaoguang_works\ogl-master\build\Debug\misc05_picking_BulletPhysics.exe" /INCREMENTAL /NOLOGO opengl32.lib glu32.lib "external\glfw-3.1.2\src\Debug\glfw3.lib" external\Debug\GLEW_1130.lib external\Debug\ANTTWEAKBAR_116_OGLCORE_GLFW.lib "external\bullet-2.81-rev2613\src\BulletDynamics\Debug\BulletDynamics.lib" "external\bullet-2.81-rev2613\src\BulletCollision\Debug\BulletCollision.lib" "external\bullet-2.81-rev2613\src\LinearMath\Debug\LinearMath.lib" opengl32.lib glu32.lib kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:/lixiaoguang_works/ogl-master/build/Debug/misc05_picking_BulletPhysics.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:/lixiaoguang_works/ogl-master/build/Debug/misc05_picking_BulletPhysics.lib" /MACHINE:X64  /machine:x64 misc05_picking_BulletPhysics.dir\Debug\misc05_picking_BulletPhysics.obj
+         misc05_picking_BulletPhysics.dir\Debug\shader.obj
+         misc05_picking_BulletPhysics.dir\Debug\controls.obj
+         misc05_picking_BulletPhysics.dir\Debug\texture.obj
+         misc05_picking_BulletPhysics.dir\Debug\objloader.obj
+         misc05_picking_BulletPhysics.dir\Debug\vboindexer.obj
+         misc05_picking_BulletPhysics.vcxproj -> D:\lixiaoguang_works\ogl-master\build\Debug\misc05_picking_BulletPhysics.exe
+       PostBuildEvent:
+         setlocal
+         "C:\Program Files\CMake\bin\cmake.exe" -E copy D:/lixiaoguang_works/ogl-master/build/Debug/misc05_picking_BulletPhysics.exe D:/lixiaoguang_works/ogl-master/misc05_picking/
+         if %errorlevel% neq 0 goto :cmEnd
+         :cmEnd
+         endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+         :cmErrorLevel
+         exit /b %1
+         :cmDone
+         if %errorlevel% neq 0 goto :VCEnd
+         :VCEnd
+     1>Done Building Project "D:\lixiaoguang_works\ogl-master\build\misc05_picking_BulletPhysics.vcxproj" (Rebuild target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:14.94

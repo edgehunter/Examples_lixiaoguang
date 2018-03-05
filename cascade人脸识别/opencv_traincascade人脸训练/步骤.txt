@@ -1,0 +1,11 @@
+将z_dir.bat分别复制到pos_image与neg_image目录下运行，删除生成txt的最后两行，将生成的txt分别命名为pos_image.txt与neg_image.txt。
+用VS打开pos_image.txt全选，按tab键，替换tab为pos_image/
+替换bmp为bmp 1 0 0 20 20
+用VS打开neg_image.txt全选，按tab键，替换tab为neg_image/
+
+运行createsamples.bat （可以右键打开编辑样本数量）
+运行traincascade.bat （可以右键打开编辑样本数量）
+
+运行到某一个stage后，如果只出现POS count : consumed 而没有NEG的信息说明负样本数量不够了，此时编辑traincascade.bat中stage到这一stage即可。
+
+将xml文件夹下将训练好的cascade.xml复制到测试工程下，运行测试效果

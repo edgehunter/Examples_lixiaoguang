@@ -1,0 +1,27 @@
+﻿Build started 2018/2/11 16:57:04.
+     1>Project "E:\lixiaoguang-18.01.31\iocp\IOCP_UDP\IOCP_UDP_lixiaoguang\IOCP_UDP_lixiaoguang\IOCP_UDP_lixiaoguang.vcxproj" on node 2 (Rebuild target(s)).
+     1>ClCompile:
+         D:\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _LIB /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt ServerIOCP_UDP.cpp stdafx.cpp
+         stdafx.cpp
+         ServerIOCP_UDP.cpp
+         Generating Code...
+       Link:
+         D:\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"E:\lixiaoguang-18.01.31\iocp\IOCP_UDP\IOCP_UDP_lixiaoguang\Debug\IOCP_UDP_lixiaoguang.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"E:\lixiaoguang-18.01.31\iocp\IOCP_UDP\IOCP_UDP_lixiaoguang\Debug\IOCP_UDP_lixiaoguang.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"E:\lixiaoguang-18.01.31\iocp\IOCP_UDP\IOCP_UDP_lixiaoguang\Debug\IOCP_UDP_lixiaoguang.lib" /MACHINE:X86 Debug\ServerIOCP_UDP.obj
+         Debug\stdafx.obj
+     1>ServerIOCP_UDP.obj : error LNK2019: unresolved external symbol __imp__bind@12 referenced in function _main
+     1>ServerIOCP_UDP.obj : error LNK2019: unresolved external symbol __imp__closesocket@4 referenced in function _main
+     1>ServerIOCP_UDP.obj : error LNK2019: unresolved external symbol __imp__htons@4 referenced in function _main
+     1>ServerIOCP_UDP.obj : error LNK2019: unresolved external symbol __imp__inet_addr@4 referenced in function _main
+     1>ServerIOCP_UDP.obj : error LNK2019: unresolved external symbol __imp__inet_ntoa@4 referenced in function "unsigned long __stdcall WorkerThread(void *)" (?WorkerThread@@YGKPAX@Z)
+     1>ServerIOCP_UDP.obj : error LNK2019: unresolved external symbol __imp__WSAStartup@8 referenced in function "bool __cdecl Initialize(void)" (?Initialize@@YA_NXZ)
+     1>ServerIOCP_UDP.obj : error LNK2019: unresolved external symbol __imp__WSACleanup@0 referenced in function "void __cdecl DeInitialize(void)" (?DeInitialize@@YAXXZ)
+     1>ServerIOCP_UDP.obj : error LNK2019: unresolved external symbol __imp__WSAGetLastError@0 referenced in function "void __cdecl AcceptConnection_UDP(unsigned int)" (?AcceptConnection_UDP@@YAXI@Z)
+     1>ServerIOCP_UDP.obj : error LNK2019: unresolved external symbol __imp__WSARecvFrom@36 referenced in function "void __cdecl AcceptConnection_UDP(unsigned int)" (?AcceptConnection_UDP@@YAXI@Z)
+     1>ServerIOCP_UDP.obj : error LNK2019: unresolved external symbol __imp__WSASendTo@36 referenced in function "unsigned long __stdcall WorkerThread(void *)" (?WorkerThread@@YGKPAX@Z)
+     1>ServerIOCP_UDP.obj : error LNK2019: unresolved external symbol __imp__WSASocketW@24 referenced in function _main
+     1>E:\lixiaoguang-18.01.31\iocp\IOCP_UDP\IOCP_UDP_lixiaoguang\Debug\IOCP_UDP_lixiaoguang.exe : fatal error LNK1120: 11 unresolved externals
+     1>Done Building Project "E:\lixiaoguang-18.01.31\iocp\IOCP_UDP\IOCP_UDP_lixiaoguang\IOCP_UDP_lixiaoguang\IOCP_UDP_lixiaoguang.vcxproj" (Rebuild target(s)) -- FAILED.
+
+Build FAILED.
+
+Time Elapsed 00:00:00.59

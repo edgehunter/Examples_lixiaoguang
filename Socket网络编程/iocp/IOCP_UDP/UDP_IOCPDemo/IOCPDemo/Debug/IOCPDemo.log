@@ -1,0 +1,18 @@
+﻿Build started 2017/12/28 9:33:35.
+     1>Project "D:\BR_Solutions\Beamforming_Solutions\GitRepository\WinSock\IOCP\UDP_IOCPDemo\IOCPDemo\IOCPDemo.vcxproj" on node 2 (Build target(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _WINDOWS /D _DEBUG /D _UNICODE /D UNICODE /D _AFXDLL /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yu"stdafx.h" /Fp"Debug\IOCPDemo.pch" /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt MyIOCP.cpp
+         MyIOCP.cpp
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"D:\BR_Solutions\Beamforming_Solutions\GitRepository\WinSock\IOCP\UDP_IOCPDemo\Debug\IOCPDemo.exe" /INCREMENTAL /NOLOGO /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /manifestinput:"C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\Include\Manifest\dpiaware.manifest" /DEBUG /PDB:"D:\BR_Solutions\Beamforming_Solutions\GitRepository\WinSock\IOCP\UDP_IOCPDemo\Debug\IOCPDemo.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /ENTRY:"wWinMainCRTStartup" /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:\BR_Solutions\Beamforming_Solutions\GitRepository\WinSock\IOCP\UDP_IOCPDemo\Debug\IOCPDemo.lib" /MACHINE:X86 /SAFESEH Debug\IOCPDemo.res
+         Debug\IOCPDemo.obj
+         Debug\IOCPDemoDlg.obj
+         Debug\IThread.obj
+         Debug\MyIOCP.obj
+         Debug\stdafx.obj
+         IOCPDemo.vcxproj -> D:\BR_Solutions\Beamforming_Solutions\GitRepository\WinSock\IOCP\UDP_IOCPDemo\Debug\IOCPDemo.exe
+     1>Done Building Project "D:\BR_Solutions\Beamforming_Solutions\GitRepository\WinSock\IOCP\UDP_IOCPDemo\IOCPDemo\IOCPDemo.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:00.63

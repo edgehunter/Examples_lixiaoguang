@@ -1,0 +1,9 @@
+﻿Build started 2017/12/22 9:41:18.
+     1>Project "D:\BR_Solutions\Beamforming_Solutions\GitRepository\WinSock\IOCP\A simple application using IO Completion Ports and WinSock\ServerIOCP\ServerIOCP.vcxproj" on node 2 (Build target(s)).
+     1>Link:
+         ServerIOCP.vcxproj -> D:\BR_Solutions\Beamforming_Solutions\GitRepository\WinSock\IOCP\A simple application using IO Completion Ports and WinSock\ServerIOCP\.\Debug\ServerIOCP.exe
+     1>Done Building Project "D:\BR_Solutions\Beamforming_Solutions\GitRepository\WinSock\IOCP\A simple application using IO Completion Ports and WinSock\ServerIOCP\ServerIOCP.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:00.04

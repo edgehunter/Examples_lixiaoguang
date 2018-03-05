@@ -1,0 +1,1 @@
+dir C:\Users\BR-HP-notebook\Desktop\OpenCVCascade\opencv_traincascade_lixiaoguang\face\negdata  /b /s /o:n /a:a >neg_image.txt

@@ -1,0 +1,27 @@
+﻿Build started 2018/1/12 11:03:20.
+     1>Project "C:\Users\BR\Desktop\Creating-a-Serial-communication-on-Win32\cool_code\SerialApp.vcxproj" on node 2 (Rebuild target(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _WINDOWS /D _VC80_UPGRADE=0x0600 /D _UNICODE /D UNICODE /D _AFXDLL /Gm /EHsc /RTC1 /MDd /GS /Gy- /fp:precise /Zc:wchar_t /Zc:forScope /Yc"stdafx.h" /Fp".\Debug\SerialApp.pch" /Fo".\Debug\\" /Fd".\Debug\vc120.pdb" /FR".\Debug\\" /Gd /TP /analyze- /errorReport:prompt StdAfx.cpp
+         StdAfx.cpp
+         _WIN32_WINNT not defined. Defaulting to _WIN32_WINNT_MAXVER (see WinSDKVer.h)
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _WINDOWS /D _VC80_UPGRADE=0x0600 /D _UNICODE /D UNICODE /D _AFXDLL /Gm /EHsc /RTC1 /MDd /GS /Gy- /fp:precise /Zc:wchar_t /Zc:forScope /Yu"stdafx.h" /Fp".\Debug\SerialApp.pch" /Fo".\Debug\\" /Fd".\Debug\vc120.pdb" /FR".\Debug\\" /Gd /TP /analyze- /errorReport:prompt SerialApp.cpp SerialAppDlg.cpp
+         SerialAppDlg.cpp
+         SerialApp.cpp
+     1>c:\users\br\desktop\creating-a-serial-communication-on-win32\cool_code\serialapp.cpp(53): warning C4996: 'CWinApp::Enable3dControls': CWinApp::Enable3dControls is no longer needed. You should remove this call.
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\atlmfc\include\afxwin.h(5178) : see declaration of 'CWinApp::Enable3dControls'
+         Generating Code...
+       ResourceCompile:
+         C:\Program Files (x86)\Windows Kits\8.1\bin\x86\rc.exe /D _DEBUG /D _VC80_UPGRADE=0x0600 /D _UNICODE /D UNICODE /D _AFXDLL /l"0x041e" /nologo /fo".\Debug\SerialApp.res" SerialApp.rc 
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:".\Debug\SerialApp.exe" /INCREMENTAL /NOLOGO /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /manifestinput:"C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\Include\Manifest\dpiaware.manifest" /DEBUG /PDB:".\Debug\SerialApp.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /ENTRY:"wWinMainCRTStartup" /DYNAMICBASE /NXCOMPAT /IMPLIB:".\Debug\SerialApp.lib" /MACHINE:X86 /SAFESEH .\Debug\SerialApp.res
+         .\Debug\SerialApp.obj
+         .\Debug\SerialAppDlg.obj
+         .\Debug\StdAfx.obj
+     1>SerialApp.obj : warning LNK4075: ignoring '/EDITANDCONTINUE' due to '/SAFESEH' specification
+     1>SerialAppDlg.obj : error LNK2019: unresolved external symbol "public: static struct CRuntimeClass * __stdcall SerialThread::GetThisClass(void)" (?GetThisClass@SerialThread@@SGPAUCRuntimeClass@@XZ) referenced in function "protected: virtual int __thiscall CSerialAppDlg::OnInitDialog(void)" (?OnInitDialog@CSerialAppDlg@@MAEHXZ)
+     1>.\Debug\SerialApp.exe : fatal error LNK1120: 1 unresolved externals
+     1>Done Building Project "C:\Users\BR\Desktop\Creating-a-Serial-communication-on-Win32\cool_code\SerialApp.vcxproj" (Rebuild target(s)) -- FAILED.
+
+Build FAILED.
+
+Time Elapsed 00:00:02.31

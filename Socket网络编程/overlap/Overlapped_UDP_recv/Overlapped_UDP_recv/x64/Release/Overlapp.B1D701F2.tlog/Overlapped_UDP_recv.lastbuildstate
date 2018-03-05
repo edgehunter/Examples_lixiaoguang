@@ -1,0 +1,2 @@
+#TargetFrameworkVersion=v4.0:PlatformToolSet=v120:EnableManagedIncrementalBuild=false:VCToolArchitecture=Native32Bit
+Release|x64|D:\BR_Solutions\Beamforming_Solutions\GitRepository\WinSock\overlap\Overlapped_UDP_recv\|

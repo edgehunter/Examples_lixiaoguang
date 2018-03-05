@@ -1,0 +1,1 @@
+opencv_traincascade.exe -data xml -vec pos_lixiaoguang.vec -bg neg_image.txt -numPos 3000 -numNeg 10000 -numStages 16 -precalcValBufSize 2500 -precalcIdxBufSize 2500 -featureType HAAR -w 20 -h 20 -maxWeakCount 150 -mode ALL -minHitRate 0.999 -maxFalseAlarmRate 0.25 -maxDepth 1
