@@ -1,0 +1,38 @@
+﻿Build started 2018/3/5 11:12:21.
+     1>Project "D:\lixiaoguang_works\glfw_glew-glad_shader_glm\CUDA_OpenGL_glfw_glew\CUDA_OpenGL_glfw_glew\CUDA_OpenGL_glfw_glew.vcxproj" on node 2 (Build target(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\CL.exe /c /IOpenGL\include /IOpenGL\include\GLFW\deps /Zi /nologo /W3 /WX- /O2 /Oi /GL /D WIN32 /D _WINDOWS /D NDEBUG /D _UNICODE /D UNICODE /D _AFXDLL /Gm- /EHsc /MD /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Yc"stdafx.h" /Fp"x64\Release\CUDA_OpenGL_glfw_glew.pch" /Fo"x64\Release\\" /Fd"x64\Release\vc120.pdb" /Gd /TP /errorReport:prompt stdafx.cpp
+         stdafx.cpp
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\CL.exe /c /IOpenGL\include /IOpenGL\include\GLFW\deps /Zi /nologo /W3 /WX- /O2 /Oi /GL /D WIN32 /D _WINDOWS /D NDEBUG /D _UNICODE /D UNICODE /D _AFXDLL /Gm- /EHsc /MD /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Yu"stdafx.h" /Fp"x64\Release\CUDA_OpenGL_glfw_glew.pch" /Fo"x64\Release\\" /Fd"x64\Release\vc120.pdb" /Gd /TP /errorReport:prompt BottomEditView.cpp BottomView.cpp CUDA_OpenGL_glfw_glew.cpp CUDA_OpenGL_glfw_glewDoc.cpp CUDA_OpenGL_glfw_glewView.cpp MainFrm.cpp OpenGL.cpp TopView.cpp
+         BottomEditView.cpp
+         BottomView.cpp
+         CUDA_OpenGL_glfw_glew.cpp
+         CUDA_OpenGL_glfw_glewDoc.cpp
+         CUDA_OpenGL_glfw_glewView.cpp
+         MainFrm.cpp
+         OpenGL.cpp
+         TopView.cpp
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\CL.exe /c /IOpenGL\include /IOpenGL\include\GLFW\deps /Zi /nologo /W3 /WX- /O2 /Oi /GL /D WIN32 /D _WINDOWS /D NDEBUG /D _UNICODE /D UNICODE /D _AFXDLL /Gm- /EHsc /MD /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Fo"x64\Release\\" /Fd"x64\Release\vc120.pdb" /Gd /TC /errorReport:prompt OpenGL\include\GLFW\deps\glad.c
+         glad.c
+       ResourceCompile:
+         C:\Program Files (x86)\Windows Kits\8.1\bin\x86\rc.exe /D NDEBUG /D _UNICODE /D UNICODE /D _AFXDLL /l"0x0409" /Ix64\Release\ /nologo /fo"x64\Release\CUDA_OpenGL_glfw_glew.res" CUDA_OpenGL_glfw_glew.rc 
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\link.exe /ERRORREPORT:PROMPT /OUT:"D:\lixiaoguang_works\glfw_glew-glad_shader_glm\CUDA_OpenGL_glfw_glew\x64\Release\CUDA_OpenGL_glfw_glew.exe" /INCREMENTAL:NO /NOLOGO /LIBPATH:OpenGL\lib\Release glfw3.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /manifestinput:"C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\Include\Manifest\dpiaware.manifest" /DEBUG /PDB:"D:\lixiaoguang_works\glfw_glew-glad_shader_glm\CUDA_OpenGL_glfw_glew\x64\Release\CUDA_OpenGL_glfw_glew.pdb" /SUBSYSTEM:WINDOWS /OPT:REF /OPT:ICF /LTCG /TLBID:1 /ENTRY:"wWinMainCRTStartup" /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:\lixiaoguang_works\glfw_glew-glad_shader_glm\CUDA_OpenGL_glfw_glew\x64\Release\CUDA_OpenGL_glfw_glew.lib" /MACHINE:X64 x64\Release\CUDA_OpenGL_glfw_glew.res
+         x64\Release\BottomEditView.obj
+         x64\Release\BottomView.obj
+         x64\Release\CUDA_OpenGL_glfw_glew.obj
+         x64\Release\CUDA_OpenGL_glfw_glewDoc.obj
+         x64\Release\CUDA_OpenGL_glfw_glewView.obj
+         x64\Release\MainFrm.obj
+         x64\Release\OpenGL.obj
+         x64\Release\glad.obj
+         x64\Release\stdafx.obj
+         x64\Release\TopView.obj
+         Generating code
+         Finished generating code
+         CUDA_OpenGL_glfw_glew.vcxproj -> D:\lixiaoguang_works\glfw_glew-glad_shader_glm\CUDA_OpenGL_glfw_glew\x64\Release\CUDA_OpenGL_glfw_glew.exe
+     1>Done Building Project "D:\lixiaoguang_works\glfw_glew-glad_shader_glm\CUDA_OpenGL_glfw_glew\CUDA_OpenGL_glfw_glew\CUDA_OpenGL_glfw_glew.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:06.02

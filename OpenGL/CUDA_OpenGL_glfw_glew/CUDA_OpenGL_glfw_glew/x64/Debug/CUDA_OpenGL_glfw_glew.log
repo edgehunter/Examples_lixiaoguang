@@ -1,0 +1,32 @@
+﻿Build started 2017/9/26 10:28:13.
+     1>Project "D:\Projects_lixiaoguang\Project_Home\CUDA_OpenGL_glfw_glew\CUDA_OpenGL_glfw_glew\CUDA_OpenGL_glfw_glew.vcxproj" on node 2 (Rebuild target(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\CL.exe /c /Zi /nologo /W3 /WX- /Od /D WIN32 /D _WINDOWS /D _DEBUG /D _UNICODE /D UNICODE /D _AFXDLL /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yc"stdafx.h" /Fp"x64\Debug\CUDA_OpenGL_glfw_glew.pch" /Fo"x64\Debug\\" /Fd"x64\Debug\vc120.pdb" /Gd /TP /errorReport:prompt stdafx.cpp
+         stdafx.cpp
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\CL.exe /c /Zi /nologo /W3 /WX- /Od /D WIN32 /D _WINDOWS /D _DEBUG /D _UNICODE /D UNICODE /D _AFXDLL /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yu"stdafx.h" /Fp"x64\Debug\CUDA_OpenGL_glfw_glew.pch" /Fo"x64\Debug\\" /Fd"x64\Debug\vc120.pdb" /Gd /TP /errorReport:prompt BottomEditView.cpp BottomView.cpp CUDA_OpenGL_glfw_glew.cpp CUDA_OpenGL_glfw_glewDoc.cpp CUDA_OpenGL_glfw_glewView.cpp MainFrm.cpp TopView.cpp
+         TopView.cpp
+         MainFrm.cpp
+         CUDA_OpenGL_glfw_glewView.cpp
+         CUDA_OpenGL_glfw_glewDoc.cpp
+         CUDA_OpenGL_glfw_glew.cpp
+         BottomView.cpp
+         BottomEditView.cpp
+         Generating Code...
+       ResourceCompile:
+         C:\Program Files (x86)\Windows Kits\8.1\bin\x86\rc.exe /D _DEBUG /D _UNICODE /D UNICODE /D _AFXDLL /l"0x0409" /Ix64\Debug\ /nologo /fo"x64\Debug\CUDA_OpenGL_glfw_glew.res" CUDA_OpenGL_glfw_glew.rc 
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\link.exe /ERRORREPORT:PROMPT /OUT:"D:\Projects_lixiaoguang\Project_Home\CUDA_OpenGL_glfw_glew\x64\Debug\CUDA_OpenGL_glfw_glew.exe" /INCREMENTAL /NOLOGO /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /manifestinput:"C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\Include\Manifest\dpiaware.manifest" /DEBUG /PDB:"D:\Projects_lixiaoguang\Project_Home\CUDA_OpenGL_glfw_glew\x64\Debug\CUDA_OpenGL_glfw_glew.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /ENTRY:"wWinMainCRTStartup" /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:\Projects_lixiaoguang\Project_Home\CUDA_OpenGL_glfw_glew\x64\Debug\CUDA_OpenGL_glfw_glew.lib" /MACHINE:X64 x64\Debug\CUDA_OpenGL_glfw_glew.res
+         x64\Debug\BottomEditView.obj
+         x64\Debug\BottomView.obj
+         x64\Debug\CUDA_OpenGL_glfw_glew.obj
+         x64\Debug\CUDA_OpenGL_glfw_glewDoc.obj
+         x64\Debug\CUDA_OpenGL_glfw_glewView.obj
+         x64\Debug\MainFrm.obj
+         x64\Debug\stdafx.obj
+         x64\Debug\TopView.obj
+         CUDA_OpenGL_glfw_glew.vcxproj -> D:\Projects_lixiaoguang\Project_Home\CUDA_OpenGL_glfw_glew\x64\Debug\CUDA_OpenGL_glfw_glew.exe
+     1>Done Building Project "D:\Projects_lixiaoguang\Project_Home\CUDA_OpenGL_glfw_glew\CUDA_OpenGL_glfw_glew\CUDA_OpenGL_glfw_glew.vcxproj" (Rebuild target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:30.83

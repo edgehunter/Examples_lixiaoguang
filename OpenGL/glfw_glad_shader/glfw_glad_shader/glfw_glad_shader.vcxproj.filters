@@ -1,0 +1,101 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="glad">
+      <UniqueIdentifier>{e9960629-2fdd-4253-bdb7-65833e9dd3db}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="imgui">
+      <UniqueIdentifier>{157cdb8b-eb22-4c5e-97a5-b5bf91773c1b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="imgui\imgui_impl_glfw_gl3">
+      <UniqueIdentifier>{1a794ebb-c665-4c66-8d92-82aeec8bf2d0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="shader">
+      <UniqueIdentifier>{265b767e-1294-48d3-8f9d-b79c0a247656}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="controls">
+      <UniqueIdentifier>{ca60f8f6-111d-4e49-a723-38e584d32cca}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="stdafx.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="imgui\imconfig.h">
+      <Filter>imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="imgui\imgui.h">
+      <Filter>imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="imgui\imgui_internal.h">
+      <Filter>imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="imgui\examples\opengl3_example\imgui_impl_glfw_gl3.h">
+      <Filter>imgui\imgui_impl_glfw_gl3</Filter>
+    </ClInclude>
+    <ClInclude Include="OpenGL\include\glad\include\glad\glad.h">
+      <Filter>glad</Filter>
+    </ClInclude>
+    <ClInclude Include="shader\shader.h">
+      <Filter>shader</Filter>
+    </ClInclude>
+    <ClInclude Include="controls\controls.h">
+      <Filter>controls</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="glfw_glad_shader.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="imgui\imgui.cpp">
+      <Filter>imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="imgui\imgui_demo.cpp">
+      <Filter>imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="imgui\imgui_draw.cpp">
+      <Filter>imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="imgui\examples\opengl3_example\imgui_impl_glfw_gl3.cpp">
+      <Filter>imgui\imgui_impl_glfw_gl3</Filter>
+    </ClCompile>
+    <ClCompile Include="OpenGL\include\glad\src\glad.c">
+      <Filter>glad</Filter>
+    </ClCompile>
+    <ClCompile Include="shader\shader.cpp">
+      <Filter>shader</Filter>
+    </ClCompile>
+    <ClCompile Include="controls\controls.cpp">
+      <Filter>controls</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="shader\SimpleTransform.vertexshader">
+      <Filter>shader</Filter>
+    </None>
+    <None Include="shader\SingleColor.fragmentshader">
+      <Filter>shader</Filter>
+    </None>
+  </ItemGroup>
+</Project>
