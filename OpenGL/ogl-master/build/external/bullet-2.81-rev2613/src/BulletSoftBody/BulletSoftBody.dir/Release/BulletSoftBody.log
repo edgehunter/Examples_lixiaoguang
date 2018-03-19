@@ -1,0 +1,36 @@
+﻿Build started 2018/3/13 15:20:44.
+     1>Project "D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\build\external\bullet-2.81-rev2613\src\BulletSoftBody\BulletSoftBody.vcxproj" on node 9 (Rebuild target(s)).
+     1>CustomBuild:
+         Building Custom Rule D:/lixiaoguang_works/Examples_lixiaoguang/OpenGL/ogl-master/external/bullet-2.81-rev2613/src/BulletSoftBody/CMakeLists.txt
+         CMake does not need to re-run because D:/lixiaoguang_works/Examples_lixiaoguang/OpenGL/ogl-master/build/external/bullet-2.81-rev2613/src/BulletSoftBody/CMakeFiles/generate.stamp is up-to-date.
+       ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\CL.exe /c /I"D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\glfw-3.1.2\include\GLFW" /I"D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\glew-1.13.0\include" /I"D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\AntTweakBar-1.16\include" /I"D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\assimp-3.0.1270\code\BoostWorkaround" /I"D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\bullet-2.81-rev2613\src" /I\src /nologo /W3 /WX- /MP /O2 /Ob2 /D WIN32 /D _WINDOWS /D NDEBUG /D TW_STATIC /D TW_NO_LIB_PRAGMA /D TW_NO_DIRECT3D /D GLEW_STATIC /D _CRT_SECURE_NO_WARNINGS /D ASSIMP_BUILD_BOOST_WORKAROUND /D "CMAKE_INTDIR=\"Release\"" /D _MBCS /Gm- /EHsc /MD /GS /fp:precise /Zc:wchar_t /Zc:forScope /GR /Fo"BulletSoftBody.dir\Release\\" /Fd"BulletSoftBody.dir\Release\vc120.pdb" /Gd /TP /errorReport:prompt "D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\bullet-2.81-rev2613\src\BulletSoftBody\btSoftBody.cpp" "D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\bullet-2.81-rev2613\src\BulletSoftBody\btSoftBodyConcaveCollisionAlgorithm.cpp" "D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\bullet-2.81-rev2613\src\BulletSoftBody\btSoftBodyHelpers.cpp" "D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\bullet-2.81-rev2613\src\BulletSoftBody\btSoftBodyRigidBodyCollisionConfiguration.cpp" "D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\bullet-2.81-rev2613\src\BulletSoftBody\btSoftRigidCollisionAlgorithm.cpp" "D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\bullet-2.81-rev2613\src\BulletSoftBody\btSoftRigidDynamicsWorld.cpp" "D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\bullet-2.81-rev2613\src\BulletSoftBody\btSoftSoftCollisionAlgorithm.cpp" "D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\bullet-2.81-rev2613\src\BulletSoftBody\btDefaultSoftBodySolver.cpp"
+         btSoftBody.cpp
+         btSoftBodyConcaveCollisionAlgorithm.cpp
+     1>D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\bullet-2.81-rev2613\src\BulletSoftBody\btSoftBody.cpp : warning C4819: The file contains a character that cannot be represented in the current code page (936). Save the file in Unicode format to prevent data loss
+         btSoftBodyHelpers.cpp
+         btSoftBodyRigidBodyCollisionConfiguration.cpp
+         btSoftRigidCollisionAlgorithm.cpp
+         btSoftRigidDynamicsWorld.cpp
+         btSoftSoftCollisionAlgorithm.cpp
+         btDefaultSoftBodySolver.cpp
+     1>D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\bullet-2.81-rev2613\src\BulletSoftBody\btSoftBody.cpp(3322): warning C4244: '=' : conversion from '__int64' to 'int', possible loss of data
+     1>D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\bullet-2.81-rev2613\src\BulletSoftBody\btSoftBody.cpp(3323): warning C4244: '=' : conversion from '__int64' to 'int', possible loss of data
+     1>D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\bullet-2.81-rev2613\src\BulletSoftBody\btSoftBody.cpp(3347): warning C4244: '=' : conversion from '__int64' to 'int', possible loss of data
+     1>D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\bullet-2.81-rev2613\src\BulletSoftBody\btSoftBody.cpp(3368): warning C4244: '=' : conversion from '__int64' to 'int', possible loss of data
+     1>D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\bullet-2.81-rev2613\src\BulletSoftBody\btSoftBody.cpp(3392): warning C4244: '=' : conversion from '__int64' to 'int', possible loss of data
+       Lib:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\Lib.exe /OUT:"D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\build\external\bullet-2.81-rev2613\src\BulletSoftBody\Release\BulletSoftBody.lib" /NOLOGO /MACHINE:X64  /machine:x64 BulletSoftBody.dir\Release\btSoftBody.obj
+         BulletSoftBody.dir\Release\btSoftBodyConcaveCollisionAlgorithm.obj
+         BulletSoftBody.dir\Release\btSoftBodyHelpers.obj
+         BulletSoftBody.dir\Release\btSoftBodyRigidBodyCollisionConfiguration.obj
+         BulletSoftBody.dir\Release\btSoftRigidCollisionAlgorithm.obj
+         BulletSoftBody.dir\Release\btSoftRigidDynamicsWorld.obj
+         BulletSoftBody.dir\Release\btSoftSoftCollisionAlgorithm.obj
+         BulletSoftBody.dir\Release\btDefaultSoftBodySolver.obj
+         BulletSoftBody.vcxproj -> D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\build\external\bullet-2.81-rev2613\src\BulletSoftBody\Release\BulletSoftBody.lib
+     1>Done Building Project "D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\build\external\bullet-2.81-rev2613\src\BulletSoftBody\BulletSoftBody.vcxproj" (Rebuild target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:25.34

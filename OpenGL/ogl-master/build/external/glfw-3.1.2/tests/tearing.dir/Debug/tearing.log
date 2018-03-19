@@ -1,18 +1,18 @@
-﻿Build started 2018/1/26 16:57:16.
-     1>Project "D:\lixiaoguang_works\ogl-master\build\external\glfw-3.1.2\tests\tearing.vcxproj" on node 4 (Rebuild target(s)).
+﻿Build started 2018/3/13 15:23:35.
+     1>Project "D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\build\external\glfw-3.1.2\tests\tearing.vcxproj" on node 8 (Rebuild target(s)).
      1>CustomBuild:
-         Building Custom Rule D:/lixiaoguang_works/ogl-master/external/glfw-3.1.2/tests/CMakeLists.txt
-         CMake does not need to re-run because D:/lixiaoguang_works/ogl-master/build/external/glfw-3.1.2/tests/CMakeFiles/generate.stamp is up-to-date.
+         Building Custom Rule D:/lixiaoguang_works/Examples_lixiaoguang/OpenGL/ogl-master/external/glfw-3.1.2/tests/CMakeLists.txt
+         CMake does not need to re-run because D:/lixiaoguang_works/Examples_lixiaoguang/OpenGL/ogl-master/build/external/glfw-3.1.2/tests/CMakeFiles/generate.stamp is up-to-date.
        ClCompile:
-         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\CL.exe /c /I"D:\lixiaoguang_works\ogl-master\external\glfw-3.1.2\include" /I"D:\lixiaoguang_works\ogl-master\external\glfw-3.1.2\deps" /Zi /nologo /W3 /WX- /MP /Od /Ob0 /D WIN32 /D _WINDOWS /D TW_STATIC /D TW_NO_LIB_PRAGMA /D TW_NO_DIRECT3D /D GLEW_STATIC /D _CRT_SECURE_NO_WARNINGS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"tearing.dir\Debug\\" /Fd"tearing.dir\Debug\vc120.pdb" /Gd /TC /errorReport:prompt "D:\lixiaoguang_works\ogl-master\external\glfw-3.1.2\tests\tearing.c" "D:\lixiaoguang_works\ogl-master\external\glfw-3.1.2\deps\getopt.c"
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\CL.exe /c /I"D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\glfw-3.1.2\include" /I"D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\glfw-3.1.2\deps" /Zi /nologo /W3 /WX- /MP /Od /Ob0 /D WIN32 /D _WINDOWS /D TW_STATIC /D TW_NO_LIB_PRAGMA /D TW_NO_DIRECT3D /D GLEW_STATIC /D _CRT_SECURE_NO_WARNINGS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"tearing.dir\Debug\\" /Fd"tearing.dir\Debug\vc120.pdb" /Gd /TC /errorReport:prompt "D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\glfw-3.1.2\tests\tearing.c" "D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\glfw-3.1.2\deps\getopt.c"
          tearing.c
          getopt.c
        Link:
-         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\link.exe /ERRORREPORT:PROMPT /OUT:"D:\lixiaoguang_works\ogl-master\build\external\glfw-3.1.2\tests\Debug\tearing.exe" /INCREMENTAL /NOLOGO ..\src\Debug\glfw3.lib opengl32.lib kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:/lixiaoguang_works/ogl-master/build/external/glfw-3.1.2/tests/Debug/tearing.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /ENTRY:"mainCRTStartup" /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:/lixiaoguang_works/ogl-master/build/external/glfw-3.1.2/tests/Debug/tearing.lib" /MACHINE:X64  /machine:x64 tearing.dir\Debug\tearing.obj
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\link.exe /ERRORREPORT:PROMPT /OUT:"D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\build\external\glfw-3.1.2\tests\Debug\tearing.exe" /INCREMENTAL /NOLOGO ..\src\Debug\glfw3.lib opengl32.lib kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:/lixiaoguang_works/Examples_lixiaoguang/OpenGL/ogl-master/build/external/glfw-3.1.2/tests/Debug/tearing.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /ENTRY:"mainCRTStartup" /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:/lixiaoguang_works/Examples_lixiaoguang/OpenGL/ogl-master/build/external/glfw-3.1.2/tests/Debug/tearing.lib" /MACHINE:X64  /machine:x64 tearing.dir\Debug\tearing.obj
          tearing.dir\Debug\getopt.obj
-         tearing.vcxproj -> D:\lixiaoguang_works\ogl-master\build\external\glfw-3.1.2\tests\Debug\tearing.exe
-     1>Done Building Project "D:\lixiaoguang_works\ogl-master\build\external\glfw-3.1.2\tests\tearing.vcxproj" (Rebuild target(s)).
+         tearing.vcxproj -> D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\build\external\glfw-3.1.2\tests\Debug\tearing.exe
+     1>Done Building Project "D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\build\external\glfw-3.1.2\tests\tearing.vcxproj" (Rebuild target(s)).
 
 Build succeeded.
 
-Time Elapsed 00:00:02.54
+Time Elapsed 00:00:01.31

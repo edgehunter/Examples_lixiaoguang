@@ -1,5 +1,5 @@
 # CMake generation dependency list for this directory.
-D:/lixiaoguang_works/ogl-master/external/glfw-3.1.2/CMakeLists.txt
+D:/lixiaoguang_works/Examples_lixiaoguang/OpenGL/ogl-master/external/glfw-3.1.2/CMakeLists.txt
 C:/Program Files/CMake/share/cmake-3.10/Modules/FindOpenGL.cmake
 C:/Program Files/CMake/share/cmake-3.10/Modules/FindPackageHandleStandardArgs.cmake
 C:/Program Files/CMake/share/cmake-3.10/Modules/FindPackageMessage.cmake
@@ -14,9 +14,9 @@ C:/Program Files/CMake/share/cmake-3.10/Modules/FindPackageHandleStandardArgs.cm
 C:/Program Files/CMake/share/cmake-3.10/Modules/FindPackageMessage.cmake
 C:/Program Files/CMake/share/cmake-3.10/Modules/CMakePackageConfigHelpers.cmake
 C:/Program Files/CMake/share/cmake-3.10/Modules/WriteBasicConfigVersionFile.cmake
-D:/lixiaoguang_works/ogl-master/external/glfw-3.1.2/src/glfw3Config.cmake.in
+D:/lixiaoguang_works/Examples_lixiaoguang/OpenGL/ogl-master/external/glfw-3.1.2/src/glfw3Config.cmake.in
 C:/Program Files/CMake/share/cmake-3.10/Modules/BasicConfigVersion-SameMajorVersion.cmake.in
-D:/lixiaoguang_works/ogl-master/external/glfw-3.1.2/docs/Doxyfile.in
-D:/lixiaoguang_works/ogl-master/external/glfw-3.1.2/src/glfw_config.h.in
-D:/lixiaoguang_works/ogl-master/external/glfw-3.1.2/src/glfw3.pc.in
-D:/lixiaoguang_works/ogl-master/external/glfw-3.1.2/cmake_uninstall.cmake.in
+D:/lixiaoguang_works/Examples_lixiaoguang/OpenGL/ogl-master/external/glfw-3.1.2/docs/Doxyfile.in
+D:/lixiaoguang_works/Examples_lixiaoguang/OpenGL/ogl-master/external/glfw-3.1.2/src/glfw_config.h.in
+D:/lixiaoguang_works/Examples_lixiaoguang/OpenGL/ogl-master/external/glfw-3.1.2/src/glfw3.pc.in
+D:/lixiaoguang_works/Examples_lixiaoguang/OpenGL/ogl-master/external/glfw-3.1.2/cmake_uninstall.cmake.in

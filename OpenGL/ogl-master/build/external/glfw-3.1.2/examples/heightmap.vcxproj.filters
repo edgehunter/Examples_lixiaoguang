@@ -1,27 +1,27 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <Project ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <ClCompile Include="D:\lixiaoguang_works\ogl-master\external\glfw-3.1.2\examples\heightmap.c">
+    <ClCompile Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\glfw-3.1.2\examples\heightmap.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\lixiaoguang_works\ogl-master\external\glfw-3.1.2\deps\glad.c">
+    <ClCompile Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\glfw-3.1.2\deps\glad.c">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="D:\lixiaoguang_works\ogl-master\external\glfw-3.1.2\deps\glad\glad.h">
+    <ClInclude Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\glfw-3.1.2\deps\glad\glad.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <CustomBuild Include="D:\lixiaoguang_works\ogl-master\external\glfw-3.1.2\examples\CMakeLists.txt" />
+    <CustomBuild Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\glfw-3.1.2\examples\CMakeLists.txt" />
   </ItemGroup>
   <ItemGroup>
     <Filter Include="Source Files">
-      <UniqueIdentifier>{4137E80B-F9E3-3DD0-98BA-AAB508EDA651}</UniqueIdentifier>
+      <UniqueIdentifier>{B60F2CFA-E83A-3ADA-BA21-12B5F549C2D9}</UniqueIdentifier>
     </Filter>
     <Filter Include="Header Files">
-      <UniqueIdentifier>{923656BC-BDAB-3683-8038-A4137BDD98A8}</UniqueIdentifier>
+      <UniqueIdentifier>{75A1DF3F-45B3-3383-9235-D7E78D7D63F9}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
 </Project>

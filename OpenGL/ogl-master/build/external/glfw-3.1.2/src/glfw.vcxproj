@@ -19,7 +19,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{0347FADC-1556-3F80-B104-3EAC32895D3B}</ProjectGuid>
+    <ProjectGuid>{1F170557-4846-3FFA-A8D7-FB810EA97CFB}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
     <Platform>x64</Platform>
     <ProjectName>glfw</ProjectName>
@@ -55,26 +55,26 @@
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup>
     <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
-    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\lixiaoguang_works\ogl-master\build\external\glfw-3.1.2\src\Debug\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\build\external\glfw-3.1.2\src\Debug\</OutDir>
     <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">glfw.dir\Debug\</IntDir>
     <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">glfw3</TargetName>
     <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.lib</TargetExt>
-    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\lixiaoguang_works\ogl-master\build\external\glfw-3.1.2\src\Release\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\build\external\glfw-3.1.2\src\Release\</OutDir>
     <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">glfw.dir\Release\</IntDir>
     <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">glfw3</TargetName>
     <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.lib</TargetExt>
-    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\lixiaoguang_works\ogl-master\build\external\glfw-3.1.2\src\MinSizeRel\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\build\external\glfw-3.1.2\src\MinSizeRel\</OutDir>
     <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">glfw.dir\MinSizeRel\</IntDir>
     <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">glfw3</TargetName>
     <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.lib</TargetExt>
-    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\lixiaoguang_works\ogl-master\build\external\glfw-3.1.2\src\RelWithDebInfo\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\build\external\glfw-3.1.2\src\RelWithDebInfo\</OutDir>
     <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">glfw.dir\RelWithDebInfo\</IntDir>
     <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">glfw3</TargetName>
     <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.lib</TargetExt>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>D:\lixiaoguang_works\ogl-master\external\glfw-3.1.2\src;D:\lixiaoguang_works\ogl-master\build\external\glfw-3.1.2\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\glfw-3.1.2\src;D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\build\external\glfw-3.1.2\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AssemblerListingLocation>Debug/</AssemblerListingLocation>
       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
       <CompileAs>CompileAsC</CompileAs>
@@ -92,10 +92,10 @@
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;TW_STATIC;TW_NO_LIB_PRAGMA;TW_NO_DIRECT3D;GLEW_STATIC;_CRT_SECURE_NO_WARNINGS;_GLFW_USE_CONFIG_H;CMAKE_INTDIR=\"Debug\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>D:\lixiaoguang_works\ogl-master\external\glfw-3.1.2\src;D:\lixiaoguang_works\ogl-master\build\external\glfw-3.1.2\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\glfw-3.1.2\src;D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\build\external\glfw-3.1.2\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>D:\lixiaoguang_works\ogl-master\external\glfw-3.1.2\src;D:\lixiaoguang_works\ogl-master\build\external\glfw-3.1.2\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\glfw-3.1.2\src;D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\build\external\glfw-3.1.2\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -108,7 +108,7 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>D:\lixiaoguang_works\ogl-master\external\glfw-3.1.2\src;D:\lixiaoguang_works\ogl-master\build\external\glfw-3.1.2\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\glfw-3.1.2\src;D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\build\external\glfw-3.1.2\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AssemblerListingLocation>Release/</AssemblerListingLocation>
       <CompileAs>CompileAsC</CompileAs>
       <ExceptionHandling>
@@ -125,10 +125,10 @@
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;TW_STATIC;TW_NO_LIB_PRAGMA;TW_NO_DIRECT3D;GLEW_STATIC;_CRT_SECURE_NO_WARNINGS;_GLFW_USE_CONFIG_H;CMAKE_INTDIR=\"Release\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>D:\lixiaoguang_works\ogl-master\external\glfw-3.1.2\src;D:\lixiaoguang_works\ogl-master\build\external\glfw-3.1.2\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\glfw-3.1.2\src;D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\build\external\glfw-3.1.2\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>D:\lixiaoguang_works\ogl-master\external\glfw-3.1.2\src;D:\lixiaoguang_works\ogl-master\build\external\glfw-3.1.2\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\glfw-3.1.2\src;D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\build\external\glfw-3.1.2\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -141,7 +141,7 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>D:\lixiaoguang_works\ogl-master\external\glfw-3.1.2\src;D:\lixiaoguang_works\ogl-master\build\external\glfw-3.1.2\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\glfw-3.1.2\src;D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\build\external\glfw-3.1.2\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AssemblerListingLocation>MinSizeRel/</AssemblerListingLocation>
       <CompileAs>CompileAsC</CompileAs>
       <ExceptionHandling>
@@ -158,10 +158,10 @@
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;TW_STATIC;TW_NO_LIB_PRAGMA;TW_NO_DIRECT3D;GLEW_STATIC;_CRT_SECURE_NO_WARNINGS;_GLFW_USE_CONFIG_H;CMAKE_INTDIR=\"MinSizeRel\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>D:\lixiaoguang_works\ogl-master\external\glfw-3.1.2\src;D:\lixiaoguang_works\ogl-master\build\external\glfw-3.1.2\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\glfw-3.1.2\src;D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\build\external\glfw-3.1.2\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>D:\lixiaoguang_works\ogl-master\external\glfw-3.1.2\src;D:\lixiaoguang_works\ogl-master\build\external\glfw-3.1.2\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\glfw-3.1.2\src;D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\build\external\glfw-3.1.2\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -174,7 +174,7 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>D:\lixiaoguang_works\ogl-master\external\glfw-3.1.2\src;D:\lixiaoguang_works\ogl-master\build\external\glfw-3.1.2\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\glfw-3.1.2\src;D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\build\external\glfw-3.1.2\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AssemblerListingLocation>RelWithDebInfo/</AssemblerListingLocation>
       <CompileAs>CompileAsC</CompileAs>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
@@ -191,10 +191,10 @@
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;TW_STATIC;TW_NO_LIB_PRAGMA;TW_NO_DIRECT3D;GLEW_STATIC;_CRT_SECURE_NO_WARNINGS;_GLFW_USE_CONFIG_H;CMAKE_INTDIR=\"RelWithDebInfo\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>D:\lixiaoguang_works\ogl-master\external\glfw-3.1.2\src;D:\lixiaoguang_works\ogl-master\build\external\glfw-3.1.2\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\glfw-3.1.2\src;D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\build\external\glfw-3.1.2\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>D:\lixiaoguang_works\ogl-master\external\glfw-3.1.2\src;D:\lixiaoguang_works\ogl-master\build\external\glfw-3.1.2\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\glfw-3.1.2\src;D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\build\external\glfw-3.1.2\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -206,10 +206,10 @@
     </Lib>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <CustomBuild Include="D:\lixiaoguang_works\ogl-master\external\glfw-3.1.2\src\CMakeLists.txt">
-      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule D:/lixiaoguang_works/ogl-master/external/glfw-3.1.2/src/CMakeLists.txt</Message>
+    <CustomBuild Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\glfw-3.1.2\src\CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule D:/lixiaoguang_works/Examples_lixiaoguang/OpenGL/ogl-master/external/glfw-3.1.2/src/CMakeLists.txt</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -HD:/lixiaoguang_works/ogl-master -BD:/lixiaoguang_works/ogl-master/build --check-stamp-file D:/lixiaoguang_works/ogl-master/build/external/glfw-3.1.2/src/CMakeFiles/generate.stamp
+"C:\Program Files\CMake\bin\cmake.exe" -HD:/lixiaoguang_works/Examples_lixiaoguang/OpenGL/ogl-master -BD:/lixiaoguang_works/Examples_lixiaoguang/OpenGL/ogl-master/build --check-stamp-file D:/lixiaoguang_works/Examples_lixiaoguang/OpenGL/ogl-master/build/external/glfw-3.1.2/src/CMakeFiles/generate.stamp
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -217,12 +217,12 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:/lixiaoguang_works/ogl-master/external/glfw-3.1.2/src/CMakeLists.txt;D:\lixiaoguang_works\ogl-master\external\glfw-3.1.2\src\CMakeLists.txt;D:\lixiaoguang_works\ogl-master\external\glfw-3.1.2\src\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\lixiaoguang_works\ogl-master\build\external\glfw-3.1.2\src\CMakeFiles\generate.stamp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:/lixiaoguang_works/Examples_lixiaoguang/OpenGL/ogl-master/external/glfw-3.1.2/src/CMakeLists.txt;D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\glfw-3.1.2\src\CMakeLists.txt;D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\glfw-3.1.2\src\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\build\external\glfw-3.1.2\src\CMakeFiles\generate.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
-      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule D:/lixiaoguang_works/ogl-master/external/glfw-3.1.2/src/CMakeLists.txt</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule D:/lixiaoguang_works/Examples_lixiaoguang/OpenGL/ogl-master/external/glfw-3.1.2/src/CMakeLists.txt</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -HD:/lixiaoguang_works/ogl-master -BD:/lixiaoguang_works/ogl-master/build --check-stamp-file D:/lixiaoguang_works/ogl-master/build/external/glfw-3.1.2/src/CMakeFiles/generate.stamp
+"C:\Program Files\CMake\bin\cmake.exe" -HD:/lixiaoguang_works/Examples_lixiaoguang/OpenGL/ogl-master -BD:/lixiaoguang_works/Examples_lixiaoguang/OpenGL/ogl-master/build --check-stamp-file D:/lixiaoguang_works/Examples_lixiaoguang/OpenGL/ogl-master/build/external/glfw-3.1.2/src/CMakeFiles/generate.stamp
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -230,12 +230,12 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:/lixiaoguang_works/ogl-master/external/glfw-3.1.2/src/CMakeLists.txt;D:\lixiaoguang_works\ogl-master\external\glfw-3.1.2\src\CMakeLists.txt;D:\lixiaoguang_works\ogl-master\external\glfw-3.1.2\src\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\lixiaoguang_works\ogl-master\build\external\glfw-3.1.2\src\CMakeFiles\generate.stamp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:/lixiaoguang_works/Examples_lixiaoguang/OpenGL/ogl-master/external/glfw-3.1.2/src/CMakeLists.txt;D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\glfw-3.1.2\src\CMakeLists.txt;D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\glfw-3.1.2\src\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\build\external\glfw-3.1.2\src\CMakeFiles\generate.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
-      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule D:/lixiaoguang_works/ogl-master/external/glfw-3.1.2/src/CMakeLists.txt</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule D:/lixiaoguang_works/Examples_lixiaoguang/OpenGL/ogl-master/external/glfw-3.1.2/src/CMakeLists.txt</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -HD:/lixiaoguang_works/ogl-master -BD:/lixiaoguang_works/ogl-master/build --check-stamp-file D:/lixiaoguang_works/ogl-master/build/external/glfw-3.1.2/src/CMakeFiles/generate.stamp
+"C:\Program Files\CMake\bin\cmake.exe" -HD:/lixiaoguang_works/Examples_lixiaoguang/OpenGL/ogl-master -BD:/lixiaoguang_works/Examples_lixiaoguang/OpenGL/ogl-master/build --check-stamp-file D:/lixiaoguang_works/Examples_lixiaoguang/OpenGL/ogl-master/build/external/glfw-3.1.2/src/CMakeFiles/generate.stamp
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -243,12 +243,12 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:/lixiaoguang_works/ogl-master/external/glfw-3.1.2/src/CMakeLists.txt;D:\lixiaoguang_works\ogl-master\external\glfw-3.1.2\src\CMakeLists.txt;D:\lixiaoguang_works\ogl-master\external\glfw-3.1.2\src\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\lixiaoguang_works\ogl-master\build\external\glfw-3.1.2\src\CMakeFiles\generate.stamp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:/lixiaoguang_works/Examples_lixiaoguang/OpenGL/ogl-master/external/glfw-3.1.2/src/CMakeLists.txt;D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\glfw-3.1.2\src\CMakeLists.txt;D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\glfw-3.1.2\src\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\build\external\glfw-3.1.2\src\CMakeFiles\generate.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
-      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule D:/lixiaoguang_works/ogl-master/external/glfw-3.1.2/src/CMakeLists.txt</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule D:/lixiaoguang_works/Examples_lixiaoguang/OpenGL/ogl-master/external/glfw-3.1.2/src/CMakeLists.txt</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -HD:/lixiaoguang_works/ogl-master -BD:/lixiaoguang_works/ogl-master/build --check-stamp-file D:/lixiaoguang_works/ogl-master/build/external/glfw-3.1.2/src/CMakeFiles/generate.stamp
+"C:\Program Files\CMake\bin\cmake.exe" -HD:/lixiaoguang_works/Examples_lixiaoguang/OpenGL/ogl-master -BD:/lixiaoguang_works/Examples_lixiaoguang/OpenGL/ogl-master/build --check-stamp-file D:/lixiaoguang_works/Examples_lixiaoguang/OpenGL/ogl-master/build/external/glfw-3.1.2/src/CMakeFiles/generate.stamp
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -256,36 +256,36 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:/lixiaoguang_works/ogl-master/external/glfw-3.1.2/src/CMakeLists.txt;D:\lixiaoguang_works\ogl-master\external\glfw-3.1.2\src\CMakeLists.txt;D:\lixiaoguang_works\ogl-master\external\glfw-3.1.2\src\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\lixiaoguang_works\ogl-master\build\external\glfw-3.1.2\src\CMakeFiles\generate.stamp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:/lixiaoguang_works/Examples_lixiaoguang/OpenGL/ogl-master/external/glfw-3.1.2/src/CMakeLists.txt;D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\glfw-3.1.2\src\CMakeLists.txt;D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\glfw-3.1.2\src\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\build\external\glfw-3.1.2\src\CMakeFiles\generate.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
     </CustomBuild>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="D:\lixiaoguang_works\ogl-master\external\glfw-3.1.2\src\context.c"  />
-    <ClCompile Include="D:\lixiaoguang_works\ogl-master\external\glfw-3.1.2\src\init.c"  />
-    <ClCompile Include="D:\lixiaoguang_works\ogl-master\external\glfw-3.1.2\src\input.c"  />
-    <ClCompile Include="D:\lixiaoguang_works\ogl-master\external\glfw-3.1.2\src\monitor.c"  />
-    <ClCompile Include="D:\lixiaoguang_works\ogl-master\external\glfw-3.1.2\src\window.c"  />
-    <ClCompile Include="D:\lixiaoguang_works\ogl-master\external\glfw-3.1.2\src\win32_init.c"  />
-    <ClCompile Include="D:\lixiaoguang_works\ogl-master\external\glfw-3.1.2\src\win32_monitor.c"  />
-    <ClCompile Include="D:\lixiaoguang_works\ogl-master\external\glfw-3.1.2\src\win32_time.c"  />
-    <ClCompile Include="D:\lixiaoguang_works\ogl-master\external\glfw-3.1.2\src\win32_tls.c"  />
-    <ClCompile Include="D:\lixiaoguang_works\ogl-master\external\glfw-3.1.2\src\win32_window.c"  />
-    <ClCompile Include="D:\lixiaoguang_works\ogl-master\external\glfw-3.1.2\src\winmm_joystick.c"  />
-    <ClCompile Include="D:\lixiaoguang_works\ogl-master\external\glfw-3.1.2\src\wgl_context.c"  />
-    <ClInclude Include="D:\lixiaoguang_works\ogl-master\external\glfw-3.1.2\src\internal.h" />
-    <ClInclude Include="D:\lixiaoguang_works\ogl-master\build\external\glfw-3.1.2\src\glfw_config.h" />
-    <ClInclude Include="D:\lixiaoguang_works\ogl-master\external\glfw-3.1.2\include\GLFW\glfw3.h" />
-    <ClInclude Include="D:\lixiaoguang_works\ogl-master\external\glfw-3.1.2\include\GLFW\glfw3native.h" />
-    <ClInclude Include="D:\lixiaoguang_works\ogl-master\external\glfw-3.1.2\src\win32_platform.h" />
-    <ClInclude Include="D:\lixiaoguang_works\ogl-master\external\glfw-3.1.2\src\win32_tls.h" />
-    <ClInclude Include="D:\lixiaoguang_works\ogl-master\external\glfw-3.1.2\src\winmm_joystick.h" />
-    <ClInclude Include="D:\lixiaoguang_works\ogl-master\external\glfw-3.1.2\src\wgl_context.h" />
+    <ClCompile Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\glfw-3.1.2\src\context.c"  />
+    <ClCompile Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\glfw-3.1.2\src\init.c"  />
+    <ClCompile Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\glfw-3.1.2\src\input.c"  />
+    <ClCompile Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\glfw-3.1.2\src\monitor.c"  />
+    <ClCompile Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\glfw-3.1.2\src\window.c"  />
+    <ClCompile Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\glfw-3.1.2\src\win32_init.c"  />
+    <ClCompile Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\glfw-3.1.2\src\win32_monitor.c"  />
+    <ClCompile Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\glfw-3.1.2\src\win32_time.c"  />
+    <ClCompile Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\glfw-3.1.2\src\win32_tls.c"  />
+    <ClCompile Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\glfw-3.1.2\src\win32_window.c"  />
+    <ClCompile Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\glfw-3.1.2\src\winmm_joystick.c"  />
+    <ClCompile Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\glfw-3.1.2\src\wgl_context.c"  />
+    <ClInclude Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\glfw-3.1.2\src\internal.h" />
+    <ClInclude Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\build\external\glfw-3.1.2\src\glfw_config.h" />
+    <ClInclude Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\glfw-3.1.2\include\GLFW\glfw3.h" />
+    <ClInclude Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\glfw-3.1.2\include\GLFW\glfw3native.h" />
+    <ClInclude Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\glfw-3.1.2\src\win32_platform.h" />
+    <ClInclude Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\glfw-3.1.2\src\win32_tls.h" />
+    <ClInclude Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\glfw-3.1.2\src\winmm_joystick.h" />
+    <ClInclude Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\glfw-3.1.2\src\wgl_context.h" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="D:\lixiaoguang_works\ogl-master\build\ZERO_CHECK.vcxproj">
-      <Project>{15C16E22-8FC6-311A-B057-6F5619568BDB}</Project>
+    <ProjectReference Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\build\ZERO_CHECK.vcxproj">
+      <Project>{E9502045-6E6C-33A0-AD31-43218EB6EA17}</Project>
       <Name>ZERO_CHECK</Name>
     </ProjectReference>
   </ItemGroup>

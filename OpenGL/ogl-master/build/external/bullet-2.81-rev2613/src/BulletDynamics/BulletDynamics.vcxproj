@@ -19,7 +19,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{8FAD3423-3884-3491-B554-72F3ECBF1FC7}</ProjectGuid>
+    <ProjectGuid>{CA43D889-911C-3668-B5CB-4D370D9E02A3}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
     <Platform>x64</Platform>
     <ProjectName>BulletDynamics</ProjectName>
@@ -55,26 +55,26 @@
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup>
     <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
-    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\lixiaoguang_works\ogl-master\build\external\bullet-2.81-rev2613\src\BulletDynamics\Debug\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\build\external\bullet-2.81-rev2613\src\BulletDynamics\Debug\</OutDir>
     <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">BulletDynamics.dir\Debug\</IntDir>
     <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">BulletDynamics</TargetName>
     <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.lib</TargetExt>
-    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\lixiaoguang_works\ogl-master\build\external\bullet-2.81-rev2613\src\BulletDynamics\Release\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\build\external\bullet-2.81-rev2613\src\BulletDynamics\Release\</OutDir>
     <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">BulletDynamics.dir\Release\</IntDir>
     <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">BulletDynamics</TargetName>
     <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.lib</TargetExt>
-    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\lixiaoguang_works\ogl-master\build\external\bullet-2.81-rev2613\src\BulletDynamics\MinSizeRel\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\build\external\bullet-2.81-rev2613\src\BulletDynamics\MinSizeRel\</OutDir>
     <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">BulletDynamics.dir\MinSizeRel\</IntDir>
     <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">BulletDynamics</TargetName>
     <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.lib</TargetExt>
-    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\lixiaoguang_works\ogl-master\build\external\bullet-2.81-rev2613\src\BulletDynamics\RelWithDebInfo\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\build\external\bullet-2.81-rev2613\src\BulletDynamics\RelWithDebInfo\</OutDir>
     <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">BulletDynamics.dir\RelWithDebInfo\</IntDir>
     <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">BulletDynamics</TargetName>
     <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.lib</TargetExt>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>D:\lixiaoguang_works\ogl-master\external\glfw-3.1.2\include\GLFW;D:\lixiaoguang_works\ogl-master\external\glew-1.13.0\include;D:\lixiaoguang_works\ogl-master\external\AntTweakBar-1.16\include;D:\lixiaoguang_works\ogl-master\external\assimp-3.0.1270\code\BoostWorkaround;D:\lixiaoguang_works\ogl-master\external\bullet-2.81-rev2613\src;\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\glfw-3.1.2\include\GLFW;D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\glew-1.13.0\include;D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\AntTweakBar-1.16\include;D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\assimp-3.0.1270\code\BoostWorkaround;D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\bullet-2.81-rev2613\src;\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AssemblerListingLocation>Debug/</AssemblerListingLocation>
       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
       <CompileAs>CompileAsCpp</CompileAs>
@@ -92,10 +92,10 @@
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;TW_STATIC;TW_NO_LIB_PRAGMA;TW_NO_DIRECT3D;GLEW_STATIC;_CRT_SECURE_NO_WARNINGS;ASSIMP_BUILD_BOOST_WORKAROUND;CMAKE_INTDIR=\"Debug\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>D:\lixiaoguang_works\ogl-master\external\glfw-3.1.2\include\GLFW;D:\lixiaoguang_works\ogl-master\external\glew-1.13.0\include;D:\lixiaoguang_works\ogl-master\external\AntTweakBar-1.16\include;D:\lixiaoguang_works\ogl-master\external\assimp-3.0.1270\code\BoostWorkaround;D:\lixiaoguang_works\ogl-master\external\bullet-2.81-rev2613\src;\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\glfw-3.1.2\include\GLFW;D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\glew-1.13.0\include;D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\AntTweakBar-1.16\include;D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\assimp-3.0.1270\code\BoostWorkaround;D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\bullet-2.81-rev2613\src;\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>D:\lixiaoguang_works\ogl-master\external\glfw-3.1.2\include\GLFW;D:\lixiaoguang_works\ogl-master\external\glew-1.13.0\include;D:\lixiaoguang_works\ogl-master\external\AntTweakBar-1.16\include;D:\lixiaoguang_works\ogl-master\external\assimp-3.0.1270\code\BoostWorkaround;D:\lixiaoguang_works\ogl-master\external\bullet-2.81-rev2613\src;\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\glfw-3.1.2\include\GLFW;D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\glew-1.13.0\include;D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\AntTweakBar-1.16\include;D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\assimp-3.0.1270\code\BoostWorkaround;D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\bullet-2.81-rev2613\src;\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -108,7 +108,7 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>D:\lixiaoguang_works\ogl-master\external\glfw-3.1.2\include\GLFW;D:\lixiaoguang_works\ogl-master\external\glew-1.13.0\include;D:\lixiaoguang_works\ogl-master\external\AntTweakBar-1.16\include;D:\lixiaoguang_works\ogl-master\external\assimp-3.0.1270\code\BoostWorkaround;D:\lixiaoguang_works\ogl-master\external\bullet-2.81-rev2613\src;\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\glfw-3.1.2\include\GLFW;D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\glew-1.13.0\include;D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\AntTweakBar-1.16\include;D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\assimp-3.0.1270\code\BoostWorkaround;D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\bullet-2.81-rev2613\src;\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AssemblerListingLocation>Release/</AssemblerListingLocation>
       <CompileAs>CompileAsCpp</CompileAs>
       <ExceptionHandling>Sync</ExceptionHandling>
@@ -125,10 +125,10 @@
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;TW_STATIC;TW_NO_LIB_PRAGMA;TW_NO_DIRECT3D;GLEW_STATIC;_CRT_SECURE_NO_WARNINGS;ASSIMP_BUILD_BOOST_WORKAROUND;CMAKE_INTDIR=\"Release\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>D:\lixiaoguang_works\ogl-master\external\glfw-3.1.2\include\GLFW;D:\lixiaoguang_works\ogl-master\external\glew-1.13.0\include;D:\lixiaoguang_works\ogl-master\external\AntTweakBar-1.16\include;D:\lixiaoguang_works\ogl-master\external\assimp-3.0.1270\code\BoostWorkaround;D:\lixiaoguang_works\ogl-master\external\bullet-2.81-rev2613\src;\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\glfw-3.1.2\include\GLFW;D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\glew-1.13.0\include;D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\AntTweakBar-1.16\include;D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\assimp-3.0.1270\code\BoostWorkaround;D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\bullet-2.81-rev2613\src;\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>D:\lixiaoguang_works\ogl-master\external\glfw-3.1.2\include\GLFW;D:\lixiaoguang_works\ogl-master\external\glew-1.13.0\include;D:\lixiaoguang_works\ogl-master\external\AntTweakBar-1.16\include;D:\lixiaoguang_works\ogl-master\external\assimp-3.0.1270\code\BoostWorkaround;D:\lixiaoguang_works\ogl-master\external\bullet-2.81-rev2613\src;\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\glfw-3.1.2\include\GLFW;D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\glew-1.13.0\include;D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\AntTweakBar-1.16\include;D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\assimp-3.0.1270\code\BoostWorkaround;D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\bullet-2.81-rev2613\src;\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -141,7 +141,7 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>D:\lixiaoguang_works\ogl-master\external\glfw-3.1.2\include\GLFW;D:\lixiaoguang_works\ogl-master\external\glew-1.13.0\include;D:\lixiaoguang_works\ogl-master\external\AntTweakBar-1.16\include;D:\lixiaoguang_works\ogl-master\external\assimp-3.0.1270\code\BoostWorkaround;D:\lixiaoguang_works\ogl-master\external\bullet-2.81-rev2613\src;\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\glfw-3.1.2\include\GLFW;D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\glew-1.13.0\include;D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\AntTweakBar-1.16\include;D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\assimp-3.0.1270\code\BoostWorkaround;D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\bullet-2.81-rev2613\src;\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AssemblerListingLocation>MinSizeRel/</AssemblerListingLocation>
       <CompileAs>CompileAsCpp</CompileAs>
       <ExceptionHandling>Sync</ExceptionHandling>
@@ -158,10 +158,10 @@
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;TW_STATIC;TW_NO_LIB_PRAGMA;TW_NO_DIRECT3D;GLEW_STATIC;_CRT_SECURE_NO_WARNINGS;ASSIMP_BUILD_BOOST_WORKAROUND;CMAKE_INTDIR=\"MinSizeRel\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>D:\lixiaoguang_works\ogl-master\external\glfw-3.1.2\include\GLFW;D:\lixiaoguang_works\ogl-master\external\glew-1.13.0\include;D:\lixiaoguang_works\ogl-master\external\AntTweakBar-1.16\include;D:\lixiaoguang_works\ogl-master\external\assimp-3.0.1270\code\BoostWorkaround;D:\lixiaoguang_works\ogl-master\external\bullet-2.81-rev2613\src;\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\glfw-3.1.2\include\GLFW;D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\glew-1.13.0\include;D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\AntTweakBar-1.16\include;D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\assimp-3.0.1270\code\BoostWorkaround;D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\bullet-2.81-rev2613\src;\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>D:\lixiaoguang_works\ogl-master\external\glfw-3.1.2\include\GLFW;D:\lixiaoguang_works\ogl-master\external\glew-1.13.0\include;D:\lixiaoguang_works\ogl-master\external\AntTweakBar-1.16\include;D:\lixiaoguang_works\ogl-master\external\assimp-3.0.1270\code\BoostWorkaround;D:\lixiaoguang_works\ogl-master\external\bullet-2.81-rev2613\src;\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\glfw-3.1.2\include\GLFW;D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\glew-1.13.0\include;D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\AntTweakBar-1.16\include;D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\assimp-3.0.1270\code\BoostWorkaround;D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\bullet-2.81-rev2613\src;\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -174,7 +174,7 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>D:\lixiaoguang_works\ogl-master\external\glfw-3.1.2\include\GLFW;D:\lixiaoguang_works\ogl-master\external\glew-1.13.0\include;D:\lixiaoguang_works\ogl-master\external\AntTweakBar-1.16\include;D:\lixiaoguang_works\ogl-master\external\assimp-3.0.1270\code\BoostWorkaround;D:\lixiaoguang_works\ogl-master\external\bullet-2.81-rev2613\src;\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\glfw-3.1.2\include\GLFW;D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\glew-1.13.0\include;D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\AntTweakBar-1.16\include;D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\assimp-3.0.1270\code\BoostWorkaround;D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\bullet-2.81-rev2613\src;\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AssemblerListingLocation>RelWithDebInfo/</AssemblerListingLocation>
       <CompileAs>CompileAsCpp</CompileAs>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
@@ -191,10 +191,10 @@
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;TW_STATIC;TW_NO_LIB_PRAGMA;TW_NO_DIRECT3D;GLEW_STATIC;_CRT_SECURE_NO_WARNINGS;ASSIMP_BUILD_BOOST_WORKAROUND;CMAKE_INTDIR=\"RelWithDebInfo\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>D:\lixiaoguang_works\ogl-master\external\glfw-3.1.2\include\GLFW;D:\lixiaoguang_works\ogl-master\external\glew-1.13.0\include;D:\lixiaoguang_works\ogl-master\external\AntTweakBar-1.16\include;D:\lixiaoguang_works\ogl-master\external\assimp-3.0.1270\code\BoostWorkaround;D:\lixiaoguang_works\ogl-master\external\bullet-2.81-rev2613\src;\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\glfw-3.1.2\include\GLFW;D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\glew-1.13.0\include;D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\AntTweakBar-1.16\include;D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\assimp-3.0.1270\code\BoostWorkaround;D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\bullet-2.81-rev2613\src;\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>D:\lixiaoguang_works\ogl-master\external\glfw-3.1.2\include\GLFW;D:\lixiaoguang_works\ogl-master\external\glew-1.13.0\include;D:\lixiaoguang_works\ogl-master\external\AntTweakBar-1.16\include;D:\lixiaoguang_works\ogl-master\external\assimp-3.0.1270\code\BoostWorkaround;D:\lixiaoguang_works\ogl-master\external\bullet-2.81-rev2613\src;\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\glfw-3.1.2\include\GLFW;D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\glew-1.13.0\include;D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\AntTweakBar-1.16\include;D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\assimp-3.0.1270\code\BoostWorkaround;D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\bullet-2.81-rev2613\src;\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -206,10 +206,10 @@
     </Lib>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <CustomBuild Include="D:\lixiaoguang_works\ogl-master\external\bullet-2.81-rev2613\src\BulletDynamics\CMakeLists.txt">
-      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule D:/lixiaoguang_works/ogl-master/external/bullet-2.81-rev2613/src/BulletDynamics/CMakeLists.txt</Message>
+    <CustomBuild Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\bullet-2.81-rev2613\src\BulletDynamics\CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule D:/lixiaoguang_works/Examples_lixiaoguang/OpenGL/ogl-master/external/bullet-2.81-rev2613/src/BulletDynamics/CMakeLists.txt</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -HD:/lixiaoguang_works/ogl-master -BD:/lixiaoguang_works/ogl-master/build --check-stamp-file D:/lixiaoguang_works/ogl-master/build/external/bullet-2.81-rev2613/src/BulletDynamics/CMakeFiles/generate.stamp
+"C:\Program Files\CMake\bin\cmake.exe" -HD:/lixiaoguang_works/Examples_lixiaoguang/OpenGL/ogl-master -BD:/lixiaoguang_works/Examples_lixiaoguang/OpenGL/ogl-master/build --check-stamp-file D:/lixiaoguang_works/Examples_lixiaoguang/OpenGL/ogl-master/build/external/bullet-2.81-rev2613/src/BulletDynamics/CMakeFiles/generate.stamp
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -217,12 +217,12 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:/lixiaoguang_works/ogl-master/external/bullet-2.81-rev2613/src/BulletDynamics/CMakeLists.txt;D:\lixiaoguang_works\ogl-master\external\bullet-2.81-rev2613\src\BulletDynamics\CMakeLists.txt;D:\lixiaoguang_works\ogl-master\external\bullet-2.81-rev2613\src\BulletDynamics\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\lixiaoguang_works\ogl-master\build\external\bullet-2.81-rev2613\src\BulletDynamics\CMakeFiles\generate.stamp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:/lixiaoguang_works/Examples_lixiaoguang/OpenGL/ogl-master/external/bullet-2.81-rev2613/src/BulletDynamics/CMakeLists.txt;D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\bullet-2.81-rev2613\src\BulletDynamics\CMakeLists.txt;D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\bullet-2.81-rev2613\src\BulletDynamics\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\build\external\bullet-2.81-rev2613\src\BulletDynamics\CMakeFiles\generate.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
-      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule D:/lixiaoguang_works/ogl-master/external/bullet-2.81-rev2613/src/BulletDynamics/CMakeLists.txt</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule D:/lixiaoguang_works/Examples_lixiaoguang/OpenGL/ogl-master/external/bullet-2.81-rev2613/src/BulletDynamics/CMakeLists.txt</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -HD:/lixiaoguang_works/ogl-master -BD:/lixiaoguang_works/ogl-master/build --check-stamp-file D:/lixiaoguang_works/ogl-master/build/external/bullet-2.81-rev2613/src/BulletDynamics/CMakeFiles/generate.stamp
+"C:\Program Files\CMake\bin\cmake.exe" -HD:/lixiaoguang_works/Examples_lixiaoguang/OpenGL/ogl-master -BD:/lixiaoguang_works/Examples_lixiaoguang/OpenGL/ogl-master/build --check-stamp-file D:/lixiaoguang_works/Examples_lixiaoguang/OpenGL/ogl-master/build/external/bullet-2.81-rev2613/src/BulletDynamics/CMakeFiles/generate.stamp
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -230,12 +230,12 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:/lixiaoguang_works/ogl-master/external/bullet-2.81-rev2613/src/BulletDynamics/CMakeLists.txt;D:\lixiaoguang_works\ogl-master\external\bullet-2.81-rev2613\src\BulletDynamics\CMakeLists.txt;D:\lixiaoguang_works\ogl-master\external\bullet-2.81-rev2613\src\BulletDynamics\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\lixiaoguang_works\ogl-master\build\external\bullet-2.81-rev2613\src\BulletDynamics\CMakeFiles\generate.stamp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:/lixiaoguang_works/Examples_lixiaoguang/OpenGL/ogl-master/external/bullet-2.81-rev2613/src/BulletDynamics/CMakeLists.txt;D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\bullet-2.81-rev2613\src\BulletDynamics\CMakeLists.txt;D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\bullet-2.81-rev2613\src\BulletDynamics\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\build\external\bullet-2.81-rev2613\src\BulletDynamics\CMakeFiles\generate.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
-      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule D:/lixiaoguang_works/ogl-master/external/bullet-2.81-rev2613/src/BulletDynamics/CMakeLists.txt</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule D:/lixiaoguang_works/Examples_lixiaoguang/OpenGL/ogl-master/external/bullet-2.81-rev2613/src/BulletDynamics/CMakeLists.txt</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -HD:/lixiaoguang_works/ogl-master -BD:/lixiaoguang_works/ogl-master/build --check-stamp-file D:/lixiaoguang_works/ogl-master/build/external/bullet-2.81-rev2613/src/BulletDynamics/CMakeFiles/generate.stamp
+"C:\Program Files\CMake\bin\cmake.exe" -HD:/lixiaoguang_works/Examples_lixiaoguang/OpenGL/ogl-master -BD:/lixiaoguang_works/Examples_lixiaoguang/OpenGL/ogl-master/build --check-stamp-file D:/lixiaoguang_works/Examples_lixiaoguang/OpenGL/ogl-master/build/external/bullet-2.81-rev2613/src/BulletDynamics/CMakeFiles/generate.stamp
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -243,12 +243,12 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:/lixiaoguang_works/ogl-master/external/bullet-2.81-rev2613/src/BulletDynamics/CMakeLists.txt;D:\lixiaoguang_works\ogl-master\external\bullet-2.81-rev2613\src\BulletDynamics\CMakeLists.txt;D:\lixiaoguang_works\ogl-master\external\bullet-2.81-rev2613\src\BulletDynamics\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\lixiaoguang_works\ogl-master\build\external\bullet-2.81-rev2613\src\BulletDynamics\CMakeFiles\generate.stamp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:/lixiaoguang_works/Examples_lixiaoguang/OpenGL/ogl-master/external/bullet-2.81-rev2613/src/BulletDynamics/CMakeLists.txt;D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\bullet-2.81-rev2613\src\BulletDynamics\CMakeLists.txt;D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\bullet-2.81-rev2613\src\BulletDynamics\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\build\external\bullet-2.81-rev2613\src\BulletDynamics\CMakeFiles\generate.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
-      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule D:/lixiaoguang_works/ogl-master/external/bullet-2.81-rev2613/src/BulletDynamics/CMakeLists.txt</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule D:/lixiaoguang_works/Examples_lixiaoguang/OpenGL/ogl-master/external/bullet-2.81-rev2613/src/BulletDynamics/CMakeLists.txt</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -HD:/lixiaoguang_works/ogl-master -BD:/lixiaoguang_works/ogl-master/build --check-stamp-file D:/lixiaoguang_works/ogl-master/build/external/bullet-2.81-rev2613/src/BulletDynamics/CMakeFiles/generate.stamp
+"C:\Program Files\CMake\bin\cmake.exe" -HD:/lixiaoguang_works/Examples_lixiaoguang/OpenGL/ogl-master -BD:/lixiaoguang_works/Examples_lixiaoguang/OpenGL/ogl-master/build --check-stamp-file D:/lixiaoguang_works/Examples_lixiaoguang/OpenGL/ogl-master/build/external/bullet-2.81-rev2613/src/BulletDynamics/CMakeFiles/generate.stamp
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -256,66 +256,66 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:/lixiaoguang_works/ogl-master/external/bullet-2.81-rev2613/src/BulletDynamics/CMakeLists.txt;D:\lixiaoguang_works\ogl-master\external\bullet-2.81-rev2613\src\BulletDynamics\CMakeLists.txt;D:\lixiaoguang_works\ogl-master\external\bullet-2.81-rev2613\src\BulletDynamics\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\lixiaoguang_works\ogl-master\build\external\bullet-2.81-rev2613\src\BulletDynamics\CMakeFiles\generate.stamp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:/lixiaoguang_works/Examples_lixiaoguang/OpenGL/ogl-master/external/bullet-2.81-rev2613/src/BulletDynamics/CMakeLists.txt;D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\bullet-2.81-rev2613\src\BulletDynamics\CMakeLists.txt;D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\bullet-2.81-rev2613\src\BulletDynamics\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\build\external\bullet-2.81-rev2613\src\BulletDynamics\CMakeFiles\generate.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
     </CustomBuild>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="D:\lixiaoguang_works\ogl-master\external\bullet-2.81-rev2613\src\BulletDynamics\Character\btKinematicCharacterController.cpp"  />
-    <ClCompile Include="D:\lixiaoguang_works\ogl-master\external\bullet-2.81-rev2613\src\BulletDynamics\ConstraintSolver\btConeTwistConstraint.cpp"  />
-    <ClCompile Include="D:\lixiaoguang_works\ogl-master\external\bullet-2.81-rev2613\src\BulletDynamics\ConstraintSolver\btContactConstraint.cpp"  />
-    <ClCompile Include="D:\lixiaoguang_works\ogl-master\external\bullet-2.81-rev2613\src\BulletDynamics\ConstraintSolver\btGearConstraint.cpp"  />
-    <ClCompile Include="D:\lixiaoguang_works\ogl-master\external\bullet-2.81-rev2613\src\BulletDynamics\ConstraintSolver\btGeneric6DofConstraint.cpp"  />
-    <ClCompile Include="D:\lixiaoguang_works\ogl-master\external\bullet-2.81-rev2613\src\BulletDynamics\ConstraintSolver\btGeneric6DofSpringConstraint.cpp"  />
-    <ClCompile Include="D:\lixiaoguang_works\ogl-master\external\bullet-2.81-rev2613\src\BulletDynamics\ConstraintSolver\btHinge2Constraint.cpp"  />
-    <ClCompile Include="D:\lixiaoguang_works\ogl-master\external\bullet-2.81-rev2613\src\BulletDynamics\ConstraintSolver\btHingeConstraint.cpp"  />
-    <ClCompile Include="D:\lixiaoguang_works\ogl-master\external\bullet-2.81-rev2613\src\BulletDynamics\ConstraintSolver\btPoint2PointConstraint.cpp"  />
-    <ClCompile Include="D:\lixiaoguang_works\ogl-master\external\bullet-2.81-rev2613\src\BulletDynamics\ConstraintSolver\btSequentialImpulseConstraintSolver.cpp"  />
-    <ClCompile Include="D:\lixiaoguang_works\ogl-master\external\bullet-2.81-rev2613\src\BulletDynamics\ConstraintSolver\btSliderConstraint.cpp"  />
-    <ClCompile Include="D:\lixiaoguang_works\ogl-master\external\bullet-2.81-rev2613\src\BulletDynamics\ConstraintSolver\btSolve2LinearConstraint.cpp"  />
-    <ClCompile Include="D:\lixiaoguang_works\ogl-master\external\bullet-2.81-rev2613\src\BulletDynamics\ConstraintSolver\btTypedConstraint.cpp"  />
-    <ClCompile Include="D:\lixiaoguang_works\ogl-master\external\bullet-2.81-rev2613\src\BulletDynamics\ConstraintSolver\btUniversalConstraint.cpp"  />
-    <ClCompile Include="D:\lixiaoguang_works\ogl-master\external\bullet-2.81-rev2613\src\BulletDynamics\Dynamics\btDiscreteDynamicsWorld.cpp"  />
-    <ClCompile Include="D:\lixiaoguang_works\ogl-master\external\bullet-2.81-rev2613\src\BulletDynamics\Dynamics\btRigidBody.cpp"  />
-    <ClCompile Include="D:\lixiaoguang_works\ogl-master\external\bullet-2.81-rev2613\src\BulletDynamics\Dynamics\btSimpleDynamicsWorld.cpp"  />
-    <ClCompile Include="D:\lixiaoguang_works\ogl-master\external\bullet-2.81-rev2613\src\BulletDynamics\Dynamics\Bullet-C-API.cpp"  />
-    <ClCompile Include="D:\lixiaoguang_works\ogl-master\external\bullet-2.81-rev2613\src\BulletDynamics\Vehicle\btRaycastVehicle.cpp"  />
-    <ClCompile Include="D:\lixiaoguang_works\ogl-master\external\bullet-2.81-rev2613\src\BulletDynamics\Vehicle\btWheelInfo.cpp"  />
-    <ClInclude Include="D:\lixiaoguang_works\ogl-master\external\bullet-2.81-rev2613\src\btBulletDynamicsCommon.h" />
-    <ClInclude Include="D:\lixiaoguang_works\ogl-master\external\bullet-2.81-rev2613\src\btBulletCollisionCommon.h" />
-    <ClInclude Include="D:\lixiaoguang_works\ogl-master\external\bullet-2.81-rev2613\src\BulletDynamics\ConstraintSolver\btConeTwistConstraint.h" />
-    <ClInclude Include="D:\lixiaoguang_works\ogl-master\external\bullet-2.81-rev2613\src\BulletDynamics\ConstraintSolver\btConstraintSolver.h" />
-    <ClInclude Include="D:\lixiaoguang_works\ogl-master\external\bullet-2.81-rev2613\src\BulletDynamics\ConstraintSolver\btContactConstraint.h" />
-    <ClInclude Include="D:\lixiaoguang_works\ogl-master\external\bullet-2.81-rev2613\src\BulletDynamics\ConstraintSolver\btContactSolverInfo.h" />
-    <ClInclude Include="D:\lixiaoguang_works\ogl-master\external\bullet-2.81-rev2613\src\BulletDynamics\ConstraintSolver\btGearConstraint.h" />
-    <ClInclude Include="D:\lixiaoguang_works\ogl-master\external\bullet-2.81-rev2613\src\BulletDynamics\ConstraintSolver\btGeneric6DofConstraint.h" />
-    <ClInclude Include="D:\lixiaoguang_works\ogl-master\external\bullet-2.81-rev2613\src\BulletDynamics\ConstraintSolver\btGeneric6DofSpringConstraint.h" />
-    <ClInclude Include="D:\lixiaoguang_works\ogl-master\external\bullet-2.81-rev2613\src\BulletDynamics\ConstraintSolver\btHinge2Constraint.h" />
-    <ClInclude Include="D:\lixiaoguang_works\ogl-master\external\bullet-2.81-rev2613\src\BulletDynamics\ConstraintSolver\btHingeConstraint.h" />
-    <ClInclude Include="D:\lixiaoguang_works\ogl-master\external\bullet-2.81-rev2613\src\BulletDynamics\ConstraintSolver\btJacobianEntry.h" />
-    <ClInclude Include="D:\lixiaoguang_works\ogl-master\external\bullet-2.81-rev2613\src\BulletDynamics\ConstraintSolver\btPoint2PointConstraint.h" />
-    <ClInclude Include="D:\lixiaoguang_works\ogl-master\external\bullet-2.81-rev2613\src\BulletDynamics\ConstraintSolver\btSequentialImpulseConstraintSolver.h" />
-    <ClInclude Include="D:\lixiaoguang_works\ogl-master\external\bullet-2.81-rev2613\src\BulletDynamics\ConstraintSolver\btSliderConstraint.h" />
-    <ClInclude Include="D:\lixiaoguang_works\ogl-master\external\bullet-2.81-rev2613\src\BulletDynamics\ConstraintSolver\btSolve2LinearConstraint.h" />
-    <ClInclude Include="D:\lixiaoguang_works\ogl-master\external\bullet-2.81-rev2613\src\BulletDynamics\ConstraintSolver\btSolverBody.h" />
-    <ClInclude Include="D:\lixiaoguang_works\ogl-master\external\bullet-2.81-rev2613\src\BulletDynamics\ConstraintSolver\btSolverConstraint.h" />
-    <ClInclude Include="D:\lixiaoguang_works\ogl-master\external\bullet-2.81-rev2613\src\BulletDynamics\ConstraintSolver\btTypedConstraint.h" />
-    <ClInclude Include="D:\lixiaoguang_works\ogl-master\external\bullet-2.81-rev2613\src\BulletDynamics\ConstraintSolver\btUniversalConstraint.h" />
-    <ClInclude Include="D:\lixiaoguang_works\ogl-master\external\bullet-2.81-rev2613\src\BulletDynamics\Dynamics\btActionInterface.h" />
-    <ClInclude Include="D:\lixiaoguang_works\ogl-master\external\bullet-2.81-rev2613\src\BulletDynamics\Dynamics\btDiscreteDynamicsWorld.h" />
-    <ClInclude Include="D:\lixiaoguang_works\ogl-master\external\bullet-2.81-rev2613\src\BulletDynamics\Dynamics\btDynamicsWorld.h" />
-    <ClInclude Include="D:\lixiaoguang_works\ogl-master\external\bullet-2.81-rev2613\src\BulletDynamics\Dynamics\btSimpleDynamicsWorld.h" />
-    <ClInclude Include="D:\lixiaoguang_works\ogl-master\external\bullet-2.81-rev2613\src\BulletDynamics\Dynamics\btRigidBody.h" />
-    <ClInclude Include="D:\lixiaoguang_works\ogl-master\external\bullet-2.81-rev2613\src\BulletDynamics\Vehicle\btRaycastVehicle.h" />
-    <ClInclude Include="D:\lixiaoguang_works\ogl-master\external\bullet-2.81-rev2613\src\BulletDynamics\Vehicle\btVehicleRaycaster.h" />
-    <ClInclude Include="D:\lixiaoguang_works\ogl-master\external\bullet-2.81-rev2613\src\BulletDynamics\Vehicle\btWheelInfo.h" />
-    <ClInclude Include="D:\lixiaoguang_works\ogl-master\external\bullet-2.81-rev2613\src\BulletDynamics\Character\btCharacterControllerInterface.h" />
-    <ClInclude Include="D:\lixiaoguang_works\ogl-master\external\bullet-2.81-rev2613\src\BulletDynamics\Character\btKinematicCharacterController.h" />
+    <ClCompile Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\bullet-2.81-rev2613\src\BulletDynamics\Character\btKinematicCharacterController.cpp"  />
+    <ClCompile Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\bullet-2.81-rev2613\src\BulletDynamics\ConstraintSolver\btConeTwistConstraint.cpp"  />
+    <ClCompile Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\bullet-2.81-rev2613\src\BulletDynamics\ConstraintSolver\btContactConstraint.cpp"  />
+    <ClCompile Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\bullet-2.81-rev2613\src\BulletDynamics\ConstraintSolver\btGearConstraint.cpp"  />
+    <ClCompile Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\bullet-2.81-rev2613\src\BulletDynamics\ConstraintSolver\btGeneric6DofConstraint.cpp"  />
+    <ClCompile Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\bullet-2.81-rev2613\src\BulletDynamics\ConstraintSolver\btGeneric6DofSpringConstraint.cpp"  />
+    <ClCompile Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\bullet-2.81-rev2613\src\BulletDynamics\ConstraintSolver\btHinge2Constraint.cpp"  />
+    <ClCompile Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\bullet-2.81-rev2613\src\BulletDynamics\ConstraintSolver\btHingeConstraint.cpp"  />
+    <ClCompile Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\bullet-2.81-rev2613\src\BulletDynamics\ConstraintSolver\btPoint2PointConstraint.cpp"  />
+    <ClCompile Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\bullet-2.81-rev2613\src\BulletDynamics\ConstraintSolver\btSequentialImpulseConstraintSolver.cpp"  />
+    <ClCompile Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\bullet-2.81-rev2613\src\BulletDynamics\ConstraintSolver\btSliderConstraint.cpp"  />
+    <ClCompile Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\bullet-2.81-rev2613\src\BulletDynamics\ConstraintSolver\btSolve2LinearConstraint.cpp"  />
+    <ClCompile Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\bullet-2.81-rev2613\src\BulletDynamics\ConstraintSolver\btTypedConstraint.cpp"  />
+    <ClCompile Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\bullet-2.81-rev2613\src\BulletDynamics\ConstraintSolver\btUniversalConstraint.cpp"  />
+    <ClCompile Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\bullet-2.81-rev2613\src\BulletDynamics\Dynamics\btDiscreteDynamicsWorld.cpp"  />
+    <ClCompile Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\bullet-2.81-rev2613\src\BulletDynamics\Dynamics\btRigidBody.cpp"  />
+    <ClCompile Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\bullet-2.81-rev2613\src\BulletDynamics\Dynamics\btSimpleDynamicsWorld.cpp"  />
+    <ClCompile Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\bullet-2.81-rev2613\src\BulletDynamics\Dynamics\Bullet-C-API.cpp"  />
+    <ClCompile Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\bullet-2.81-rev2613\src\BulletDynamics\Vehicle\btRaycastVehicle.cpp"  />
+    <ClCompile Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\bullet-2.81-rev2613\src\BulletDynamics\Vehicle\btWheelInfo.cpp"  />
+    <ClInclude Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\bullet-2.81-rev2613\src\btBulletDynamicsCommon.h" />
+    <ClInclude Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\bullet-2.81-rev2613\src\btBulletCollisionCommon.h" />
+    <ClInclude Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\bullet-2.81-rev2613\src\BulletDynamics\ConstraintSolver\btConeTwistConstraint.h" />
+    <ClInclude Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\bullet-2.81-rev2613\src\BulletDynamics\ConstraintSolver\btConstraintSolver.h" />
+    <ClInclude Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\bullet-2.81-rev2613\src\BulletDynamics\ConstraintSolver\btContactConstraint.h" />
+    <ClInclude Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\bullet-2.81-rev2613\src\BulletDynamics\ConstraintSolver\btContactSolverInfo.h" />
+    <ClInclude Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\bullet-2.81-rev2613\src\BulletDynamics\ConstraintSolver\btGearConstraint.h" />
+    <ClInclude Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\bullet-2.81-rev2613\src\BulletDynamics\ConstraintSolver\btGeneric6DofConstraint.h" />
+    <ClInclude Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\bullet-2.81-rev2613\src\BulletDynamics\ConstraintSolver\btGeneric6DofSpringConstraint.h" />
+    <ClInclude Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\bullet-2.81-rev2613\src\BulletDynamics\ConstraintSolver\btHinge2Constraint.h" />
+    <ClInclude Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\bullet-2.81-rev2613\src\BulletDynamics\ConstraintSolver\btHingeConstraint.h" />
+    <ClInclude Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\bullet-2.81-rev2613\src\BulletDynamics\ConstraintSolver\btJacobianEntry.h" />
+    <ClInclude Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\bullet-2.81-rev2613\src\BulletDynamics\ConstraintSolver\btPoint2PointConstraint.h" />
+    <ClInclude Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\bullet-2.81-rev2613\src\BulletDynamics\ConstraintSolver\btSequentialImpulseConstraintSolver.h" />
+    <ClInclude Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\bullet-2.81-rev2613\src\BulletDynamics\ConstraintSolver\btSliderConstraint.h" />
+    <ClInclude Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\bullet-2.81-rev2613\src\BulletDynamics\ConstraintSolver\btSolve2LinearConstraint.h" />
+    <ClInclude Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\bullet-2.81-rev2613\src\BulletDynamics\ConstraintSolver\btSolverBody.h" />
+    <ClInclude Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\bullet-2.81-rev2613\src\BulletDynamics\ConstraintSolver\btSolverConstraint.h" />
+    <ClInclude Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\bullet-2.81-rev2613\src\BulletDynamics\ConstraintSolver\btTypedConstraint.h" />
+    <ClInclude Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\bullet-2.81-rev2613\src\BulletDynamics\ConstraintSolver\btUniversalConstraint.h" />
+    <ClInclude Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\bullet-2.81-rev2613\src\BulletDynamics\Dynamics\btActionInterface.h" />
+    <ClInclude Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\bullet-2.81-rev2613\src\BulletDynamics\Dynamics\btDiscreteDynamicsWorld.h" />
+    <ClInclude Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\bullet-2.81-rev2613\src\BulletDynamics\Dynamics\btDynamicsWorld.h" />
+    <ClInclude Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\bullet-2.81-rev2613\src\BulletDynamics\Dynamics\btSimpleDynamicsWorld.h" />
+    <ClInclude Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\bullet-2.81-rev2613\src\BulletDynamics\Dynamics\btRigidBody.h" />
+    <ClInclude Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\bullet-2.81-rev2613\src\BulletDynamics\Vehicle\btRaycastVehicle.h" />
+    <ClInclude Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\bullet-2.81-rev2613\src\BulletDynamics\Vehicle\btVehicleRaycaster.h" />
+    <ClInclude Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\bullet-2.81-rev2613\src\BulletDynamics\Vehicle\btWheelInfo.h" />
+    <ClInclude Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\bullet-2.81-rev2613\src\BulletDynamics\Character\btCharacterControllerInterface.h" />
+    <ClInclude Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\bullet-2.81-rev2613\src\BulletDynamics\Character\btKinematicCharacterController.h" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="D:\lixiaoguang_works\ogl-master\build\ZERO_CHECK.vcxproj">
-      <Project>{15C16E22-8FC6-311A-B057-6F5619568BDB}</Project>
+    <ProjectReference Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\build\ZERO_CHECK.vcxproj">
+      <Project>{E9502045-6E6C-33A0-AD31-43218EB6EA17}</Project>
       <Name>ZERO_CHECK</Name>
     </ProjectReference>
   </ItemGroup>

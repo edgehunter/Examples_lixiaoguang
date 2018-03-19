@@ -1,9 +1,9 @@
-cd D:/lixiaoguang_works/ogl-master/tutorial12_extensions/
+cd D:/lixiaoguang_works/Examples_lixiaoguang/OpenGL/ogl-master/tutorial12_extensions/
 set 
 
 if [%1]==[--debugger] (
 	SHIFT
 )
 
-"D:\lixiaoguang_works\ogl-master\build\Release\tutorial12_extensions.exe"  
+"D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\build\Release\tutorial12_extensions.exe"  
 pause

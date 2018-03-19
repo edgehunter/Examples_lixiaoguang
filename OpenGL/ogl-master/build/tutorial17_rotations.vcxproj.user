@@ -3,30 +3,30 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <LocalDebuggerEnvironment></LocalDebuggerEnvironment>
     <DebuggerFlavor>WindowsLocalDebugger</DebuggerFlavor>
-    <LocalDebuggerCommand>D:\lixiaoguang_works\ogl-master\build\Debug\tutorial17_rotations.exe</LocalDebuggerCommand>
+    <LocalDebuggerCommand>D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\build\Debug\tutorial17_rotations.exe</LocalDebuggerCommand>
     <LocalDebuggerCommandArguments></LocalDebuggerCommandArguments>
-    <LocalDebuggerWorkingDirectory>D:/lixiaoguang_works/ogl-master/tutorial17_rotations/</LocalDebuggerWorkingDirectory>
+    <LocalDebuggerWorkingDirectory>D:/lixiaoguang_works/Examples_lixiaoguang/OpenGL/ogl-master/tutorial17_rotations/</LocalDebuggerWorkingDirectory>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <LocalDebuggerEnvironment></LocalDebuggerEnvironment>
     <DebuggerFlavor>WindowsLocalDebugger</DebuggerFlavor>
-    <LocalDebuggerCommand>D:\lixiaoguang_works\ogl-master\build\Release\tutorial17_rotations.exe</LocalDebuggerCommand>
+    <LocalDebuggerCommand>D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\build\Release\tutorial17_rotations.exe</LocalDebuggerCommand>
     <LocalDebuggerCommandArguments></LocalDebuggerCommandArguments>
-    <LocalDebuggerWorkingDirectory>D:/lixiaoguang_works/ogl-master/tutorial17_rotations/</LocalDebuggerWorkingDirectory>
+    <LocalDebuggerWorkingDirectory>D:/lixiaoguang_works/Examples_lixiaoguang/OpenGL/ogl-master/tutorial17_rotations/</LocalDebuggerWorkingDirectory>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
     <LocalDebuggerEnvironment></LocalDebuggerEnvironment>
     <DebuggerFlavor>WindowsLocalDebugger</DebuggerFlavor>
-    <LocalDebuggerCommand>D:\lixiaoguang_works\ogl-master\build\MinSizeRel\tutorial17_rotations.exe</LocalDebuggerCommand>
+    <LocalDebuggerCommand>D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\build\MinSizeRel\tutorial17_rotations.exe</LocalDebuggerCommand>
     <LocalDebuggerCommandArguments></LocalDebuggerCommandArguments>
-    <LocalDebuggerWorkingDirectory>D:/lixiaoguang_works/ogl-master/tutorial17_rotations/</LocalDebuggerWorkingDirectory>
+    <LocalDebuggerWorkingDirectory>D:/lixiaoguang_works/Examples_lixiaoguang/OpenGL/ogl-master/tutorial17_rotations/</LocalDebuggerWorkingDirectory>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
     <LocalDebuggerEnvironment></LocalDebuggerEnvironment>
     <DebuggerFlavor>WindowsLocalDebugger</DebuggerFlavor>
-    <LocalDebuggerCommand>D:\lixiaoguang_works\ogl-master\build\RelWithDebInfo\tutorial17_rotations.exe</LocalDebuggerCommand>
+    <LocalDebuggerCommand>D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\build\RelWithDebInfo\tutorial17_rotations.exe</LocalDebuggerCommand>
     <LocalDebuggerCommandArguments></LocalDebuggerCommandArguments>
-    <LocalDebuggerWorkingDirectory>D:/lixiaoguang_works/ogl-master/tutorial17_rotations/</LocalDebuggerWorkingDirectory>
+    <LocalDebuggerWorkingDirectory>D:/lixiaoguang_works/Examples_lixiaoguang/OpenGL/ogl-master/tutorial17_rotations/</LocalDebuggerWorkingDirectory>
   </PropertyGroup>
 
 </Project>

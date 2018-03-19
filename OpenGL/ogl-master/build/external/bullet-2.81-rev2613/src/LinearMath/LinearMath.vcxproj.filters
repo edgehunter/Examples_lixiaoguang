@@ -1,120 +1,120 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <Project ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <ClCompile Include="D:\lixiaoguang_works\ogl-master\external\bullet-2.81-rev2613\src\LinearMath\btAlignedAllocator.cpp">
+    <ClCompile Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\bullet-2.81-rev2613\src\LinearMath\btAlignedAllocator.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\lixiaoguang_works\ogl-master\external\bullet-2.81-rev2613\src\LinearMath\btConvexHull.cpp">
+    <ClCompile Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\bullet-2.81-rev2613\src\LinearMath\btConvexHull.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\lixiaoguang_works\ogl-master\external\bullet-2.81-rev2613\src\LinearMath\btConvexHullComputer.cpp">
+    <ClCompile Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\bullet-2.81-rev2613\src\LinearMath\btConvexHullComputer.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\lixiaoguang_works\ogl-master\external\bullet-2.81-rev2613\src\LinearMath\btGeometryUtil.cpp">
+    <ClCompile Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\bullet-2.81-rev2613\src\LinearMath\btGeometryUtil.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\lixiaoguang_works\ogl-master\external\bullet-2.81-rev2613\src\LinearMath\btPolarDecomposition.cpp">
+    <ClCompile Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\bullet-2.81-rev2613\src\LinearMath\btPolarDecomposition.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\lixiaoguang_works\ogl-master\external\bullet-2.81-rev2613\src\LinearMath\btQuickprof.cpp">
+    <ClCompile Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\bullet-2.81-rev2613\src\LinearMath\btQuickprof.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\lixiaoguang_works\ogl-master\external\bullet-2.81-rev2613\src\LinearMath\btSerializer.cpp">
+    <ClCompile Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\bullet-2.81-rev2613\src\LinearMath\btSerializer.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\lixiaoguang_works\ogl-master\external\bullet-2.81-rev2613\src\LinearMath\btVector3.cpp">
+    <ClCompile Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\bullet-2.81-rev2613\src\LinearMath\btVector3.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="D:\lixiaoguang_works\ogl-master\external\bullet-2.81-rev2613\src\LinearMath\btAabbUtil2.h">
+    <ClInclude Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\bullet-2.81-rev2613\src\LinearMath\btAabbUtil2.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="D:\lixiaoguang_works\ogl-master\external\bullet-2.81-rev2613\src\LinearMath\btAlignedAllocator.h">
+    <ClInclude Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\bullet-2.81-rev2613\src\LinearMath\btAlignedAllocator.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="D:\lixiaoguang_works\ogl-master\external\bullet-2.81-rev2613\src\LinearMath\btAlignedObjectArray.h">
+    <ClInclude Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\bullet-2.81-rev2613\src\LinearMath\btAlignedObjectArray.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="D:\lixiaoguang_works\ogl-master\external\bullet-2.81-rev2613\src\LinearMath\btConvexHull.h">
+    <ClInclude Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\bullet-2.81-rev2613\src\LinearMath\btConvexHull.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="D:\lixiaoguang_works\ogl-master\external\bullet-2.81-rev2613\src\LinearMath\btConvexHullComputer.h">
+    <ClInclude Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\bullet-2.81-rev2613\src\LinearMath\btConvexHullComputer.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="D:\lixiaoguang_works\ogl-master\external\bullet-2.81-rev2613\src\LinearMath\btDefaultMotionState.h">
+    <ClInclude Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\bullet-2.81-rev2613\src\LinearMath\btDefaultMotionState.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="D:\lixiaoguang_works\ogl-master\external\bullet-2.81-rev2613\src\LinearMath\btGeometryUtil.h">
+    <ClInclude Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\bullet-2.81-rev2613\src\LinearMath\btGeometryUtil.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="D:\lixiaoguang_works\ogl-master\external\bullet-2.81-rev2613\src\LinearMath\btGrahamScan2dConvexHull.h">
+    <ClInclude Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\bullet-2.81-rev2613\src\LinearMath\btGrahamScan2dConvexHull.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="D:\lixiaoguang_works\ogl-master\external\bullet-2.81-rev2613\src\LinearMath\btHashMap.h">
+    <ClInclude Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\bullet-2.81-rev2613\src\LinearMath\btHashMap.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="D:\lixiaoguang_works\ogl-master\external\bullet-2.81-rev2613\src\LinearMath\btIDebugDraw.h">
+    <ClInclude Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\bullet-2.81-rev2613\src\LinearMath\btIDebugDraw.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="D:\lixiaoguang_works\ogl-master\external\bullet-2.81-rev2613\src\LinearMath\btList.h">
+    <ClInclude Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\bullet-2.81-rev2613\src\LinearMath\btList.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="D:\lixiaoguang_works\ogl-master\external\bullet-2.81-rev2613\src\LinearMath\btMatrix3x3.h">
+    <ClInclude Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\bullet-2.81-rev2613\src\LinearMath\btMatrix3x3.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="D:\lixiaoguang_works\ogl-master\external\bullet-2.81-rev2613\src\LinearMath\btMinMax.h">
+    <ClInclude Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\bullet-2.81-rev2613\src\LinearMath\btMinMax.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="D:\lixiaoguang_works\ogl-master\external\bullet-2.81-rev2613\src\LinearMath\btMotionState.h">
+    <ClInclude Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\bullet-2.81-rev2613\src\LinearMath\btMotionState.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="D:\lixiaoguang_works\ogl-master\external\bullet-2.81-rev2613\src\LinearMath\btPolarDecomposition.h">
+    <ClInclude Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\bullet-2.81-rev2613\src\LinearMath\btPolarDecomposition.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="D:\lixiaoguang_works\ogl-master\external\bullet-2.81-rev2613\src\LinearMath\btPoolAllocator.h">
+    <ClInclude Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\bullet-2.81-rev2613\src\LinearMath\btPoolAllocator.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="D:\lixiaoguang_works\ogl-master\external\bullet-2.81-rev2613\src\LinearMath\btQuadWord.h">
+    <ClInclude Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\bullet-2.81-rev2613\src\LinearMath\btQuadWord.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="D:\lixiaoguang_works\ogl-master\external\bullet-2.81-rev2613\src\LinearMath\btQuaternion.h">
+    <ClInclude Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\bullet-2.81-rev2613\src\LinearMath\btQuaternion.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="D:\lixiaoguang_works\ogl-master\external\bullet-2.81-rev2613\src\LinearMath\btQuickprof.h">
+    <ClInclude Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\bullet-2.81-rev2613\src\LinearMath\btQuickprof.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="D:\lixiaoguang_works\ogl-master\external\bullet-2.81-rev2613\src\LinearMath\btRandom.h">
+    <ClInclude Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\bullet-2.81-rev2613\src\LinearMath\btRandom.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="D:\lixiaoguang_works\ogl-master\external\bullet-2.81-rev2613\src\LinearMath\btScalar.h">
+    <ClInclude Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\bullet-2.81-rev2613\src\LinearMath\btScalar.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="D:\lixiaoguang_works\ogl-master\external\bullet-2.81-rev2613\src\LinearMath\btSerializer.h">
+    <ClInclude Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\bullet-2.81-rev2613\src\LinearMath\btSerializer.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="D:\lixiaoguang_works\ogl-master\external\bullet-2.81-rev2613\src\LinearMath\btStackAlloc.h">
+    <ClInclude Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\bullet-2.81-rev2613\src\LinearMath\btStackAlloc.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="D:\lixiaoguang_works\ogl-master\external\bullet-2.81-rev2613\src\LinearMath\btTransform.h">
+    <ClInclude Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\bullet-2.81-rev2613\src\LinearMath\btTransform.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="D:\lixiaoguang_works\ogl-master\external\bullet-2.81-rev2613\src\LinearMath\btTransformUtil.h">
+    <ClInclude Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\bullet-2.81-rev2613\src\LinearMath\btTransformUtil.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="D:\lixiaoguang_works\ogl-master\external\bullet-2.81-rev2613\src\LinearMath\btVector3.h">
+    <ClInclude Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\bullet-2.81-rev2613\src\LinearMath\btVector3.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <CustomBuild Include="D:\lixiaoguang_works\ogl-master\external\bullet-2.81-rev2613\src\LinearMath\CMakeLists.txt" />
+    <CustomBuild Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\bullet-2.81-rev2613\src\LinearMath\CMakeLists.txt" />
   </ItemGroup>
   <ItemGroup>
     <Filter Include="Source Files">
-      <UniqueIdentifier>{4137E80B-F9E3-3DD0-98BA-AAB508EDA651}</UniqueIdentifier>
+      <UniqueIdentifier>{B60F2CFA-E83A-3ADA-BA21-12B5F549C2D9}</UniqueIdentifier>
     </Filter>
     <Filter Include="Header Files">
-      <UniqueIdentifier>{923656BC-BDAB-3683-8038-A4137BDD98A8}</UniqueIdentifier>
+      <UniqueIdentifier>{75A1DF3F-45B3-3383-9235-D7E78D7D63F9}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
 </Project>

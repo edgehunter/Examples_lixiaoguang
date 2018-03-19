@@ -1,0 +1,132 @@
+#include "Camera.h"
+
+
+Camera::Camera()
+{
+}
+
+
+Camera::~Camera()
+{
+}
+
+void Camera::Init(GLFWwindow* Window, const unsigned int Screen_Width, const unsigned int Screen_Height)
+{
+	// Initial position : on +Z
+	Position = glm::vec3(0, 0, 5);
+
+	// Initial horizontal angle : toward -Z
+	HorizontalAngle = -3.14f;
+
+	// Initial vertical angle : none
+	VerticalAngle = 0.0f;
+
+	// Initial Field of View
+	InitialFoV = 45.0f;
+
+	KeySpeed = 3.0f; // 3 units / second
+	MouseSpeed = 0.005f;
+
+	// Get mouse position
+	xPos = Screen_Width / 2;
+	yPos = Screen_Height / 2;
+
+	xPos_old = Screen_Width / 2;
+	yPos_old = Screen_Height / 2;
+
+	this->Window = Window;
+}
+
+glm::mat4 Camera::GetViewMatrix(){
+	return ViewMatrix;
+}
+glm::mat4 Camera::GetProjectionMatrix(){
+	return ProjectionMatrix;
+}
+
+void Camera::ComputeMatricesFromInputs(){
+
+	// glfwGetTime is called only once, the first time this function is called
+	static double lastTime = glfwGetTime();
+
+	// Compute time difference between current and last frame
+	double currentTime = glfwGetTime();
+	float deltaTime = float(currentTime - lastTime);
+
+
+	//printf("deltaTime=(%f) ", deltaTime);
+
+
+	// Reset mouse position for next frame
+	//glfwSetCursorPos(window, 600 / 2, 400 / 2);
+
+	glfwGetCursorPos(Window, &xPos, &yPos);
+
+	// Reset mouse position for next frame
+	//glfwSetCursorPos(window, 600 / 2, 400 / 2);
+
+	// Compute new orientation
+	if (glfwGetMouseButton(Window, GLFW_MOUSE_BUTTON_RIGHT) == GLFW_PRESS)
+	{
+		HorizontalAngle += MouseSpeed * float(xPos_old - xPos);
+		VerticalAngle += MouseSpeed * float(yPos_old - yPos);
+	}
+
+
+	xPos_old = xPos, yPos_old = yPos;
+
+	// Direction : Spherical coordinates to Cartesian coordinates conversion
+	glm::vec3 direction(
+		cos(VerticalAngle) * sin(HorizontalAngle),
+		sin(VerticalAngle),
+		cos(VerticalAngle) * cos(HorizontalAngle)
+		);
+
+	// Right vector
+	glm::vec3 right = glm::vec3(
+		sin(HorizontalAngle - 3.14f / 2.0f),
+		0,
+		cos(HorizontalAngle - 3.14f / 2.0f)
+		);
+
+	// Up vector
+	glm::vec3 up = glm::cross(right, direction);
+
+	// Move forward
+	if (glfwGetKey(Window, GLFW_KEY_UP) == GLFW_PRESS){
+		Position += direction * deltaTime * KeySpeed;
+	}
+	// Move backward
+	if (glfwGetKey(Window, GLFW_KEY_DOWN) == GLFW_PRESS){
+		Position -= direction * deltaTime * KeySpeed;
+	}
+	// Strafe right
+	if (glfwGetKey(Window, GLFW_KEY_RIGHT) == GLFW_PRESS){
+		Position += right * deltaTime * KeySpeed;
+	}
+	// Strafe left
+	if (glfwGetKey(Window, GLFW_KEY_LEFT) == GLFW_PRESS){
+		Position -= right * deltaTime * KeySpeed;
+	}
+
+	float FoV = InitialFoV;// - 5 * glfwGetMouseWheel(); // Now GLFW 3 requires setting up a callback for this. It's a bit too complicated for this beginner's tutorial, so it's disabled instead.
+
+	// Projection matrix : 45?Field of View, 4:3 ratio, display range : 0.1 unit <-> 100 units
+	ProjectionMatrix = glm::perspective(glm::radians(FoV), 4.0f / 3.0f, 0.1f, 1000.0f);
+	// Camera matrix
+	ViewMatrix = glm::lookAt(
+		Position,           // Camera is here
+		Position + direction, // and looks here : at the same position, plus "direction"
+		up                  // Head is up (set to 0,-1,0 to look upside-down)
+		);
+
+	// For the next frame, the "last time" will be "now"
+	lastTime = currentTime;
+
+	/*
+	printf("horizontalAngle=(%f), verticalAngle=(%f) \n", HorizontalAngle, VerticalAngle);
+	printf("position=(%f,%f,%f), direction=(%f,%f,%f), up=(%f,%f,%f) \n",
+		Position.x, Position.y, Position.z, direction.x, direction.y, direction.z, up.x, up.y, up.z);
+
+	*/
+}

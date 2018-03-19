@@ -1,27 +1,27 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <Project ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <ClCompile Include="D:\lixiaoguang_works\ogl-master\playground\playground.cpp">
+    <ClCompile Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\playground\playground.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\lixiaoguang_works\ogl-master\common\shader.cpp">
+    <ClCompile Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\common\shader.cpp">
       <Filter>common</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="D:\lixiaoguang_works\ogl-master\common\shader.hpp">
+    <ClInclude Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\common\shader.hpp">
       <Filter>common</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <CustomBuild Include="D:\lixiaoguang_works\ogl-master\CMakeLists.txt" />
+    <CustomBuild Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\CMakeLists.txt" />
   </ItemGroup>
   <ItemGroup>
     <Filter Include="Source Files">
-      <UniqueIdentifier>{4137E80B-F9E3-3DD0-98BA-AAB508EDA651}</UniqueIdentifier>
+      <UniqueIdentifier>{B60F2CFA-E83A-3ADA-BA21-12B5F549C2D9}</UniqueIdentifier>
     </Filter>
     <Filter Include="common">
-      <UniqueIdentifier>{CE560EE7-D682-3E3A-B536-F30AA934A9D6}</UniqueIdentifier>
+      <UniqueIdentifier>{F4E9CDB5-5099-38A4-B708-DAAED8630811}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
 </Project>

@@ -1,89 +1,89 @@
 Determining if the include file pthread.h exists failed with the following output:
-Change Dir: D:/lixiaoguang_works/ogl-master/build/CMakeFiles/CMakeTmp
+Change Dir: D:/lixiaoguang_works/Examples_lixiaoguang/OpenGL/ogl-master/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"C:/Program Files (x86)/MSBuild/12.0/bin/MSBuild.exe" "cmTC_ea5c6.vcxproj" "/p:Configuration=Debug" "/p:VisualStudioVersion=12.0"
+Run Build Command:"C:/Program Files (x86)/MSBuild/12.0/bin/MSBuild.exe" "cmTC_62a0c.vcxproj" "/p:Configuration=Debug" "/p:VisualStudioVersion=12.0"
 Microsoft(R) 生成引擎版本 12.0.40629.0
 [Microsoft .NET Framework 版本 4.0.30319.42000]
 版权所有 (C) Microsoft Corporation。保留所有权利。
 
-生成启动时间为 2018/1/24 9:55:47。
-节点 1 上的项目“D:\lixiaoguang_works\ogl-master\build\CMakeFiles\CMakeTmp\cmTC_ea5c6.vcxproj”(默认目标)。
+生成启动时间为 2018/3/13 15:15:53。
+节点 1 上的项目“D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\build\CMakeFiles\CMakeTmp\cmTC_62a0c.vcxproj”(默认目标)。
 PrepareForBuild:
-  正在创建目录“cmTC_ea5c6.dir\Debug\”。
-  正在创建目录“D:\lixiaoguang_works\ogl-master\build\CMakeFiles\CMakeTmp\Debug\”。
-  正在创建目录“cmTC_ea5c6.dir\Debug\cmTC_ea5c6.tlog\”。
+  正在创建目录“cmTC_62a0c.dir\Debug\”。
+  正在创建目录“D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\build\CMakeFiles\CMakeTmp\Debug\”。
+  正在创建目录“cmTC_62a0c.dir\Debug\cmTC_62a0c.tlog\”。
 InitializeBuildStatus:
-  正在创建“cmTC_ea5c6.dir\Debug\cmTC_ea5c6.tlog\unsuccessfulbuild”，因为已指定“AlwaysCreate”。
+  正在创建“cmTC_62a0c.dir\Debug\cmTC_62a0c.tlog\unsuccessfulbuild”，因为已指定“AlwaysCreate”。
 ClCompile:
-  C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\CL.exe /c /Zi /W3 /WX- /Od /Ob0 /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"cmTC_ea5c6.dir\Debug\\" /Fd"cmTC_ea5c6.dir\Debug\vc120.pdb" /Gd /TC /errorReport:queue "D:\lixiaoguang_works\ogl-master\build\CMakeFiles\CMakeTmp\CheckIncludeFile.c"
+  C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\CL.exe /c /Zi /W3 /WX- /Od /Ob0 /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"cmTC_62a0c.dir\Debug\\" /Fd"cmTC_62a0c.dir\Debug\vc120.pdb" /Gd /TC /errorReport:queue "D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\build\CMakeFiles\CMakeTmp\CheckIncludeFile.c"
   Microsoft (R) C/C++ Optimizing Compiler Version 18.00.40629 for x64
   Copyright (C) Microsoft Corporation.  All rights reserved.
   
-  cl /c /Zi /W3 /WX- /Od /Ob0 /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"cmTC_ea5c6.dir\Debug\\" /Fd"cmTC_ea5c6.dir\Debug\vc120.pdb" /Gd /TC /errorReport:queue "D:\lixiaoguang_works\ogl-master\build\CMakeFiles\CMakeTmp\CheckIncludeFile.c"
+  cl /c /Zi /W3 /WX- /Od /Ob0 /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"cmTC_62a0c.dir\Debug\\" /Fd"cmTC_62a0c.dir\Debug\vc120.pdb" /Gd /TC /errorReport:queue "D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\build\CMakeFiles\CMakeTmp\CheckIncludeFile.c"
   
   CheckIncludeFile.c
-D:\lixiaoguang_works\ogl-master\build\CMakeFiles\CMakeTmp\CheckIncludeFile.c(1): fatal error C1083: Cannot open include file: 'pthread.h': No such file or directory [D:\lixiaoguang_works\ogl-master\build\CMakeFiles\CMakeTmp\cmTC_ea5c6.vcxproj]
-已完成生成项目“D:\lixiaoguang_works\ogl-master\build\CMakeFiles\CMakeTmp\cmTC_ea5c6.vcxproj”(默认目标)的操作 - 失败。
+D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\build\CMakeFiles\CMakeTmp\CheckIncludeFile.c(1): fatal error C1083: Cannot open include file: 'pthread.h': No such file or directory [D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\build\CMakeFiles\CMakeTmp\cmTC_62a0c.vcxproj]
+已完成生成项目“D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\build\CMakeFiles\CMakeTmp\cmTC_62a0c.vcxproj”(默认目标)的操作 - 失败。
 
 生成失败。
 
-“D:\lixiaoguang_works\ogl-master\build\CMakeFiles\CMakeTmp\cmTC_ea5c6.vcxproj”(默认目标) (1) ->
+“D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\build\CMakeFiles\CMakeTmp\cmTC_62a0c.vcxproj”(默认目标) (1) ->
 (ClCompile 目标) -> 
-  D:\lixiaoguang_works\ogl-master\build\CMakeFiles\CMakeTmp\CheckIncludeFile.c(1): fatal error C1083: Cannot open include file: 'pthread.h': No such file or directory [D:\lixiaoguang_works\ogl-master\build\CMakeFiles\CMakeTmp\cmTC_ea5c6.vcxproj]
+  D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\build\CMakeFiles\CMakeTmp\CheckIncludeFile.c(1): fatal error C1083: Cannot open include file: 'pthread.h': No such file or directory [D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\build\CMakeFiles\CMakeTmp\cmTC_62a0c.vcxproj]
 
     0 个警告
     1 个错误
 
-已用时间 00:00:00.45
+已用时间 00:00:00.41
 
 
 Determining size of off64_t failed with the following output:
-Change Dir: D:/lixiaoguang_works/ogl-master/build/CMakeFiles/CMakeTmp
+Change Dir: D:/lixiaoguang_works/Examples_lixiaoguang/OpenGL/ogl-master/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"C:/Program Files (x86)/MSBuild/12.0/bin/MSBuild.exe" "cmTC_5c70f.vcxproj" "/p:Configuration=Debug" "/p:VisualStudioVersion=12.0"
+Run Build Command:"C:/Program Files (x86)/MSBuild/12.0/bin/MSBuild.exe" "cmTC_e45a4.vcxproj" "/p:Configuration=Debug" "/p:VisualStudioVersion=12.0"
 Microsoft(R) 生成引擎版本 12.0.40629.0
 [Microsoft .NET Framework 版本 4.0.30319.42000]
 版权所有 (C) Microsoft Corporation。保留所有权利。
 
-生成启动时间为 2018/1/24 9:55:51。
-节点 1 上的项目“D:\lixiaoguang_works\ogl-master\build\CMakeFiles\CMakeTmp\cmTC_5c70f.vcxproj”(默认目标)。
+生成启动时间为 2018/3/13 15:15:57。
+节点 1 上的项目“D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\build\CMakeFiles\CMakeTmp\cmTC_e45a4.vcxproj”(默认目标)。
 PrepareForBuild:
-  正在创建目录“cmTC_5c70f.dir\Debug\”。
-  正在创建目录“D:\lixiaoguang_works\ogl-master\build\CMakeFiles\CMakeTmp\Debug\”。
-  正在创建目录“cmTC_5c70f.dir\Debug\cmTC_5c70f.tlog\”。
+  正在创建目录“cmTC_e45a4.dir\Debug\”。
+  正在创建目录“D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\build\CMakeFiles\CMakeTmp\Debug\”。
+  正在创建目录“cmTC_e45a4.dir\Debug\cmTC_e45a4.tlog\”。
 InitializeBuildStatus:
-  正在创建“cmTC_5c70f.dir\Debug\cmTC_5c70f.tlog\unsuccessfulbuild”，因为已指定“AlwaysCreate”。
+  正在创建“cmTC_e45a4.dir\Debug\cmTC_e45a4.tlog\unsuccessfulbuild”，因为已指定“AlwaysCreate”。
 ClCompile:
-  C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\CL.exe /c /Zi /W3 /WX- /Od /Ob0 /D WIN32 /D _WINDOWS /D _LARGEFILE64_SOURCE=1 /D HAVE_SYS_TYPES_H /D HAVE_STDINT_H /D HAVE_STDDEF_H /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"cmTC_5c70f.dir\Debug\\" /Fd"cmTC_5c70f.dir\Debug\vc120.pdb" /Gd /TC /errorReport:queue "D:\lixiaoguang_works\ogl-master\build\CMakeFiles\CheckTypeSize\OFF64_T.c"
+  C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\CL.exe /c /Zi /W3 /WX- /Od /Ob0 /D WIN32 /D _WINDOWS /D _LARGEFILE64_SOURCE=1 /D HAVE_SYS_TYPES_H /D HAVE_STDINT_H /D HAVE_STDDEF_H /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"cmTC_e45a4.dir\Debug\\" /Fd"cmTC_e45a4.dir\Debug\vc120.pdb" /Gd /TC /errorReport:queue "D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\build\CMakeFiles\CheckTypeSize\OFF64_T.c"
   Microsoft (R) C/C++ Optimizing Compiler Version 18.00.40629 for x64
   Copyright (C) Microsoft Corporation.  All rights reserved.
   
-  cl /c /Zi /W3 /WX- /Od /Ob0 /D WIN32 /D _WINDOWS /D _LARGEFILE64_SOURCE=1 /D HAVE_SYS_TYPES_H /D HAVE_STDINT_H /D HAVE_STDDEF_H /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"cmTC_5c70f.dir\Debug\\" /Fd"cmTC_5c70f.dir\Debug\vc120.pdb" /Gd /TC /errorReport:queue "D:\lixiaoguang_works\ogl-master\build\CMakeFiles\CheckTypeSize\OFF64_T.c"
+  cl /c /Zi /W3 /WX- /Od /Ob0 /D WIN32 /D _WINDOWS /D _LARGEFILE64_SOURCE=1 /D HAVE_SYS_TYPES_H /D HAVE_STDINT_H /D HAVE_STDDEF_H /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"cmTC_e45a4.dir\Debug\\" /Fd"cmTC_e45a4.dir\Debug\vc120.pdb" /Gd /TC /errorReport:queue "D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\build\CMakeFiles\CheckTypeSize\OFF64_T.c"
   
   OFF64_T.c
-D:\lixiaoguang_works\ogl-master\build\CMakeFiles\CheckTypeSize\OFF64_T.c(25): error C2065: 'off64_t' : undeclared identifier [D:\lixiaoguang_works\ogl-master\build\CMakeFiles\CMakeTmp\cmTC_5c70f.vcxproj]
-D:\lixiaoguang_works\ogl-master\build\CMakeFiles\CheckTypeSize\OFF64_T.c(26): error C2065: 'off64_t' : undeclared identifier [D:\lixiaoguang_works\ogl-master\build\CMakeFiles\CMakeTmp\cmTC_5c70f.vcxproj]
-D:\lixiaoguang_works\ogl-master\build\CMakeFiles\CheckTypeSize\OFF64_T.c(27): error C2065: 'off64_t' : undeclared identifier [D:\lixiaoguang_works\ogl-master\build\CMakeFiles\CMakeTmp\cmTC_5c70f.vcxproj]
-D:\lixiaoguang_works\ogl-master\build\CMakeFiles\CheckTypeSize\OFF64_T.c(28): error C2065: 'off64_t' : undeclared identifier [D:\lixiaoguang_works\ogl-master\build\CMakeFiles\CMakeTmp\cmTC_5c70f.vcxproj]
-D:\lixiaoguang_works\ogl-master\build\CMakeFiles\CheckTypeSize\OFF64_T.c(29): error C2065: 'off64_t' : undeclared identifier [D:\lixiaoguang_works\ogl-master\build\CMakeFiles\CMakeTmp\cmTC_5c70f.vcxproj]
-已完成生成项目“D:\lixiaoguang_works\ogl-master\build\CMakeFiles\CMakeTmp\cmTC_5c70f.vcxproj”(默认目标)的操作 - 失败。
+D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\build\CMakeFiles\CheckTypeSize\OFF64_T.c(25): error C2065: 'off64_t' : undeclared identifier [D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\build\CMakeFiles\CMakeTmp\cmTC_e45a4.vcxproj]
+D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\build\CMakeFiles\CheckTypeSize\OFF64_T.c(26): error C2065: 'off64_t' : undeclared identifier [D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\build\CMakeFiles\CMakeTmp\cmTC_e45a4.vcxproj]
+D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\build\CMakeFiles\CheckTypeSize\OFF64_T.c(27): error C2065: 'off64_t' : undeclared identifier [D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\build\CMakeFiles\CMakeTmp\cmTC_e45a4.vcxproj]
+D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\build\CMakeFiles\CheckTypeSize\OFF64_T.c(28): error C2065: 'off64_t' : undeclared identifier [D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\build\CMakeFiles\CMakeTmp\cmTC_e45a4.vcxproj]
+D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\build\CMakeFiles\CheckTypeSize\OFF64_T.c(29): error C2065: 'off64_t' : undeclared identifier [D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\build\CMakeFiles\CMakeTmp\cmTC_e45a4.vcxproj]
+已完成生成项目“D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\build\CMakeFiles\CMakeTmp\cmTC_e45a4.vcxproj”(默认目标)的操作 - 失败。
 
 生成失败。
 
-“D:\lixiaoguang_works\ogl-master\build\CMakeFiles\CMakeTmp\cmTC_5c70f.vcxproj”(默认目标) (1) ->
+“D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\build\CMakeFiles\CMakeTmp\cmTC_e45a4.vcxproj”(默认目标) (1) ->
 (ClCompile 目标) -> 
-  D:\lixiaoguang_works\ogl-master\build\CMakeFiles\CheckTypeSize\OFF64_T.c(25): error C2065: 'off64_t' : undeclared identifier [D:\lixiaoguang_works\ogl-master\build\CMakeFiles\CMakeTmp\cmTC_5c70f.vcxproj]
-  D:\lixiaoguang_works\ogl-master\build\CMakeFiles\CheckTypeSize\OFF64_T.c(26): error C2065: 'off64_t' : undeclared identifier [D:\lixiaoguang_works\ogl-master\build\CMakeFiles\CMakeTmp\cmTC_5c70f.vcxproj]
-  D:\lixiaoguang_works\ogl-master\build\CMakeFiles\CheckTypeSize\OFF64_T.c(27): error C2065: 'off64_t' : undeclared identifier [D:\lixiaoguang_works\ogl-master\build\CMakeFiles\CMakeTmp\cmTC_5c70f.vcxproj]
-  D:\lixiaoguang_works\ogl-master\build\CMakeFiles\CheckTypeSize\OFF64_T.c(28): error C2065: 'off64_t' : undeclared identifier [D:\lixiaoguang_works\ogl-master\build\CMakeFiles\CMakeTmp\cmTC_5c70f.vcxproj]
-  D:\lixiaoguang_works\ogl-master\build\CMakeFiles\CheckTypeSize\OFF64_T.c(29): error C2065: 'off64_t' : undeclared identifier [D:\lixiaoguang_works\ogl-master\build\CMakeFiles\CMakeTmp\cmTC_5c70f.vcxproj]
+  D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\build\CMakeFiles\CheckTypeSize\OFF64_T.c(25): error C2065: 'off64_t' : undeclared identifier [D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\build\CMakeFiles\CMakeTmp\cmTC_e45a4.vcxproj]
+  D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\build\CMakeFiles\CheckTypeSize\OFF64_T.c(26): error C2065: 'off64_t' : undeclared identifier [D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\build\CMakeFiles\CMakeTmp\cmTC_e45a4.vcxproj]
+  D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\build\CMakeFiles\CheckTypeSize\OFF64_T.c(27): error C2065: 'off64_t' : undeclared identifier [D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\build\CMakeFiles\CMakeTmp\cmTC_e45a4.vcxproj]
+  D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\build\CMakeFiles\CheckTypeSize\OFF64_T.c(28): error C2065: 'off64_t' : undeclared identifier [D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\build\CMakeFiles\CMakeTmp\cmTC_e45a4.vcxproj]
+  D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\build\CMakeFiles\CheckTypeSize\OFF64_T.c(29): error C2065: 'off64_t' : undeclared identifier [D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\build\CMakeFiles\CMakeTmp\cmTC_e45a4.vcxproj]
 
     0 个警告
     5 个错误
 
-已用时间 00:00:00.43
+已用时间 00:00:00.39
 
-D:/lixiaoguang_works/ogl-master/build/CMakeFiles/CheckTypeSize/OFF64_T.c:
+D:/lixiaoguang_works/Examples_lixiaoguang/OpenGL/ogl-master/build/CMakeFiles/CheckTypeSize/OFF64_T.c:
 #include <sys/types.h>
 #include <stdint.h>
 #include <stddef.h>
@@ -133,84 +133,84 @@ int main(int argc, char *argv[])
 
 
 Determining if the function fseeko exists failed with the following output:
-Change Dir: D:/lixiaoguang_works/ogl-master/build/CMakeFiles/CMakeTmp
+Change Dir: D:/lixiaoguang_works/Examples_lixiaoguang/OpenGL/ogl-master/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"C:/Program Files (x86)/MSBuild/12.0/bin/MSBuild.exe" "cmTC_97285.vcxproj" "/p:Configuration=Debug" "/p:VisualStudioVersion=12.0"
+Run Build Command:"C:/Program Files (x86)/MSBuild/12.0/bin/MSBuild.exe" "cmTC_2074b.vcxproj" "/p:Configuration=Debug" "/p:VisualStudioVersion=12.0"
 Microsoft(R) 生成引擎版本 12.0.40629.0
 [Microsoft .NET Framework 版本 4.0.30319.42000]
 版权所有 (C) Microsoft Corporation。保留所有权利。
 
-生成启动时间为 2018/1/24 9:55:51。
-节点 1 上的项目“D:\lixiaoguang_works\ogl-master\build\CMakeFiles\CMakeTmp\cmTC_97285.vcxproj”(默认目标)。
+生成启动时间为 2018/3/13 15:15:58。
+节点 1 上的项目“D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\build\CMakeFiles\CMakeTmp\cmTC_2074b.vcxproj”(默认目标)。
 PrepareForBuild:
-  正在创建目录“cmTC_97285.dir\Debug\”。
-  正在创建目录“D:\lixiaoguang_works\ogl-master\build\CMakeFiles\CMakeTmp\Debug\”。
-  正在创建目录“cmTC_97285.dir\Debug\cmTC_97285.tlog\”。
+  正在创建目录“cmTC_2074b.dir\Debug\”。
+  正在创建目录“D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\build\CMakeFiles\CMakeTmp\Debug\”。
+  正在创建目录“cmTC_2074b.dir\Debug\cmTC_2074b.tlog\”。
 InitializeBuildStatus:
-  正在创建“cmTC_97285.dir\Debug\cmTC_97285.tlog\unsuccessfulbuild”，因为已指定“AlwaysCreate”。
+  正在创建“cmTC_2074b.dir\Debug\cmTC_2074b.tlog\unsuccessfulbuild”，因为已指定“AlwaysCreate”。
 ClCompile:
-  C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\CL.exe /c /Zi /W3 /WX- /Od /Ob0 /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=fseeko /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"cmTC_97285.dir\Debug\\" /Fd"cmTC_97285.dir\Debug\vc120.pdb" /Gd /TC /errorReport:queue "C:\Program Files\CMake\share\cmake-3.10\Modules\CheckFunctionExists.c"
+  C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\CL.exe /c /Zi /W3 /WX- /Od /Ob0 /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=fseeko /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"cmTC_2074b.dir\Debug\\" /Fd"cmTC_2074b.dir\Debug\vc120.pdb" /Gd /TC /errorReport:queue "C:\Program Files\CMake\share\cmake-3.10\Modules\CheckFunctionExists.c"
   Microsoft (R) C/C++ Optimizing Compiler Version 18.00.40629 for x64
   Copyright (C) Microsoft Corporation.  All rights reserved.
   
-  cl /c /Zi /W3 /WX- /Od /Ob0 /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=fseeko /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"cmTC_97285.dir\Debug\\" /Fd"cmTC_97285.dir\Debug\vc120.pdb" /Gd /TC /errorReport:queue "C:\Program Files\CMake\share\cmake-3.10\Modules\CheckFunctionExists.c"
+  cl /c /Zi /W3 /WX- /Od /Ob0 /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=fseeko /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"cmTC_2074b.dir\Debug\\" /Fd"cmTC_2074b.dir\Debug\vc120.pdb" /Gd /TC /errorReport:queue "C:\Program Files\CMake\share\cmake-3.10\Modules\CheckFunctionExists.c"
   
   CheckFunctionExists.c
 Link:
-  C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\link.exe /ERRORREPORT:QUEUE /OUT:"D:\lixiaoguang_works\ogl-master\build\CMakeFiles\CMakeTmp\Debug\cmTC_97285.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:/lixiaoguang_works/ogl-master/build/CMakeFiles/CMakeTmp/Debug/cmTC_97285.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:/lixiaoguang_works/ogl-master/build/CMakeFiles/CMakeTmp/Debug/cmTC_97285.lib" /MACHINE:X64  /machine:x64 cmTC_97285.dir\Debug\CheckFunctionExists.obj
-CheckFunctionExists.obj : error LNK2019: unresolved external symbol fseeko referenced in function main [D:\lixiaoguang_works\ogl-master\build\CMakeFiles\CMakeTmp\cmTC_97285.vcxproj]
-D:\lixiaoguang_works\ogl-master\build\CMakeFiles\CMakeTmp\Debug\cmTC_97285.exe : fatal error LNK1120: 1 unresolved externals [D:\lixiaoguang_works\ogl-master\build\CMakeFiles\CMakeTmp\cmTC_97285.vcxproj]
-已完成生成项目“D:\lixiaoguang_works\ogl-master\build\CMakeFiles\CMakeTmp\cmTC_97285.vcxproj”(默认目标)的操作 - 失败。
+  C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\link.exe /ERRORREPORT:QUEUE /OUT:"D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\build\CMakeFiles\CMakeTmp\Debug\cmTC_2074b.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:/lixiaoguang_works/Examples_lixiaoguang/OpenGL/ogl-master/build/CMakeFiles/CMakeTmp/Debug/cmTC_2074b.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:/lixiaoguang_works/Examples_lixiaoguang/OpenGL/ogl-master/build/CMakeFiles/CMakeTmp/Debug/cmTC_2074b.lib" /MACHINE:X64  /machine:x64 cmTC_2074b.dir\Debug\CheckFunctionExists.obj
+CheckFunctionExists.obj : error LNK2019: unresolved external symbol fseeko referenced in function main [D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\build\CMakeFiles\CMakeTmp\cmTC_2074b.vcxproj]
+D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\build\CMakeFiles\CMakeTmp\Debug\cmTC_2074b.exe : fatal error LNK1120: 1 unresolved externals [D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\build\CMakeFiles\CMakeTmp\cmTC_2074b.vcxproj]
+已完成生成项目“D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\build\CMakeFiles\CMakeTmp\cmTC_2074b.vcxproj”(默认目标)的操作 - 失败。
 
 生成失败。
 
-“D:\lixiaoguang_works\ogl-master\build\CMakeFiles\CMakeTmp\cmTC_97285.vcxproj”(默认目标) (1) ->
+“D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\build\CMakeFiles\CMakeTmp\cmTC_2074b.vcxproj”(默认目标) (1) ->
 (Link 目标) -> 
-  CheckFunctionExists.obj : error LNK2019: unresolved external symbol fseeko referenced in function main [D:\lixiaoguang_works\ogl-master\build\CMakeFiles\CMakeTmp\cmTC_97285.vcxproj]
-  D:\lixiaoguang_works\ogl-master\build\CMakeFiles\CMakeTmp\Debug\cmTC_97285.exe : fatal error LNK1120: 1 unresolved externals [D:\lixiaoguang_works\ogl-master\build\CMakeFiles\CMakeTmp\cmTC_97285.vcxproj]
+  CheckFunctionExists.obj : error LNK2019: unresolved external symbol fseeko referenced in function main [D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\build\CMakeFiles\CMakeTmp\cmTC_2074b.vcxproj]
+  D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\build\CMakeFiles\CMakeTmp\Debug\cmTC_2074b.exe : fatal error LNK1120: 1 unresolved externals [D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\build\CMakeFiles\CMakeTmp\cmTC_2074b.vcxproj]
 
     0 个警告
     2 个错误
 
-已用时间 00:00:00.71
+已用时间 00:00:00.55
 
 
 Determining if the include file unistd.h exists failed with the following output:
-Change Dir: D:/lixiaoguang_works/ogl-master/build/CMakeFiles/CMakeTmp
+Change Dir: D:/lixiaoguang_works/Examples_lixiaoguang/OpenGL/ogl-master/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"C:/Program Files (x86)/MSBuild/12.0/bin/MSBuild.exe" "cmTC_d122a.vcxproj" "/p:Configuration=Debug" "/p:VisualStudioVersion=12.0"
+Run Build Command:"C:/Program Files (x86)/MSBuild/12.0/bin/MSBuild.exe" "cmTC_78518.vcxproj" "/p:Configuration=Debug" "/p:VisualStudioVersion=12.0"
 Microsoft(R) 生成引擎版本 12.0.40629.0
 [Microsoft .NET Framework 版本 4.0.30319.42000]
 版权所有 (C) Microsoft Corporation。保留所有权利。
 
-生成启动时间为 2018/1/24 9:55:52。
-节点 1 上的项目“D:\lixiaoguang_works\ogl-master\build\CMakeFiles\CMakeTmp\cmTC_d122a.vcxproj”(默认目标)。
+生成启动时间为 2018/3/13 15:15:58。
+节点 1 上的项目“D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\build\CMakeFiles\CMakeTmp\cmTC_78518.vcxproj”(默认目标)。
 PrepareForBuild:
-  正在创建目录“cmTC_d122a.dir\Debug\”。
-  正在创建目录“D:\lixiaoguang_works\ogl-master\build\CMakeFiles\CMakeTmp\Debug\”。
-  正在创建目录“cmTC_d122a.dir\Debug\cmTC_d122a.tlog\”。
+  正在创建目录“cmTC_78518.dir\Debug\”。
+  正在创建目录“D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\build\CMakeFiles\CMakeTmp\Debug\”。
+  正在创建目录“cmTC_78518.dir\Debug\cmTC_78518.tlog\”。
 InitializeBuildStatus:
-  正在创建“cmTC_d122a.dir\Debug\cmTC_d122a.tlog\unsuccessfulbuild”，因为已指定“AlwaysCreate”。
+  正在创建“cmTC_78518.dir\Debug\cmTC_78518.tlog\unsuccessfulbuild”，因为已指定“AlwaysCreate”。
 ClCompile:
-  C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\CL.exe /c /Zi /W3 /WX- /Od /Ob0 /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"cmTC_d122a.dir\Debug\\" /Fd"cmTC_d122a.dir\Debug\vc120.pdb" /Gd /TC /errorReport:queue "D:\lixiaoguang_works\ogl-master\build\CMakeFiles\CMakeTmp\CheckIncludeFile.c"
+  C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\CL.exe /c /Zi /W3 /WX- /Od /Ob0 /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"cmTC_78518.dir\Debug\\" /Fd"cmTC_78518.dir\Debug\vc120.pdb" /Gd /TC /errorReport:queue "D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\build\CMakeFiles\CMakeTmp\CheckIncludeFile.c"
   Microsoft (R) C/C++ Optimizing Compiler Version 18.00.40629 for x64
   Copyright (C) Microsoft Corporation.  All rights reserved.
   
-  cl /c /Zi /W3 /WX- /Od /Ob0 /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"cmTC_d122a.dir\Debug\\" /Fd"cmTC_d122a.dir\Debug\vc120.pdb" /Gd /TC /errorReport:queue "D:\lixiaoguang_works\ogl-master\build\CMakeFiles\CMakeTmp\CheckIncludeFile.c"
+  cl /c /Zi /W3 /WX- /Od /Ob0 /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"cmTC_78518.dir\Debug\\" /Fd"cmTC_78518.dir\Debug\vc120.pdb" /Gd /TC /errorReport:queue "D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\build\CMakeFiles\CMakeTmp\CheckIncludeFile.c"
   
   CheckIncludeFile.c
-D:\lixiaoguang_works\ogl-master\build\CMakeFiles\CMakeTmp\CheckIncludeFile.c(1): fatal error C1083: Cannot open include file: 'unistd.h': No such file or directory [D:\lixiaoguang_works\ogl-master\build\CMakeFiles\CMakeTmp\cmTC_d122a.vcxproj]
-已完成生成项目“D:\lixiaoguang_works\ogl-master\build\CMakeFiles\CMakeTmp\cmTC_d122a.vcxproj”(默认目标)的操作 - 失败。
+D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\build\CMakeFiles\CMakeTmp\CheckIncludeFile.c(1): fatal error C1083: Cannot open include file: 'unistd.h': No such file or directory [D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\build\CMakeFiles\CMakeTmp\cmTC_78518.vcxproj]
+已完成生成项目“D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\build\CMakeFiles\CMakeTmp\cmTC_78518.vcxproj”(默认目标)的操作 - 失败。
 
 生成失败。
 
-“D:\lixiaoguang_works\ogl-master\build\CMakeFiles\CMakeTmp\cmTC_d122a.vcxproj”(默认目标) (1) ->
+“D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\build\CMakeFiles\CMakeTmp\cmTC_78518.vcxproj”(默认目标) (1) ->
 (ClCompile 目标) -> 
-  D:\lixiaoguang_works\ogl-master\build\CMakeFiles\CMakeTmp\CheckIncludeFile.c(1): fatal error C1083: Cannot open include file: 'unistd.h': No such file or directory [D:\lixiaoguang_works\ogl-master\build\CMakeFiles\CMakeTmp\cmTC_d122a.vcxproj]
+  D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\build\CMakeFiles\CMakeTmp\CheckIncludeFile.c(1): fatal error C1083: Cannot open include file: 'unistd.h': No such file or directory [D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\build\CMakeFiles\CMakeTmp\cmTC_78518.vcxproj]
 
     0 个警告
     1 个错误
 
-已用时间 00:00:00.44
+已用时间 00:00:00.35
 
 

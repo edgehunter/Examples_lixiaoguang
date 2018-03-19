@@ -19,7 +19,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{DD437165-F935-34A2-9110-8F5CA6416D90}</ProjectGuid>
+    <ProjectGuid>{B7BA2AF8-C25B-30C7-BE4F-1A09513A381E}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
     <Platform>x64</Platform>
     <ProjectName>LinearMath</ProjectName>
@@ -55,26 +55,26 @@
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup>
     <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
-    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\lixiaoguang_works\ogl-master\build\external\bullet-2.81-rev2613\src\LinearMath\Debug\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\build\external\bullet-2.81-rev2613\src\LinearMath\Debug\</OutDir>
     <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">LinearMath.dir\Debug\</IntDir>
     <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">LinearMath</TargetName>
     <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.lib</TargetExt>
-    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\lixiaoguang_works\ogl-master\build\external\bullet-2.81-rev2613\src\LinearMath\Release\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\build\external\bullet-2.81-rev2613\src\LinearMath\Release\</OutDir>
     <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">LinearMath.dir\Release\</IntDir>
     <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">LinearMath</TargetName>
     <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.lib</TargetExt>
-    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\lixiaoguang_works\ogl-master\build\external\bullet-2.81-rev2613\src\LinearMath\MinSizeRel\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\build\external\bullet-2.81-rev2613\src\LinearMath\MinSizeRel\</OutDir>
     <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">LinearMath.dir\MinSizeRel\</IntDir>
     <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">LinearMath</TargetName>
     <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.lib</TargetExt>
-    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\lixiaoguang_works\ogl-master\build\external\bullet-2.81-rev2613\src\LinearMath\RelWithDebInfo\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\build\external\bullet-2.81-rev2613\src\LinearMath\RelWithDebInfo\</OutDir>
     <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">LinearMath.dir\RelWithDebInfo\</IntDir>
     <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">LinearMath</TargetName>
     <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.lib</TargetExt>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>D:\lixiaoguang_works\ogl-master\external\glfw-3.1.2\include\GLFW;D:\lixiaoguang_works\ogl-master\external\glew-1.13.0\include;D:\lixiaoguang_works\ogl-master\external\AntTweakBar-1.16\include;D:\lixiaoguang_works\ogl-master\external\assimp-3.0.1270\code\BoostWorkaround;D:\lixiaoguang_works\ogl-master\external\bullet-2.81-rev2613\src;\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\glfw-3.1.2\include\GLFW;D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\glew-1.13.0\include;D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\AntTweakBar-1.16\include;D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\assimp-3.0.1270\code\BoostWorkaround;D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\bullet-2.81-rev2613\src;\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AssemblerListingLocation>Debug/</AssemblerListingLocation>
       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
       <CompileAs>CompileAsCpp</CompileAs>
@@ -92,10 +92,10 @@
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;TW_STATIC;TW_NO_LIB_PRAGMA;TW_NO_DIRECT3D;GLEW_STATIC;_CRT_SECURE_NO_WARNINGS;ASSIMP_BUILD_BOOST_WORKAROUND;CMAKE_INTDIR=\"Debug\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>D:\lixiaoguang_works\ogl-master\external\glfw-3.1.2\include\GLFW;D:\lixiaoguang_works\ogl-master\external\glew-1.13.0\include;D:\lixiaoguang_works\ogl-master\external\AntTweakBar-1.16\include;D:\lixiaoguang_works\ogl-master\external\assimp-3.0.1270\code\BoostWorkaround;D:\lixiaoguang_works\ogl-master\external\bullet-2.81-rev2613\src;\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\glfw-3.1.2\include\GLFW;D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\glew-1.13.0\include;D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\AntTweakBar-1.16\include;D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\assimp-3.0.1270\code\BoostWorkaround;D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\bullet-2.81-rev2613\src;\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>D:\lixiaoguang_works\ogl-master\external\glfw-3.1.2\include\GLFW;D:\lixiaoguang_works\ogl-master\external\glew-1.13.0\include;D:\lixiaoguang_works\ogl-master\external\AntTweakBar-1.16\include;D:\lixiaoguang_works\ogl-master\external\assimp-3.0.1270\code\BoostWorkaround;D:\lixiaoguang_works\ogl-master\external\bullet-2.81-rev2613\src;\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\glfw-3.1.2\include\GLFW;D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\glew-1.13.0\include;D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\AntTweakBar-1.16\include;D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\assimp-3.0.1270\code\BoostWorkaround;D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\bullet-2.81-rev2613\src;\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -108,7 +108,7 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>D:\lixiaoguang_works\ogl-master\external\glfw-3.1.2\include\GLFW;D:\lixiaoguang_works\ogl-master\external\glew-1.13.0\include;D:\lixiaoguang_works\ogl-master\external\AntTweakBar-1.16\include;D:\lixiaoguang_works\ogl-master\external\assimp-3.0.1270\code\BoostWorkaround;D:\lixiaoguang_works\ogl-master\external\bullet-2.81-rev2613\src;\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\glfw-3.1.2\include\GLFW;D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\glew-1.13.0\include;D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\AntTweakBar-1.16\include;D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\assimp-3.0.1270\code\BoostWorkaround;D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\bullet-2.81-rev2613\src;\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AssemblerListingLocation>Release/</AssemblerListingLocation>
       <CompileAs>CompileAsCpp</CompileAs>
       <ExceptionHandling>Sync</ExceptionHandling>
@@ -125,10 +125,10 @@
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;TW_STATIC;TW_NO_LIB_PRAGMA;TW_NO_DIRECT3D;GLEW_STATIC;_CRT_SECURE_NO_WARNINGS;ASSIMP_BUILD_BOOST_WORKAROUND;CMAKE_INTDIR=\"Release\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>D:\lixiaoguang_works\ogl-master\external\glfw-3.1.2\include\GLFW;D:\lixiaoguang_works\ogl-master\external\glew-1.13.0\include;D:\lixiaoguang_works\ogl-master\external\AntTweakBar-1.16\include;D:\lixiaoguang_works\ogl-master\external\assimp-3.0.1270\code\BoostWorkaround;D:\lixiaoguang_works\ogl-master\external\bullet-2.81-rev2613\src;\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\glfw-3.1.2\include\GLFW;D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\glew-1.13.0\include;D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\AntTweakBar-1.16\include;D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\assimp-3.0.1270\code\BoostWorkaround;D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\bullet-2.81-rev2613\src;\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>D:\lixiaoguang_works\ogl-master\external\glfw-3.1.2\include\GLFW;D:\lixiaoguang_works\ogl-master\external\glew-1.13.0\include;D:\lixiaoguang_works\ogl-master\external\AntTweakBar-1.16\include;D:\lixiaoguang_works\ogl-master\external\assimp-3.0.1270\code\BoostWorkaround;D:\lixiaoguang_works\ogl-master\external\bullet-2.81-rev2613\src;\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\glfw-3.1.2\include\GLFW;D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\glew-1.13.0\include;D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\AntTweakBar-1.16\include;D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\assimp-3.0.1270\code\BoostWorkaround;D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\bullet-2.81-rev2613\src;\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -141,7 +141,7 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>D:\lixiaoguang_works\ogl-master\external\glfw-3.1.2\include\GLFW;D:\lixiaoguang_works\ogl-master\external\glew-1.13.0\include;D:\lixiaoguang_works\ogl-master\external\AntTweakBar-1.16\include;D:\lixiaoguang_works\ogl-master\external\assimp-3.0.1270\code\BoostWorkaround;D:\lixiaoguang_works\ogl-master\external\bullet-2.81-rev2613\src;\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\glfw-3.1.2\include\GLFW;D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\glew-1.13.0\include;D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\AntTweakBar-1.16\include;D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\assimp-3.0.1270\code\BoostWorkaround;D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\bullet-2.81-rev2613\src;\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AssemblerListingLocation>MinSizeRel/</AssemblerListingLocation>
       <CompileAs>CompileAsCpp</CompileAs>
       <ExceptionHandling>Sync</ExceptionHandling>
@@ -158,10 +158,10 @@
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;TW_STATIC;TW_NO_LIB_PRAGMA;TW_NO_DIRECT3D;GLEW_STATIC;_CRT_SECURE_NO_WARNINGS;ASSIMP_BUILD_BOOST_WORKAROUND;CMAKE_INTDIR=\"MinSizeRel\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>D:\lixiaoguang_works\ogl-master\external\glfw-3.1.2\include\GLFW;D:\lixiaoguang_works\ogl-master\external\glew-1.13.0\include;D:\lixiaoguang_works\ogl-master\external\AntTweakBar-1.16\include;D:\lixiaoguang_works\ogl-master\external\assimp-3.0.1270\code\BoostWorkaround;D:\lixiaoguang_works\ogl-master\external\bullet-2.81-rev2613\src;\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\glfw-3.1.2\include\GLFW;D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\glew-1.13.0\include;D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\AntTweakBar-1.16\include;D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\assimp-3.0.1270\code\BoostWorkaround;D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\bullet-2.81-rev2613\src;\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>D:\lixiaoguang_works\ogl-master\external\glfw-3.1.2\include\GLFW;D:\lixiaoguang_works\ogl-master\external\glew-1.13.0\include;D:\lixiaoguang_works\ogl-master\external\AntTweakBar-1.16\include;D:\lixiaoguang_works\ogl-master\external\assimp-3.0.1270\code\BoostWorkaround;D:\lixiaoguang_works\ogl-master\external\bullet-2.81-rev2613\src;\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\glfw-3.1.2\include\GLFW;D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\glew-1.13.0\include;D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\AntTweakBar-1.16\include;D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\assimp-3.0.1270\code\BoostWorkaround;D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\bullet-2.81-rev2613\src;\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -174,7 +174,7 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>D:\lixiaoguang_works\ogl-master\external\glfw-3.1.2\include\GLFW;D:\lixiaoguang_works\ogl-master\external\glew-1.13.0\include;D:\lixiaoguang_works\ogl-master\external\AntTweakBar-1.16\include;D:\lixiaoguang_works\ogl-master\external\assimp-3.0.1270\code\BoostWorkaround;D:\lixiaoguang_works\ogl-master\external\bullet-2.81-rev2613\src;\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\glfw-3.1.2\include\GLFW;D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\glew-1.13.0\include;D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\AntTweakBar-1.16\include;D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\assimp-3.0.1270\code\BoostWorkaround;D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\bullet-2.81-rev2613\src;\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AssemblerListingLocation>RelWithDebInfo/</AssemblerListingLocation>
       <CompileAs>CompileAsCpp</CompileAs>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
@@ -191,10 +191,10 @@
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;TW_STATIC;TW_NO_LIB_PRAGMA;TW_NO_DIRECT3D;GLEW_STATIC;_CRT_SECURE_NO_WARNINGS;ASSIMP_BUILD_BOOST_WORKAROUND;CMAKE_INTDIR=\"RelWithDebInfo\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>D:\lixiaoguang_works\ogl-master\external\glfw-3.1.2\include\GLFW;D:\lixiaoguang_works\ogl-master\external\glew-1.13.0\include;D:\lixiaoguang_works\ogl-master\external\AntTweakBar-1.16\include;D:\lixiaoguang_works\ogl-master\external\assimp-3.0.1270\code\BoostWorkaround;D:\lixiaoguang_works\ogl-master\external\bullet-2.81-rev2613\src;\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\glfw-3.1.2\include\GLFW;D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\glew-1.13.0\include;D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\AntTweakBar-1.16\include;D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\assimp-3.0.1270\code\BoostWorkaround;D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\bullet-2.81-rev2613\src;\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>D:\lixiaoguang_works\ogl-master\external\glfw-3.1.2\include\GLFW;D:\lixiaoguang_works\ogl-master\external\glew-1.13.0\include;D:\lixiaoguang_works\ogl-master\external\AntTweakBar-1.16\include;D:\lixiaoguang_works\ogl-master\external\assimp-3.0.1270\code\BoostWorkaround;D:\lixiaoguang_works\ogl-master\external\bullet-2.81-rev2613\src;\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\glfw-3.1.2\include\GLFW;D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\glew-1.13.0\include;D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\AntTweakBar-1.16\include;D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\assimp-3.0.1270\code\BoostWorkaround;D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\bullet-2.81-rev2613\src;\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -206,10 +206,10 @@
     </Lib>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <CustomBuild Include="D:\lixiaoguang_works\ogl-master\external\bullet-2.81-rev2613\src\LinearMath\CMakeLists.txt">
-      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule D:/lixiaoguang_works/ogl-master/external/bullet-2.81-rev2613/src/LinearMath/CMakeLists.txt</Message>
+    <CustomBuild Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\bullet-2.81-rev2613\src\LinearMath\CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule D:/lixiaoguang_works/Examples_lixiaoguang/OpenGL/ogl-master/external/bullet-2.81-rev2613/src/LinearMath/CMakeLists.txt</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -HD:/lixiaoguang_works/ogl-master -BD:/lixiaoguang_works/ogl-master/build --check-stamp-file D:/lixiaoguang_works/ogl-master/build/external/bullet-2.81-rev2613/src/LinearMath/CMakeFiles/generate.stamp
+"C:\Program Files\CMake\bin\cmake.exe" -HD:/lixiaoguang_works/Examples_lixiaoguang/OpenGL/ogl-master -BD:/lixiaoguang_works/Examples_lixiaoguang/OpenGL/ogl-master/build --check-stamp-file D:/lixiaoguang_works/Examples_lixiaoguang/OpenGL/ogl-master/build/external/bullet-2.81-rev2613/src/LinearMath/CMakeFiles/generate.stamp
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -217,12 +217,12 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:/lixiaoguang_works/ogl-master/external/bullet-2.81-rev2613/src/LinearMath/CMakeLists.txt;D:\lixiaoguang_works\ogl-master\external\bullet-2.81-rev2613\src\LinearMath\CMakeLists.txt;D:\lixiaoguang_works\ogl-master\external\bullet-2.81-rev2613\src\LinearMath\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\lixiaoguang_works\ogl-master\build\external\bullet-2.81-rev2613\src\LinearMath\CMakeFiles\generate.stamp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:/lixiaoguang_works/Examples_lixiaoguang/OpenGL/ogl-master/external/bullet-2.81-rev2613/src/LinearMath/CMakeLists.txt;D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\bullet-2.81-rev2613\src\LinearMath\CMakeLists.txt;D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\bullet-2.81-rev2613\src\LinearMath\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\build\external\bullet-2.81-rev2613\src\LinearMath\CMakeFiles\generate.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
-      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule D:/lixiaoguang_works/ogl-master/external/bullet-2.81-rev2613/src/LinearMath/CMakeLists.txt</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule D:/lixiaoguang_works/Examples_lixiaoguang/OpenGL/ogl-master/external/bullet-2.81-rev2613/src/LinearMath/CMakeLists.txt</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -HD:/lixiaoguang_works/ogl-master -BD:/lixiaoguang_works/ogl-master/build --check-stamp-file D:/lixiaoguang_works/ogl-master/build/external/bullet-2.81-rev2613/src/LinearMath/CMakeFiles/generate.stamp
+"C:\Program Files\CMake\bin\cmake.exe" -HD:/lixiaoguang_works/Examples_lixiaoguang/OpenGL/ogl-master -BD:/lixiaoguang_works/Examples_lixiaoguang/OpenGL/ogl-master/build --check-stamp-file D:/lixiaoguang_works/Examples_lixiaoguang/OpenGL/ogl-master/build/external/bullet-2.81-rev2613/src/LinearMath/CMakeFiles/generate.stamp
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -230,12 +230,12 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:/lixiaoguang_works/ogl-master/external/bullet-2.81-rev2613/src/LinearMath/CMakeLists.txt;D:\lixiaoguang_works\ogl-master\external\bullet-2.81-rev2613\src\LinearMath\CMakeLists.txt;D:\lixiaoguang_works\ogl-master\external\bullet-2.81-rev2613\src\LinearMath\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\lixiaoguang_works\ogl-master\build\external\bullet-2.81-rev2613\src\LinearMath\CMakeFiles\generate.stamp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:/lixiaoguang_works/Examples_lixiaoguang/OpenGL/ogl-master/external/bullet-2.81-rev2613/src/LinearMath/CMakeLists.txt;D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\bullet-2.81-rev2613\src\LinearMath\CMakeLists.txt;D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\bullet-2.81-rev2613\src\LinearMath\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\build\external\bullet-2.81-rev2613\src\LinearMath\CMakeFiles\generate.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
-      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule D:/lixiaoguang_works/ogl-master/external/bullet-2.81-rev2613/src/LinearMath/CMakeLists.txt</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule D:/lixiaoguang_works/Examples_lixiaoguang/OpenGL/ogl-master/external/bullet-2.81-rev2613/src/LinearMath/CMakeLists.txt</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -HD:/lixiaoguang_works/ogl-master -BD:/lixiaoguang_works/ogl-master/build --check-stamp-file D:/lixiaoguang_works/ogl-master/build/external/bullet-2.81-rev2613/src/LinearMath/CMakeFiles/generate.stamp
+"C:\Program Files\CMake\bin\cmake.exe" -HD:/lixiaoguang_works/Examples_lixiaoguang/OpenGL/ogl-master -BD:/lixiaoguang_works/Examples_lixiaoguang/OpenGL/ogl-master/build --check-stamp-file D:/lixiaoguang_works/Examples_lixiaoguang/OpenGL/ogl-master/build/external/bullet-2.81-rev2613/src/LinearMath/CMakeFiles/generate.stamp
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -243,12 +243,12 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:/lixiaoguang_works/ogl-master/external/bullet-2.81-rev2613/src/LinearMath/CMakeLists.txt;D:\lixiaoguang_works\ogl-master\external\bullet-2.81-rev2613\src\LinearMath\CMakeLists.txt;D:\lixiaoguang_works\ogl-master\external\bullet-2.81-rev2613\src\LinearMath\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\lixiaoguang_works\ogl-master\build\external\bullet-2.81-rev2613\src\LinearMath\CMakeFiles\generate.stamp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:/lixiaoguang_works/Examples_lixiaoguang/OpenGL/ogl-master/external/bullet-2.81-rev2613/src/LinearMath/CMakeLists.txt;D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\bullet-2.81-rev2613\src\LinearMath\CMakeLists.txt;D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\bullet-2.81-rev2613\src\LinearMath\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\build\external\bullet-2.81-rev2613\src\LinearMath\CMakeFiles\generate.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
-      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule D:/lixiaoguang_works/ogl-master/external/bullet-2.81-rev2613/src/LinearMath/CMakeLists.txt</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule D:/lixiaoguang_works/Examples_lixiaoguang/OpenGL/ogl-master/external/bullet-2.81-rev2613/src/LinearMath/CMakeLists.txt</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -HD:/lixiaoguang_works/ogl-master -BD:/lixiaoguang_works/ogl-master/build --check-stamp-file D:/lixiaoguang_works/ogl-master/build/external/bullet-2.81-rev2613/src/LinearMath/CMakeFiles/generate.stamp
+"C:\Program Files\CMake\bin\cmake.exe" -HD:/lixiaoguang_works/Examples_lixiaoguang/OpenGL/ogl-master -BD:/lixiaoguang_works/Examples_lixiaoguang/OpenGL/ogl-master/build --check-stamp-file D:/lixiaoguang_works/Examples_lixiaoguang/OpenGL/ogl-master/build/external/bullet-2.81-rev2613/src/LinearMath/CMakeFiles/generate.stamp
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -256,50 +256,50 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:/lixiaoguang_works/ogl-master/external/bullet-2.81-rev2613/src/LinearMath/CMakeLists.txt;D:\lixiaoguang_works\ogl-master\external\bullet-2.81-rev2613\src\LinearMath\CMakeLists.txt;D:\lixiaoguang_works\ogl-master\external\bullet-2.81-rev2613\src\LinearMath\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\lixiaoguang_works\ogl-master\build\external\bullet-2.81-rev2613\src\LinearMath\CMakeFiles\generate.stamp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:/lixiaoguang_works/Examples_lixiaoguang/OpenGL/ogl-master/external/bullet-2.81-rev2613/src/LinearMath/CMakeLists.txt;D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\bullet-2.81-rev2613\src\LinearMath\CMakeLists.txt;D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\bullet-2.81-rev2613\src\LinearMath\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\build\external\bullet-2.81-rev2613\src\LinearMath\CMakeFiles\generate.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
     </CustomBuild>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="D:\lixiaoguang_works\ogl-master\external\bullet-2.81-rev2613\src\LinearMath\btAlignedAllocator.cpp"  />
-    <ClCompile Include="D:\lixiaoguang_works\ogl-master\external\bullet-2.81-rev2613\src\LinearMath\btConvexHull.cpp"  />
-    <ClCompile Include="D:\lixiaoguang_works\ogl-master\external\bullet-2.81-rev2613\src\LinearMath\btConvexHullComputer.cpp"  />
-    <ClCompile Include="D:\lixiaoguang_works\ogl-master\external\bullet-2.81-rev2613\src\LinearMath\btGeometryUtil.cpp"  />
-    <ClCompile Include="D:\lixiaoguang_works\ogl-master\external\bullet-2.81-rev2613\src\LinearMath\btPolarDecomposition.cpp"  />
-    <ClCompile Include="D:\lixiaoguang_works\ogl-master\external\bullet-2.81-rev2613\src\LinearMath\btQuickprof.cpp"  />
-    <ClCompile Include="D:\lixiaoguang_works\ogl-master\external\bullet-2.81-rev2613\src\LinearMath\btSerializer.cpp"  />
-    <ClCompile Include="D:\lixiaoguang_works\ogl-master\external\bullet-2.81-rev2613\src\LinearMath\btVector3.cpp"  />
-    <ClInclude Include="D:\lixiaoguang_works\ogl-master\external\bullet-2.81-rev2613\src\LinearMath\btAabbUtil2.h" />
-    <ClInclude Include="D:\lixiaoguang_works\ogl-master\external\bullet-2.81-rev2613\src\LinearMath\btAlignedAllocator.h" />
-    <ClInclude Include="D:\lixiaoguang_works\ogl-master\external\bullet-2.81-rev2613\src\LinearMath\btAlignedObjectArray.h" />
-    <ClInclude Include="D:\lixiaoguang_works\ogl-master\external\bullet-2.81-rev2613\src\LinearMath\btConvexHull.h" />
-    <ClInclude Include="D:\lixiaoguang_works\ogl-master\external\bullet-2.81-rev2613\src\LinearMath\btConvexHullComputer.h" />
-    <ClInclude Include="D:\lixiaoguang_works\ogl-master\external\bullet-2.81-rev2613\src\LinearMath\btDefaultMotionState.h" />
-    <ClInclude Include="D:\lixiaoguang_works\ogl-master\external\bullet-2.81-rev2613\src\LinearMath\btGeometryUtil.h" />
-    <ClInclude Include="D:\lixiaoguang_works\ogl-master\external\bullet-2.81-rev2613\src\LinearMath\btGrahamScan2dConvexHull.h" />
-    <ClInclude Include="D:\lixiaoguang_works\ogl-master\external\bullet-2.81-rev2613\src\LinearMath\btHashMap.h" />
-    <ClInclude Include="D:\lixiaoguang_works\ogl-master\external\bullet-2.81-rev2613\src\LinearMath\btIDebugDraw.h" />
-    <ClInclude Include="D:\lixiaoguang_works\ogl-master\external\bullet-2.81-rev2613\src\LinearMath\btList.h" />
-    <ClInclude Include="D:\lixiaoguang_works\ogl-master\external\bullet-2.81-rev2613\src\LinearMath\btMatrix3x3.h" />
-    <ClInclude Include="D:\lixiaoguang_works\ogl-master\external\bullet-2.81-rev2613\src\LinearMath\btMinMax.h" />
-    <ClInclude Include="D:\lixiaoguang_works\ogl-master\external\bullet-2.81-rev2613\src\LinearMath\btMotionState.h" />
-    <ClInclude Include="D:\lixiaoguang_works\ogl-master\external\bullet-2.81-rev2613\src\LinearMath\btPolarDecomposition.h" />
-    <ClInclude Include="D:\lixiaoguang_works\ogl-master\external\bullet-2.81-rev2613\src\LinearMath\btPoolAllocator.h" />
-    <ClInclude Include="D:\lixiaoguang_works\ogl-master\external\bullet-2.81-rev2613\src\LinearMath\btQuadWord.h" />
-    <ClInclude Include="D:\lixiaoguang_works\ogl-master\external\bullet-2.81-rev2613\src\LinearMath\btQuaternion.h" />
-    <ClInclude Include="D:\lixiaoguang_works\ogl-master\external\bullet-2.81-rev2613\src\LinearMath\btQuickprof.h" />
-    <ClInclude Include="D:\lixiaoguang_works\ogl-master\external\bullet-2.81-rev2613\src\LinearMath\btRandom.h" />
-    <ClInclude Include="D:\lixiaoguang_works\ogl-master\external\bullet-2.81-rev2613\src\LinearMath\btScalar.h" />
-    <ClInclude Include="D:\lixiaoguang_works\ogl-master\external\bullet-2.81-rev2613\src\LinearMath\btSerializer.h" />
-    <ClInclude Include="D:\lixiaoguang_works\ogl-master\external\bullet-2.81-rev2613\src\LinearMath\btStackAlloc.h" />
-    <ClInclude Include="D:\lixiaoguang_works\ogl-master\external\bullet-2.81-rev2613\src\LinearMath\btTransform.h" />
-    <ClInclude Include="D:\lixiaoguang_works\ogl-master\external\bullet-2.81-rev2613\src\LinearMath\btTransformUtil.h" />
-    <ClInclude Include="D:\lixiaoguang_works\ogl-master\external\bullet-2.81-rev2613\src\LinearMath\btVector3.h" />
+    <ClCompile Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\bullet-2.81-rev2613\src\LinearMath\btAlignedAllocator.cpp"  />
+    <ClCompile Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\bullet-2.81-rev2613\src\LinearMath\btConvexHull.cpp"  />
+    <ClCompile Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\bullet-2.81-rev2613\src\LinearMath\btConvexHullComputer.cpp"  />
+    <ClCompile Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\bullet-2.81-rev2613\src\LinearMath\btGeometryUtil.cpp"  />
+    <ClCompile Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\bullet-2.81-rev2613\src\LinearMath\btPolarDecomposition.cpp"  />
+    <ClCompile Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\bullet-2.81-rev2613\src\LinearMath\btQuickprof.cpp"  />
+    <ClCompile Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\bullet-2.81-rev2613\src\LinearMath\btSerializer.cpp"  />
+    <ClCompile Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\bullet-2.81-rev2613\src\LinearMath\btVector3.cpp"  />
+    <ClInclude Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\bullet-2.81-rev2613\src\LinearMath\btAabbUtil2.h" />
+    <ClInclude Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\bullet-2.81-rev2613\src\LinearMath\btAlignedAllocator.h" />
+    <ClInclude Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\bullet-2.81-rev2613\src\LinearMath\btAlignedObjectArray.h" />
+    <ClInclude Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\bullet-2.81-rev2613\src\LinearMath\btConvexHull.h" />
+    <ClInclude Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\bullet-2.81-rev2613\src\LinearMath\btConvexHullComputer.h" />
+    <ClInclude Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\bullet-2.81-rev2613\src\LinearMath\btDefaultMotionState.h" />
+    <ClInclude Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\bullet-2.81-rev2613\src\LinearMath\btGeometryUtil.h" />
+    <ClInclude Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\bullet-2.81-rev2613\src\LinearMath\btGrahamScan2dConvexHull.h" />
+    <ClInclude Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\bullet-2.81-rev2613\src\LinearMath\btHashMap.h" />
+    <ClInclude Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\bullet-2.81-rev2613\src\LinearMath\btIDebugDraw.h" />
+    <ClInclude Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\bullet-2.81-rev2613\src\LinearMath\btList.h" />
+    <ClInclude Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\bullet-2.81-rev2613\src\LinearMath\btMatrix3x3.h" />
+    <ClInclude Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\bullet-2.81-rev2613\src\LinearMath\btMinMax.h" />
+    <ClInclude Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\bullet-2.81-rev2613\src\LinearMath\btMotionState.h" />
+    <ClInclude Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\bullet-2.81-rev2613\src\LinearMath\btPolarDecomposition.h" />
+    <ClInclude Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\bullet-2.81-rev2613\src\LinearMath\btPoolAllocator.h" />
+    <ClInclude Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\bullet-2.81-rev2613\src\LinearMath\btQuadWord.h" />
+    <ClInclude Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\bullet-2.81-rev2613\src\LinearMath\btQuaternion.h" />
+    <ClInclude Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\bullet-2.81-rev2613\src\LinearMath\btQuickprof.h" />
+    <ClInclude Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\bullet-2.81-rev2613\src\LinearMath\btRandom.h" />
+    <ClInclude Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\bullet-2.81-rev2613\src\LinearMath\btScalar.h" />
+    <ClInclude Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\bullet-2.81-rev2613\src\LinearMath\btSerializer.h" />
+    <ClInclude Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\bullet-2.81-rev2613\src\LinearMath\btStackAlloc.h" />
+    <ClInclude Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\bullet-2.81-rev2613\src\LinearMath\btTransform.h" />
+    <ClInclude Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\bullet-2.81-rev2613\src\LinearMath\btTransformUtil.h" />
+    <ClInclude Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\bullet-2.81-rev2613\src\LinearMath\btVector3.h" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="D:\lixiaoguang_works\ogl-master\build\ZERO_CHECK.vcxproj">
-      <Project>{15C16E22-8FC6-311A-B057-6F5619568BDB}</Project>
+    <ProjectReference Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\build\ZERO_CHECK.vcxproj">
+      <Project>{E9502045-6E6C-33A0-AD31-43218EB6EA17}</Project>
       <Name>ZERO_CHECK</Name>
     </ProjectReference>
   </ItemGroup>

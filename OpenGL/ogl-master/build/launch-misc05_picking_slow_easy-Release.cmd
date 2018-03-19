@@ -1,9 +1,9 @@
-cd D:/lixiaoguang_works/ogl-master/misc05_picking/
+cd D:/lixiaoguang_works/Examples_lixiaoguang/OpenGL/ogl-master/misc05_picking/
 set 
 
 if [%1]==[--debugger] (
 	SHIFT
 )
 
-"D:\lixiaoguang_works\ogl-master\build\Release\misc05_picking_slow_easy.exe"  
+"D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\build\Release\misc05_picking_slow_easy.exe"  
 pause

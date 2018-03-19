@@ -19,7 +19,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{D68644E1-4760-39F3-A6A3-7CA4BCF1572F}</ProjectGuid>
+    <ProjectGuid>{98676FF6-EC27-3106-A68F-826EB2F51913}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
     <Platform>x64</Platform>
     <ProjectName>zlib</ProjectName>
@@ -55,26 +55,26 @@
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup>
     <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
-    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\lixiaoguang_works\ogl-master\build\external\assimp-3.0.1270\contrib\zlib\Debug\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\build\external\assimp-3.0.1270\contrib\zlib\Debug\</OutDir>
     <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">zlib.dir\Debug\</IntDir>
     <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">zlibd</TargetName>
     <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.lib</TargetExt>
-    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\lixiaoguang_works\ogl-master\build\external\assimp-3.0.1270\contrib\zlib\Release\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\build\external\assimp-3.0.1270\contrib\zlib\Release\</OutDir>
     <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">zlib.dir\Release\</IntDir>
     <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">zlib</TargetName>
     <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.lib</TargetExt>
-    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\lixiaoguang_works\ogl-master\build\external\assimp-3.0.1270\contrib\zlib\MinSizeRel\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\build\external\assimp-3.0.1270\contrib\zlib\MinSizeRel\</OutDir>
     <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">zlib.dir\MinSizeRel\</IntDir>
     <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">zlib</TargetName>
     <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.lib</TargetExt>
-    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\lixiaoguang_works\ogl-master\build\external\assimp-3.0.1270\contrib\zlib\RelWithDebInfo\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\build\external\assimp-3.0.1270\contrib\zlib\RelWithDebInfo\</OutDir>
     <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">zlib.dir\RelWithDebInfo\</IntDir>
     <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">zlib</TargetName>
     <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.lib</TargetExt>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>D:\lixiaoguang_works\ogl-master\external\glfw-3.1.2\include\GLFW;D:\lixiaoguang_works\ogl-master\external\glew-1.13.0\include;D:\lixiaoguang_works\ogl-master\external\AntTweakBar-1.16\include;D:\lixiaoguang_works\ogl-master\external\assimp-3.0.1270\contrib\zlib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\glfw-3.1.2\include\GLFW;D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\glew-1.13.0\include;D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\AntTweakBar-1.16\include;D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\assimp-3.0.1270\contrib\zlib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AssemblerListingLocation>Debug/</AssemblerListingLocation>
       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
       <CompileAs>CompileAsC</CompileAs>
@@ -92,10 +92,10 @@
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;TW_STATIC;TW_NO_LIB_PRAGMA;TW_NO_DIRECT3D;GLEW_STATIC;_CRT_SECURE_NO_WARNINGS;NO_FSEEKO;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;CMAKE_INTDIR=\"Debug\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>D:\lixiaoguang_works\ogl-master\external\glfw-3.1.2\include\GLFW;D:\lixiaoguang_works\ogl-master\external\glew-1.13.0\include;D:\lixiaoguang_works\ogl-master\external\AntTweakBar-1.16\include;D:\lixiaoguang_works\ogl-master\external\assimp-3.0.1270\contrib\zlib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\glfw-3.1.2\include\GLFW;D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\glew-1.13.0\include;D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\AntTweakBar-1.16\include;D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\assimp-3.0.1270\contrib\zlib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>D:\lixiaoguang_works\ogl-master\external\glfw-3.1.2\include\GLFW;D:\lixiaoguang_works\ogl-master\external\glew-1.13.0\include;D:\lixiaoguang_works\ogl-master\external\AntTweakBar-1.16\include;D:\lixiaoguang_works\ogl-master\external\assimp-3.0.1270\contrib\zlib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\glfw-3.1.2\include\GLFW;D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\glew-1.13.0\include;D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\AntTweakBar-1.16\include;D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\assimp-3.0.1270\contrib\zlib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -108,7 +108,7 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>D:\lixiaoguang_works\ogl-master\external\glfw-3.1.2\include\GLFW;D:\lixiaoguang_works\ogl-master\external\glew-1.13.0\include;D:\lixiaoguang_works\ogl-master\external\AntTweakBar-1.16\include;D:\lixiaoguang_works\ogl-master\external\assimp-3.0.1270\contrib\zlib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\glfw-3.1.2\include\GLFW;D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\glew-1.13.0\include;D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\AntTweakBar-1.16\include;D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\assimp-3.0.1270\contrib\zlib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AssemblerListingLocation>Release/</AssemblerListingLocation>
       <CompileAs>CompileAsC</CompileAs>
       <ExceptionHandling>
@@ -125,10 +125,10 @@
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;TW_STATIC;TW_NO_LIB_PRAGMA;TW_NO_DIRECT3D;GLEW_STATIC;_CRT_SECURE_NO_WARNINGS;NO_FSEEKO;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;CMAKE_INTDIR=\"Release\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>D:\lixiaoguang_works\ogl-master\external\glfw-3.1.2\include\GLFW;D:\lixiaoguang_works\ogl-master\external\glew-1.13.0\include;D:\lixiaoguang_works\ogl-master\external\AntTweakBar-1.16\include;D:\lixiaoguang_works\ogl-master\external\assimp-3.0.1270\contrib\zlib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\glfw-3.1.2\include\GLFW;D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\glew-1.13.0\include;D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\AntTweakBar-1.16\include;D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\assimp-3.0.1270\contrib\zlib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>D:\lixiaoguang_works\ogl-master\external\glfw-3.1.2\include\GLFW;D:\lixiaoguang_works\ogl-master\external\glew-1.13.0\include;D:\lixiaoguang_works\ogl-master\external\AntTweakBar-1.16\include;D:\lixiaoguang_works\ogl-master\external\assimp-3.0.1270\contrib\zlib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\glfw-3.1.2\include\GLFW;D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\glew-1.13.0\include;D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\AntTweakBar-1.16\include;D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\assimp-3.0.1270\contrib\zlib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -141,7 +141,7 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>D:\lixiaoguang_works\ogl-master\external\glfw-3.1.2\include\GLFW;D:\lixiaoguang_works\ogl-master\external\glew-1.13.0\include;D:\lixiaoguang_works\ogl-master\external\AntTweakBar-1.16\include;D:\lixiaoguang_works\ogl-master\external\assimp-3.0.1270\contrib\zlib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\glfw-3.1.2\include\GLFW;D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\glew-1.13.0\include;D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\AntTweakBar-1.16\include;D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\assimp-3.0.1270\contrib\zlib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AssemblerListingLocation>MinSizeRel/</AssemblerListingLocation>
       <CompileAs>CompileAsC</CompileAs>
       <ExceptionHandling>
@@ -158,10 +158,10 @@
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;TW_STATIC;TW_NO_LIB_PRAGMA;TW_NO_DIRECT3D;GLEW_STATIC;_CRT_SECURE_NO_WARNINGS;NO_FSEEKO;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;CMAKE_INTDIR=\"MinSizeRel\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>D:\lixiaoguang_works\ogl-master\external\glfw-3.1.2\include\GLFW;D:\lixiaoguang_works\ogl-master\external\glew-1.13.0\include;D:\lixiaoguang_works\ogl-master\external\AntTweakBar-1.16\include;D:\lixiaoguang_works\ogl-master\external\assimp-3.0.1270\contrib\zlib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\glfw-3.1.2\include\GLFW;D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\glew-1.13.0\include;D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\AntTweakBar-1.16\include;D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\assimp-3.0.1270\contrib\zlib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>D:\lixiaoguang_works\ogl-master\external\glfw-3.1.2\include\GLFW;D:\lixiaoguang_works\ogl-master\external\glew-1.13.0\include;D:\lixiaoguang_works\ogl-master\external\AntTweakBar-1.16\include;D:\lixiaoguang_works\ogl-master\external\assimp-3.0.1270\contrib\zlib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\glfw-3.1.2\include\GLFW;D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\glew-1.13.0\include;D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\AntTweakBar-1.16\include;D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\assimp-3.0.1270\contrib\zlib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -174,7 +174,7 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>D:\lixiaoguang_works\ogl-master\external\glfw-3.1.2\include\GLFW;D:\lixiaoguang_works\ogl-master\external\glew-1.13.0\include;D:\lixiaoguang_works\ogl-master\external\AntTweakBar-1.16\include;D:\lixiaoguang_works\ogl-master\external\assimp-3.0.1270\contrib\zlib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\glfw-3.1.2\include\GLFW;D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\glew-1.13.0\include;D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\AntTweakBar-1.16\include;D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\assimp-3.0.1270\contrib\zlib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AssemblerListingLocation>RelWithDebInfo/</AssemblerListingLocation>
       <CompileAs>CompileAsC</CompileAs>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
@@ -191,10 +191,10 @@
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;TW_STATIC;TW_NO_LIB_PRAGMA;TW_NO_DIRECT3D;GLEW_STATIC;_CRT_SECURE_NO_WARNINGS;NO_FSEEKO;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;CMAKE_INTDIR=\"RelWithDebInfo\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>D:\lixiaoguang_works\ogl-master\external\glfw-3.1.2\include\GLFW;D:\lixiaoguang_works\ogl-master\external\glew-1.13.0\include;D:\lixiaoguang_works\ogl-master\external\AntTweakBar-1.16\include;D:\lixiaoguang_works\ogl-master\external\assimp-3.0.1270\contrib\zlib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\glfw-3.1.2\include\GLFW;D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\glew-1.13.0\include;D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\AntTweakBar-1.16\include;D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\assimp-3.0.1270\contrib\zlib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>D:\lixiaoguang_works\ogl-master\external\glfw-3.1.2\include\GLFW;D:\lixiaoguang_works\ogl-master\external\glew-1.13.0\include;D:\lixiaoguang_works\ogl-master\external\AntTweakBar-1.16\include;D:\lixiaoguang_works\ogl-master\external\assimp-3.0.1270\contrib\zlib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\glfw-3.1.2\include\GLFW;D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\glew-1.13.0\include;D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\AntTweakBar-1.16\include;D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\assimp-3.0.1270\contrib\zlib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -206,10 +206,10 @@
     </Lib>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <CustomBuild Include="D:\lixiaoguang_works\ogl-master\external\assimp-3.0.1270\contrib\zlib\CMakeLists.txt">
-      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule D:/lixiaoguang_works/ogl-master/external/assimp-3.0.1270/contrib/zlib/CMakeLists.txt</Message>
+    <CustomBuild Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\assimp-3.0.1270\contrib\zlib\CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule D:/lixiaoguang_works/Examples_lixiaoguang/OpenGL/ogl-master/external/assimp-3.0.1270/contrib/zlib/CMakeLists.txt</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -HD:/lixiaoguang_works/ogl-master -BD:/lixiaoguang_works/ogl-master/build --check-stamp-file D:/lixiaoguang_works/ogl-master/build/external/assimp-3.0.1270/contrib/zlib/CMakeFiles/generate.stamp
+"C:\Program Files\CMake\bin\cmake.exe" -HD:/lixiaoguang_works/Examples_lixiaoguang/OpenGL/ogl-master -BD:/lixiaoguang_works/Examples_lixiaoguang/OpenGL/ogl-master/build --check-stamp-file D:/lixiaoguang_works/Examples_lixiaoguang/OpenGL/ogl-master/build/external/assimp-3.0.1270/contrib/zlib/CMakeFiles/generate.stamp
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -217,12 +217,12 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:/lixiaoguang_works/ogl-master/external/assimp-3.0.1270/contrib/zlib/CMakeLists.txt;D:\lixiaoguang_works\ogl-master\external\assimp-3.0.1270\contrib\zlib\CMakeLists.txt;D:\lixiaoguang_works\ogl-master\external\assimp-3.0.1270\contrib\zlib\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\lixiaoguang_works\ogl-master\build\external\assimp-3.0.1270\contrib\zlib\CMakeFiles\generate.stamp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:/lixiaoguang_works/Examples_lixiaoguang/OpenGL/ogl-master/external/assimp-3.0.1270/contrib/zlib/CMakeLists.txt;D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\assimp-3.0.1270\contrib\zlib\CMakeLists.txt;D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\assimp-3.0.1270\contrib\zlib\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\build\external\assimp-3.0.1270\contrib\zlib\CMakeFiles\generate.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
-      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule D:/lixiaoguang_works/ogl-master/external/assimp-3.0.1270/contrib/zlib/CMakeLists.txt</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule D:/lixiaoguang_works/Examples_lixiaoguang/OpenGL/ogl-master/external/assimp-3.0.1270/contrib/zlib/CMakeLists.txt</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -HD:/lixiaoguang_works/ogl-master -BD:/lixiaoguang_works/ogl-master/build --check-stamp-file D:/lixiaoguang_works/ogl-master/build/external/assimp-3.0.1270/contrib/zlib/CMakeFiles/generate.stamp
+"C:\Program Files\CMake\bin\cmake.exe" -HD:/lixiaoguang_works/Examples_lixiaoguang/OpenGL/ogl-master -BD:/lixiaoguang_works/Examples_lixiaoguang/OpenGL/ogl-master/build --check-stamp-file D:/lixiaoguang_works/Examples_lixiaoguang/OpenGL/ogl-master/build/external/assimp-3.0.1270/contrib/zlib/CMakeFiles/generate.stamp
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -230,12 +230,12 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:/lixiaoguang_works/ogl-master/external/assimp-3.0.1270/contrib/zlib/CMakeLists.txt;D:\lixiaoguang_works\ogl-master\external\assimp-3.0.1270\contrib\zlib\CMakeLists.txt;D:\lixiaoguang_works\ogl-master\external\assimp-3.0.1270\contrib\zlib\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\lixiaoguang_works\ogl-master\build\external\assimp-3.0.1270\contrib\zlib\CMakeFiles\generate.stamp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:/lixiaoguang_works/Examples_lixiaoguang/OpenGL/ogl-master/external/assimp-3.0.1270/contrib/zlib/CMakeLists.txt;D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\assimp-3.0.1270\contrib\zlib\CMakeLists.txt;D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\assimp-3.0.1270\contrib\zlib\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\build\external\assimp-3.0.1270\contrib\zlib\CMakeFiles\generate.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
-      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule D:/lixiaoguang_works/ogl-master/external/assimp-3.0.1270/contrib/zlib/CMakeLists.txt</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule D:/lixiaoguang_works/Examples_lixiaoguang/OpenGL/ogl-master/external/assimp-3.0.1270/contrib/zlib/CMakeLists.txt</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -HD:/lixiaoguang_works/ogl-master -BD:/lixiaoguang_works/ogl-master/build --check-stamp-file D:/lixiaoguang_works/ogl-master/build/external/assimp-3.0.1270/contrib/zlib/CMakeFiles/generate.stamp
+"C:\Program Files\CMake\bin\cmake.exe" -HD:/lixiaoguang_works/Examples_lixiaoguang/OpenGL/ogl-master -BD:/lixiaoguang_works/Examples_lixiaoguang/OpenGL/ogl-master/build --check-stamp-file D:/lixiaoguang_works/Examples_lixiaoguang/OpenGL/ogl-master/build/external/assimp-3.0.1270/contrib/zlib/CMakeFiles/generate.stamp
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -243,12 +243,12 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:/lixiaoguang_works/ogl-master/external/assimp-3.0.1270/contrib/zlib/CMakeLists.txt;D:\lixiaoguang_works\ogl-master\external\assimp-3.0.1270\contrib\zlib\CMakeLists.txt;D:\lixiaoguang_works\ogl-master\external\assimp-3.0.1270\contrib\zlib\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\lixiaoguang_works\ogl-master\build\external\assimp-3.0.1270\contrib\zlib\CMakeFiles\generate.stamp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:/lixiaoguang_works/Examples_lixiaoguang/OpenGL/ogl-master/external/assimp-3.0.1270/contrib/zlib/CMakeLists.txt;D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\assimp-3.0.1270\contrib\zlib\CMakeLists.txt;D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\assimp-3.0.1270\contrib\zlib\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\build\external\assimp-3.0.1270\contrib\zlib\CMakeFiles\generate.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
-      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule D:/lixiaoguang_works/ogl-master/external/assimp-3.0.1270/contrib/zlib/CMakeLists.txt</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule D:/lixiaoguang_works/Examples_lixiaoguang/OpenGL/ogl-master/external/assimp-3.0.1270/contrib/zlib/CMakeLists.txt</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -HD:/lixiaoguang_works/ogl-master -BD:/lixiaoguang_works/ogl-master/build --check-stamp-file D:/lixiaoguang_works/ogl-master/build/external/assimp-3.0.1270/contrib/zlib/CMakeFiles/generate.stamp
+"C:\Program Files\CMake\bin\cmake.exe" -HD:/lixiaoguang_works/Examples_lixiaoguang/OpenGL/ogl-master -BD:/lixiaoguang_works/Examples_lixiaoguang/OpenGL/ogl-master/build --check-stamp-file D:/lixiaoguang_works/Examples_lixiaoguang/OpenGL/ogl-master/build/external/assimp-3.0.1270/contrib/zlib/CMakeFiles/generate.stamp
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -256,35 +256,35 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:/lixiaoguang_works/ogl-master/external/assimp-3.0.1270/contrib/zlib/CMakeLists.txt;D:\lixiaoguang_works\ogl-master\external\assimp-3.0.1270\contrib\zlib\CMakeLists.txt;D:\lixiaoguang_works\ogl-master\external\assimp-3.0.1270\contrib\zlib\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\lixiaoguang_works\ogl-master\build\external\assimp-3.0.1270\contrib\zlib\CMakeFiles\generate.stamp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:/lixiaoguang_works/Examples_lixiaoguang/OpenGL/ogl-master/external/assimp-3.0.1270/contrib/zlib/CMakeLists.txt;D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\assimp-3.0.1270\contrib\zlib\CMakeLists.txt;D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\assimp-3.0.1270\contrib\zlib\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\build\external\assimp-3.0.1270\contrib\zlib\CMakeFiles\generate.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
     </CustomBuild>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="D:\lixiaoguang_works\ogl-master\external\assimp-3.0.1270\contrib\zlib\adler32.c"  />
-    <ClCompile Include="D:\lixiaoguang_works\ogl-master\external\assimp-3.0.1270\contrib\zlib\compress.c"  />
-    <ClCompile Include="D:\lixiaoguang_works\ogl-master\external\assimp-3.0.1270\contrib\zlib\crc32.c"  />
-    <ClCompile Include="D:\lixiaoguang_works\ogl-master\external\assimp-3.0.1270\contrib\zlib\deflate.c"  />
-    <ClCompile Include="D:\lixiaoguang_works\ogl-master\external\assimp-3.0.1270\contrib\zlib\inffast.c"  />
-    <ClCompile Include="D:\lixiaoguang_works\ogl-master\external\assimp-3.0.1270\contrib\zlib\inflate.c"  />
-    <ClCompile Include="D:\lixiaoguang_works\ogl-master\external\assimp-3.0.1270\contrib\zlib\inftrees.c"  />
-    <ClCompile Include="D:\lixiaoguang_works\ogl-master\external\assimp-3.0.1270\contrib\zlib\trees.c"  />
-    <ClCompile Include="D:\lixiaoguang_works\ogl-master\external\assimp-3.0.1270\contrib\zlib\zutil.c"  />
-    <ClInclude Include="D:\lixiaoguang_works\ogl-master\external\assimp-3.0.1270\contrib\zlib\zconf.h" />
-    <ClInclude Include="D:\lixiaoguang_works\ogl-master\external\assimp-3.0.1270\contrib\zlib\zlib.h" />
-    <ClInclude Include="D:\lixiaoguang_works\ogl-master\external\assimp-3.0.1270\contrib\zlib\crc32.h" />
-    <ClInclude Include="D:\lixiaoguang_works\ogl-master\external\assimp-3.0.1270\contrib\zlib\deflate.h" />
-    <ClInclude Include="D:\lixiaoguang_works\ogl-master\external\assimp-3.0.1270\contrib\zlib\inffast.h" />
-    <ClInclude Include="D:\lixiaoguang_works\ogl-master\external\assimp-3.0.1270\contrib\zlib\inffixed.h" />
-    <ClInclude Include="D:\lixiaoguang_works\ogl-master\external\assimp-3.0.1270\contrib\zlib\inflate.h" />
-    <ClInclude Include="D:\lixiaoguang_works\ogl-master\external\assimp-3.0.1270\contrib\zlib\inftrees.h" />
-    <ClInclude Include="D:\lixiaoguang_works\ogl-master\external\assimp-3.0.1270\contrib\zlib\trees.h" />
-    <ClInclude Include="D:\lixiaoguang_works\ogl-master\external\assimp-3.0.1270\contrib\zlib\zutil.h" />
+    <ClCompile Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\assimp-3.0.1270\contrib\zlib\adler32.c"  />
+    <ClCompile Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\assimp-3.0.1270\contrib\zlib\compress.c"  />
+    <ClCompile Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\assimp-3.0.1270\contrib\zlib\crc32.c"  />
+    <ClCompile Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\assimp-3.0.1270\contrib\zlib\deflate.c"  />
+    <ClCompile Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\assimp-3.0.1270\contrib\zlib\inffast.c"  />
+    <ClCompile Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\assimp-3.0.1270\contrib\zlib\inflate.c"  />
+    <ClCompile Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\assimp-3.0.1270\contrib\zlib\inftrees.c"  />
+    <ClCompile Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\assimp-3.0.1270\contrib\zlib\trees.c"  />
+    <ClCompile Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\assimp-3.0.1270\contrib\zlib\zutil.c"  />
+    <ClInclude Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\assimp-3.0.1270\contrib\zlib\zconf.h" />
+    <ClInclude Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\assimp-3.0.1270\contrib\zlib\zlib.h" />
+    <ClInclude Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\assimp-3.0.1270\contrib\zlib\crc32.h" />
+    <ClInclude Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\assimp-3.0.1270\contrib\zlib\deflate.h" />
+    <ClInclude Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\assimp-3.0.1270\contrib\zlib\inffast.h" />
+    <ClInclude Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\assimp-3.0.1270\contrib\zlib\inffixed.h" />
+    <ClInclude Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\assimp-3.0.1270\contrib\zlib\inflate.h" />
+    <ClInclude Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\assimp-3.0.1270\contrib\zlib\inftrees.h" />
+    <ClInclude Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\assimp-3.0.1270\contrib\zlib\trees.h" />
+    <ClInclude Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\assimp-3.0.1270\contrib\zlib\zutil.h" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="D:\lixiaoguang_works\ogl-master\build\ZERO_CHECK.vcxproj">
-      <Project>{15C16E22-8FC6-311A-B057-6F5619568BDB}</Project>
+    <ProjectReference Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\build\ZERO_CHECK.vcxproj">
+      <Project>{E9502045-6E6C-33A0-AD31-43218EB6EA17}</Project>
       <Name>ZERO_CHECK</Name>
     </ProjectReference>
   </ItemGroup>

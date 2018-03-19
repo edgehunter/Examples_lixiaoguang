@@ -1,0 +1,16 @@
+﻿Build started 2018/3/13 15:20:44.
+     1>Project "D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\build\external\GLEW_1130.vcxproj" on node 3 (Rebuild target(s)).
+     1>CustomBuild:
+         Building Custom Rule D:/lixiaoguang_works/Examples_lixiaoguang/OpenGL/ogl-master/external/CMakeLists.txt
+         CMake does not need to re-run because D:/lixiaoguang_works/Examples_lixiaoguang/OpenGL/ogl-master/build/external/CMakeFiles/generate.stamp is up-to-date.
+       ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\CL.exe /c /I"D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\glfw-3.1.2\include\GLFW" /I"D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\glew-1.13.0\include" /I"D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\AntTweakBar-1.16\include" /I"D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\assimp-3.0.1270\code\BoostWorkaround" /I"D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\bullet-2.81-rev2613\src" /nologo /W3 /WX- /MP /O2 /Ob2 /D WIN32 /D _WINDOWS /D NDEBUG /D TW_STATIC /D TW_NO_LIB_PRAGMA /D TW_NO_DIRECT3D /D GLEW_STATIC /D _CRT_SECURE_NO_WARNINGS /D ASSIMP_BUILD_BOOST_WORKAROUND /D "CMAKE_INTDIR=\"Release\"" /D _MBCS /Gm- /MD /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"GLEW_1130.dir\Release\\" /Fd"GLEW_1130.dir\Release\vc120.pdb" /Gd /TC /errorReport:prompt "D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\glew-1.13.0\src\glew.c"
+         glew.c
+       Lib:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\Lib.exe /OUT:"D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\build\external\Release\GLEW_1130.lib" /NOLOGO /MACHINE:X64  /machine:x64 GLEW_1130.dir\Release\glew.obj
+         GLEW_1130.vcxproj -> D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\build\external\Release\GLEW_1130.lib
+     1>Done Building Project "D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\build\external\GLEW_1130.vcxproj" (Rebuild target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:01:08.92

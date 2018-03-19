@@ -22,17 +22,18 @@
 //using namespace glm;
 
 // shader
-#include "shader/shader.h"
+#include "OpenGL/shader/shader.h"
 
 // controls
-#include "controls/controls.h"
+#include "OpenGL/controls/Camera.h"
 
 void framebuffer_size_callback(GLFWwindow* window, int width, int height);
+void scroll_callback(GLFWwindow* window, double xoffset, double yoffset);
 void processInput(GLFWwindow *window);
 
 // settings
-const unsigned int SCR_WIDTH = 1280;
-const unsigned int SCR_HEIGHT = 800;
+const unsigned int SCR_WIDTH = 600;
+const unsigned int SCR_HEIGHT = 400;
 
 /*
 
@@ -54,7 +55,7 @@ const char *fragmentShaderSource =
 "}\n\0";
 
 */
-GLFWwindow* window;
+
 
 int main()
 {
@@ -72,7 +73,7 @@ int main()
 	// glfw window creation
 	// --------------------
 	//GLFWwindow* window = glfwCreateWindow(SCR_WIDTH, SCR_HEIGHT, "LearnOpenGL", NULL, NULL);
-	window = glfwCreateWindow(SCR_WIDTH, SCR_HEIGHT, "LearnOpenGL", NULL, NULL);
+	GLFWwindow* window = glfwCreateWindow(SCR_WIDTH, SCR_HEIGHT, "LearnOpenGL", NULL, NULL);
 	if (window == NULL)
 	{
 		std::cout << "Failed to create GLFW window" << std::endl;
@@ -81,6 +82,10 @@ int main()
 	}
 	glfwMakeContextCurrent(window);
 	glfwSetFramebufferSizeCallback(window, framebuffer_size_callback);
+	glfwSetScrollCallback(window, scroll_callback);
+
+	glfwSetInputMode(window, GLFW_STICKY_MOUSE_BUTTONS, 1);
+
 
 	// glad: load all OpenGL function pointers
 	// ---------------------------------------
@@ -92,7 +97,7 @@ int main()
 
 	// Set FPS
 	// ---------------------------------------
-	glfwSwapInterval(1);
+	glfwSwapInterval(0);
 
 
 	// Dark blue background
@@ -156,8 +161,13 @@ int main()
 
 	*/
 
+	//Shader
+	// ---------------------------------------
+
+	Shader m_Shader;
+
 	// Create and compile our GLSL program from the shaders
-	GLuint programID = LoadShaders("shader/SimpleTransform.vertexshader", "shader/SingleColor.fragmentshader");
+	GLuint programID = m_Shader.LoadShaders("OpenGL/shader/SimpleTransform.vertexshader", "OpenGL/shader/SingleColor.fragmentshader");
 
 	// Get a handle for our "MVP" uniform
 	GLuint MatrixMVP = glGetUniformLocation(programID, "MVP");
@@ -207,6 +217,15 @@ int main()
 	// You can unbind the VAO afterwards so other VAO calls won't accidentally modify this VAO, but this rarely happens. Modifying other
 	// VAOs requires a call to glBindVertexArray anyways so we generally don't unbind VAOs (nor VBOs) when it's not directly necessary.
 	glBindVertexArray(0);
+
+
+	//Camera
+	// ---------------------------------------
+	Camera m_Camera;
+	m_Camera.Init(window, SCR_WIDTH, SCR_HEIGHT);
+
+
+	// ---------------------------------------
 
 
 	// Setup ImGui binding
@@ -270,9 +289,12 @@ int main()
 		glUseProgram(programID);
 
 		// Compute the MVP matrix from keyboard and mouse input
-		computeMatricesFromInputs();
-		glm::mat4 ProjectionMatrix = getProjectionMatrix();
-		glm::mat4 ViewMatrix = getViewMatrix();
+
+		
+		m_Camera.ComputeMatricesFromInputs();
+
+		glm::mat4 ProjectionMatrix = m_Camera.GetProjectionMatrix();
+		glm::mat4 ViewMatrix = m_Camera.GetViewMatrix();
 		glm::mat4 ModelMatrix = glm::mat4(1.0);
 		glm::mat4 MVP = ProjectionMatrix * ViewMatrix * ModelMatrix;
 
@@ -368,4 +390,15 @@ void framebuffer_size_callback(GLFWwindow* window, int width, int height)
 	// make sure the viewport matches the new window dimensions; note that width and 
 	// height will be significantly larger than specified on retina displays.
 	glViewport(0, 0, width, height);
+
+	printf("width=(%d), height=(%d) \n", width, height);
+}
+
+
+
+//The callback function receives two - dimensional scroll offsets.
+//A simple mouse wheel, being vertical, provides offsets along the Y - axis.
+void scroll_callback(GLFWwindow* window, double xoffset, double yoffset)
+{
+	printf("xoffset=(%f), yoffset=(%f) \n", xoffset, yoffset);
 }

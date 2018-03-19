@@ -1,10 +1,10 @@
-﻿Build started 2018/1/26 16:56:52.
-     1>Project "D:\lixiaoguang_works\ogl-master\build\external\glfw-3.1.2\src\glfw.vcxproj" on node 5 (Rebuild target(s)).
+﻿Build started 2018/3/13 15:23:11.
+     1>Project "D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\build\external\glfw-3.1.2\src\glfw.vcxproj" on node 4 (Rebuild target(s)).
      1>CustomBuild:
-         Building Custom Rule D:/lixiaoguang_works/ogl-master/external/glfw-3.1.2/src/CMakeLists.txt
-         CMake does not need to re-run because D:/lixiaoguang_works/ogl-master/build/external/glfw-3.1.2/src/CMakeFiles/generate.stamp is up-to-date.
+         Building Custom Rule D:/lixiaoguang_works/Examples_lixiaoguang/OpenGL/ogl-master/external/glfw-3.1.2/src/CMakeLists.txt
+         CMake does not need to re-run because D:/lixiaoguang_works/Examples_lixiaoguang/OpenGL/ogl-master/build/external/glfw-3.1.2/src/CMakeFiles/generate.stamp is up-to-date.
        ClCompile:
-         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\CL.exe /c /I"D:\lixiaoguang_works\ogl-master\external\glfw-3.1.2\src" /I"D:\lixiaoguang_works\ogl-master\build\external\glfw-3.1.2\src" /Zi /nologo /W3 /WX- /MP /Od /Ob0 /D WIN32 /D _WINDOWS /D TW_STATIC /D TW_NO_LIB_PRAGMA /D TW_NO_DIRECT3D /D GLEW_STATIC /D _CRT_SECURE_NO_WARNINGS /D _GLFW_USE_CONFIG_H /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"glfw.dir\Debug\\" /Fd"glfw.dir\Debug\vc120.pdb" /Gd /TC /errorReport:prompt "D:\lixiaoguang_works\ogl-master\external\glfw-3.1.2\src\context.c" "D:\lixiaoguang_works\ogl-master\external\glfw-3.1.2\src\init.c" "D:\lixiaoguang_works\ogl-master\external\glfw-3.1.2\src\input.c" "D:\lixiaoguang_works\ogl-master\external\glfw-3.1.2\src\monitor.c" "D:\lixiaoguang_works\ogl-master\external\glfw-3.1.2\src\window.c" "D:\lixiaoguang_works\ogl-master\external\glfw-3.1.2\src\win32_init.c" "D:\lixiaoguang_works\ogl-master\external\glfw-3.1.2\src\win32_monitor.c" "D:\lixiaoguang_works\ogl-master\external\glfw-3.1.2\src\win32_time.c" "D:\lixiaoguang_works\ogl-master\external\glfw-3.1.2\src\win32_tls.c" "D:\lixiaoguang_works\ogl-master\external\glfw-3.1.2\src\win32_window.c" "D:\lixiaoguang_works\ogl-master\external\glfw-3.1.2\src\winmm_joystick.c" "D:\lixiaoguang_works\ogl-master\external\glfw-3.1.2\src\wgl_context.c"
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\CL.exe /c /I"D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\glfw-3.1.2\src" /I"D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\build\external\glfw-3.1.2\src" /Zi /nologo /W3 /WX- /MP /Od /Ob0 /D WIN32 /D _WINDOWS /D TW_STATIC /D TW_NO_LIB_PRAGMA /D TW_NO_DIRECT3D /D GLEW_STATIC /D _CRT_SECURE_NO_WARNINGS /D _GLFW_USE_CONFIG_H /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"glfw.dir\Debug\\" /Fd"glfw.dir\Debug\vc120.pdb" /Gd /TC /errorReport:prompt "D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\glfw-3.1.2\src\context.c" "D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\glfw-3.1.2\src\init.c" "D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\glfw-3.1.2\src\input.c" "D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\glfw-3.1.2\src\monitor.c" "D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\glfw-3.1.2\src\window.c" "D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\glfw-3.1.2\src\win32_init.c" "D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\glfw-3.1.2\src\win32_monitor.c" "D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\glfw-3.1.2\src\win32_time.c" "D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\glfw-3.1.2\src\win32_tls.c" "D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\glfw-3.1.2\src\win32_window.c" "D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\glfw-3.1.2\src\winmm_joystick.c" "D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\glfw-3.1.2\src\wgl_context.c"
          context.c
          init.c
          input.c
@@ -18,7 +18,7 @@
          winmm_joystick.c
          wgl_context.c
        Lib:
-         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\Lib.exe /OUT:"D:\lixiaoguang_works\ogl-master\build\external\glfw-3.1.2\src\Debug\glfw3.lib" /NOLOGO /MACHINE:X64  /machine:x64 glfw.dir\Debug\context.obj
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\Lib.exe /OUT:"D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\build\external\glfw-3.1.2\src\Debug\glfw3.lib" /NOLOGO /MACHINE:X64  /machine:x64 glfw.dir\Debug\context.obj
          glfw.dir\Debug\init.obj
          glfw.dir\Debug\input.obj
          glfw.dir\Debug\monitor.obj
@@ -30,9 +30,9 @@
          glfw.dir\Debug\win32_window.obj
          glfw.dir\Debug\winmm_joystick.obj
          glfw.dir\Debug\wgl_context.obj
-         glfw.vcxproj -> D:\lixiaoguang_works\ogl-master\build\external\glfw-3.1.2\src\Debug\glfw3.lib
-     1>Done Building Project "D:\lixiaoguang_works\ogl-master\build\external\glfw-3.1.2\src\glfw.vcxproj" (Rebuild target(s)).
+         glfw.vcxproj -> D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\build\external\glfw-3.1.2\src\Debug\glfw3.lib
+     1>Done Building Project "D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\build\external\glfw-3.1.2\src\glfw.vcxproj" (Rebuild target(s)).
 
 Build succeeded.
 
-Time Elapsed 00:00:06.96
+Time Elapsed 00:00:04.07

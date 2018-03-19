@@ -1,4 +1,4 @@
-# Install script for directory: D:/lixiaoguang_works/ogl-master/external/glfw-3.1.2/tests
+# Install script for directory: D:/lixiaoguang_works/Examples_lixiaoguang/OpenGL/ogl-master/external/glfw-3.1.2/tests
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

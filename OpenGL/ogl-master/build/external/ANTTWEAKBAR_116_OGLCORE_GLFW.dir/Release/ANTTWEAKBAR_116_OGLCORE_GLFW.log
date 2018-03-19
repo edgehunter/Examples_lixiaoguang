@@ -1,0 +1,40 @@
+﻿Build started 2018/3/13 15:20:45.
+     1>Project "D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\build\external\ANTTWEAKBAR_116_OGLCORE_GLFW.vcxproj" on node 6 (Rebuild target(s)).
+     1>CustomBuild:
+         Building Custom Rule D:/lixiaoguang_works/Examples_lixiaoguang/OpenGL/ogl-master/external/CMakeLists.txt
+         CMake does not need to re-run because D:/lixiaoguang_works/Examples_lixiaoguang/OpenGL/ogl-master/build/external/CMakeFiles/generate.stamp is up-to-date.
+       ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\CL.exe /c /I"D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\glfw-3.1.2\include\GLFW" /I"D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\glew-1.13.0\include" /I"D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\AntTweakBar-1.16\include" /I"D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\assimp-3.0.1270\code\BoostWorkaround" /I"D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\bullet-2.81-rev2613\src" /nologo /W3 /WX- /MP /O2 /Ob2 /D WIN32 /D _WINDOWS /D NDEBUG /D TW_STATIC /D TW_NO_LIB_PRAGMA /D TW_NO_DIRECT3D /D GLEW_STATIC /D _CRT_SECURE_NO_WARNINGS /D ASSIMP_BUILD_BOOST_WORKAROUND /D "CMAKE_INTDIR=\"Release\"" /D _MBCS /Gm- /EHsc /MD /GS /fp:precise /Zc:wchar_t /Zc:forScope /GR /Fo"ANTTWEAKBAR_116_OGLCORE_GLFW.dir\Release\\" /Fd"ANTTWEAKBAR_116_OGLCORE_GLFW.dir\Release\vc120.pdb" /Gd /TP /errorReport:prompt "D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\AntTweakBar-1.16\src\LoadOGL.cpp" "D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\AntTweakBar-1.16\src\LoadOGLCore.cpp" "D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\AntTweakBar-1.16\src\TwColors.cpp" "D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\AntTweakBar-1.16\src\TwBar.cpp" "D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\AntTweakBar-1.16\src\TwFonts.cpp" "D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\AntTweakBar-1.16\src\TwMgr.cpp" "D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\AntTweakBar-1.16\src\TwOpenGL.cpp" "D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\AntTweakBar-1.16\src\TwOpenGLCore.cpp" "D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\AntTweakBar-1.16\src\TwPrecomp.cpp"
+         LoadOGL.cpp
+         LoadOGLCore.cpp
+         TwColors.cpp
+         TwBar.cpp
+         TwFonts.cpp
+         TwMgr.cpp
+         TwOpenGL.cpp
+         TwOpenGLCore.cpp
+     1>d:\lixiaoguang_works\examples_lixiaoguang\opengl\ogl-master\external\anttweakbar-1.16\src\TwFonts.h : warning C4819: The file contains a character that cannot be represented in the current code page (936). Save the file in Unicode format to prevent data loss (D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\AntTweakBar-1.16\src\TwMgr.cpp)
+     1>d:\lixiaoguang_works\examples_lixiaoguang\opengl\ogl-master\external\anttweakbar-1.16\src\TwFonts.h : warning C4819: The file contains a character that cannot be represented in the current code page (936). Save the file in Unicode format to prevent data loss (D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\AntTweakBar-1.16\src\TwOpenGL.cpp)
+     1>d:\lixiaoguang_works\examples_lixiaoguang\opengl\ogl-master\external\anttweakbar-1.16\src\TwFonts.h : warning C4819: The file contains a character that cannot be represented in the current code page (936). Save the file in Unicode format to prevent data loss (D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\AntTweakBar-1.16\src\TwBar.cpp)
+     1>d:\lixiaoguang_works\examples_lixiaoguang\opengl\ogl-master\external\anttweakbar-1.16\src\TwFonts.h : warning C4819: The file contains a character that cannot be represented in the current code page (936). Save the file in Unicode format to prevent data loss (D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\AntTweakBar-1.16\src\TwOpenGLCore.cpp)
+     1>d:\lixiaoguang_works\examples_lixiaoguang\opengl\ogl-master\external\anttweakbar-1.16\src\TwFonts.h : warning C4819: The file contains a character that cannot be represented in the current code page (936). Save the file in Unicode format to prevent data loss (D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\AntTweakBar-1.16\src\TwFonts.cpp)
+         TwPrecomp.cpp
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\CL.exe /c /I"D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\glfw-3.1.2\include\GLFW" /I"D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\glew-1.13.0\include" /I"D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\AntTweakBar-1.16\include" /I"D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\assimp-3.0.1270\code\BoostWorkaround" /I"D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\bullet-2.81-rev2613\src" /nologo /W3 /WX- /MP /O2 /Ob2 /D WIN32 /D _WINDOWS /D NDEBUG /D TW_STATIC /D TW_NO_LIB_PRAGMA /D TW_NO_DIRECT3D /D GLEW_STATIC /D _CRT_SECURE_NO_WARNINGS /D ASSIMP_BUILD_BOOST_WORKAROUND /D "CMAKE_INTDIR=\"Release\"" /D _MBCS /Gm- /EHsc /MD /GS /fp:precise /Zc:wchar_t /Zc:forScope /GR /Fo"ANTTWEAKBAR_116_OGLCORE_GLFW.dir\Release\\" /Fd"ANTTWEAKBAR_116_OGLCORE_GLFW.dir\Release\vc120.pdb" /Gd /TC /errorReport:prompt "D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\AntTweakBar-1.16\src\TwEventGLFW.c"
+         TwEventGLFW.c
+       Lib:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\Lib.exe /OUT:"D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\build\external\Release\ANTTWEAKBAR_116_OGLCORE_GLFW.lib" /NOLOGO /MACHINE:X64  /machine:x64 ANTTWEAKBAR_116_OGLCORE_GLFW.dir\Release\LoadOGL.obj
+         ANTTWEAKBAR_116_OGLCORE_GLFW.dir\Release\LoadOGLCore.obj
+         ANTTWEAKBAR_116_OGLCORE_GLFW.dir\Release\TwColors.obj
+         ANTTWEAKBAR_116_OGLCORE_GLFW.dir\Release\TwBar.obj
+         ANTTWEAKBAR_116_OGLCORE_GLFW.dir\Release\TwEventGLFW.obj
+         ANTTWEAKBAR_116_OGLCORE_GLFW.dir\Release\TwFonts.obj
+         ANTTWEAKBAR_116_OGLCORE_GLFW.dir\Release\TwMgr.obj
+         ANTTWEAKBAR_116_OGLCORE_GLFW.dir\Release\TwOpenGL.obj
+         ANTTWEAKBAR_116_OGLCORE_GLFW.dir\Release\TwOpenGLCore.obj
+         ANTTWEAKBAR_116_OGLCORE_GLFW.dir\Release\TwPrecomp.obj
+         ANTTWEAKBAR_116_OGLCORE_GLFW.vcxproj -> D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\build\external\Release\ANTTWEAKBAR_116_OGLCORE_GLFW.lib
+     1>Done Building Project "D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\build\external\ANTTWEAKBAR_116_OGLCORE_GLFW.vcxproj" (Rebuild target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:14.68

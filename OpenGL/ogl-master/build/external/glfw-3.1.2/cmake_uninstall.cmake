@@ -1,9 +1,9 @@
 
-if (NOT EXISTS "D:/lixiaoguang_works/ogl-master/build/external/glfw-3.1.2/install_manifest.txt")
-  message(FATAL_ERROR "Cannot find install manifest: \"D:/lixiaoguang_works/ogl-master/build/external/glfw-3.1.2/install_manifest.txt\"")
+if (NOT EXISTS "D:/lixiaoguang_works/Examples_lixiaoguang/OpenGL/ogl-master/build/external/glfw-3.1.2/install_manifest.txt")
+  message(FATAL_ERROR "Cannot find install manifest: \"D:/lixiaoguang_works/Examples_lixiaoguang/OpenGL/ogl-master/build/external/glfw-3.1.2/install_manifest.txt\"")
 endif()
 
-file(READ "D:/lixiaoguang_works/ogl-master/build/external/glfw-3.1.2/install_manifest.txt" files)
+file(READ "D:/lixiaoguang_works/Examples_lixiaoguang/OpenGL/ogl-master/build/external/glfw-3.1.2/install_manifest.txt" files)
 string(REGEX REPLACE "\n" ";" files "${files}")
 
 foreach (file ${files})

@@ -1,4 +1,4 @@
-The system is: Windows - 10.0.14393 - AMD64
+The system is: Windows - 10.0.16299 - AMD64
 Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
 Compiler:  
 Build flags: 
@@ -10,8 +10,8 @@ Microsoft(R) ��������汾 12.0.40629.0
 [Microsoft .NET Framework �汾 4.0.30319.42000]
 ��Ȩ���� (C) Microsoft Corporation����������Ȩ����
 
-��������ʱ��Ϊ 2018/1/24 9:55:39��
-�ڵ� 1 �ϵ���Ŀ��D:\lixiaoguang_works\ogl-master\build\CMakeFiles\3.10.1\CompilerIdC\CompilerIdC.vcxproj��(Ĭ��Ŀ��)��
+��������ʱ��Ϊ 2018/3/13 15:15:45��
+�ڵ� 1 �ϵ���Ŀ��D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\build\CMakeFiles\3.10.1\CompilerIdC\CompilerIdC.vcxproj��(Ĭ��Ŀ��)��
 PrepareForBuild:
   ���ڴ���Ŀ¼��Debug\����
   ���ڴ���Ŀ¼��Debug\CompilerIdC.tlog\����
@@ -22,7 +22,7 @@ ClCompile:
   CMakeCCompilerId.c
 Link:
   C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\link.exe /ERRORREPORT:QUEUE /OUT:".\CompilerIdC.exe" /INCREMENTAL:NO /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /PDB:".\CompilerIdC.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:".\CompilerIdC.lib" /MACHINE:X64 Debug\CMakeCCompilerId.obj
-  CompilerIdC.vcxproj -> D:\lixiaoguang_works\ogl-master\build\CMakeFiles\3.10.1\CompilerIdC\.\CompilerIdC.exe
+  CompilerIdC.vcxproj -> D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\build\CMakeFiles\3.10.1\CompilerIdC\.\CompilerIdC.exe
 PostBuildEvent:
   for %%i in (cl.exe) do @echo CMAKE_C_COMPILER=%%~$PATH:i
   :VCEnd
@@ -30,20 +30,20 @@ PostBuildEvent:
 FinalizeBuildStatus:
   ����ɾ���ļ���Debug\CompilerIdC.tlog\unsuccessfulbuild����
   ���ڶԡ�Debug\CompilerIdC.tlog\CompilerIdC.lastbuildstate��ִ�� Touch ����
-�����������Ŀ��D:\lixiaoguang_works\ogl-master\build\CMakeFiles\3.10.1\CompilerIdC\CompilerIdC.vcxproj��(Ĭ��Ŀ��)�Ĳ�����
+�����������Ŀ��D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\build\CMakeFiles\3.10.1\CompilerIdC\CompilerIdC.vcxproj��(Ĭ��Ŀ��)�Ĳ�����
 
 �ѳɹ����ɡ�
     0 ������
     0 ������
 
-����ʱ�� 00:00:00.90
+����ʱ�� 00:00:00.88
 
 
 Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CompilerIdC.exe"
 
 Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CompilerIdC.vcxproj"
 
-The C compiler identification is MSVC, found in "D:/lixiaoguang_works/ogl-master/build/CMakeFiles/3.10.1/CompilerIdC/CompilerIdC.exe"
+The C compiler identification is MSVC, found in "D:/lixiaoguang_works/Examples_lixiaoguang/OpenGL/ogl-master/build/CMakeFiles/3.10.1/CompilerIdC/CompilerIdC.exe"
 
 Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
 Compiler:  
@@ -56,8 +56,8 @@ Microsoft(R) ��������汾 12.0.40629.0
 [Microsoft .NET Framework �汾 4.0.30319.42000]
 ��Ȩ���� (C) Microsoft Corporation����������Ȩ����
 
-��������ʱ��Ϊ 2018/1/24 9:55:40��
-�ڵ� 1 �ϵ���Ŀ��D:\lixiaoguang_works\ogl-master\build\CMakeFiles\3.10.1\CompilerIdCXX\CompilerIdCXX.vcxproj��(Ĭ��Ŀ��)��
+��������ʱ��Ϊ 2018/3/13 15:15:47��
+�ڵ� 1 �ϵ���Ŀ��D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\build\CMakeFiles\3.10.1\CompilerIdCXX\CompilerIdCXX.vcxproj��(Ĭ��Ŀ��)��
 PrepareForBuild:
   ���ڴ���Ŀ¼��Debug\����
   ���ڴ���Ŀ¼��Debug\CompilerIdCXX.tlog\����
@@ -68,7 +68,7 @@ ClCompile:
   CMakeCXXCompilerId.cpp
 Link:
   C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\link.exe /ERRORREPORT:QUEUE /OUT:".\CompilerIdCXX.exe" /INCREMENTAL:NO /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /PDB:".\CompilerIdCXX.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:".\CompilerIdCXX.lib" /MACHINE:X64 Debug\CMakeCXXCompilerId.obj
-  CompilerIdCXX.vcxproj -> D:\lixiaoguang_works\ogl-master\build\CMakeFiles\3.10.1\CompilerIdCXX\.\CompilerIdCXX.exe
+  CompilerIdCXX.vcxproj -> D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\build\CMakeFiles\3.10.1\CompilerIdCXX\.\CompilerIdCXX.exe
 PostBuildEvent:
   for %%i in (cl.exe) do @echo CMAKE_CXX_COMPILER=%%~$PATH:i
   :VCEnd
@@ -76,216 +76,216 @@ PostBuildEvent:
 FinalizeBuildStatus:
   ����ɾ���ļ���Debug\CompilerIdCXX.tlog\unsuccessfulbuild����
   ���ڶԡ�Debug\CompilerIdCXX.tlog\CompilerIdCXX.lastbuildstate��ִ�� Touch ����
-�����������Ŀ��D:\lixiaoguang_works\ogl-master\build\CMakeFiles\3.10.1\CompilerIdCXX\CompilerIdCXX.vcxproj��(Ĭ��Ŀ��)�Ĳ�����
+�����������Ŀ��D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\build\CMakeFiles\3.10.1\CompilerIdCXX\CompilerIdCXX.vcxproj��(Ĭ��Ŀ��)�Ĳ�����
 
 �ѳɹ����ɡ�
     0 ������
     0 ������
 
-����ʱ�� 00:00:00.81
+����ʱ�� 00:00:00.76
 
 
 Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CompilerIdCXX.exe"
 
 Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CompilerIdCXX.vcxproj"
 
-The CXX compiler identification is MSVC, found in "D:/lixiaoguang_works/ogl-master/build/CMakeFiles/3.10.1/CompilerIdCXX/CompilerIdCXX.exe"
+The CXX compiler identification is MSVC, found in "D:/lixiaoguang_works/Examples_lixiaoguang/OpenGL/ogl-master/build/CMakeFiles/3.10.1/CompilerIdCXX/CompilerIdCXX.exe"
 
 Determining if the C compiler works passed with the following output:
-Change Dir: D:/lixiaoguang_works/ogl-master/build/CMakeFiles/CMakeTmp
+Change Dir: D:/lixiaoguang_works/Examples_lixiaoguang/OpenGL/ogl-master/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"C:/Program Files (x86)/MSBuild/12.0/bin/MSBuild.exe" "cmTC_c5718.vcxproj" "/p:Configuration=Debug" "/p:VisualStudioVersion=12.0"
+Run Build Command:"C:/Program Files (x86)/MSBuild/12.0/bin/MSBuild.exe" "cmTC_f5462.vcxproj" "/p:Configuration=Debug" "/p:VisualStudioVersion=12.0"
 Microsoft(R) 生成引擎版本 12.0.40629.0
 [Microsoft .NET Framework 版本 4.0.30319.42000]
 版权所有 (C) Microsoft Corporation。保留所有权利。
 
-生成启动时间为 2018/1/24 9:55:41。
-节点 1 上的项目“D:\lixiaoguang_works\ogl-master\build\CMakeFiles\CMakeTmp\cmTC_c5718.vcxproj”(默认目标)。
+生成启动时间为 2018/3/13 15:15:48。
+节点 1 上的项目“D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\build\CMakeFiles\CMakeTmp\cmTC_f5462.vcxproj”(默认目标)。
 PrepareForBuild:
-  正在创建目录“cmTC_c5718.dir\Debug\”。
-  正在创建目录“D:\lixiaoguang_works\ogl-master\build\CMakeFiles\CMakeTmp\Debug\”。
-  正在创建目录“cmTC_c5718.dir\Debug\cmTC_c5718.tlog\”。
+  正在创建目录“cmTC_f5462.dir\Debug\”。
+  正在创建目录“D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\build\CMakeFiles\CMakeTmp\Debug\”。
+  正在创建目录“cmTC_f5462.dir\Debug\cmTC_f5462.tlog\”。
 InitializeBuildStatus:
-  正在创建“cmTC_c5718.dir\Debug\cmTC_c5718.tlog\unsuccessfulbuild”，因为已指定“AlwaysCreate”。
+  正在创建“cmTC_f5462.dir\Debug\cmTC_f5462.tlog\unsuccessfulbuild”，因为已指定“AlwaysCreate”。
 ClCompile:
-  C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\CL.exe /c /Zi /W3 /WX- /Od /Ob0 /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"cmTC_c5718.dir\Debug\\" /Fd"cmTC_c5718.dir\Debug\vc120.pdb" /Gd /TC /errorReport:queue "D:\lixiaoguang_works\ogl-master\build\CMakeFiles\CMakeTmp\testCCompiler.c"
+  C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\CL.exe /c /Zi /W3 /WX- /Od /Ob0 /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"cmTC_f5462.dir\Debug\\" /Fd"cmTC_f5462.dir\Debug\vc120.pdb" /Gd /TC /errorReport:queue "D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\build\CMakeFiles\CMakeTmp\testCCompiler.c"
   Microsoft (R) C/C++ Optimizing Compiler Version 18.00.40629 for x64
   Copyright (C) Microsoft Corporation.  All rights reserved.
   
-  cl /c /Zi /W3 /WX- /Od /Ob0 /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"cmTC_c5718.dir\Debug\\" /Fd"cmTC_c5718.dir\Debug\vc120.pdb" /Gd /TC /errorReport:queue "D:\lixiaoguang_works\ogl-master\build\CMakeFiles\CMakeTmp\testCCompiler.c"
+  cl /c /Zi /W3 /WX- /Od /Ob0 /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"cmTC_f5462.dir\Debug\\" /Fd"cmTC_f5462.dir\Debug\vc120.pdb" /Gd /TC /errorReport:queue "D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\build\CMakeFiles\CMakeTmp\testCCompiler.c"
   
   testCCompiler.c
 Link:
-  C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\link.exe /ERRORREPORT:QUEUE /OUT:"D:\lixiaoguang_works\ogl-master\build\CMakeFiles\CMakeTmp\Debug\cmTC_c5718.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:/lixiaoguang_works/ogl-master/build/CMakeFiles/CMakeTmp/Debug/cmTC_c5718.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:/lixiaoguang_works/ogl-master/build/CMakeFiles/CMakeTmp/Debug/cmTC_c5718.lib" /MACHINE:X64  /machine:x64 cmTC_c5718.dir\Debug\testCCompiler.obj
-  cmTC_c5718.vcxproj -> D:\lixiaoguang_works\ogl-master\build\CMakeFiles\CMakeTmp\Debug\cmTC_c5718.exe
+  C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\link.exe /ERRORREPORT:QUEUE /OUT:"D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\build\CMakeFiles\CMakeTmp\Debug\cmTC_f5462.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:/lixiaoguang_works/Examples_lixiaoguang/OpenGL/ogl-master/build/CMakeFiles/CMakeTmp/Debug/cmTC_f5462.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:/lixiaoguang_works/Examples_lixiaoguang/OpenGL/ogl-master/build/CMakeFiles/CMakeTmp/Debug/cmTC_f5462.lib" /MACHINE:X64  /machine:x64 cmTC_f5462.dir\Debug\testCCompiler.obj
+  cmTC_f5462.vcxproj -> D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\build\CMakeFiles\CMakeTmp\Debug\cmTC_f5462.exe
 FinalizeBuildStatus:
-  正在删除文件“cmTC_c5718.dir\Debug\cmTC_c5718.tlog\unsuccessfulbuild”。
-  正在对“cmTC_c5718.dir\Debug\cmTC_c5718.tlog\cmTC_c5718.lastbuildstate”执行 Touch 任务。
-已完成生成项目“D:\lixiaoguang_works\ogl-master\build\CMakeFiles\CMakeTmp\cmTC_c5718.vcxproj”(默认目标)的操作。
+  正在删除文件“cmTC_f5462.dir\Debug\cmTC_f5462.tlog\unsuccessfulbuild”。
+  正在对“cmTC_f5462.dir\Debug\cmTC_f5462.tlog\cmTC_f5462.lastbuildstate”执行 Touch 任务。
+已完成生成项目“D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\build\CMakeFiles\CMakeTmp\cmTC_f5462.vcxproj”(默认目标)的操作。
 
 已成功生成。
     0 个警告
     0 个错误
 
-已用时间 00:00:01.10
+已用时间 00:00:01.01
 
 
 Detecting C compiler ABI info compiled with the following output:
-Change Dir: D:/lixiaoguang_works/ogl-master/build/CMakeFiles/CMakeTmp
+Change Dir: D:/lixiaoguang_works/Examples_lixiaoguang/OpenGL/ogl-master/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"C:/Program Files (x86)/MSBuild/12.0/bin/MSBuild.exe" "cmTC_25c3e.vcxproj" "/p:Configuration=Debug" "/p:VisualStudioVersion=12.0"
+Run Build Command:"C:/Program Files (x86)/MSBuild/12.0/bin/MSBuild.exe" "cmTC_c5558.vcxproj" "/p:Configuration=Debug" "/p:VisualStudioVersion=12.0"
 Microsoft(R) 生成引擎版本 12.0.40629.0
 [Microsoft .NET Framework 版本 4.0.30319.42000]
 版权所有 (C) Microsoft Corporation。保留所有权利。
 
-生成启动时间为 2018/1/24 9:55:43。
-节点 1 上的项目“D:\lixiaoguang_works\ogl-master\build\CMakeFiles\CMakeTmp\cmTC_25c3e.vcxproj”(默认目标)。
+生成启动时间为 2018/3/13 15:15:49。
+节点 1 上的项目“D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\build\CMakeFiles\CMakeTmp\cmTC_c5558.vcxproj”(默认目标)。
 PrepareForBuild:
-  正在创建目录“cmTC_25c3e.dir\Debug\”。
-  正在创建目录“D:\lixiaoguang_works\ogl-master\build\CMakeFiles\CMakeTmp\Debug\”。
-  正在创建目录“cmTC_25c3e.dir\Debug\cmTC_25c3e.tlog\”。
+  正在创建目录“cmTC_c5558.dir\Debug\”。
+  正在创建目录“D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\build\CMakeFiles\CMakeTmp\Debug\”。
+  正在创建目录“cmTC_c5558.dir\Debug\cmTC_c5558.tlog\”。
 InitializeBuildStatus:
-  正在创建“cmTC_25c3e.dir\Debug\cmTC_25c3e.tlog\unsuccessfulbuild”，因为已指定“AlwaysCreate”。
+  正在创建“cmTC_c5558.dir\Debug\cmTC_c5558.tlog\unsuccessfulbuild”，因为已指定“AlwaysCreate”。
 ClCompile:
-  C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\CL.exe /c /Zi /W3 /WX- /Od /Ob0 /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"cmTC_25c3e.dir\Debug\\" /Fd"cmTC_25c3e.dir\Debug\vc120.pdb" /Gd /TC /errorReport:queue "C:\Program Files\CMake\share\cmake-3.10\Modules\CMakeCCompilerABI.c"
+  C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\CL.exe /c /Zi /W3 /WX- /Od /Ob0 /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"cmTC_c5558.dir\Debug\\" /Fd"cmTC_c5558.dir\Debug\vc120.pdb" /Gd /TC /errorReport:queue "C:\Program Files\CMake\share\cmake-3.10\Modules\CMakeCCompilerABI.c"
   Microsoft (R) C/C++ Optimizing Compiler Version 18.00.40629 for x64
   Copyright (C) Microsoft Corporation.  All rights reserved.
   
-  cl /c /Zi /W3 /WX- /Od /Ob0 /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"cmTC_25c3e.dir\Debug\\" /Fd"cmTC_25c3e.dir\Debug\vc120.pdb" /Gd /TC /errorReport:queue "C:\Program Files\CMake\share\cmake-3.10\Modules\CMakeCCompilerABI.c"
+  cl /c /Zi /W3 /WX- /Od /Ob0 /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"cmTC_c5558.dir\Debug\\" /Fd"cmTC_c5558.dir\Debug\vc120.pdb" /Gd /TC /errorReport:queue "C:\Program Files\CMake\share\cmake-3.10\Modules\CMakeCCompilerABI.c"
   
   CMakeCCompilerABI.c
 Link:
-  C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\link.exe /ERRORREPORT:QUEUE /OUT:"D:\lixiaoguang_works\ogl-master\build\CMakeFiles\CMakeTmp\Debug\cmTC_25c3e.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:/lixiaoguang_works/ogl-master/build/CMakeFiles/CMakeTmp/Debug/cmTC_25c3e.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:/lixiaoguang_works/ogl-master/build/CMakeFiles/CMakeTmp/Debug/cmTC_25c3e.lib" /MACHINE:X64  /machine:x64 cmTC_25c3e.dir\Debug\CMakeCCompilerABI.obj
-  cmTC_25c3e.vcxproj -> D:\lixiaoguang_works\ogl-master\build\CMakeFiles\CMakeTmp\Debug\cmTC_25c3e.exe
+  C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\link.exe /ERRORREPORT:QUEUE /OUT:"D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\build\CMakeFiles\CMakeTmp\Debug\cmTC_c5558.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:/lixiaoguang_works/Examples_lixiaoguang/OpenGL/ogl-master/build/CMakeFiles/CMakeTmp/Debug/cmTC_c5558.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:/lixiaoguang_works/Examples_lixiaoguang/OpenGL/ogl-master/build/CMakeFiles/CMakeTmp/Debug/cmTC_c5558.lib" /MACHINE:X64  /machine:x64 cmTC_c5558.dir\Debug\CMakeCCompilerABI.obj
+  cmTC_c5558.vcxproj -> D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\build\CMakeFiles\CMakeTmp\Debug\cmTC_c5558.exe
 FinalizeBuildStatus:
-  正在删除文件“cmTC_25c3e.dir\Debug\cmTC_25c3e.tlog\unsuccessfulbuild”。
-  正在对“cmTC_25c3e.dir\Debug\cmTC_25c3e.tlog\cmTC_25c3e.lastbuildstate”执行 Touch 任务。
-已完成生成项目“D:\lixiaoguang_works\ogl-master\build\CMakeFiles\CMakeTmp\cmTC_25c3e.vcxproj”(默认目标)的操作。
+  正在删除文件“cmTC_c5558.dir\Debug\cmTC_c5558.tlog\unsuccessfulbuild”。
+  正在对“cmTC_c5558.dir\Debug\cmTC_c5558.tlog\cmTC_c5558.lastbuildstate”执行 Touch 任务。
+已完成生成项目“D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\build\CMakeFiles\CMakeTmp\cmTC_c5558.vcxproj”(默认目标)的操作。
 
 已成功生成。
     0 个警告
     0 个错误
 
-已用时间 00:00:00.78
+已用时间 00:00:00.75
 
 
 Determining if the CXX compiler works passed with the following output:
-Change Dir: D:/lixiaoguang_works/ogl-master/build/CMakeFiles/CMakeTmp
+Change Dir: D:/lixiaoguang_works/Examples_lixiaoguang/OpenGL/ogl-master/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"C:/Program Files (x86)/MSBuild/12.0/bin/MSBuild.exe" "cmTC_09918.vcxproj" "/p:Configuration=Debug" "/p:VisualStudioVersion=12.0"
+Run Build Command:"C:/Program Files (x86)/MSBuild/12.0/bin/MSBuild.exe" "cmTC_92dbd.vcxproj" "/p:Configuration=Debug" "/p:VisualStudioVersion=12.0"
 Microsoft(R) 生成引擎版本 12.0.40629.0
 [Microsoft .NET Framework 版本 4.0.30319.42000]
 版权所有 (C) Microsoft Corporation。保留所有权利。
 
-生成启动时间为 2018/1/24 9:55:44。
-节点 1 上的项目“D:\lixiaoguang_works\ogl-master\build\CMakeFiles\CMakeTmp\cmTC_09918.vcxproj”(默认目标)。
+生成启动时间为 2018/3/13 15:15:50。
+节点 1 上的项目“D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\build\CMakeFiles\CMakeTmp\cmTC_92dbd.vcxproj”(默认目标)。
 PrepareForBuild:
-  正在创建目录“cmTC_09918.dir\Debug\”。
-  正在创建目录“D:\lixiaoguang_works\ogl-master\build\CMakeFiles\CMakeTmp\Debug\”。
-  正在创建目录“cmTC_09918.dir\Debug\cmTC_09918.tlog\”。
+  正在创建目录“cmTC_92dbd.dir\Debug\”。
+  正在创建目录“D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\build\CMakeFiles\CMakeTmp\Debug\”。
+  正在创建目录“cmTC_92dbd.dir\Debug\cmTC_92dbd.tlog\”。
 InitializeBuildStatus:
-  正在创建“cmTC_09918.dir\Debug\cmTC_09918.tlog\unsuccessfulbuild”，因为已指定“AlwaysCreate”。
+  正在创建“cmTC_92dbd.dir\Debug\cmTC_92dbd.tlog\unsuccessfulbuild”，因为已指定“AlwaysCreate”。
 ClCompile:
-  C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\CL.exe /c /Zi /W3 /WX- /Od /Ob0 /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /GR /Fo"cmTC_09918.dir\Debug\\" /Fd"cmTC_09918.dir\Debug\vc120.pdb" /Gd /TP /errorReport:queue "D:\lixiaoguang_works\ogl-master\build\CMakeFiles\CMakeTmp\testCXXCompiler.cxx"
+  C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\CL.exe /c /Zi /W3 /WX- /Od /Ob0 /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /GR /Fo"cmTC_92dbd.dir\Debug\\" /Fd"cmTC_92dbd.dir\Debug\vc120.pdb" /Gd /TP /errorReport:queue "D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\build\CMakeFiles\CMakeTmp\testCXXCompiler.cxx"
   Microsoft (R) C/C++ Optimizing Compiler Version 18.00.40629 for x64
   Copyright (C) Microsoft Corporation.  All rights reserved.
   
-  cl /c /Zi /W3 /WX- /Od /Ob0 /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /GR /Fo"cmTC_09918.dir\Debug\\" /Fd"cmTC_09918.dir\Debug\vc120.pdb" /Gd /TP /errorReport:queue "D:\lixiaoguang_works\ogl-master\build\CMakeFiles\CMakeTmp\testCXXCompiler.cxx"
+  cl /c /Zi /W3 /WX- /Od /Ob0 /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /GR /Fo"cmTC_92dbd.dir\Debug\\" /Fd"cmTC_92dbd.dir\Debug\vc120.pdb" /Gd /TP /errorReport:queue "D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\build\CMakeFiles\CMakeTmp\testCXXCompiler.cxx"
   
   testCXXCompiler.cxx
 Link:
-  C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\link.exe /ERRORREPORT:QUEUE /OUT:"D:\lixiaoguang_works\ogl-master\build\CMakeFiles\CMakeTmp\Debug\cmTC_09918.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:/lixiaoguang_works/ogl-master/build/CMakeFiles/CMakeTmp/Debug/cmTC_09918.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:/lixiaoguang_works/ogl-master/build/CMakeFiles/CMakeTmp/Debug/cmTC_09918.lib" /MACHINE:X64  /machine:x64 cmTC_09918.dir\Debug\testCXXCompiler.obj
-  cmTC_09918.vcxproj -> D:\lixiaoguang_works\ogl-master\build\CMakeFiles\CMakeTmp\Debug\cmTC_09918.exe
+  C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\link.exe /ERRORREPORT:QUEUE /OUT:"D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\build\CMakeFiles\CMakeTmp\Debug\cmTC_92dbd.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:/lixiaoguang_works/Examples_lixiaoguang/OpenGL/ogl-master/build/CMakeFiles/CMakeTmp/Debug/cmTC_92dbd.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:/lixiaoguang_works/Examples_lixiaoguang/OpenGL/ogl-master/build/CMakeFiles/CMakeTmp/Debug/cmTC_92dbd.lib" /MACHINE:X64  /machine:x64 cmTC_92dbd.dir\Debug\testCXXCompiler.obj
+  cmTC_92dbd.vcxproj -> D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\build\CMakeFiles\CMakeTmp\Debug\cmTC_92dbd.exe
 FinalizeBuildStatus:
-  正在删除文件“cmTC_09918.dir\Debug\cmTC_09918.tlog\unsuccessfulbuild”。
-  正在对“cmTC_09918.dir\Debug\cmTC_09918.tlog\cmTC_09918.lastbuildstate”执行 Touch 任务。
-已完成生成项目“D:\lixiaoguang_works\ogl-master\build\CMakeFiles\CMakeTmp\cmTC_09918.vcxproj”(默认目标)的操作。
+  正在删除文件“cmTC_92dbd.dir\Debug\cmTC_92dbd.tlog\unsuccessfulbuild”。
+  正在对“cmTC_92dbd.dir\Debug\cmTC_92dbd.tlog\cmTC_92dbd.lastbuildstate”执行 Touch 任务。
+已完成生成项目“D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\build\CMakeFiles\CMakeTmp\cmTC_92dbd.vcxproj”(默认目标)的操作。
 
 已成功生成。
     0 个警告
     0 个错误
 
-已用时间 00:00:00.77
+已用时间 00:00:00.71
 
 
 Detecting CXX compiler ABI info compiled with the following output:
-Change Dir: D:/lixiaoguang_works/ogl-master/build/CMakeFiles/CMakeTmp
+Change Dir: D:/lixiaoguang_works/Examples_lixiaoguang/OpenGL/ogl-master/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"C:/Program Files (x86)/MSBuild/12.0/bin/MSBuild.exe" "cmTC_ef64b.vcxproj" "/p:Configuration=Debug" "/p:VisualStudioVersion=12.0"
+Run Build Command:"C:/Program Files (x86)/MSBuild/12.0/bin/MSBuild.exe" "cmTC_62b78.vcxproj" "/p:Configuration=Debug" "/p:VisualStudioVersion=12.0"
 Microsoft(R) 生成引擎版本 12.0.40629.0
 [Microsoft .NET Framework 版本 4.0.30319.42000]
 版权所有 (C) Microsoft Corporation。保留所有权利。
 
-生成启动时间为 2018/1/24 9:55:45。
-节点 1 上的项目“D:\lixiaoguang_works\ogl-master\build\CMakeFiles\CMakeTmp\cmTC_ef64b.vcxproj”(默认目标)。
+生成启动时间为 2018/3/13 15:15:51。
+节点 1 上的项目“D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\build\CMakeFiles\CMakeTmp\cmTC_62b78.vcxproj”(默认目标)。
 PrepareForBuild:
-  正在创建目录“cmTC_ef64b.dir\Debug\”。
-  正在创建目录“D:\lixiaoguang_works\ogl-master\build\CMakeFiles\CMakeTmp\Debug\”。
-  正在创建目录“cmTC_ef64b.dir\Debug\cmTC_ef64b.tlog\”。
+  正在创建目录“cmTC_62b78.dir\Debug\”。
+  正在创建目录“D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\build\CMakeFiles\CMakeTmp\Debug\”。
+  正在创建目录“cmTC_62b78.dir\Debug\cmTC_62b78.tlog\”。
 InitializeBuildStatus:
-  正在创建“cmTC_ef64b.dir\Debug\cmTC_ef64b.tlog\unsuccessfulbuild”，因为已指定“AlwaysCreate”。
+  正在创建“cmTC_62b78.dir\Debug\cmTC_62b78.tlog\unsuccessfulbuild”，因为已指定“AlwaysCreate”。
 ClCompile:
-  C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\CL.exe /c /Zi /W3 /WX- /Od /Ob0 /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /GR /Fo"cmTC_ef64b.dir\Debug\\" /Fd"cmTC_ef64b.dir\Debug\vc120.pdb" /Gd /TP /errorReport:queue "C:\Program Files\CMake\share\cmake-3.10\Modules\CMakeCXXCompilerABI.cpp"
+  C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\CL.exe /c /Zi /W3 /WX- /Od /Ob0 /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /GR /Fo"cmTC_62b78.dir\Debug\\" /Fd"cmTC_62b78.dir\Debug\vc120.pdb" /Gd /TP /errorReport:queue "C:\Program Files\CMake\share\cmake-3.10\Modules\CMakeCXXCompilerABI.cpp"
   Microsoft (R) C/C++ Optimizing Compiler Version 18.00.40629 for x64
   Copyright (C) Microsoft Corporation.  All rights reserved.
   
-  cl /c /Zi /W3 /WX- /Od /Ob0 /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /GR /Fo"cmTC_ef64b.dir\Debug\\" /Fd"cmTC_ef64b.dir\Debug\vc120.pdb" /Gd /TP /errorReport:queue "C:\Program Files\CMake\share\cmake-3.10\Modules\CMakeCXXCompilerABI.cpp"
+  cl /c /Zi /W3 /WX- /Od /Ob0 /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /GR /Fo"cmTC_62b78.dir\Debug\\" /Fd"cmTC_62b78.dir\Debug\vc120.pdb" /Gd /TP /errorReport:queue "C:\Program Files\CMake\share\cmake-3.10\Modules\CMakeCXXCompilerABI.cpp"
   
   CMakeCXXCompilerABI.cpp
 Link:
-  C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\link.exe /ERRORREPORT:QUEUE /OUT:"D:\lixiaoguang_works\ogl-master\build\CMakeFiles\CMakeTmp\Debug\cmTC_ef64b.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:/lixiaoguang_works/ogl-master/build/CMakeFiles/CMakeTmp/Debug/cmTC_ef64b.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:/lixiaoguang_works/ogl-master/build/CMakeFiles/CMakeTmp/Debug/cmTC_ef64b.lib" /MACHINE:X64  /machine:x64 cmTC_ef64b.dir\Debug\CMakeCXXCompilerABI.obj
-  cmTC_ef64b.vcxproj -> D:\lixiaoguang_works\ogl-master\build\CMakeFiles\CMakeTmp\Debug\cmTC_ef64b.exe
+  C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\link.exe /ERRORREPORT:QUEUE /OUT:"D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\build\CMakeFiles\CMakeTmp\Debug\cmTC_62b78.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:/lixiaoguang_works/Examples_lixiaoguang/OpenGL/ogl-master/build/CMakeFiles/CMakeTmp/Debug/cmTC_62b78.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:/lixiaoguang_works/Examples_lixiaoguang/OpenGL/ogl-master/build/CMakeFiles/CMakeTmp/Debug/cmTC_62b78.lib" /MACHINE:X64  /machine:x64 cmTC_62b78.dir\Debug\CMakeCXXCompilerABI.obj
+  cmTC_62b78.vcxproj -> D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\build\CMakeFiles\CMakeTmp\Debug\cmTC_62b78.exe
 FinalizeBuildStatus:
-  正在删除文件“cmTC_ef64b.dir\Debug\cmTC_ef64b.tlog\unsuccessfulbuild”。
-  正在对“cmTC_ef64b.dir\Debug\cmTC_ef64b.tlog\cmTC_ef64b.lastbuildstate”执行 Touch 任务。
-已完成生成项目“D:\lixiaoguang_works\ogl-master\build\CMakeFiles\CMakeTmp\cmTC_ef64b.vcxproj”(默认目标)的操作。
+  正在删除文件“cmTC_62b78.dir\Debug\cmTC_62b78.tlog\unsuccessfulbuild”。
+  正在对“cmTC_62b78.dir\Debug\cmTC_62b78.tlog\cmTC_62b78.lastbuildstate”执行 Touch 任务。
+已完成生成项目“D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\build\CMakeFiles\CMakeTmp\cmTC_62b78.vcxproj”(默认目标)的操作。
 
 已成功生成。
     0 个警告
     0 个错误
 
-已用时间 00:00:00.78
+已用时间 00:00:00.67
 
 
 
 
 Detecting CXX [] compiler features compiled with the following output:
-Change Dir: D:/lixiaoguang_works/ogl-master/build/CMakeFiles/CMakeTmp
+Change Dir: D:/lixiaoguang_works/Examples_lixiaoguang/OpenGL/ogl-master/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"C:/Program Files (x86)/MSBuild/12.0/bin/MSBuild.exe" "cmTC_94e5c.vcxproj" "/p:Configuration=Debug" "/p:VisualStudioVersion=12.0"
+Run Build Command:"C:/Program Files (x86)/MSBuild/12.0/bin/MSBuild.exe" "cmTC_1347b.vcxproj" "/p:Configuration=Debug" "/p:VisualStudioVersion=12.0"
 Microsoft(R) 生成引擎版本 12.0.40629.0
 [Microsoft .NET Framework 版本 4.0.30319.42000]
 版权所有 (C) Microsoft Corporation。保留所有权利。
 
-生成启动时间为 2018/1/24 9:55:46。
-节点 1 上的项目“D:\lixiaoguang_works\ogl-master\build\CMakeFiles\CMakeTmp\cmTC_94e5c.vcxproj”(默认目标)。
+生成启动时间为 2018/3/13 15:15:52。
+节点 1 上的项目“D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\build\CMakeFiles\CMakeTmp\cmTC_1347b.vcxproj”(默认目标)。
 PrepareForBuild:
-  正在创建目录“cmTC_94e5c.dir\Debug\”。
-  正在创建目录“D:\lixiaoguang_works\ogl-master\build\CMakeFiles\CMakeTmp\Debug\”。
-  正在创建目录“cmTC_94e5c.dir\Debug\cmTC_94e5c.tlog\”。
+  正在创建目录“cmTC_1347b.dir\Debug\”。
+  正在创建目录“D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\build\CMakeFiles\CMakeTmp\Debug\”。
+  正在创建目录“cmTC_1347b.dir\Debug\cmTC_1347b.tlog\”。
 InitializeBuildStatus:
-  正在创建“cmTC_94e5c.dir\Debug\cmTC_94e5c.tlog\unsuccessfulbuild”，因为已指定“AlwaysCreate”。
+  正在创建“cmTC_1347b.dir\Debug\cmTC_1347b.tlog\unsuccessfulbuild”，因为已指定“AlwaysCreate”。
 ClCompile:
-  C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\CL.exe /c /Zi /W3 /WX- /Od /Ob0 /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /GR /Fo"cmTC_94e5c.dir\Debug\\" /Fd"cmTC_94e5c.dir\Debug\vc120.pdb" /Gd /TP /errorReport:queue "D:\lixiaoguang_works\ogl-master\build\CMakeFiles\feature_tests.cxx"
+  C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\CL.exe /c /Zi /W3 /WX- /Od /Ob0 /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /GR /Fo"cmTC_1347b.dir\Debug\\" /Fd"cmTC_1347b.dir\Debug\vc120.pdb" /Gd /TP /errorReport:queue "D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\build\CMakeFiles\feature_tests.cxx"
   Microsoft (R) C/C++ Optimizing Compiler Version 18.00.40629 for x64
   Copyright (C) Microsoft Corporation.  All rights reserved.
   
-  cl /c /Zi /W3 /WX- /Od /Ob0 /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /GR /Fo"cmTC_94e5c.dir\Debug\\" /Fd"cmTC_94e5c.dir\Debug\vc120.pdb" /Gd /TP /errorReport:queue "D:\lixiaoguang_works\ogl-master\build\CMakeFiles\feature_tests.cxx"
+  cl /c /Zi /W3 /WX- /Od /Ob0 /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /GR /Fo"cmTC_1347b.dir\Debug\\" /Fd"cmTC_1347b.dir\Debug\vc120.pdb" /Gd /TP /errorReport:queue "D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\build\CMakeFiles\feature_tests.cxx"
   
   feature_tests.cxx
 Link:
-  C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\link.exe /ERRORREPORT:QUEUE /OUT:"D:\lixiaoguang_works\ogl-master\build\CMakeFiles\CMakeTmp\Debug\cmTC_94e5c.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:/lixiaoguang_works/ogl-master/build/CMakeFiles/CMakeTmp/Debug/cmTC_94e5c.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:/lixiaoguang_works/ogl-master/build/CMakeFiles/CMakeTmp/Debug/cmTC_94e5c.lib" /MACHINE:X64  /machine:x64 cmTC_94e5c.dir\Debug\feature_tests.obj
-  cmTC_94e5c.vcxproj -> D:\lixiaoguang_works\ogl-master\build\CMakeFiles\CMakeTmp\Debug\cmTC_94e5c.exe
+  C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\link.exe /ERRORREPORT:QUEUE /OUT:"D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\build\CMakeFiles\CMakeTmp\Debug\cmTC_1347b.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:/lixiaoguang_works/Examples_lixiaoguang/OpenGL/ogl-master/build/CMakeFiles/CMakeTmp/Debug/cmTC_1347b.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:/lixiaoguang_works/Examples_lixiaoguang/OpenGL/ogl-master/build/CMakeFiles/CMakeTmp/Debug/cmTC_1347b.lib" /MACHINE:X64  /machine:x64 cmTC_1347b.dir\Debug\feature_tests.obj
+  cmTC_1347b.vcxproj -> D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\build\CMakeFiles\CMakeTmp\Debug\cmTC_1347b.exe
 FinalizeBuildStatus:
-  正在删除文件“cmTC_94e5c.dir\Debug\cmTC_94e5c.tlog\unsuccessfulbuild”。
-  正在对“cmTC_94e5c.dir\Debug\cmTC_94e5c.tlog\cmTC_94e5c.lastbuildstate”执行 Touch 任务。
-已完成生成项目“D:\lixiaoguang_works\ogl-master\build\CMakeFiles\CMakeTmp\cmTC_94e5c.vcxproj”(默认目标)的操作。
+  正在删除文件“cmTC_1347b.dir\Debug\cmTC_1347b.tlog\unsuccessfulbuild”。
+  正在对“cmTC_1347b.dir\Debug\cmTC_1347b.tlog\cmTC_1347b.lastbuildstate”执行 Touch 任务。
+已完成生成项目“D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\build\CMakeFiles\CMakeTmp\cmTC_1347b.vcxproj”(默认目标)的操作。
 
 已成功生成。
     0 个警告
     0 个错误
 
-已用时间 00:00:00.80
+已用时间 00:00:00.64
 
 
     Feature record: CXX_FEATURE:0cxx_aggregate_default_initializers
@@ -344,119 +344,119 @@ FinalizeBuildStatus:
     Feature record: CXX_FEATURE:1cxx_variadic_macros
     Feature record: CXX_FEATURE:1cxx_variadic_templates
 Determining if the include file sys/types.h exists passed with the following output:
-Change Dir: D:/lixiaoguang_works/ogl-master/build/CMakeFiles/CMakeTmp
+Change Dir: D:/lixiaoguang_works/Examples_lixiaoguang/OpenGL/ogl-master/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"C:/Program Files (x86)/MSBuild/12.0/bin/MSBuild.exe" "cmTC_2024b.vcxproj" "/p:Configuration=Debug" "/p:VisualStudioVersion=12.0"
+Run Build Command:"C:/Program Files (x86)/MSBuild/12.0/bin/MSBuild.exe" "cmTC_32fb9.vcxproj" "/p:Configuration=Debug" "/p:VisualStudioVersion=12.0"
 Microsoft(R) 生成引擎版本 12.0.40629.0
 [Microsoft .NET Framework 版本 4.0.30319.42000]
 版权所有 (C) Microsoft Corporation。保留所有权利。
 
-生成启动时间为 2018/1/24 9:55:48。
-节点 1 上的项目“D:\lixiaoguang_works\ogl-master\build\CMakeFiles\CMakeTmp\cmTC_2024b.vcxproj”(默认目标)。
+生成启动时间为 2018/3/13 15:15:54。
+节点 1 上的项目“D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\build\CMakeFiles\CMakeTmp\cmTC_32fb9.vcxproj”(默认目标)。
 PrepareForBuild:
-  正在创建目录“cmTC_2024b.dir\Debug\”。
-  正在创建目录“D:\lixiaoguang_works\ogl-master\build\CMakeFiles\CMakeTmp\Debug\”。
-  正在创建目录“cmTC_2024b.dir\Debug\cmTC_2024b.tlog\”。
+  正在创建目录“cmTC_32fb9.dir\Debug\”。
+  正在创建目录“D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\build\CMakeFiles\CMakeTmp\Debug\”。
+  正在创建目录“cmTC_32fb9.dir\Debug\cmTC_32fb9.tlog\”。
 InitializeBuildStatus:
-  正在创建“cmTC_2024b.dir\Debug\cmTC_2024b.tlog\unsuccessfulbuild”，因为已指定“AlwaysCreate”。
+  正在创建“cmTC_32fb9.dir\Debug\cmTC_32fb9.tlog\unsuccessfulbuild”，因为已指定“AlwaysCreate”。
 ClCompile:
-  C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\CL.exe /c /Zi /W3 /WX- /Od /Ob0 /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"cmTC_2024b.dir\Debug\\" /Fd"cmTC_2024b.dir\Debug\vc120.pdb" /Gd /TC /errorReport:queue "D:\lixiaoguang_works\ogl-master\build\CMakeFiles\CMakeTmp\CheckIncludeFile.c"
+  C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\CL.exe /c /Zi /W3 /WX- /Od /Ob0 /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"cmTC_32fb9.dir\Debug\\" /Fd"cmTC_32fb9.dir\Debug\vc120.pdb" /Gd /TC /errorReport:queue "D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\build\CMakeFiles\CMakeTmp\CheckIncludeFile.c"
   Microsoft (R) C/C++ Optimizing Compiler Version 18.00.40629 for x64
   Copyright (C) Microsoft Corporation.  All rights reserved.
   
-  cl /c /Zi /W3 /WX- /Od /Ob0 /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"cmTC_2024b.dir\Debug\\" /Fd"cmTC_2024b.dir\Debug\vc120.pdb" /Gd /TC /errorReport:queue "D:\lixiaoguang_works\ogl-master\build\CMakeFiles\CMakeTmp\CheckIncludeFile.c"
+  cl /c /Zi /W3 /WX- /Od /Ob0 /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"cmTC_32fb9.dir\Debug\\" /Fd"cmTC_32fb9.dir\Debug\vc120.pdb" /Gd /TC /errorReport:queue "D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\build\CMakeFiles\CMakeTmp\CheckIncludeFile.c"
   
   CheckIncludeFile.c
 Link:
-  C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\link.exe /ERRORREPORT:QUEUE /OUT:"D:\lixiaoguang_works\ogl-master\build\CMakeFiles\CMakeTmp\Debug\cmTC_2024b.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:/lixiaoguang_works/ogl-master/build/CMakeFiles/CMakeTmp/Debug/cmTC_2024b.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:/lixiaoguang_works/ogl-master/build/CMakeFiles/CMakeTmp/Debug/cmTC_2024b.lib" /MACHINE:X64  /machine:x64 cmTC_2024b.dir\Debug\CheckIncludeFile.obj
-  cmTC_2024b.vcxproj -> D:\lixiaoguang_works\ogl-master\build\CMakeFiles\CMakeTmp\Debug\cmTC_2024b.exe
+  C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\link.exe /ERRORREPORT:QUEUE /OUT:"D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\build\CMakeFiles\CMakeTmp\Debug\cmTC_32fb9.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:/lixiaoguang_works/Examples_lixiaoguang/OpenGL/ogl-master/build/CMakeFiles/CMakeTmp/Debug/cmTC_32fb9.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:/lixiaoguang_works/Examples_lixiaoguang/OpenGL/ogl-master/build/CMakeFiles/CMakeTmp/Debug/cmTC_32fb9.lib" /MACHINE:X64  /machine:x64 cmTC_32fb9.dir\Debug\CheckIncludeFile.obj
+  cmTC_32fb9.vcxproj -> D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\build\CMakeFiles\CMakeTmp\Debug\cmTC_32fb9.exe
 FinalizeBuildStatus:
-  正在删除文件“cmTC_2024b.dir\Debug\cmTC_2024b.tlog\unsuccessfulbuild”。
-  正在对“cmTC_2024b.dir\Debug\cmTC_2024b.tlog\cmTC_2024b.lastbuildstate”执行 Touch 任务。
-已完成生成项目“D:\lixiaoguang_works\ogl-master\build\CMakeFiles\CMakeTmp\cmTC_2024b.vcxproj”(默认目标)的操作。
+  正在删除文件“cmTC_32fb9.dir\Debug\cmTC_32fb9.tlog\unsuccessfulbuild”。
+  正在对“cmTC_32fb9.dir\Debug\cmTC_32fb9.tlog\cmTC_32fb9.lastbuildstate”执行 Touch 任务。
+已完成生成项目“D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\build\CMakeFiles\CMakeTmp\cmTC_32fb9.vcxproj”(默认目标)的操作。
 
 已成功生成。
     0 个警告
     0 个错误
 
-已用时间 00:00:00.78
+已用时间 00:00:00.64
 
 
 Determining if the include file stdint.h exists passed with the following output:
-Change Dir: D:/lixiaoguang_works/ogl-master/build/CMakeFiles/CMakeTmp
+Change Dir: D:/lixiaoguang_works/Examples_lixiaoguang/OpenGL/ogl-master/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"C:/Program Files (x86)/MSBuild/12.0/bin/MSBuild.exe" "cmTC_4fd45.vcxproj" "/p:Configuration=Debug" "/p:VisualStudioVersion=12.0"
+Run Build Command:"C:/Program Files (x86)/MSBuild/12.0/bin/MSBuild.exe" "cmTC_fa187.vcxproj" "/p:Configuration=Debug" "/p:VisualStudioVersion=12.0"
 Microsoft(R) 生成引擎版本 12.0.40629.0
 [Microsoft .NET Framework 版本 4.0.30319.42000]
 版权所有 (C) Microsoft Corporation。保留所有权利。
 
-生成启动时间为 2018/1/24 9:55:49。
-节点 1 上的项目“D:\lixiaoguang_works\ogl-master\build\CMakeFiles\CMakeTmp\cmTC_4fd45.vcxproj”(默认目标)。
+生成启动时间为 2018/3/13 15:15:55。
+节点 1 上的项目“D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\build\CMakeFiles\CMakeTmp\cmTC_fa187.vcxproj”(默认目标)。
 PrepareForBuild:
-  正在创建目录“cmTC_4fd45.dir\Debug\”。
-  正在创建目录“D:\lixiaoguang_works\ogl-master\build\CMakeFiles\CMakeTmp\Debug\”。
-  正在创建目录“cmTC_4fd45.dir\Debug\cmTC_4fd45.tlog\”。
+  正在创建目录“cmTC_fa187.dir\Debug\”。
+  正在创建目录“D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\build\CMakeFiles\CMakeTmp\Debug\”。
+  正在创建目录“cmTC_fa187.dir\Debug\cmTC_fa187.tlog\”。
 InitializeBuildStatus:
-  正在创建“cmTC_4fd45.dir\Debug\cmTC_4fd45.tlog\unsuccessfulbuild”，因为已指定“AlwaysCreate”。
+  正在创建“cmTC_fa187.dir\Debug\cmTC_fa187.tlog\unsuccessfulbuild”，因为已指定“AlwaysCreate”。
 ClCompile:
-  C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\CL.exe /c /Zi /W3 /WX- /Od /Ob0 /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"cmTC_4fd45.dir\Debug\\" /Fd"cmTC_4fd45.dir\Debug\vc120.pdb" /Gd /TC /errorReport:queue "D:\lixiaoguang_works\ogl-master\build\CMakeFiles\CMakeTmp\CheckIncludeFile.c"
+  C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\CL.exe /c /Zi /W3 /WX- /Od /Ob0 /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"cmTC_fa187.dir\Debug\\" /Fd"cmTC_fa187.dir\Debug\vc120.pdb" /Gd /TC /errorReport:queue "D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\build\CMakeFiles\CMakeTmp\CheckIncludeFile.c"
   Microsoft (R) C/C++ Optimizing Compiler Version 18.00.40629 for x64
   Copyright (C) Microsoft Corporation.  All rights reserved.
   
-  cl /c /Zi /W3 /WX- /Od /Ob0 /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"cmTC_4fd45.dir\Debug\\" /Fd"cmTC_4fd45.dir\Debug\vc120.pdb" /Gd /TC /errorReport:queue "D:\lixiaoguang_works\ogl-master\build\CMakeFiles\CMakeTmp\CheckIncludeFile.c"
+  cl /c /Zi /W3 /WX- /Od /Ob0 /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"cmTC_fa187.dir\Debug\\" /Fd"cmTC_fa187.dir\Debug\vc120.pdb" /Gd /TC /errorReport:queue "D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\build\CMakeFiles\CMakeTmp\CheckIncludeFile.c"
   
   CheckIncludeFile.c
 Link:
-  C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\link.exe /ERRORREPORT:QUEUE /OUT:"D:\lixiaoguang_works\ogl-master\build\CMakeFiles\CMakeTmp\Debug\cmTC_4fd45.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:/lixiaoguang_works/ogl-master/build/CMakeFiles/CMakeTmp/Debug/cmTC_4fd45.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:/lixiaoguang_works/ogl-master/build/CMakeFiles/CMakeTmp/Debug/cmTC_4fd45.lib" /MACHINE:X64  /machine:x64 cmTC_4fd45.dir\Debug\CheckIncludeFile.obj
-  cmTC_4fd45.vcxproj -> D:\lixiaoguang_works\ogl-master\build\CMakeFiles\CMakeTmp\Debug\cmTC_4fd45.exe
+  C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\link.exe /ERRORREPORT:QUEUE /OUT:"D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\build\CMakeFiles\CMakeTmp\Debug\cmTC_fa187.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:/lixiaoguang_works/Examples_lixiaoguang/OpenGL/ogl-master/build/CMakeFiles/CMakeTmp/Debug/cmTC_fa187.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:/lixiaoguang_works/Examples_lixiaoguang/OpenGL/ogl-master/build/CMakeFiles/CMakeTmp/Debug/cmTC_fa187.lib" /MACHINE:X64  /machine:x64 cmTC_fa187.dir\Debug\CheckIncludeFile.obj
+  cmTC_fa187.vcxproj -> D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\build\CMakeFiles\CMakeTmp\Debug\cmTC_fa187.exe
 FinalizeBuildStatus:
-  正在删除文件“cmTC_4fd45.dir\Debug\cmTC_4fd45.tlog\unsuccessfulbuild”。
-  正在对“cmTC_4fd45.dir\Debug\cmTC_4fd45.tlog\cmTC_4fd45.lastbuildstate”执行 Touch 任务。
-已完成生成项目“D:\lixiaoguang_works\ogl-master\build\CMakeFiles\CMakeTmp\cmTC_4fd45.vcxproj”(默认目标)的操作。
+  正在删除文件“cmTC_fa187.dir\Debug\cmTC_fa187.tlog\unsuccessfulbuild”。
+  正在对“cmTC_fa187.dir\Debug\cmTC_fa187.tlog\cmTC_fa187.lastbuildstate”执行 Touch 任务。
+已完成生成项目“D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\build\CMakeFiles\CMakeTmp\cmTC_fa187.vcxproj”(默认目标)的操作。
 
 已成功生成。
     0 个警告
     0 个错误
 
-已用时间 00:00:00.80
+已用时间 00:00:00.68
 
 
 Determining if the include file stddef.h exists passed with the following output:
-Change Dir: D:/lixiaoguang_works/ogl-master/build/CMakeFiles/CMakeTmp
+Change Dir: D:/lixiaoguang_works/Examples_lixiaoguang/OpenGL/ogl-master/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"C:/Program Files (x86)/MSBuild/12.0/bin/MSBuild.exe" "cmTC_a6179.vcxproj" "/p:Configuration=Debug" "/p:VisualStudioVersion=12.0"
+Run Build Command:"C:/Program Files (x86)/MSBuild/12.0/bin/MSBuild.exe" "cmTC_6f39c.vcxproj" "/p:Configuration=Debug" "/p:VisualStudioVersion=12.0"
 Microsoft(R) 生成引擎版本 12.0.40629.0
 [Microsoft .NET Framework 版本 4.0.30319.42000]
 版权所有 (C) Microsoft Corporation。保留所有权利。
 
-生成启动时间为 2018/1/24 9:55:50。
-节点 1 上的项目“D:\lixiaoguang_works\ogl-master\build\CMakeFiles\CMakeTmp\cmTC_a6179.vcxproj”(默认目标)。
+生成启动时间为 2018/3/13 15:15:56。
+节点 1 上的项目“D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\build\CMakeFiles\CMakeTmp\cmTC_6f39c.vcxproj”(默认目标)。
 PrepareForBuild:
-  正在创建目录“cmTC_a6179.dir\Debug\”。
-  正在创建目录“D:\lixiaoguang_works\ogl-master\build\CMakeFiles\CMakeTmp\Debug\”。
-  正在创建目录“cmTC_a6179.dir\Debug\cmTC_a6179.tlog\”。
+  正在创建目录“cmTC_6f39c.dir\Debug\”。
+  正在创建目录“D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\build\CMakeFiles\CMakeTmp\Debug\”。
+  正在创建目录“cmTC_6f39c.dir\Debug\cmTC_6f39c.tlog\”。
 InitializeBuildStatus:
-  正在创建“cmTC_a6179.dir\Debug\cmTC_a6179.tlog\unsuccessfulbuild”，因为已指定“AlwaysCreate”。
+  正在创建“cmTC_6f39c.dir\Debug\cmTC_6f39c.tlog\unsuccessfulbuild”，因为已指定“AlwaysCreate”。
 ClCompile:
-  C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\CL.exe /c /Zi /W3 /WX- /Od /Ob0 /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"cmTC_a6179.dir\Debug\\" /Fd"cmTC_a6179.dir\Debug\vc120.pdb" /Gd /TC /errorReport:queue "D:\lixiaoguang_works\ogl-master\build\CMakeFiles\CMakeTmp\CheckIncludeFile.c"
+  C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\CL.exe /c /Zi /W3 /WX- /Od /Ob0 /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"cmTC_6f39c.dir\Debug\\" /Fd"cmTC_6f39c.dir\Debug\vc120.pdb" /Gd /TC /errorReport:queue "D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\build\CMakeFiles\CMakeTmp\CheckIncludeFile.c"
   Microsoft (R) C/C++ Optimizing Compiler Version 18.00.40629 for x64
   Copyright (C) Microsoft Corporation.  All rights reserved.
   
-  cl /c /Zi /W3 /WX- /Od /Ob0 /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"cmTC_a6179.dir\Debug\\" /Fd"cmTC_a6179.dir\Debug\vc120.pdb" /Gd /TC /errorReport:queue "D:\lixiaoguang_works\ogl-master\build\CMakeFiles\CMakeTmp\CheckIncludeFile.c"
+  cl /c /Zi /W3 /WX- /Od /Ob0 /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"cmTC_6f39c.dir\Debug\\" /Fd"cmTC_6f39c.dir\Debug\vc120.pdb" /Gd /TC /errorReport:queue "D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\build\CMakeFiles\CMakeTmp\CheckIncludeFile.c"
   
   CheckIncludeFile.c
 Link:
-  C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\link.exe /ERRORREPORT:QUEUE /OUT:"D:\lixiaoguang_works\ogl-master\build\CMakeFiles\CMakeTmp\Debug\cmTC_a6179.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:/lixiaoguang_works/ogl-master/build/CMakeFiles/CMakeTmp/Debug/cmTC_a6179.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:/lixiaoguang_works/ogl-master/build/CMakeFiles/CMakeTmp/Debug/cmTC_a6179.lib" /MACHINE:X64  /machine:x64 cmTC_a6179.dir\Debug\CheckIncludeFile.obj
-  cmTC_a6179.vcxproj -> D:\lixiaoguang_works\ogl-master\build\CMakeFiles\CMakeTmp\Debug\cmTC_a6179.exe
+  C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\link.exe /ERRORREPORT:QUEUE /OUT:"D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\build\CMakeFiles\CMakeTmp\Debug\cmTC_6f39c.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:/lixiaoguang_works/Examples_lixiaoguang/OpenGL/ogl-master/build/CMakeFiles/CMakeTmp/Debug/cmTC_6f39c.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:/lixiaoguang_works/Examples_lixiaoguang/OpenGL/ogl-master/build/CMakeFiles/CMakeTmp/Debug/cmTC_6f39c.lib" /MACHINE:X64  /machine:x64 cmTC_6f39c.dir\Debug\CheckIncludeFile.obj
+  cmTC_6f39c.vcxproj -> D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\build\CMakeFiles\CMakeTmp\Debug\cmTC_6f39c.exe
 FinalizeBuildStatus:
-  正在删除文件“cmTC_a6179.dir\Debug\cmTC_a6179.tlog\unsuccessfulbuild”。
-  正在对“cmTC_a6179.dir\Debug\cmTC_a6179.tlog\cmTC_a6179.lastbuildstate”执行 Touch 任务。
-已完成生成项目“D:\lixiaoguang_works\ogl-master\build\CMakeFiles\CMakeTmp\cmTC_a6179.vcxproj”(默认目标)的操作。
+  正在删除文件“cmTC_6f39c.dir\Debug\cmTC_6f39c.tlog\unsuccessfulbuild”。
+  正在对“cmTC_6f39c.dir\Debug\cmTC_6f39c.tlog\cmTC_6f39c.lastbuildstate”执行 Touch 任务。
+已完成生成项目“D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\build\CMakeFiles\CMakeTmp\cmTC_6f39c.vcxproj”(默认目标)的操作。
 
 已成功生成。
     0 个警告
     0 个错误
 
-已用时间 00:00:00.79
+已用时间 00:00:00.67
 
 

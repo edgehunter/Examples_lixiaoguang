@@ -22,11 +22,14 @@
     <Filter Include="imgui\imgui_impl_glfw_gl3">
       <UniqueIdentifier>{1a794ebb-c665-4c66-8d92-82aeec8bf2d0}</UniqueIdentifier>
     </Filter>
-    <Filter Include="shader">
-      <UniqueIdentifier>{265b767e-1294-48d3-8f9d-b79c0a247656}</UniqueIdentifier>
+    <Filter Include="opengl">
+      <UniqueIdentifier>{cc0145ba-a886-46b5-84f3-5882a49c665c}</UniqueIdentifier>
     </Filter>
-    <Filter Include="controls">
-      <UniqueIdentifier>{ca60f8f6-111d-4e49-a723-38e584d32cca}</UniqueIdentifier>
+    <Filter Include="opengl\controls">
+      <UniqueIdentifier>{1905b056-0e68-4f85-9ed1-ea06603e1ec0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="opengl\shader">
+      <UniqueIdentifier>{dd86cbb7-16d1-4c9f-a2c0-3cd517c4f97e}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -39,26 +42,26 @@
     <ClInclude Include="targetver.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="imgui\imconfig.h">
-      <Filter>imgui</Filter>
-    </ClInclude>
-    <ClInclude Include="imgui\imgui.h">
-      <Filter>imgui</Filter>
-    </ClInclude>
-    <ClInclude Include="imgui\imgui_internal.h">
-      <Filter>imgui</Filter>
-    </ClInclude>
-    <ClInclude Include="imgui\examples\opengl3_example\imgui_impl_glfw_gl3.h">
+    <ClInclude Include="OpenGL_SDK\imgui\examples\opengl3_example\imgui_impl_glfw_gl3.h">
       <Filter>imgui\imgui_impl_glfw_gl3</Filter>
     </ClInclude>
-    <ClInclude Include="OpenGL\include\glad\include\glad\glad.h">
+    <ClInclude Include="OpenGL_SDK\imgui\imconfig.h">
+      <Filter>imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="OpenGL_SDK\imgui\imgui.h">
+      <Filter>imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="OpenGL_SDK\imgui\imgui_internal.h">
+      <Filter>imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="OpenGL_SDK\include\glad\include\glad\glad.h">
       <Filter>glad</Filter>
     </ClInclude>
-    <ClInclude Include="shader\shader.h">
-      <Filter>shader</Filter>
+    <ClInclude Include="OpenGL\controls\Camera.h">
+      <Filter>opengl\controls</Filter>
     </ClInclude>
-    <ClInclude Include="controls\controls.h">
-      <Filter>controls</Filter>
+    <ClInclude Include="OpenGL\shader\Shader.h">
+      <Filter>opengl\shader</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -68,34 +71,34 @@
     <ClCompile Include="glfw_glad_shader.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="imgui\imgui.cpp">
-      <Filter>imgui</Filter>
-    </ClCompile>
-    <ClCompile Include="imgui\imgui_demo.cpp">
-      <Filter>imgui</Filter>
-    </ClCompile>
-    <ClCompile Include="imgui\imgui_draw.cpp">
-      <Filter>imgui</Filter>
-    </ClCompile>
-    <ClCompile Include="imgui\examples\opengl3_example\imgui_impl_glfw_gl3.cpp">
+    <ClCompile Include="OpenGL_SDK\imgui\examples\opengl3_example\imgui_impl_glfw_gl3.cpp">
       <Filter>imgui\imgui_impl_glfw_gl3</Filter>
     </ClCompile>
-    <ClCompile Include="OpenGL\include\glad\src\glad.c">
+    <ClCompile Include="OpenGL_SDK\imgui\imgui.cpp">
+      <Filter>imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="OpenGL_SDK\imgui\imgui_demo.cpp">
+      <Filter>imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="OpenGL_SDK\imgui\imgui_draw.cpp">
+      <Filter>imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="OpenGL_SDK\include\glad\src\glad.c">
       <Filter>glad</Filter>
     </ClCompile>
-    <ClCompile Include="shader\shader.cpp">
-      <Filter>shader</Filter>
+    <ClCompile Include="OpenGL\controls\Camera.cpp">
+      <Filter>opengl\controls</Filter>
     </ClCompile>
-    <ClCompile Include="controls\controls.cpp">
-      <Filter>controls</Filter>
+    <ClCompile Include="OpenGL\shader\Shader.cpp">
+      <Filter>opengl\shader</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <None Include="shader\SimpleTransform.vertexshader">
-      <Filter>shader</Filter>
+    <None Include="OpenGL\shader\SimpleTransform.vertexshader">
+      <Filter>opengl\shader</Filter>
     </None>
-    <None Include="shader\SingleColor.fragmentshader">
-      <Filter>shader</Filter>
+    <None Include="OpenGL\shader\SingleColor.fragmentshader">
+      <Filter>opengl\shader</Filter>
     </None>
   </ItemGroup>
 </Project>

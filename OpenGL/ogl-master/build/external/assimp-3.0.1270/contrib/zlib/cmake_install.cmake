@@ -1,4 +1,4 @@
-# Install script for directory: D:/lixiaoguang_works/ogl-master/external/assimp-3.0.1270/contrib/zlib
+# Install script for directory: D:/lixiaoguang_works/Examples_lixiaoguang/OpenGL/ogl-master/external/assimp-3.0.1270/contrib/zlib
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

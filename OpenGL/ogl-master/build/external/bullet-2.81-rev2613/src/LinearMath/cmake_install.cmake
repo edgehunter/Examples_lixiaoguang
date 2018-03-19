@@ -1,4 +1,4 @@
-# Install script for directory: D:/lixiaoguang_works/ogl-master/external/bullet-2.81-rev2613/src/LinearMath
+# Install script for directory: D:/lixiaoguang_works/Examples_lixiaoguang/OpenGL/ogl-master/external/bullet-2.81-rev2613/src/LinearMath
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

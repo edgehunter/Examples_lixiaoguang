@@ -1,9 +1,9 @@
-cd D:/lixiaoguang_works/ogl-master/tutorial05_textured_cube/
+cd D:/lixiaoguang_works/Examples_lixiaoguang/OpenGL/ogl-master/tutorial05_textured_cube/
 set 
 
 if [%1]==[--debugger] (
 	SHIFT
 )
 
-"D:\lixiaoguang_works\ogl-master\build\RelWithDebInfo\tutorial05_textured_cube.exe"  
+"D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\build\RelWithDebInfo\tutorial05_textured_cube.exe"  
 pause

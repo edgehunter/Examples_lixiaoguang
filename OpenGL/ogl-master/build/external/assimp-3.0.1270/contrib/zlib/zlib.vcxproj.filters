@@ -1,75 +1,75 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <Project ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <ClCompile Include="D:\lixiaoguang_works\ogl-master\external\assimp-3.0.1270\contrib\zlib\adler32.c">
+    <ClCompile Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\assimp-3.0.1270\contrib\zlib\adler32.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\lixiaoguang_works\ogl-master\external\assimp-3.0.1270\contrib\zlib\compress.c">
+    <ClCompile Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\assimp-3.0.1270\contrib\zlib\compress.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\lixiaoguang_works\ogl-master\external\assimp-3.0.1270\contrib\zlib\crc32.c">
+    <ClCompile Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\assimp-3.0.1270\contrib\zlib\crc32.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\lixiaoguang_works\ogl-master\external\assimp-3.0.1270\contrib\zlib\deflate.c">
+    <ClCompile Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\assimp-3.0.1270\contrib\zlib\deflate.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\lixiaoguang_works\ogl-master\external\assimp-3.0.1270\contrib\zlib\inffast.c">
+    <ClCompile Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\assimp-3.0.1270\contrib\zlib\inffast.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\lixiaoguang_works\ogl-master\external\assimp-3.0.1270\contrib\zlib\inflate.c">
+    <ClCompile Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\assimp-3.0.1270\contrib\zlib\inflate.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\lixiaoguang_works\ogl-master\external\assimp-3.0.1270\contrib\zlib\inftrees.c">
+    <ClCompile Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\assimp-3.0.1270\contrib\zlib\inftrees.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\lixiaoguang_works\ogl-master\external\assimp-3.0.1270\contrib\zlib\trees.c">
+    <ClCompile Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\assimp-3.0.1270\contrib\zlib\trees.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\lixiaoguang_works\ogl-master\external\assimp-3.0.1270\contrib\zlib\zutil.c">
+    <ClCompile Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\assimp-3.0.1270\contrib\zlib\zutil.c">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="D:\lixiaoguang_works\ogl-master\external\assimp-3.0.1270\contrib\zlib\zconf.h">
+    <ClInclude Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\assimp-3.0.1270\contrib\zlib\zconf.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="D:\lixiaoguang_works\ogl-master\external\assimp-3.0.1270\contrib\zlib\zlib.h">
+    <ClInclude Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\assimp-3.0.1270\contrib\zlib\zlib.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="D:\lixiaoguang_works\ogl-master\external\assimp-3.0.1270\contrib\zlib\crc32.h">
+    <ClInclude Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\assimp-3.0.1270\contrib\zlib\crc32.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="D:\lixiaoguang_works\ogl-master\external\assimp-3.0.1270\contrib\zlib\deflate.h">
+    <ClInclude Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\assimp-3.0.1270\contrib\zlib\deflate.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="D:\lixiaoguang_works\ogl-master\external\assimp-3.0.1270\contrib\zlib\inffast.h">
+    <ClInclude Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\assimp-3.0.1270\contrib\zlib\inffast.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="D:\lixiaoguang_works\ogl-master\external\assimp-3.0.1270\contrib\zlib\inffixed.h">
+    <ClInclude Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\assimp-3.0.1270\contrib\zlib\inffixed.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="D:\lixiaoguang_works\ogl-master\external\assimp-3.0.1270\contrib\zlib\inflate.h">
+    <ClInclude Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\assimp-3.0.1270\contrib\zlib\inflate.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="D:\lixiaoguang_works\ogl-master\external\assimp-3.0.1270\contrib\zlib\inftrees.h">
+    <ClInclude Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\assimp-3.0.1270\contrib\zlib\inftrees.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="D:\lixiaoguang_works\ogl-master\external\assimp-3.0.1270\contrib\zlib\trees.h">
+    <ClInclude Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\assimp-3.0.1270\contrib\zlib\trees.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="D:\lixiaoguang_works\ogl-master\external\assimp-3.0.1270\contrib\zlib\zutil.h">
+    <ClInclude Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\assimp-3.0.1270\contrib\zlib\zutil.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <CustomBuild Include="D:\lixiaoguang_works\ogl-master\external\assimp-3.0.1270\contrib\zlib\CMakeLists.txt" />
+    <CustomBuild Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\assimp-3.0.1270\contrib\zlib\CMakeLists.txt" />
   </ItemGroup>
   <ItemGroup>
     <Filter Include="Source Files">
-      <UniqueIdentifier>{4137E80B-F9E3-3DD0-98BA-AAB508EDA651}</UniqueIdentifier>
+      <UniqueIdentifier>{B60F2CFA-E83A-3ADA-BA21-12B5F549C2D9}</UniqueIdentifier>
     </Filter>
     <Filter Include="Header Files">
-      <UniqueIdentifier>{923656BC-BDAB-3683-8038-A4137BDD98A8}</UniqueIdentifier>
+      <UniqueIdentifier>{75A1DF3F-45B3-3383-9235-D7E78D7D63F9}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
 </Project>

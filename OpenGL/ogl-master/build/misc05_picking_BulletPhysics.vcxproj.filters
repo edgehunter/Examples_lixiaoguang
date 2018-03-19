@@ -1,62 +1,62 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <Project ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <ClCompile Include="D:\lixiaoguang_works\ogl-master\misc05_picking\misc05_picking_BulletPhysics.cpp">
+    <ClCompile Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\misc05_picking\misc05_picking_BulletPhysics.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\lixiaoguang_works\ogl-master\common\shader.cpp">
+    <ClCompile Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\common\shader.cpp">
       <Filter>common</Filter>
     </ClCompile>
-    <ClCompile Include="D:\lixiaoguang_works\ogl-master\common\controls.cpp">
+    <ClCompile Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\common\controls.cpp">
       <Filter>common</Filter>
     </ClCompile>
-    <ClCompile Include="D:\lixiaoguang_works\ogl-master\common\texture.cpp">
+    <ClCompile Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\common\texture.cpp">
       <Filter>common</Filter>
     </ClCompile>
-    <ClCompile Include="D:\lixiaoguang_works\ogl-master\common\objloader.cpp">
+    <ClCompile Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\common\objloader.cpp">
       <Filter>common</Filter>
     </ClCompile>
-    <ClCompile Include="D:\lixiaoguang_works\ogl-master\common\vboindexer.cpp">
+    <ClCompile Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\common\vboindexer.cpp">
       <Filter>common</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="D:\lixiaoguang_works\ogl-master\common\shader.hpp">
+    <ClInclude Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\common\shader.hpp">
       <Filter>common</Filter>
     </ClInclude>
-    <ClInclude Include="D:\lixiaoguang_works\ogl-master\common\controls.hpp">
+    <ClInclude Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\common\controls.hpp">
       <Filter>common</Filter>
     </ClInclude>
-    <ClInclude Include="D:\lixiaoguang_works\ogl-master\common\texture.hpp">
+    <ClInclude Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\common\texture.hpp">
       <Filter>common</Filter>
     </ClInclude>
-    <ClInclude Include="D:\lixiaoguang_works\ogl-master\common\objloader.hpp">
+    <ClInclude Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\common\objloader.hpp">
       <Filter>common</Filter>
     </ClInclude>
-    <ClInclude Include="D:\lixiaoguang_works\ogl-master\common\vboindexer.hpp">
+    <ClInclude Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\common\vboindexer.hpp">
       <Filter>common</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <CustomBuild Include="D:\lixiaoguang_works\ogl-master\CMakeLists.txt" />
+    <CustomBuild Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\CMakeLists.txt" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="D:\lixiaoguang_works\ogl-master\misc05_picking\StandardShading.vertexshader">
+    <None Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\misc05_picking\StandardShading.vertexshader">
       <Filter>shaders</Filter>
     </None>
-    <None Include="D:\lixiaoguang_works\ogl-master\misc05_picking\StandardShading.fragmentshader">
+    <None Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\misc05_picking\StandardShading.fragmentshader">
       <Filter>shaders</Filter>
     </None>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="Source Files">
-      <UniqueIdentifier>{4137E80B-F9E3-3DD0-98BA-AAB508EDA651}</UniqueIdentifier>
+      <UniqueIdentifier>{B60F2CFA-E83A-3ADA-BA21-12B5F549C2D9}</UniqueIdentifier>
     </Filter>
     <Filter Include="common">
-      <UniqueIdentifier>{CE560EE7-D682-3E3A-B536-F30AA934A9D6}</UniqueIdentifier>
+      <UniqueIdentifier>{F4E9CDB5-5099-38A4-B708-DAAED8630811}</UniqueIdentifier>
     </Filter>
     <Filter Include="shaders">
-      <UniqueIdentifier>{C34E83F4-D542-3638-8339-2F80B78AEAD4}</UniqueIdentifier>
+      <UniqueIdentifier>{E8637D54-24D6-3E6E-9D88-B8E13C00EDC6}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
 </Project>

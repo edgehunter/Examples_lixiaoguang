@@ -1,1209 +1,1209 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <Project ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <ClCompile Include="D:\lixiaoguang_works\ogl-master\external\assimp-3.0.1270\code\Assimp.cpp">
+    <ClCompile Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\assimp-3.0.1270\code\Assimp.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\lixiaoguang_works\ogl-master\external\assimp-3.0.1270\code\AssimpPCH.cpp">
+    <ClCompile Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\assimp-3.0.1270\code\AssimpPCH.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\lixiaoguang_works\ogl-master\external\assimp-3.0.1270\code\BaseImporter.cpp">
+    <ClCompile Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\assimp-3.0.1270\code\BaseImporter.cpp">
       <Filter>Common</Filter>
     </ClCompile>
-    <ClCompile Include="D:\lixiaoguang_works\ogl-master\external\assimp-3.0.1270\code\BaseProcess.cpp">
+    <ClCompile Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\assimp-3.0.1270\code\BaseProcess.cpp">
       <Filter>Common</Filter>
     </ClCompile>
-    <ClCompile Include="D:\lixiaoguang_works\ogl-master\external\assimp-3.0.1270\code\PostStepRegistry.cpp">
+    <ClCompile Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\assimp-3.0.1270\code\PostStepRegistry.cpp">
       <Filter>Common</Filter>
     </ClCompile>
-    <ClCompile Include="D:\lixiaoguang_works\ogl-master\external\assimp-3.0.1270\code\ImporterRegistry.cpp">
+    <ClCompile Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\assimp-3.0.1270\code\ImporterRegistry.cpp">
       <Filter>Common</Filter>
     </ClCompile>
-    <ClCompile Include="D:\lixiaoguang_works\ogl-master\external\assimp-3.0.1270\code\DefaultIOStream.cpp">
+    <ClCompile Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\assimp-3.0.1270\code\DefaultIOStream.cpp">
       <Filter>Common</Filter>
     </ClCompile>
-    <ClCompile Include="D:\lixiaoguang_works\ogl-master\external\assimp-3.0.1270\code\DefaultIOSystem.cpp">
+    <ClCompile Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\assimp-3.0.1270\code\DefaultIOSystem.cpp">
       <Filter>Common</Filter>
     </ClCompile>
-    <ClCompile Include="D:\lixiaoguang_works\ogl-master\external\assimp-3.0.1270\code\Importer.cpp">
+    <ClCompile Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\assimp-3.0.1270\code\Importer.cpp">
       <Filter>Common</Filter>
     </ClCompile>
-    <ClCompile Include="D:\lixiaoguang_works\ogl-master\external\assimp-3.0.1270\code\SGSpatialSort.cpp">
+    <ClCompile Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\assimp-3.0.1270\code\SGSpatialSort.cpp">
       <Filter>Common</Filter>
     </ClCompile>
-    <ClCompile Include="D:\lixiaoguang_works\ogl-master\external\assimp-3.0.1270\code\VertexTriangleAdjacency.cpp">
+    <ClCompile Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\assimp-3.0.1270\code\VertexTriangleAdjacency.cpp">
       <Filter>Common</Filter>
     </ClCompile>
-    <ClCompile Include="D:\lixiaoguang_works\ogl-master\external\assimp-3.0.1270\code\SpatialSort.cpp">
+    <ClCompile Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\assimp-3.0.1270\code\SpatialSort.cpp">
       <Filter>Common</Filter>
     </ClCompile>
-    <ClCompile Include="D:\lixiaoguang_works\ogl-master\external\assimp-3.0.1270\code\SceneCombiner.cpp">
+    <ClCompile Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\assimp-3.0.1270\code\SceneCombiner.cpp">
       <Filter>Common</Filter>
     </ClCompile>
-    <ClCompile Include="D:\lixiaoguang_works\ogl-master\external\assimp-3.0.1270\code\ScenePreprocessor.cpp">
+    <ClCompile Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\assimp-3.0.1270\code\ScenePreprocessor.cpp">
       <Filter>Common</Filter>
     </ClCompile>
-    <ClCompile Include="D:\lixiaoguang_works\ogl-master\external\assimp-3.0.1270\code\SkeletonMeshBuilder.cpp">
+    <ClCompile Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\assimp-3.0.1270\code\SkeletonMeshBuilder.cpp">
       <Filter>Common</Filter>
     </ClCompile>
-    <ClCompile Include="D:\lixiaoguang_works\ogl-master\external\assimp-3.0.1270\code\SplitByBoneCountProcess.cpp">
+    <ClCompile Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\assimp-3.0.1270\code\SplitByBoneCountProcess.cpp">
       <Filter>Common</Filter>
     </ClCompile>
-    <ClCompile Include="D:\lixiaoguang_works\ogl-master\external\assimp-3.0.1270\code\StandardShapes.cpp">
+    <ClCompile Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\assimp-3.0.1270\code\StandardShapes.cpp">
       <Filter>Common</Filter>
     </ClCompile>
-    <ClCompile Include="D:\lixiaoguang_works\ogl-master\external\assimp-3.0.1270\code\TargetAnimation.cpp">
+    <ClCompile Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\assimp-3.0.1270\code\TargetAnimation.cpp">
       <Filter>Common</Filter>
     </ClCompile>
-    <ClCompile Include="D:\lixiaoguang_works\ogl-master\external\assimp-3.0.1270\code\RemoveComments.cpp">
+    <ClCompile Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\assimp-3.0.1270\code\RemoveComments.cpp">
       <Filter>Common</Filter>
     </ClCompile>
-    <ClCompile Include="D:\lixiaoguang_works\ogl-master\external\assimp-3.0.1270\code\Subdivision.cpp">
+    <ClCompile Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\assimp-3.0.1270\code\Subdivision.cpp">
       <Filter>Common</Filter>
     </ClCompile>
-    <ClCompile Include="D:\lixiaoguang_works\ogl-master\external\assimp-3.0.1270\code\DefaultLogger.cpp">
+    <ClCompile Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\assimp-3.0.1270\code\DefaultLogger.cpp">
       <Filter>Logging</Filter>
     </ClCompile>
-    <ClCompile Include="D:\lixiaoguang_works\ogl-master\external\assimp-3.0.1270\code\Exporter.cpp">
+    <ClCompile Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\assimp-3.0.1270\code\Exporter.cpp">
       <Filter>Exporter</Filter>
     </ClCompile>
-    <ClCompile Include="D:\lixiaoguang_works\ogl-master\external\assimp-3.0.1270\code\AssimpCExport.cpp">
+    <ClCompile Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\assimp-3.0.1270\code\AssimpCExport.cpp">
       <Filter>Exporter</Filter>
     </ClCompile>
-    <ClCompile Include="D:\lixiaoguang_works\ogl-master\external\assimp-3.0.1270\code\CalcTangentsProcess.cpp">
+    <ClCompile Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\assimp-3.0.1270\code\CalcTangentsProcess.cpp">
       <Filter>PostProcessing</Filter>
     </ClCompile>
-    <ClCompile Include="D:\lixiaoguang_works\ogl-master\external\assimp-3.0.1270\code\ComputeUVMappingProcess.cpp">
+    <ClCompile Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\assimp-3.0.1270\code\ComputeUVMappingProcess.cpp">
       <Filter>PostProcessing</Filter>
     </ClCompile>
-    <ClCompile Include="D:\lixiaoguang_works\ogl-master\external\assimp-3.0.1270\code\ConvertToLHProcess.cpp">
+    <ClCompile Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\assimp-3.0.1270\code\ConvertToLHProcess.cpp">
       <Filter>PostProcessing</Filter>
     </ClCompile>
-    <ClCompile Include="D:\lixiaoguang_works\ogl-master\external\assimp-3.0.1270\code\FindDegenerates.cpp">
+    <ClCompile Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\assimp-3.0.1270\code\FindDegenerates.cpp">
       <Filter>PostProcessing</Filter>
     </ClCompile>
-    <ClCompile Include="D:\lixiaoguang_works\ogl-master\external\assimp-3.0.1270\code\FindInstancesProcess.cpp">
+    <ClCompile Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\assimp-3.0.1270\code\FindInstancesProcess.cpp">
       <Filter>PostProcessing</Filter>
     </ClCompile>
-    <ClCompile Include="D:\lixiaoguang_works\ogl-master\external\assimp-3.0.1270\code\FindInvalidDataProcess.cpp">
+    <ClCompile Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\assimp-3.0.1270\code\FindInvalidDataProcess.cpp">
       <Filter>PostProcessing</Filter>
     </ClCompile>
-    <ClCompile Include="D:\lixiaoguang_works\ogl-master\external\assimp-3.0.1270\code\FixNormalsStep.cpp">
+    <ClCompile Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\assimp-3.0.1270\code\FixNormalsStep.cpp">
       <Filter>PostProcessing</Filter>
     </ClCompile>
-    <ClCompile Include="D:\lixiaoguang_works\ogl-master\external\assimp-3.0.1270\code\GenFaceNormalsProcess.cpp">
+    <ClCompile Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\assimp-3.0.1270\code\GenFaceNormalsProcess.cpp">
       <Filter>PostProcessing</Filter>
     </ClCompile>
-    <ClCompile Include="D:\lixiaoguang_works\ogl-master\external\assimp-3.0.1270\code\GenVertexNormalsProcess.cpp">
+    <ClCompile Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\assimp-3.0.1270\code\GenVertexNormalsProcess.cpp">
       <Filter>PostProcessing</Filter>
     </ClCompile>
-    <ClCompile Include="D:\lixiaoguang_works\ogl-master\external\assimp-3.0.1270\code\PretransformVertices.cpp">
+    <ClCompile Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\assimp-3.0.1270\code\PretransformVertices.cpp">
       <Filter>PostProcessing</Filter>
     </ClCompile>
-    <ClCompile Include="D:\lixiaoguang_works\ogl-master\external\assimp-3.0.1270\code\ImproveCacheLocality.cpp">
+    <ClCompile Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\assimp-3.0.1270\code\ImproveCacheLocality.cpp">
       <Filter>PostProcessing</Filter>
     </ClCompile>
-    <ClCompile Include="D:\lixiaoguang_works\ogl-master\external\assimp-3.0.1270\code\JoinVerticesProcess.cpp">
+    <ClCompile Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\assimp-3.0.1270\code\JoinVerticesProcess.cpp">
       <Filter>PostProcessing</Filter>
     </ClCompile>
-    <ClCompile Include="D:\lixiaoguang_works\ogl-master\external\assimp-3.0.1270\code\LimitBoneWeightsProcess.cpp">
+    <ClCompile Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\assimp-3.0.1270\code\LimitBoneWeightsProcess.cpp">
       <Filter>PostProcessing</Filter>
     </ClCompile>
-    <ClCompile Include="D:\lixiaoguang_works\ogl-master\external\assimp-3.0.1270\code\RemoveRedundantMaterials.cpp">
+    <ClCompile Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\assimp-3.0.1270\code\RemoveRedundantMaterials.cpp">
       <Filter>PostProcessing</Filter>
     </ClCompile>
-    <ClCompile Include="D:\lixiaoguang_works\ogl-master\external\assimp-3.0.1270\code\RemoveVCProcess.cpp">
+    <ClCompile Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\assimp-3.0.1270\code\RemoveVCProcess.cpp">
       <Filter>PostProcessing</Filter>
     </ClCompile>
-    <ClCompile Include="D:\lixiaoguang_works\ogl-master\external\assimp-3.0.1270\code\SortByPTypeProcess.cpp">
+    <ClCompile Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\assimp-3.0.1270\code\SortByPTypeProcess.cpp">
       <Filter>PostProcessing</Filter>
     </ClCompile>
-    <ClCompile Include="D:\lixiaoguang_works\ogl-master\external\assimp-3.0.1270\code\SplitLargeMeshes.cpp">
+    <ClCompile Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\assimp-3.0.1270\code\SplitLargeMeshes.cpp">
       <Filter>PostProcessing</Filter>
     </ClCompile>
-    <ClCompile Include="D:\lixiaoguang_works\ogl-master\external\assimp-3.0.1270\code\TerragenLoader.cpp">
+    <ClCompile Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\assimp-3.0.1270\code\TerragenLoader.cpp">
       <Filter>PostProcessing</Filter>
     </ClCompile>
-    <ClCompile Include="D:\lixiaoguang_works\ogl-master\external\assimp-3.0.1270\code\TextureTransform.cpp">
+    <ClCompile Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\assimp-3.0.1270\code\TextureTransform.cpp">
       <Filter>PostProcessing</Filter>
     </ClCompile>
-    <ClCompile Include="D:\lixiaoguang_works\ogl-master\external\assimp-3.0.1270\code\TriangulateProcess.cpp">
+    <ClCompile Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\assimp-3.0.1270\code\TriangulateProcess.cpp">
       <Filter>PostProcessing</Filter>
     </ClCompile>
-    <ClCompile Include="D:\lixiaoguang_works\ogl-master\external\assimp-3.0.1270\code\ValidateDataStructure.cpp">
+    <ClCompile Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\assimp-3.0.1270\code\ValidateDataStructure.cpp">
       <Filter>PostProcessing</Filter>
     </ClCompile>
-    <ClCompile Include="D:\lixiaoguang_works\ogl-master\external\assimp-3.0.1270\code\OptimizeGraph.cpp">
+    <ClCompile Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\assimp-3.0.1270\code\OptimizeGraph.cpp">
       <Filter>PostProcessing</Filter>
     </ClCompile>
-    <ClCompile Include="D:\lixiaoguang_works\ogl-master\external\assimp-3.0.1270\code\OptimizeMeshes.cpp">
+    <ClCompile Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\assimp-3.0.1270\code\OptimizeMeshes.cpp">
       <Filter>PostProcessing</Filter>
     </ClCompile>
-    <ClCompile Include="D:\lixiaoguang_works\ogl-master\external\assimp-3.0.1270\code\DeboneProcess.cpp">
+    <ClCompile Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\assimp-3.0.1270\code\DeboneProcess.cpp">
       <Filter>PostProcessing</Filter>
     </ClCompile>
-    <ClCompile Include="D:\lixiaoguang_works\ogl-master\external\assimp-3.0.1270\code\ProcessHelper.cpp">
+    <ClCompile Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\assimp-3.0.1270\code\ProcessHelper.cpp">
       <Filter>PostProcessing</Filter>
     </ClCompile>
-    <ClCompile Include="D:\lixiaoguang_works\ogl-master\external\assimp-3.0.1270\code\MakeVerboseFormat.cpp">
+    <ClCompile Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\assimp-3.0.1270\code\MakeVerboseFormat.cpp">
       <Filter>PostProcessing</Filter>
     </ClCompile>
-    <ClCompile Include="D:\lixiaoguang_works\ogl-master\external\assimp-3.0.1270\code\3DSConverter.cpp">
+    <ClCompile Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\assimp-3.0.1270\code\3DSConverter.cpp">
       <Filter>3DS</Filter>
     </ClCompile>
-    <ClCompile Include="D:\lixiaoguang_works\ogl-master\external\assimp-3.0.1270\code\3DSLoader.cpp">
+    <ClCompile Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\assimp-3.0.1270\code\3DSLoader.cpp">
       <Filter>3DS</Filter>
     </ClCompile>
-    <ClCompile Include="D:\lixiaoguang_works\ogl-master\external\assimp-3.0.1270\code\ACLoader.cpp">
+    <ClCompile Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\assimp-3.0.1270\code\ACLoader.cpp">
       <Filter>AC</Filter>
     </ClCompile>
-    <ClCompile Include="D:\lixiaoguang_works\ogl-master\external\assimp-3.0.1270\code\ASELoader.cpp">
+    <ClCompile Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\assimp-3.0.1270\code\ASELoader.cpp">
       <Filter>ASE</Filter>
     </ClCompile>
-    <ClCompile Include="D:\lixiaoguang_works\ogl-master\external\assimp-3.0.1270\code\ASEParser.cpp">
+    <ClCompile Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\assimp-3.0.1270\code\ASEParser.cpp">
       <Filter>ASE</Filter>
     </ClCompile>
-    <ClCompile Include="D:\lixiaoguang_works\ogl-master\external\assimp-3.0.1270\code\B3DImporter.cpp">
+    <ClCompile Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\assimp-3.0.1270\code\B3DImporter.cpp">
       <Filter>B3D</Filter>
     </ClCompile>
-    <ClCompile Include="D:\lixiaoguang_works\ogl-master\external\assimp-3.0.1270\code\BVHLoader.cpp">
+    <ClCompile Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\assimp-3.0.1270\code\BVHLoader.cpp">
       <Filter>BVH</Filter>
     </ClCompile>
-    <ClCompile Include="D:\lixiaoguang_works\ogl-master\external\assimp-3.0.1270\code\ColladaLoader.cpp">
+    <ClCompile Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\assimp-3.0.1270\code\ColladaLoader.cpp">
       <Filter>Collada</Filter>
     </ClCompile>
-    <ClCompile Include="D:\lixiaoguang_works\ogl-master\external\assimp-3.0.1270\code\ColladaParser.cpp">
+    <ClCompile Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\assimp-3.0.1270\code\ColladaParser.cpp">
       <Filter>Collada</Filter>
     </ClCompile>
-    <ClCompile Include="D:\lixiaoguang_works\ogl-master\external\assimp-3.0.1270\code\ColladaExporter.cpp">
+    <ClCompile Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\assimp-3.0.1270\code\ColladaExporter.cpp">
       <Filter>Collada</Filter>
     </ClCompile>
-    <ClCompile Include="D:\lixiaoguang_works\ogl-master\external\assimp-3.0.1270\code\DXFLoader.cpp">
+    <ClCompile Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\assimp-3.0.1270\code\DXFLoader.cpp">
       <Filter>DXF</Filter>
     </ClCompile>
-    <ClCompile Include="D:\lixiaoguang_works\ogl-master\external\assimp-3.0.1270\code\CSMLoader.cpp">
+    <ClCompile Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\assimp-3.0.1270\code\CSMLoader.cpp">
       <Filter>CSM</Filter>
     </ClCompile>
-    <ClCompile Include="D:\lixiaoguang_works\ogl-master\external\assimp-3.0.1270\code\HMPLoader.cpp">
+    <ClCompile Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\assimp-3.0.1270\code\HMPLoader.cpp">
       <Filter>HMP</Filter>
     </ClCompile>
-    <ClCompile Include="D:\lixiaoguang_works\ogl-master\external\assimp-3.0.1270\code\IRRLoader.cpp">
+    <ClCompile Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\assimp-3.0.1270\code\IRRLoader.cpp">
       <Filter>Irr</Filter>
     </ClCompile>
-    <ClCompile Include="D:\lixiaoguang_works\ogl-master\external\assimp-3.0.1270\code\IRRMeshLoader.cpp">
+    <ClCompile Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\assimp-3.0.1270\code\IRRMeshLoader.cpp">
       <Filter>Irr</Filter>
     </ClCompile>
-    <ClCompile Include="D:\lixiaoguang_works\ogl-master\external\assimp-3.0.1270\code\IRRShared.cpp">
+    <ClCompile Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\assimp-3.0.1270\code\IRRShared.cpp">
       <Filter>Irr</Filter>
     </ClCompile>
-    <ClCompile Include="D:\lixiaoguang_works\ogl-master\external\assimp-3.0.1270\code\LWOAnimation.cpp">
+    <ClCompile Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\assimp-3.0.1270\code\LWOAnimation.cpp">
       <Filter>LWO</Filter>
     </ClCompile>
-    <ClCompile Include="D:\lixiaoguang_works\ogl-master\external\assimp-3.0.1270\code\LWOBLoader.cpp">
+    <ClCompile Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\assimp-3.0.1270\code\LWOBLoader.cpp">
       <Filter>LWO</Filter>
     </ClCompile>
-    <ClCompile Include="D:\lixiaoguang_works\ogl-master\external\assimp-3.0.1270\code\LWOLoader.cpp">
+    <ClCompile Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\assimp-3.0.1270\code\LWOLoader.cpp">
       <Filter>LWO</Filter>
     </ClCompile>
-    <ClCompile Include="D:\lixiaoguang_works\ogl-master\external\assimp-3.0.1270\code\LWOMaterial.cpp">
+    <ClCompile Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\assimp-3.0.1270\code\LWOMaterial.cpp">
       <Filter>LWO</Filter>
     </ClCompile>
-    <ClCompile Include="D:\lixiaoguang_works\ogl-master\external\assimp-3.0.1270\code\LWSLoader.cpp">
+    <ClCompile Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\assimp-3.0.1270\code\LWSLoader.cpp">
       <Filter>LWS</Filter>
     </ClCompile>
-    <ClCompile Include="D:\lixiaoguang_works\ogl-master\external\assimp-3.0.1270\code\M3Importer.cpp">
+    <ClCompile Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\assimp-3.0.1270\code\M3Importer.cpp">
       <Filter>M3</Filter>
     </ClCompile>
-    <ClCompile Include="D:\lixiaoguang_works\ogl-master\external\assimp-3.0.1270\code\MD2Loader.cpp">
+    <ClCompile Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\assimp-3.0.1270\code\MD2Loader.cpp">
       <Filter>MD2</Filter>
     </ClCompile>
-    <ClCompile Include="D:\lixiaoguang_works\ogl-master\external\assimp-3.0.1270\code\MD3Loader.cpp">
+    <ClCompile Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\assimp-3.0.1270\code\MD3Loader.cpp">
       <Filter>MD3</Filter>
     </ClCompile>
-    <ClCompile Include="D:\lixiaoguang_works\ogl-master\external\assimp-3.0.1270\code\MD5Loader.cpp">
+    <ClCompile Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\assimp-3.0.1270\code\MD5Loader.cpp">
       <Filter>MD5</Filter>
     </ClCompile>
-    <ClCompile Include="D:\lixiaoguang_works\ogl-master\external\assimp-3.0.1270\code\MD5Parser.cpp">
+    <ClCompile Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\assimp-3.0.1270\code\MD5Parser.cpp">
       <Filter>MD5</Filter>
     </ClCompile>
-    <ClCompile Include="D:\lixiaoguang_works\ogl-master\external\assimp-3.0.1270\code\MDCLoader.cpp">
+    <ClCompile Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\assimp-3.0.1270\code\MDCLoader.cpp">
       <Filter>MDC</Filter>
     </ClCompile>
-    <ClCompile Include="D:\lixiaoguang_works\ogl-master\external\assimp-3.0.1270\code\MDLLoader.cpp">
+    <ClCompile Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\assimp-3.0.1270\code\MDLLoader.cpp">
       <Filter>MDL</Filter>
     </ClCompile>
-    <ClCompile Include="D:\lixiaoguang_works\ogl-master\external\assimp-3.0.1270\code\MDLMaterialLoader.cpp">
+    <ClCompile Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\assimp-3.0.1270\code\MDLMaterialLoader.cpp">
       <Filter>MDL</Filter>
     </ClCompile>
-    <ClCompile Include="D:\lixiaoguang_works\ogl-master\external\assimp-3.0.1270\code\MaterialSystem.cpp">
+    <ClCompile Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\assimp-3.0.1270\code\MaterialSystem.cpp">
       <Filter>MaterialSystem</Filter>
     </ClCompile>
-    <ClCompile Include="D:\lixiaoguang_works\ogl-master\external\assimp-3.0.1270\code\NFFLoader.cpp">
+    <ClCompile Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\assimp-3.0.1270\code\NFFLoader.cpp">
       <Filter>NFF</Filter>
     </ClCompile>
-    <ClCompile Include="D:\lixiaoguang_works\ogl-master\external\assimp-3.0.1270\code\OFFLoader.cpp">
+    <ClCompile Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\assimp-3.0.1270\code\OFFLoader.cpp">
       <Filter>OFFFormat</Filter>
     </ClCompile>
-    <ClCompile Include="D:\lixiaoguang_works\ogl-master\external\assimp-3.0.1270\code\ObjFileImporter.cpp">
+    <ClCompile Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\assimp-3.0.1270\code\ObjFileImporter.cpp">
       <Filter>Obj</Filter>
     </ClCompile>
-    <ClCompile Include="D:\lixiaoguang_works\ogl-master\external\assimp-3.0.1270\code\ObjFileMtlImporter.cpp">
+    <ClCompile Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\assimp-3.0.1270\code\ObjFileMtlImporter.cpp">
       <Filter>Obj</Filter>
     </ClCompile>
-    <ClCompile Include="D:\lixiaoguang_works\ogl-master\external\assimp-3.0.1270\code\ObjFileParser.cpp">
+    <ClCompile Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\assimp-3.0.1270\code\ObjFileParser.cpp">
       <Filter>Obj</Filter>
     </ClCompile>
-    <ClCompile Include="D:\lixiaoguang_works\ogl-master\external\assimp-3.0.1270\code\ObjExporter.cpp">
+    <ClCompile Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\assimp-3.0.1270\code\ObjExporter.cpp">
       <Filter>Obj</Filter>
     </ClCompile>
-    <ClCompile Include="D:\lixiaoguang_works\ogl-master\external\assimp-3.0.1270\code\OgreImporter.cpp">
+    <ClCompile Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\assimp-3.0.1270\code\OgreImporter.cpp">
       <Filter>Ogre</Filter>
     </ClCompile>
-    <ClCompile Include="D:\lixiaoguang_works\ogl-master\external\assimp-3.0.1270\code\OgreMaterial.cpp">
+    <ClCompile Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\assimp-3.0.1270\code\OgreMaterial.cpp">
       <Filter>Ogre</Filter>
     </ClCompile>
-    <ClCompile Include="D:\lixiaoguang_works\ogl-master\external\assimp-3.0.1270\code\OgreMesh.cpp">
+    <ClCompile Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\assimp-3.0.1270\code\OgreMesh.cpp">
       <Filter>Ogre</Filter>
     </ClCompile>
-    <ClCompile Include="D:\lixiaoguang_works\ogl-master\external\assimp-3.0.1270\code\OgreSkeleton.cpp">
+    <ClCompile Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\assimp-3.0.1270\code\OgreSkeleton.cpp">
       <Filter>Ogre</Filter>
     </ClCompile>
-    <ClCompile Include="D:\lixiaoguang_works\ogl-master\external\assimp-3.0.1270\code\PlyLoader.cpp">
+    <ClCompile Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\assimp-3.0.1270\code\PlyLoader.cpp">
       <Filter>Ply</Filter>
     </ClCompile>
-    <ClCompile Include="D:\lixiaoguang_works\ogl-master\external\assimp-3.0.1270\code\PlyParser.cpp">
+    <ClCompile Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\assimp-3.0.1270\code\PlyParser.cpp">
       <Filter>Ply</Filter>
     </ClCompile>
-    <ClCompile Include="D:\lixiaoguang_works\ogl-master\external\assimp-3.0.1270\code\PlyExporter.cpp">
+    <ClCompile Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\assimp-3.0.1270\code\PlyExporter.cpp">
       <Filter>Ply</Filter>
     </ClCompile>
-    <ClCompile Include="D:\lixiaoguang_works\ogl-master\external\assimp-3.0.1270\code\Q3DLoader.cpp">
+    <ClCompile Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\assimp-3.0.1270\code\Q3DLoader.cpp">
       <Filter>Q3D</Filter>
     </ClCompile>
-    <ClCompile Include="D:\lixiaoguang_works\ogl-master\external\assimp-3.0.1270\code\Q3BSPFileParser.cpp">
+    <ClCompile Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\assimp-3.0.1270\code\Q3BSPFileParser.cpp">
       <Filter>Q3BSP</Filter>
     </ClCompile>
-    <ClCompile Include="D:\lixiaoguang_works\ogl-master\external\assimp-3.0.1270\code\Q3BSPFileImporter.cpp">
+    <ClCompile Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\assimp-3.0.1270\code\Q3BSPFileImporter.cpp">
       <Filter>Q3BSP</Filter>
     </ClCompile>
-    <ClCompile Include="D:\lixiaoguang_works\ogl-master\external\assimp-3.0.1270\code\Q3BSPZipArchive.cpp">
+    <ClCompile Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\assimp-3.0.1270\code\Q3BSPZipArchive.cpp">
       <Filter>Q3BSP</Filter>
     </ClCompile>
-    <ClCompile Include="D:\lixiaoguang_works\ogl-master\external\assimp-3.0.1270\code\RawLoader.cpp">
+    <ClCompile Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\assimp-3.0.1270\code\RawLoader.cpp">
       <Filter>Raw</Filter>
     </ClCompile>
-    <ClCompile Include="D:\lixiaoguang_works\ogl-master\external\assimp-3.0.1270\code\SMDLoader.cpp">
+    <ClCompile Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\assimp-3.0.1270\code\SMDLoader.cpp">
       <Filter>SMD</Filter>
     </ClCompile>
-    <ClCompile Include="D:\lixiaoguang_works\ogl-master\external\assimp-3.0.1270\code\STLLoader.cpp">
+    <ClCompile Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\assimp-3.0.1270\code\STLLoader.cpp">
       <Filter>STL</Filter>
     </ClCompile>
-    <ClCompile Include="D:\lixiaoguang_works\ogl-master\external\assimp-3.0.1270\code\STLExporter.cpp">
+    <ClCompile Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\assimp-3.0.1270\code\STLExporter.cpp">
       <Filter>STL</Filter>
     </ClCompile>
-    <ClCompile Include="D:\lixiaoguang_works\ogl-master\external\assimp-3.0.1270\code\UnrealLoader.cpp">
+    <ClCompile Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\assimp-3.0.1270\code\UnrealLoader.cpp">
       <Filter>Unreal</Filter>
     </ClCompile>
-    <ClCompile Include="D:\lixiaoguang_works\ogl-master\external\assimp-3.0.1270\code\XFileImporter.cpp">
+    <ClCompile Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\assimp-3.0.1270\code\XFileImporter.cpp">
       <Filter>XFile</Filter>
     </ClCompile>
-    <ClCompile Include="D:\lixiaoguang_works\ogl-master\external\assimp-3.0.1270\code\XFileParser.cpp">
+    <ClCompile Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\assimp-3.0.1270\code\XFileParser.cpp">
       <Filter>XFile</Filter>
     </ClCompile>
-    <ClCompile Include="D:\lixiaoguang_works\ogl-master\external\assimp-3.0.1270\code\MS3DLoader.cpp">
+    <ClCompile Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\assimp-3.0.1270\code\MS3DLoader.cpp">
       <Filter>MS3D</Filter>
     </ClCompile>
-    <ClCompile Include="D:\lixiaoguang_works\ogl-master\external\assimp-3.0.1270\code\COBLoader.cpp">
+    <ClCompile Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\assimp-3.0.1270\code\COBLoader.cpp">
       <Filter>COB</Filter>
     </ClCompile>
-    <ClCompile Include="D:\lixiaoguang_works\ogl-master\external\assimp-3.0.1270\code\BlenderLoader.cpp">
+    <ClCompile Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\assimp-3.0.1270\code\BlenderLoader.cpp">
       <Filter>BLENDER</Filter>
     </ClCompile>
-    <ClCompile Include="D:\lixiaoguang_works\ogl-master\external\assimp-3.0.1270\code\BlenderDNA.cpp">
+    <ClCompile Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\assimp-3.0.1270\code\BlenderDNA.cpp">
       <Filter>BLENDER</Filter>
     </ClCompile>
-    <ClCompile Include="D:\lixiaoguang_works\ogl-master\external\assimp-3.0.1270\code\BlenderScene.cpp">
+    <ClCompile Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\assimp-3.0.1270\code\BlenderScene.cpp">
       <Filter>BLENDER</Filter>
     </ClCompile>
-    <ClCompile Include="D:\lixiaoguang_works\ogl-master\external\assimp-3.0.1270\code\BlenderModifier.cpp">
+    <ClCompile Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\assimp-3.0.1270\code\BlenderModifier.cpp">
       <Filter>BLENDER</Filter>
     </ClCompile>
-    <ClCompile Include="D:\lixiaoguang_works\ogl-master\external\assimp-3.0.1270\code\NDOLoader.cpp">
+    <ClCompile Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\assimp-3.0.1270\code\NDOLoader.cpp">
       <Filter>NDO</Filter>
     </ClCompile>
-    <ClCompile Include="D:\lixiaoguang_works\ogl-master\external\assimp-3.0.1270\code\IFCLoader.cpp">
+    <ClCompile Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\assimp-3.0.1270\code\IFCLoader.cpp">
       <Filter>IFC</Filter>
     </ClCompile>
-    <ClCompile Include="D:\lixiaoguang_works\ogl-master\external\assimp-3.0.1270\code\IFCReaderGen.cpp">
+    <ClCompile Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\assimp-3.0.1270\code\IFCReaderGen.cpp">
       <Filter>IFC</Filter>
     </ClCompile>
-    <ClCompile Include="D:\lixiaoguang_works\ogl-master\external\assimp-3.0.1270\code\IFCUtil.cpp">
+    <ClCompile Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\assimp-3.0.1270\code\IFCUtil.cpp">
       <Filter>IFC</Filter>
     </ClCompile>
-    <ClCompile Include="D:\lixiaoguang_works\ogl-master\external\assimp-3.0.1270\code\IFCGeometry.cpp">
+    <ClCompile Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\assimp-3.0.1270\code\IFCGeometry.cpp">
       <Filter>IFC</Filter>
     </ClCompile>
-    <ClCompile Include="D:\lixiaoguang_works\ogl-master\external\assimp-3.0.1270\code\IFCMaterial.cpp">
+    <ClCompile Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\assimp-3.0.1270\code\IFCMaterial.cpp">
       <Filter>IFC</Filter>
     </ClCompile>
-    <ClCompile Include="D:\lixiaoguang_works\ogl-master\external\assimp-3.0.1270\code\IFCProfile.cpp">
+    <ClCompile Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\assimp-3.0.1270\code\IFCProfile.cpp">
       <Filter>IFC</Filter>
     </ClCompile>
-    <ClCompile Include="D:\lixiaoguang_works\ogl-master\external\assimp-3.0.1270\code\IFCCurve.cpp">
+    <ClCompile Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\assimp-3.0.1270\code\IFCCurve.cpp">
       <Filter>IFC</Filter>
     </ClCompile>
-    <ClCompile Include="D:\lixiaoguang_works\ogl-master\external\assimp-3.0.1270\code\STEPFileReader.cpp">
+    <ClCompile Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\assimp-3.0.1270\code\STEPFileReader.cpp">
       <Filter>IFC</Filter>
     </ClCompile>
-    <ClCompile Include="D:\lixiaoguang_works\ogl-master\external\assimp-3.0.1270\code\XGLLoader.cpp">
+    <ClCompile Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\assimp-3.0.1270\code\XGLLoader.cpp">
       <Filter>XGL</Filter>
     </ClCompile>
-    <ClCompile Include="D:\lixiaoguang_works\ogl-master\external\assimp-3.0.1270\contrib\irrXML\irrXML.cpp">
+    <ClCompile Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\assimp-3.0.1270\contrib\irrXML\irrXML.cpp">
       <Filter>IrrXML</Filter>
     </ClCompile>
-    <ClCompile Include="D:\lixiaoguang_works\ogl-master\external\assimp-3.0.1270\contrib\ConvertUTF\ConvertUTF.c">
+    <ClCompile Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\assimp-3.0.1270\contrib\ConvertUTF\ConvertUTF.c">
       <Filter>ConvertUTF</Filter>
     </ClCompile>
-    <ClCompile Include="D:\lixiaoguang_works\ogl-master\external\assimp-3.0.1270\contrib\unzip\ioapi.c">
+    <ClCompile Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\assimp-3.0.1270\contrib\unzip\ioapi.c">
       <Filter>unzip</Filter>
     </ClCompile>
-    <ClCompile Include="D:\lixiaoguang_works\ogl-master\external\assimp-3.0.1270\contrib\unzip\unzip.c">
+    <ClCompile Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\assimp-3.0.1270\contrib\unzip\unzip.c">
       <Filter>unzip</Filter>
     </ClCompile>
-    <ClCompile Include="D:\lixiaoguang_works\ogl-master\external\assimp-3.0.1270\contrib\poly2tri\poly2tri\common\shapes.cc">
+    <ClCompile Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\assimp-3.0.1270\contrib\poly2tri\poly2tri\common\shapes.cc">
       <Filter>Poly2Tri</Filter>
     </ClCompile>
-    <ClCompile Include="D:\lixiaoguang_works\ogl-master\external\assimp-3.0.1270\contrib\poly2tri\poly2tri\sweep\advancing_front.cc">
+    <ClCompile Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\assimp-3.0.1270\contrib\poly2tri\poly2tri\sweep\advancing_front.cc">
       <Filter>Poly2Tri</Filter>
     </ClCompile>
-    <ClCompile Include="D:\lixiaoguang_works\ogl-master\external\assimp-3.0.1270\contrib\poly2tri\poly2tri\sweep\cdt.cc">
+    <ClCompile Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\assimp-3.0.1270\contrib\poly2tri\poly2tri\sweep\cdt.cc">
       <Filter>Poly2Tri</Filter>
     </ClCompile>
-    <ClCompile Include="D:\lixiaoguang_works\ogl-master\external\assimp-3.0.1270\contrib\poly2tri\poly2tri\sweep\sweep.cc">
+    <ClCompile Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\assimp-3.0.1270\contrib\poly2tri\poly2tri\sweep\sweep.cc">
       <Filter>Poly2Tri</Filter>
     </ClCompile>
-    <ClCompile Include="D:\lixiaoguang_works\ogl-master\external\assimp-3.0.1270\contrib\poly2tri\poly2tri\sweep\sweep_context.cc">
+    <ClCompile Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\assimp-3.0.1270\contrib\poly2tri\poly2tri\sweep\sweep_context.cc">
       <Filter>Poly2Tri</Filter>
     </ClCompile>
-    <ClCompile Include="D:\lixiaoguang_works\ogl-master\external\assimp-3.0.1270\contrib\clipper\clipper.cpp">
+    <ClCompile Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\assimp-3.0.1270\contrib\clipper\clipper.cpp">
       <Filter>Clipper</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="D:\lixiaoguang_works\ogl-master\external\assimp-3.0.1270\code\AssimpPCH.h">
+    <ClInclude Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\assimp-3.0.1270\code\AssimpPCH.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="D:\lixiaoguang_works\ogl-master\external\assimp-3.0.1270\code\fast_atof.h">
+    <ClInclude Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\assimp-3.0.1270\code\fast_atof.h">
       <Filter>Common</Filter>
     </ClInclude>
-    <ClInclude Include="D:\lixiaoguang_works\ogl-master\external\assimp-3.0.1270\code\qnan.h">
+    <ClInclude Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\assimp-3.0.1270\code\qnan.h">
       <Filter>Common</Filter>
     </ClInclude>
-    <ClInclude Include="D:\lixiaoguang_works\ogl-master\external\assimp-3.0.1270\code\BaseImporter.h">
+    <ClInclude Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\assimp-3.0.1270\code\BaseImporter.h">
       <Filter>Common</Filter>
     </ClInclude>
-    <ClInclude Include="D:\lixiaoguang_works\ogl-master\external\assimp-3.0.1270\code\BaseProcess.h">
+    <ClInclude Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\assimp-3.0.1270\code\BaseProcess.h">
       <Filter>Common</Filter>
     </ClInclude>
-    <ClInclude Include="D:\lixiaoguang_works\ogl-master\external\assimp-3.0.1270\code\Importer.h">
+    <ClInclude Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\assimp-3.0.1270\code\Importer.h">
       <Filter>Common</Filter>
     </ClInclude>
-    <ClInclude Include="D:\lixiaoguang_works\ogl-master\external\assimp-3.0.1270\code\ScenePrivate.h">
+    <ClInclude Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\assimp-3.0.1270\code\ScenePrivate.h">
       <Filter>Common</Filter>
     </ClInclude>
-    <ClInclude Include="D:\lixiaoguang_works\ogl-master\external\assimp-3.0.1270\code\ByteSwap.h">
+    <ClInclude Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\assimp-3.0.1270\code\ByteSwap.h">
       <Filter>Common</Filter>
     </ClInclude>
-    <ClInclude Include="D:\lixiaoguang_works\ogl-master\external\assimp-3.0.1270\code\DefaultProgressHandler.h">
+    <ClInclude Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\assimp-3.0.1270\code\DefaultProgressHandler.h">
       <Filter>Common</Filter>
     </ClInclude>
-    <ClInclude Include="D:\lixiaoguang_works\ogl-master\external\assimp-3.0.1270\code\DefaultIOStream.h">
+    <ClInclude Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\assimp-3.0.1270\code\DefaultIOStream.h">
       <Filter>Common</Filter>
     </ClInclude>
-    <ClInclude Include="D:\lixiaoguang_works\ogl-master\external\assimp-3.0.1270\code\DefaultIOSystem.h">
+    <ClInclude Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\assimp-3.0.1270\code\DefaultIOSystem.h">
       <Filter>Common</Filter>
     </ClInclude>
-    <ClInclude Include="D:\lixiaoguang_works\ogl-master\external\assimp-3.0.1270\code\CInterfaceIOWrapper.h">
+    <ClInclude Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\assimp-3.0.1270\code\CInterfaceIOWrapper.h">
       <Filter>Common</Filter>
     </ClInclude>
-    <ClInclude Include="D:\lixiaoguang_works\ogl-master\external\assimp-3.0.1270\code\Hash.h">
+    <ClInclude Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\assimp-3.0.1270\code\Hash.h">
       <Filter>Common</Filter>
     </ClInclude>
-    <ClInclude Include="D:\lixiaoguang_works\ogl-master\external\assimp-3.0.1270\code\IFF.h">
+    <ClInclude Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\assimp-3.0.1270\code\IFF.h">
       <Filter>Common</Filter>
     </ClInclude>
-    <ClInclude Include="D:\lixiaoguang_works\ogl-master\external\assimp-3.0.1270\code\ParsingUtils.h">
+    <ClInclude Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\assimp-3.0.1270\code\ParsingUtils.h">
       <Filter>Common</Filter>
     </ClInclude>
-    <ClInclude Include="D:\lixiaoguang_works\ogl-master\external\assimp-3.0.1270\code\StdOStreamLogStream.h">
+    <ClInclude Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\assimp-3.0.1270\code\StdOStreamLogStream.h">
       <Filter>Common</Filter>
     </ClInclude>
-    <ClInclude Include="D:\lixiaoguang_works\ogl-master\external\assimp-3.0.1270\code\StreamReader.h">
+    <ClInclude Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\assimp-3.0.1270\code\StreamReader.h">
       <Filter>Common</Filter>
     </ClInclude>
-    <ClInclude Include="D:\lixiaoguang_works\ogl-master\external\assimp-3.0.1270\code\StringComparison.h">
+    <ClInclude Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\assimp-3.0.1270\code\StringComparison.h">
       <Filter>Common</Filter>
     </ClInclude>
-    <ClInclude Include="D:\lixiaoguang_works\ogl-master\external\assimp-3.0.1270\code\SGSpatialSort.h">
+    <ClInclude Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\assimp-3.0.1270\code\SGSpatialSort.h">
       <Filter>Common</Filter>
     </ClInclude>
-    <ClInclude Include="D:\lixiaoguang_works\ogl-master\external\assimp-3.0.1270\code\VertexTriangleAdjacency.h">
+    <ClInclude Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\assimp-3.0.1270\code\VertexTriangleAdjacency.h">
       <Filter>Common</Filter>
     </ClInclude>
-    <ClInclude Include="D:\lixiaoguang_works\ogl-master\external\assimp-3.0.1270\code\GenericProperty.h">
+    <ClInclude Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\assimp-3.0.1270\code\GenericProperty.h">
       <Filter>Common</Filter>
     </ClInclude>
-    <ClInclude Include="D:\lixiaoguang_works\ogl-master\external\assimp-3.0.1270\code\SpatialSort.h">
+    <ClInclude Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\assimp-3.0.1270\code\SpatialSort.h">
       <Filter>Common</Filter>
     </ClInclude>
-    <ClInclude Include="D:\lixiaoguang_works\ogl-master\external\assimp-3.0.1270\code\SceneCombiner.h">
+    <ClInclude Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\assimp-3.0.1270\code\SceneCombiner.h">
       <Filter>Common</Filter>
     </ClInclude>
-    <ClInclude Include="D:\lixiaoguang_works\ogl-master\external\assimp-3.0.1270\code\ScenePreprocessor.h">
+    <ClInclude Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\assimp-3.0.1270\code\ScenePreprocessor.h">
       <Filter>Common</Filter>
     </ClInclude>
-    <ClInclude Include="D:\lixiaoguang_works\ogl-master\external\assimp-3.0.1270\code\SkeletonMeshBuilder.h">
+    <ClInclude Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\assimp-3.0.1270\code\SkeletonMeshBuilder.h">
       <Filter>Common</Filter>
     </ClInclude>
-    <ClInclude Include="D:\lixiaoguang_works\ogl-master\external\assimp-3.0.1270\code\SplitByBoneCountProcess.h">
+    <ClInclude Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\assimp-3.0.1270\code\SplitByBoneCountProcess.h">
       <Filter>Common</Filter>
     </ClInclude>
-    <ClInclude Include="D:\lixiaoguang_works\ogl-master\external\assimp-3.0.1270\code\SmoothingGroups.h">
+    <ClInclude Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\assimp-3.0.1270\code\SmoothingGroups.h">
       <Filter>Common</Filter>
     </ClInclude>
-    <ClInclude Include="D:\lixiaoguang_works\ogl-master\external\assimp-3.0.1270\code\StandardShapes.h">
+    <ClInclude Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\assimp-3.0.1270\code\StandardShapes.h">
       <Filter>Common</Filter>
     </ClInclude>
-    <ClInclude Include="D:\lixiaoguang_works\ogl-master\external\assimp-3.0.1270\code\TargetAnimation.h">
+    <ClInclude Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\assimp-3.0.1270\code\TargetAnimation.h">
       <Filter>Common</Filter>
     </ClInclude>
-    <ClInclude Include="D:\lixiaoguang_works\ogl-master\external\assimp-3.0.1270\code\RemoveComments.h">
+    <ClInclude Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\assimp-3.0.1270\code\RemoveComments.h">
       <Filter>Common</Filter>
     </ClInclude>
-    <ClInclude Include="D:\lixiaoguang_works\ogl-master\external\assimp-3.0.1270\code\Subdivision.h">
+    <ClInclude Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\assimp-3.0.1270\code\Subdivision.h">
       <Filter>Common</Filter>
     </ClInclude>
-    <ClInclude Include="D:\lixiaoguang_works\ogl-master\external\assimp-3.0.1270\code\Vertex.h">
+    <ClInclude Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\assimp-3.0.1270\code\Vertex.h">
       <Filter>Common</Filter>
     </ClInclude>
-    <ClInclude Include="D:\lixiaoguang_works\ogl-master\external\assimp-3.0.1270\code\LineSplitter.h">
+    <ClInclude Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\assimp-3.0.1270\code\LineSplitter.h">
       <Filter>Common</Filter>
     </ClInclude>
-    <ClInclude Include="D:\lixiaoguang_works\ogl-master\external\assimp-3.0.1270\code\TinyFormatter.h">
+    <ClInclude Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\assimp-3.0.1270\code\TinyFormatter.h">
       <Filter>Common</Filter>
     </ClInclude>
-    <ClInclude Include="D:\lixiaoguang_works\ogl-master\external\assimp-3.0.1270\code\Profiler.h">
+    <ClInclude Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\assimp-3.0.1270\code\Profiler.h">
       <Filter>Common</Filter>
     </ClInclude>
-    <ClInclude Include="D:\lixiaoguang_works\ogl-master\external\assimp-3.0.1270\code\LogAux.h">
+    <ClInclude Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\assimp-3.0.1270\code\LogAux.h">
       <Filter>Common</Filter>
     </ClInclude>
-    <ClInclude Include="D:\lixiaoguang_works\ogl-master\external\assimp-3.0.1270\include\assimp\DefaultLogger.hpp">
+    <ClInclude Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\assimp-3.0.1270\include\assimp\DefaultLogger.hpp">
       <Filter>Logging</Filter>
     </ClInclude>
-    <ClInclude Include="D:\lixiaoguang_works\ogl-master\external\assimp-3.0.1270\include\assimp\IOStream.hpp">
+    <ClInclude Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\assimp-3.0.1270\include\assimp\IOStream.hpp">
       <Filter>Logging</Filter>
     </ClInclude>
-    <ClInclude Include="D:\lixiaoguang_works\ogl-master\external\assimp-3.0.1270\include\assimp\LogStream.hpp">
+    <ClInclude Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\assimp-3.0.1270\include\assimp\LogStream.hpp">
       <Filter>Logging</Filter>
     </ClInclude>
-    <ClInclude Include="D:\lixiaoguang_works\ogl-master\external\assimp-3.0.1270\include\assimp\Logger.hpp">
+    <ClInclude Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\assimp-3.0.1270\include\assimp\Logger.hpp">
       <Filter>Logging</Filter>
     </ClInclude>
-    <ClInclude Include="D:\lixiaoguang_works\ogl-master\external\assimp-3.0.1270\include\assimp\NullLogger.hpp">
+    <ClInclude Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\assimp-3.0.1270\include\assimp\NullLogger.hpp">
       <Filter>Logging</Filter>
     </ClInclude>
-    <ClInclude Include="D:\lixiaoguang_works\ogl-master\external\assimp-3.0.1270\code\Win32DebugLogStream.h">
+    <ClInclude Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\assimp-3.0.1270\code\Win32DebugLogStream.h">
       <Filter>Logging</Filter>
     </ClInclude>
-    <ClInclude Include="D:\lixiaoguang_works\ogl-master\external\assimp-3.0.1270\code\FileLogStream.h">
+    <ClInclude Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\assimp-3.0.1270\code\FileLogStream.h">
       <Filter>Logging</Filter>
     </ClInclude>
-    <ClInclude Include="D:\lixiaoguang_works\ogl-master\external\assimp-3.0.1270\code\BlobIOSystem.h">
+    <ClInclude Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\assimp-3.0.1270\code\BlobIOSystem.h">
       <Filter>Exporter</Filter>
     </ClInclude>
-    <ClInclude Include="D:\lixiaoguang_works\ogl-master\external\assimp-3.0.1270\code\CalcTangentsProcess.h">
+    <ClInclude Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\assimp-3.0.1270\code\CalcTangentsProcess.h">
       <Filter>PostProcessing</Filter>
     </ClInclude>
-    <ClInclude Include="D:\lixiaoguang_works\ogl-master\external\assimp-3.0.1270\code\ComputeUVMappingProcess.h">
+    <ClInclude Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\assimp-3.0.1270\code\ComputeUVMappingProcess.h">
       <Filter>PostProcessing</Filter>
     </ClInclude>
-    <ClInclude Include="D:\lixiaoguang_works\ogl-master\external\assimp-3.0.1270\code\ConvertToLHProcess.h">
+    <ClInclude Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\assimp-3.0.1270\code\ConvertToLHProcess.h">
       <Filter>PostProcessing</Filter>
     </ClInclude>
-    <ClInclude Include="D:\lixiaoguang_works\ogl-master\external\assimp-3.0.1270\code\FindDegenerates.h">
+    <ClInclude Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\assimp-3.0.1270\code\FindDegenerates.h">
       <Filter>PostProcessing</Filter>
     </ClInclude>
-    <ClInclude Include="D:\lixiaoguang_works\ogl-master\external\assimp-3.0.1270\code\FindInstancesProcess.h">
+    <ClInclude Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\assimp-3.0.1270\code\FindInstancesProcess.h">
       <Filter>PostProcessing</Filter>
     </ClInclude>
-    <ClInclude Include="D:\lixiaoguang_works\ogl-master\external\assimp-3.0.1270\code\FindInvalidDataProcess.h">
+    <ClInclude Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\assimp-3.0.1270\code\FindInvalidDataProcess.h">
       <Filter>PostProcessing</Filter>
     </ClInclude>
-    <ClInclude Include="D:\lixiaoguang_works\ogl-master\external\assimp-3.0.1270\code\FixNormalsStep.h">
+    <ClInclude Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\assimp-3.0.1270\code\FixNormalsStep.h">
       <Filter>PostProcessing</Filter>
     </ClInclude>
-    <ClInclude Include="D:\lixiaoguang_works\ogl-master\external\assimp-3.0.1270\code\GenFaceNormalsProcess.h">
+    <ClInclude Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\assimp-3.0.1270\code\GenFaceNormalsProcess.h">
       <Filter>PostProcessing</Filter>
     </ClInclude>
-    <ClInclude Include="D:\lixiaoguang_works\ogl-master\external\assimp-3.0.1270\code\GenVertexNormalsProcess.h">
+    <ClInclude Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\assimp-3.0.1270\code\GenVertexNormalsProcess.h">
       <Filter>PostProcessing</Filter>
     </ClInclude>
-    <ClInclude Include="D:\lixiaoguang_works\ogl-master\external\assimp-3.0.1270\code\PretransformVertices.h">
+    <ClInclude Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\assimp-3.0.1270\code\PretransformVertices.h">
       <Filter>PostProcessing</Filter>
     </ClInclude>
-    <ClInclude Include="D:\lixiaoguang_works\ogl-master\external\assimp-3.0.1270\code\ImproveCacheLocality.h">
+    <ClInclude Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\assimp-3.0.1270\code\ImproveCacheLocality.h">
       <Filter>PostProcessing</Filter>
     </ClInclude>
-    <ClInclude Include="D:\lixiaoguang_works\ogl-master\external\assimp-3.0.1270\code\JoinVerticesProcess.h">
+    <ClInclude Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\assimp-3.0.1270\code\JoinVerticesProcess.h">
       <Filter>PostProcessing</Filter>
     </ClInclude>
-    <ClInclude Include="D:\lixiaoguang_works\ogl-master\external\assimp-3.0.1270\code\LimitBoneWeightsProcess.h">
+    <ClInclude Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\assimp-3.0.1270\code\LimitBoneWeightsProcess.h">
       <Filter>PostProcessing</Filter>
     </ClInclude>
-    <ClInclude Include="D:\lixiaoguang_works\ogl-master\external\assimp-3.0.1270\code\RemoveRedundantMaterials.h">
+    <ClInclude Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\assimp-3.0.1270\code\RemoveRedundantMaterials.h">
       <Filter>PostProcessing</Filter>
     </ClInclude>
-    <ClInclude Include="D:\lixiaoguang_works\ogl-master\external\assimp-3.0.1270\code\RemoveVCProcess.h">
+    <ClInclude Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\assimp-3.0.1270\code\RemoveVCProcess.h">
       <Filter>PostProcessing</Filter>
     </ClInclude>
-    <ClInclude Include="D:\lixiaoguang_works\ogl-master\external\assimp-3.0.1270\code\SortByPTypeProcess.h">
+    <ClInclude Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\assimp-3.0.1270\code\SortByPTypeProcess.h">
       <Filter>PostProcessing</Filter>
     </ClInclude>
-    <ClInclude Include="D:\lixiaoguang_works\ogl-master\external\assimp-3.0.1270\code\SplitLargeMeshes.h">
+    <ClInclude Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\assimp-3.0.1270\code\SplitLargeMeshes.h">
       <Filter>PostProcessing</Filter>
     </ClInclude>
-    <ClInclude Include="D:\lixiaoguang_works\ogl-master\external\assimp-3.0.1270\code\TerragenLoader.h">
+    <ClInclude Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\assimp-3.0.1270\code\TerragenLoader.h">
       <Filter>PostProcessing</Filter>
     </ClInclude>
-    <ClInclude Include="D:\lixiaoguang_works\ogl-master\external\assimp-3.0.1270\code\TextureTransform.h">
+    <ClInclude Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\assimp-3.0.1270\code\TextureTransform.h">
       <Filter>PostProcessing</Filter>
     </ClInclude>
-    <ClInclude Include="D:\lixiaoguang_works\ogl-master\external\assimp-3.0.1270\code\TriangulateProcess.h">
+    <ClInclude Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\assimp-3.0.1270\code\TriangulateProcess.h">
       <Filter>PostProcessing</Filter>
     </ClInclude>
-    <ClInclude Include="D:\lixiaoguang_works\ogl-master\external\assimp-3.0.1270\code\ValidateDataStructure.h">
+    <ClInclude Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\assimp-3.0.1270\code\ValidateDataStructure.h">
       <Filter>PostProcessing</Filter>
     </ClInclude>
-    <ClInclude Include="D:\lixiaoguang_works\ogl-master\external\assimp-3.0.1270\code\OptimizeGraph.h">
+    <ClInclude Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\assimp-3.0.1270\code\OptimizeGraph.h">
       <Filter>PostProcessing</Filter>
     </ClInclude>
-    <ClInclude Include="D:\lixiaoguang_works\ogl-master\external\assimp-3.0.1270\code\OptimizeMeshes.h">
+    <ClInclude Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\assimp-3.0.1270\code\OptimizeMeshes.h">
       <Filter>PostProcessing</Filter>
     </ClInclude>
-    <ClInclude Include="D:\lixiaoguang_works\ogl-master\external\assimp-3.0.1270\code\DeboneProcess.h">
+    <ClInclude Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\assimp-3.0.1270\code\DeboneProcess.h">
       <Filter>PostProcessing</Filter>
     </ClInclude>
-    <ClInclude Include="D:\lixiaoguang_works\ogl-master\external\assimp-3.0.1270\code\ProcessHelper.h">
+    <ClInclude Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\assimp-3.0.1270\code\ProcessHelper.h">
       <Filter>PostProcessing</Filter>
     </ClInclude>
-    <ClInclude Include="D:\lixiaoguang_works\ogl-master\external\assimp-3.0.1270\code\PolyTools.h">
+    <ClInclude Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\assimp-3.0.1270\code\PolyTools.h">
       <Filter>PostProcessing</Filter>
     </ClInclude>
-    <ClInclude Include="D:\lixiaoguang_works\ogl-master\external\assimp-3.0.1270\code\MakeVerboseFormat.h">
+    <ClInclude Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\assimp-3.0.1270\code\MakeVerboseFormat.h">
       <Filter>PostProcessing</Filter>
     </ClInclude>
-    <ClInclude Include="D:\lixiaoguang_works\ogl-master\external\assimp-3.0.1270\code\3DSHelper.h">
+    <ClInclude Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\assimp-3.0.1270\code\3DSHelper.h">
       <Filter>3DS</Filter>
     </ClInclude>
-    <ClInclude Include="D:\lixiaoguang_works\ogl-master\external\assimp-3.0.1270\code\3DSLoader.h">
+    <ClInclude Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\assimp-3.0.1270\code\3DSLoader.h">
       <Filter>3DS</Filter>
     </ClInclude>
-    <ClInclude Include="D:\lixiaoguang_works\ogl-master\external\assimp-3.0.1270\code\ACLoader.h">
+    <ClInclude Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\assimp-3.0.1270\code\ACLoader.h">
       <Filter>AC</Filter>
     </ClInclude>
-    <ClInclude Include="D:\lixiaoguang_works\ogl-master\external\assimp-3.0.1270\code\ASELoader.h">
+    <ClInclude Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\assimp-3.0.1270\code\ASELoader.h">
       <Filter>ASE</Filter>
     </ClInclude>
-    <ClInclude Include="D:\lixiaoguang_works\ogl-master\external\assimp-3.0.1270\code\ASEParser.h">
+    <ClInclude Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\assimp-3.0.1270\code\ASEParser.h">
       <Filter>ASE</Filter>
     </ClInclude>
-    <ClInclude Include="D:\lixiaoguang_works\ogl-master\external\assimp-3.0.1270\code\B3DImporter.h">
+    <ClInclude Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\assimp-3.0.1270\code\B3DImporter.h">
       <Filter>B3D</Filter>
     </ClInclude>
-    <ClInclude Include="D:\lixiaoguang_works\ogl-master\external\assimp-3.0.1270\code\BVHLoader.h">
+    <ClInclude Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\assimp-3.0.1270\code\BVHLoader.h">
       <Filter>BVH</Filter>
     </ClInclude>
-    <ClInclude Include="D:\lixiaoguang_works\ogl-master\external\assimp-3.0.1270\code\ColladaHelper.h">
+    <ClInclude Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\assimp-3.0.1270\code\ColladaHelper.h">
       <Filter>Collada</Filter>
     </ClInclude>
-    <ClInclude Include="D:\lixiaoguang_works\ogl-master\external\assimp-3.0.1270\code\ColladaLoader.h">
+    <ClInclude Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\assimp-3.0.1270\code\ColladaLoader.h">
       <Filter>Collada</Filter>
     </ClInclude>
-    <ClInclude Include="D:\lixiaoguang_works\ogl-master\external\assimp-3.0.1270\code\ColladaParser.h">
+    <ClInclude Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\assimp-3.0.1270\code\ColladaParser.h">
       <Filter>Collada</Filter>
     </ClInclude>
-    <ClInclude Include="D:\lixiaoguang_works\ogl-master\external\assimp-3.0.1270\code\ColladaExporter.h">
+    <ClInclude Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\assimp-3.0.1270\code\ColladaExporter.h">
       <Filter>Collada</Filter>
     </ClInclude>
-    <ClInclude Include="D:\lixiaoguang_works\ogl-master\external\assimp-3.0.1270\code\DXFLoader.h">
+    <ClInclude Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\assimp-3.0.1270\code\DXFLoader.h">
       <Filter>DXF</Filter>
     </ClInclude>
-    <ClInclude Include="D:\lixiaoguang_works\ogl-master\external\assimp-3.0.1270\code\DXFHelper.h">
+    <ClInclude Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\assimp-3.0.1270\code\DXFHelper.h">
       <Filter>DXF</Filter>
     </ClInclude>
-    <ClInclude Include="D:\lixiaoguang_works\ogl-master\external\assimp-3.0.1270\code\CSMLoader.h">
+    <ClInclude Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\assimp-3.0.1270\code\CSMLoader.h">
       <Filter>CSM</Filter>
     </ClInclude>
-    <ClInclude Include="D:\lixiaoguang_works\ogl-master\external\assimp-3.0.1270\code\HMPFileData.h">
+    <ClInclude Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\assimp-3.0.1270\code\HMPFileData.h">
       <Filter>HMP</Filter>
     </ClInclude>
-    <ClInclude Include="D:\lixiaoguang_works\ogl-master\external\assimp-3.0.1270\code\HMPLoader.h">
+    <ClInclude Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\assimp-3.0.1270\code\HMPLoader.h">
       <Filter>HMP</Filter>
     </ClInclude>
-    <ClInclude Include="D:\lixiaoguang_works\ogl-master\external\assimp-3.0.1270\code\HalfLifeFileData.h">
+    <ClInclude Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\assimp-3.0.1270\code\HalfLifeFileData.h">
       <Filter>HMP</Filter>
     </ClInclude>
-    <ClInclude Include="D:\lixiaoguang_works\ogl-master\external\assimp-3.0.1270\code\IRRLoader.h">
+    <ClInclude Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\assimp-3.0.1270\code\IRRLoader.h">
       <Filter>Irr</Filter>
     </ClInclude>
-    <ClInclude Include="D:\lixiaoguang_works\ogl-master\external\assimp-3.0.1270\code\IRRMeshLoader.h">
+    <ClInclude Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\assimp-3.0.1270\code\IRRMeshLoader.h">
       <Filter>Irr</Filter>
     </ClInclude>
-    <ClInclude Include="D:\lixiaoguang_works\ogl-master\external\assimp-3.0.1270\code\IRRShared.h">
+    <ClInclude Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\assimp-3.0.1270\code\IRRShared.h">
       <Filter>Irr</Filter>
     </ClInclude>
-    <ClInclude Include="D:\lixiaoguang_works\ogl-master\external\assimp-3.0.1270\code\LWOAnimation.h">
+    <ClInclude Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\assimp-3.0.1270\code\LWOAnimation.h">
       <Filter>LWO</Filter>
     </ClInclude>
-    <ClInclude Include="D:\lixiaoguang_works\ogl-master\external\assimp-3.0.1270\code\LWOFileData.h">
+    <ClInclude Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\assimp-3.0.1270\code\LWOFileData.h">
       <Filter>LWO</Filter>
     </ClInclude>
-    <ClInclude Include="D:\lixiaoguang_works\ogl-master\external\assimp-3.0.1270\code\LWOLoader.h">
+    <ClInclude Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\assimp-3.0.1270\code\LWOLoader.h">
       <Filter>LWO</Filter>
     </ClInclude>
-    <ClInclude Include="D:\lixiaoguang_works\ogl-master\external\assimp-3.0.1270\code\LWSLoader.h">
+    <ClInclude Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\assimp-3.0.1270\code\LWSLoader.h">
       <Filter>LWS</Filter>
     </ClInclude>
-    <ClInclude Include="D:\lixiaoguang_works\ogl-master\external\assimp-3.0.1270\code\M3Importer.h">
+    <ClInclude Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\assimp-3.0.1270\code\M3Importer.h">
       <Filter>M3</Filter>
     </ClInclude>
-    <ClInclude Include="D:\lixiaoguang_works\ogl-master\external\assimp-3.0.1270\code\MD2FileData.h">
+    <ClInclude Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\assimp-3.0.1270\code\MD2FileData.h">
       <Filter>MD2</Filter>
     </ClInclude>
-    <ClInclude Include="D:\lixiaoguang_works\ogl-master\external\assimp-3.0.1270\code\MD2Loader.h">
+    <ClInclude Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\assimp-3.0.1270\code\MD2Loader.h">
       <Filter>MD2</Filter>
     </ClInclude>
-    <ClInclude Include="D:\lixiaoguang_works\ogl-master\external\assimp-3.0.1270\code\MD2NormalTable.h">
+    <ClInclude Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\assimp-3.0.1270\code\MD2NormalTable.h">
       <Filter>MD2</Filter>
     </ClInclude>
-    <ClInclude Include="D:\lixiaoguang_works\ogl-master\external\assimp-3.0.1270\code\MD3FileData.h">
+    <ClInclude Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\assimp-3.0.1270\code\MD3FileData.h">
       <Filter>MD3</Filter>
     </ClInclude>
-    <ClInclude Include="D:\lixiaoguang_works\ogl-master\external\assimp-3.0.1270\code\MD3Loader.h">
+    <ClInclude Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\assimp-3.0.1270\code\MD3Loader.h">
       <Filter>MD3</Filter>
     </ClInclude>
-    <ClInclude Include="D:\lixiaoguang_works\ogl-master\external\assimp-3.0.1270\code\MD5Loader.h">
+    <ClInclude Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\assimp-3.0.1270\code\MD5Loader.h">
       <Filter>MD5</Filter>
     </ClInclude>
-    <ClInclude Include="D:\lixiaoguang_works\ogl-master\external\assimp-3.0.1270\code\MD5Parser.h">
+    <ClInclude Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\assimp-3.0.1270\code\MD5Parser.h">
       <Filter>MD5</Filter>
     </ClInclude>
-    <ClInclude Include="D:\lixiaoguang_works\ogl-master\external\assimp-3.0.1270\code\MDCFileData.h">
+    <ClInclude Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\assimp-3.0.1270\code\MDCFileData.h">
       <Filter>MDC</Filter>
     </ClInclude>
-    <ClInclude Include="D:\lixiaoguang_works\ogl-master\external\assimp-3.0.1270\code\MDCLoader.h">
+    <ClInclude Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\assimp-3.0.1270\code\MDCLoader.h">
       <Filter>MDC</Filter>
     </ClInclude>
-    <ClInclude Include="D:\lixiaoguang_works\ogl-master\external\assimp-3.0.1270\code\MDCNormalTable.h">
+    <ClInclude Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\assimp-3.0.1270\code\MDCNormalTable.h">
       <Filter>MDC</Filter>
     </ClInclude>
-    <ClInclude Include="D:\lixiaoguang_works\ogl-master\external\assimp-3.0.1270\code\MDLDefaultColorMap.h">
+    <ClInclude Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\assimp-3.0.1270\code\MDLDefaultColorMap.h">
       <Filter>MDL</Filter>
     </ClInclude>
-    <ClInclude Include="D:\lixiaoguang_works\ogl-master\external\assimp-3.0.1270\code\MDLFileData.h">
+    <ClInclude Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\assimp-3.0.1270\code\MDLFileData.h">
       <Filter>MDL</Filter>
     </ClInclude>
-    <ClInclude Include="D:\lixiaoguang_works\ogl-master\external\assimp-3.0.1270\code\MDLLoader.h">
+    <ClInclude Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\assimp-3.0.1270\code\MDLLoader.h">
       <Filter>MDL</Filter>
     </ClInclude>
-    <ClInclude Include="D:\lixiaoguang_works\ogl-master\external\assimp-3.0.1270\code\MaterialSystem.h">
+    <ClInclude Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\assimp-3.0.1270\code\MaterialSystem.h">
       <Filter>MaterialSystem</Filter>
     </ClInclude>
-    <ClInclude Include="D:\lixiaoguang_works\ogl-master\external\assimp-3.0.1270\code\NFFLoader.h">
+    <ClInclude Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\assimp-3.0.1270\code\NFFLoader.h">
       <Filter>NFF</Filter>
     </ClInclude>
-    <ClInclude Include="D:\lixiaoguang_works\ogl-master\external\assimp-3.0.1270\code\OFFLoader.h">
+    <ClInclude Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\assimp-3.0.1270\code\OFFLoader.h">
       <Filter>OFFFormat</Filter>
     </ClInclude>
-    <ClInclude Include="D:\lixiaoguang_works\ogl-master\external\assimp-3.0.1270\code\ObjFileData.h">
+    <ClInclude Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\assimp-3.0.1270\code\ObjFileData.h">
       <Filter>Obj</Filter>
     </ClInclude>
-    <ClInclude Include="D:\lixiaoguang_works\ogl-master\external\assimp-3.0.1270\code\ObjFileImporter.h">
+    <ClInclude Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\assimp-3.0.1270\code\ObjFileImporter.h">
       <Filter>Obj</Filter>
     </ClInclude>
-    <ClInclude Include="D:\lixiaoguang_works\ogl-master\external\assimp-3.0.1270\code\ObjFileMtlImporter.h">
+    <ClInclude Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\assimp-3.0.1270\code\ObjFileMtlImporter.h">
       <Filter>Obj</Filter>
     </ClInclude>
-    <ClInclude Include="D:\lixiaoguang_works\ogl-master\external\assimp-3.0.1270\code\ObjFileParser.h">
+    <ClInclude Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\assimp-3.0.1270\code\ObjFileParser.h">
       <Filter>Obj</Filter>
     </ClInclude>
-    <ClInclude Include="D:\lixiaoguang_works\ogl-master\external\assimp-3.0.1270\code\ObjTools.h">
+    <ClInclude Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\assimp-3.0.1270\code\ObjTools.h">
       <Filter>Obj</Filter>
     </ClInclude>
-    <ClInclude Include="D:\lixiaoguang_works\ogl-master\external\assimp-3.0.1270\code\ObjExporter.h">
+    <ClInclude Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\assimp-3.0.1270\code\ObjExporter.h">
       <Filter>Obj</Filter>
     </ClInclude>
-    <ClInclude Include="D:\lixiaoguang_works\ogl-master\external\assimp-3.0.1270\code\OgreImporter.hpp">
+    <ClInclude Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\assimp-3.0.1270\code\OgreImporter.hpp">
       <Filter>Ogre</Filter>
     </ClInclude>
-    <ClInclude Include="D:\lixiaoguang_works\ogl-master\external\assimp-3.0.1270\code\OgreXmlHelper.hpp">
+    <ClInclude Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\assimp-3.0.1270\code\OgreXmlHelper.hpp">
       <Filter>Ogre</Filter>
     </ClInclude>
-    <ClInclude Include="D:\lixiaoguang_works\ogl-master\external\assimp-3.0.1270\code\PlyLoader.h">
+    <ClInclude Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\assimp-3.0.1270\code\PlyLoader.h">
       <Filter>Ply</Filter>
     </ClInclude>
-    <ClInclude Include="D:\lixiaoguang_works\ogl-master\external\assimp-3.0.1270\code\PlyParser.h">
+    <ClInclude Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\assimp-3.0.1270\code\PlyParser.h">
       <Filter>Ply</Filter>
     </ClInclude>
-    <ClInclude Include="D:\lixiaoguang_works\ogl-master\external\assimp-3.0.1270\code\PlyExporter.h">
+    <ClInclude Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\assimp-3.0.1270\code\PlyExporter.h">
       <Filter>Ply</Filter>
     </ClInclude>
-    <ClInclude Include="D:\lixiaoguang_works\ogl-master\external\assimp-3.0.1270\code\Q3DLoader.h">
+    <ClInclude Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\assimp-3.0.1270\code\Q3DLoader.h">
       <Filter>Q3D</Filter>
     </ClInclude>
-    <ClInclude Include="D:\lixiaoguang_works\ogl-master\external\assimp-3.0.1270\code\Q3BSPFileData.h">
+    <ClInclude Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\assimp-3.0.1270\code\Q3BSPFileData.h">
       <Filter>Q3BSP</Filter>
     </ClInclude>
-    <ClInclude Include="D:\lixiaoguang_works\ogl-master\external\assimp-3.0.1270\code\Q3BSPFileParser.h">
+    <ClInclude Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\assimp-3.0.1270\code\Q3BSPFileParser.h">
       <Filter>Q3BSP</Filter>
     </ClInclude>
-    <ClInclude Include="D:\lixiaoguang_works\ogl-master\external\assimp-3.0.1270\code\Q3BSPFileImporter.h">
+    <ClInclude Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\assimp-3.0.1270\code\Q3BSPFileImporter.h">
       <Filter>Q3BSP</Filter>
     </ClInclude>
-    <ClInclude Include="D:\lixiaoguang_works\ogl-master\external\assimp-3.0.1270\code\Q3BSPZipArchive.h">
+    <ClInclude Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\assimp-3.0.1270\code\Q3BSPZipArchive.h">
       <Filter>Q3BSP</Filter>
     </ClInclude>
-    <ClInclude Include="D:\lixiaoguang_works\ogl-master\external\assimp-3.0.1270\code\RawLoader.h">
+    <ClInclude Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\assimp-3.0.1270\code\RawLoader.h">
       <Filter>Raw</Filter>
     </ClInclude>
-    <ClInclude Include="D:\lixiaoguang_works\ogl-master\external\assimp-3.0.1270\code\SMDLoader.h">
+    <ClInclude Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\assimp-3.0.1270\code\SMDLoader.h">
       <Filter>SMD</Filter>
     </ClInclude>
-    <ClInclude Include="D:\lixiaoguang_works\ogl-master\external\assimp-3.0.1270\code\STLLoader.h">
+    <ClInclude Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\assimp-3.0.1270\code\STLLoader.h">
       <Filter>STL</Filter>
     </ClInclude>
-    <ClInclude Include="D:\lixiaoguang_works\ogl-master\external\assimp-3.0.1270\code\STLExporter.h">
+    <ClInclude Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\assimp-3.0.1270\code\STLExporter.h">
       <Filter>STL</Filter>
     </ClInclude>
-    <ClInclude Include="D:\lixiaoguang_works\ogl-master\external\assimp-3.0.1270\code\UnrealLoader.h">
+    <ClInclude Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\assimp-3.0.1270\code\UnrealLoader.h">
       <Filter>Unreal</Filter>
     </ClInclude>
-    <ClInclude Include="D:\lixiaoguang_works\ogl-master\external\assimp-3.0.1270\code\XFileHelper.h">
+    <ClInclude Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\assimp-3.0.1270\code\XFileHelper.h">
       <Filter>XFile</Filter>
     </ClInclude>
-    <ClInclude Include="D:\lixiaoguang_works\ogl-master\external\assimp-3.0.1270\code\XFileImporter.h">
+    <ClInclude Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\assimp-3.0.1270\code\XFileImporter.h">
       <Filter>XFile</Filter>
     </ClInclude>
-    <ClInclude Include="D:\lixiaoguang_works\ogl-master\external\assimp-3.0.1270\code\XFileParser.h">
+    <ClInclude Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\assimp-3.0.1270\code\XFileParser.h">
       <Filter>XFile</Filter>
     </ClInclude>
-    <ClInclude Include="D:\lixiaoguang_works\ogl-master\external\assimp-3.0.1270\code\MD4FileData.h">
+    <ClInclude Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\assimp-3.0.1270\code\MD4FileData.h">
       <Filter>Extra</Filter>
     </ClInclude>
-    <ClInclude Include="D:\lixiaoguang_works\ogl-master\external\assimp-3.0.1270\code\MS3DLoader.h">
+    <ClInclude Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\assimp-3.0.1270\code\MS3DLoader.h">
       <Filter>MS3D</Filter>
     </ClInclude>
-    <ClInclude Include="D:\lixiaoguang_works\ogl-master\external\assimp-3.0.1270\code\COBLoader.h">
+    <ClInclude Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\assimp-3.0.1270\code\COBLoader.h">
       <Filter>COB</Filter>
     </ClInclude>
-    <ClInclude Include="D:\lixiaoguang_works\ogl-master\external\assimp-3.0.1270\code\COBScene.h">
+    <ClInclude Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\assimp-3.0.1270\code\COBScene.h">
       <Filter>COB</Filter>
     </ClInclude>
-    <ClInclude Include="D:\lixiaoguang_works\ogl-master\external\assimp-3.0.1270\code\BlenderLoader.h">
+    <ClInclude Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\assimp-3.0.1270\code\BlenderLoader.h">
       <Filter>BLENDER</Filter>
     </ClInclude>
-    <ClInclude Include="D:\lixiaoguang_works\ogl-master\external\assimp-3.0.1270\code\BlenderDNA.h">
+    <ClInclude Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\assimp-3.0.1270\code\BlenderDNA.h">
       <Filter>BLENDER</Filter>
     </ClInclude>
-    <ClInclude Include="D:\lixiaoguang_works\ogl-master\external\assimp-3.0.1270\code\BlenderDNA.inl">
+    <ClInclude Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\assimp-3.0.1270\code\BlenderDNA.inl">
       <Filter>BLENDER</Filter>
     </ClInclude>
-    <ClInclude Include="D:\lixiaoguang_works\ogl-master\external\assimp-3.0.1270\code\BlenderScene.h">
+    <ClInclude Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\assimp-3.0.1270\code\BlenderScene.h">
       <Filter>BLENDER</Filter>
     </ClInclude>
-    <ClInclude Include="D:\lixiaoguang_works\ogl-master\external\assimp-3.0.1270\code\BlenderSceneGen.h">
+    <ClInclude Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\assimp-3.0.1270\code\BlenderSceneGen.h">
       <Filter>BLENDER</Filter>
     </ClInclude>
-    <ClInclude Include="D:\lixiaoguang_works\ogl-master\external\assimp-3.0.1270\code\BlenderIntermediate.h">
+    <ClInclude Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\assimp-3.0.1270\code\BlenderIntermediate.h">
       <Filter>BLENDER</Filter>
     </ClInclude>
-    <ClInclude Include="D:\lixiaoguang_works\ogl-master\external\assimp-3.0.1270\code\BlenderModifier.h">
+    <ClInclude Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\assimp-3.0.1270\code\BlenderModifier.h">
       <Filter>BLENDER</Filter>
     </ClInclude>
-    <ClInclude Include="D:\lixiaoguang_works\ogl-master\external\assimp-3.0.1270\code\NDOLoader.h">
+    <ClInclude Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\assimp-3.0.1270\code\NDOLoader.h">
       <Filter>NDO</Filter>
     </ClInclude>
-    <ClInclude Include="D:\lixiaoguang_works\ogl-master\external\assimp-3.0.1270\code\IFCLoader.h">
+    <ClInclude Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\assimp-3.0.1270\code\IFCLoader.h">
       <Filter>IFC</Filter>
     </ClInclude>
-    <ClInclude Include="D:\lixiaoguang_works\ogl-master\external\assimp-3.0.1270\code\IFCReaderGen.h">
+    <ClInclude Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\assimp-3.0.1270\code\IFCReaderGen.h">
       <Filter>IFC</Filter>
     </ClInclude>
-    <ClInclude Include="D:\lixiaoguang_works\ogl-master\external\assimp-3.0.1270\code\IFCUtil.h">
+    <ClInclude Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\assimp-3.0.1270\code\IFCUtil.h">
       <Filter>IFC</Filter>
     </ClInclude>
-    <ClInclude Include="D:\lixiaoguang_works\ogl-master\external\assimp-3.0.1270\code\STEPFile.h">
+    <ClInclude Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\assimp-3.0.1270\code\STEPFile.h">
       <Filter>IFC</Filter>
     </ClInclude>
-    <ClInclude Include="D:\lixiaoguang_works\ogl-master\external\assimp-3.0.1270\code\STEPFileReader.h">
+    <ClInclude Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\assimp-3.0.1270\code\STEPFileReader.h">
       <Filter>IFC</Filter>
     </ClInclude>
-    <ClInclude Include="D:\lixiaoguang_works\ogl-master\external\assimp-3.0.1270\code\XGLLoader.h">
+    <ClInclude Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\assimp-3.0.1270\code\XGLLoader.h">
       <Filter>XGL</Filter>
     </ClInclude>
-    <ClInclude Include="D:\lixiaoguang_works\ogl-master\external\assimp-3.0.1270\code\irrXMLWrapper.h">
+    <ClInclude Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\assimp-3.0.1270\code\irrXMLWrapper.h">
       <Filter>IrrXML</Filter>
     </ClInclude>
-    <ClInclude Include="D:\lixiaoguang_works\ogl-master\external\assimp-3.0.1270\contrib\irrXML\CXMLReaderImpl.h">
+    <ClInclude Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\assimp-3.0.1270\contrib\irrXML\CXMLReaderImpl.h">
       <Filter>IrrXML</Filter>
     </ClInclude>
-    <ClInclude Include="D:\lixiaoguang_works\ogl-master\external\assimp-3.0.1270\contrib\irrXML\heapsort.h">
+    <ClInclude Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\assimp-3.0.1270\contrib\irrXML\heapsort.h">
       <Filter>IrrXML</Filter>
     </ClInclude>
-    <ClInclude Include="D:\lixiaoguang_works\ogl-master\external\assimp-3.0.1270\contrib\irrXML\irrArray.h">
+    <ClInclude Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\assimp-3.0.1270\contrib\irrXML\irrArray.h">
       <Filter>IrrXML</Filter>
     </ClInclude>
-    <ClInclude Include="D:\lixiaoguang_works\ogl-master\external\assimp-3.0.1270\contrib\irrXML\irrString.h">
+    <ClInclude Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\assimp-3.0.1270\contrib\irrXML\irrString.h">
       <Filter>IrrXML</Filter>
     </ClInclude>
-    <ClInclude Include="D:\lixiaoguang_works\ogl-master\external\assimp-3.0.1270\contrib\irrXML\irrTypes.h">
+    <ClInclude Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\assimp-3.0.1270\contrib\irrXML\irrTypes.h">
       <Filter>IrrXML</Filter>
     </ClInclude>
-    <ClInclude Include="D:\lixiaoguang_works\ogl-master\external\assimp-3.0.1270\contrib\irrXML\irrXML.h">
+    <ClInclude Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\assimp-3.0.1270\contrib\irrXML\irrXML.h">
       <Filter>IrrXML</Filter>
     </ClInclude>
-    <ClInclude Include="D:\lixiaoguang_works\ogl-master\external\assimp-3.0.1270\contrib\ConvertUTF\ConvertUTF.h">
+    <ClInclude Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\assimp-3.0.1270\contrib\ConvertUTF\ConvertUTF.h">
       <Filter>ConvertUTF</Filter>
     </ClInclude>
-    <ClInclude Include="D:\lixiaoguang_works\ogl-master\external\assimp-3.0.1270\contrib\unzip\crypt.h">
+    <ClInclude Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\assimp-3.0.1270\contrib\unzip\crypt.h">
       <Filter>unzip</Filter>
     </ClInclude>
-    <ClInclude Include="D:\lixiaoguang_works\ogl-master\external\assimp-3.0.1270\contrib\unzip\ioapi.h">
+    <ClInclude Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\assimp-3.0.1270\contrib\unzip\ioapi.h">
       <Filter>unzip</Filter>
     </ClInclude>
-    <ClInclude Include="D:\lixiaoguang_works\ogl-master\external\assimp-3.0.1270\contrib\unzip\unzip.h">
+    <ClInclude Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\assimp-3.0.1270\contrib\unzip\unzip.h">
       <Filter>unzip</Filter>
     </ClInclude>
-    <ClInclude Include="D:\lixiaoguang_works\ogl-master\external\assimp-3.0.1270\contrib\poly2tri\poly2tri\common\shapes.h">
+    <ClInclude Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\assimp-3.0.1270\contrib\poly2tri\poly2tri\common\shapes.h">
       <Filter>Poly2Tri</Filter>
     </ClInclude>
-    <ClInclude Include="D:\lixiaoguang_works\ogl-master\external\assimp-3.0.1270\contrib\poly2tri\poly2tri\common\utils.h">
+    <ClInclude Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\assimp-3.0.1270\contrib\poly2tri\poly2tri\common\utils.h">
       <Filter>Poly2Tri</Filter>
     </ClInclude>
-    <ClInclude Include="D:\lixiaoguang_works\ogl-master\external\assimp-3.0.1270\contrib\poly2tri\poly2tri\sweep\advancing_front.h">
+    <ClInclude Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\assimp-3.0.1270\contrib\poly2tri\poly2tri\sweep\advancing_front.h">
       <Filter>Poly2Tri</Filter>
     </ClInclude>
-    <ClInclude Include="D:\lixiaoguang_works\ogl-master\external\assimp-3.0.1270\contrib\poly2tri\poly2tri\sweep\cdt.h">
+    <ClInclude Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\assimp-3.0.1270\contrib\poly2tri\poly2tri\sweep\cdt.h">
       <Filter>Poly2Tri</Filter>
     </ClInclude>
-    <ClInclude Include="D:\lixiaoguang_works\ogl-master\external\assimp-3.0.1270\contrib\poly2tri\poly2tri\sweep\sweep.h">
+    <ClInclude Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\assimp-3.0.1270\contrib\poly2tri\poly2tri\sweep\sweep.h">
       <Filter>Poly2Tri</Filter>
     </ClInclude>
-    <ClInclude Include="D:\lixiaoguang_works\ogl-master\external\assimp-3.0.1270\contrib\poly2tri\poly2tri\sweep\sweep_context.h">
+    <ClInclude Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\assimp-3.0.1270\contrib\poly2tri\poly2tri\sweep\sweep_context.h">
       <Filter>Poly2Tri</Filter>
     </ClInclude>
-    <ClInclude Include="D:\lixiaoguang_works\ogl-master\external\assimp-3.0.1270\contrib\clipper\clipper.hpp">
+    <ClInclude Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\assimp-3.0.1270\contrib\clipper\clipper.hpp">
       <Filter>Clipper</Filter>
     </ClInclude>
-    <ClInclude Include="D:\lixiaoguang_works\ogl-master\external\assimp-3.0.1270\code\BoostWorkaround\boost\math\common_factor_rt.hpp">
+    <ClInclude Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\assimp-3.0.1270\code\BoostWorkaround\boost\math\common_factor_rt.hpp">
       <Filter>Boost</Filter>
     </ClInclude>
-    <ClInclude Include="D:\lixiaoguang_works\ogl-master\external\assimp-3.0.1270\code\BoostWorkaround\boost\foreach.hpp">
+    <ClInclude Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\assimp-3.0.1270\code\BoostWorkaround\boost\foreach.hpp">
       <Filter>Boost</Filter>
     </ClInclude>
-    <ClInclude Include="D:\lixiaoguang_works\ogl-master\external\assimp-3.0.1270\code\BoostWorkaround\boost\format.hpp">
+    <ClInclude Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\assimp-3.0.1270\code\BoostWorkaround\boost\format.hpp">
       <Filter>Boost</Filter>
     </ClInclude>
-    <ClInclude Include="D:\lixiaoguang_works\ogl-master\external\assimp-3.0.1270\code\BoostWorkaround\boost\scoped_array.hpp">
+    <ClInclude Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\assimp-3.0.1270\code\BoostWorkaround\boost\scoped_array.hpp">
       <Filter>Boost</Filter>
     </ClInclude>
-    <ClInclude Include="D:\lixiaoguang_works\ogl-master\external\assimp-3.0.1270\code\BoostWorkaround\boost\scoped_ptr.hpp">
+    <ClInclude Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\assimp-3.0.1270\code\BoostWorkaround\boost\scoped_ptr.hpp">
       <Filter>Boost</Filter>
     </ClInclude>
-    <ClInclude Include="D:\lixiaoguang_works\ogl-master\external\assimp-3.0.1270\code\BoostWorkaround\boost\shared_array.hpp">
+    <ClInclude Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\assimp-3.0.1270\code\BoostWorkaround\boost\shared_array.hpp">
       <Filter>Boost</Filter>
     </ClInclude>
-    <ClInclude Include="D:\lixiaoguang_works\ogl-master\external\assimp-3.0.1270\code\BoostWorkaround\boost\shared_ptr.hpp">
+    <ClInclude Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\assimp-3.0.1270\code\BoostWorkaround\boost\shared_ptr.hpp">
       <Filter>Boost</Filter>
     </ClInclude>
-    <ClInclude Include="D:\lixiaoguang_works\ogl-master\external\assimp-3.0.1270\code\BoostWorkaround\boost\make_shared.hpp">
+    <ClInclude Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\assimp-3.0.1270\code\BoostWorkaround\boost\make_shared.hpp">
       <Filter>Boost</Filter>
     </ClInclude>
-    <ClInclude Include="D:\lixiaoguang_works\ogl-master\external\assimp-3.0.1270\code\BoostWorkaround\boost\static_assert.hpp">
+    <ClInclude Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\assimp-3.0.1270\code\BoostWorkaround\boost\static_assert.hpp">
       <Filter>Boost</Filter>
     </ClInclude>
-    <ClInclude Include="D:\lixiaoguang_works\ogl-master\external\assimp-3.0.1270\code\BoostWorkaround\boost\tuple\tuple.hpp">
+    <ClInclude Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\assimp-3.0.1270\code\BoostWorkaround\boost\tuple\tuple.hpp">
       <Filter>Boost</Filter>
     </ClInclude>
-    <ClInclude Include="D:\lixiaoguang_works\ogl-master\external\assimp-3.0.1270\include\assimp\anim.h">
+    <ClInclude Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\assimp-3.0.1270\include\assimp\anim.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="D:\lixiaoguang_works\ogl-master\external\assimp-3.0.1270\include\assimp\ai_assert.h">
+    <ClInclude Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\assimp-3.0.1270\include\assimp\ai_assert.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="D:\lixiaoguang_works\ogl-master\external\assimp-3.0.1270\include\assimp\camera.h">
+    <ClInclude Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\assimp-3.0.1270\include\assimp\camera.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="D:\lixiaoguang_works\ogl-master\external\assimp-3.0.1270\include\assimp\color4.h">
+    <ClInclude Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\assimp-3.0.1270\include\assimp\color4.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="D:\lixiaoguang_works\ogl-master\external\assimp-3.0.1270\include\assimp\color4.inl">
+    <ClInclude Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\assimp-3.0.1270\include\assimp\color4.inl">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="D:\lixiaoguang_works\ogl-master\external\assimp-3.0.1270\include\assimp\config.h">
+    <ClInclude Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\assimp-3.0.1270\include\assimp\config.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="D:\lixiaoguang_works\ogl-master\external\assimp-3.0.1270\include\assimp\defs.h">
+    <ClInclude Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\assimp-3.0.1270\include\assimp\defs.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="D:\lixiaoguang_works\ogl-master\external\assimp-3.0.1270\include\assimp\cfileio.h">
+    <ClInclude Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\assimp-3.0.1270\include\assimp\cfileio.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="D:\lixiaoguang_works\ogl-master\external\assimp-3.0.1270\include\assimp\light.h">
+    <ClInclude Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\assimp-3.0.1270\include\assimp\light.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="D:\lixiaoguang_works\ogl-master\external\assimp-3.0.1270\include\assimp\material.h">
+    <ClInclude Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\assimp-3.0.1270\include\assimp\material.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="D:\lixiaoguang_works\ogl-master\external\assimp-3.0.1270\include\assimp\material.inl">
+    <ClInclude Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\assimp-3.0.1270\include\assimp\material.inl">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="D:\lixiaoguang_works\ogl-master\external\assimp-3.0.1270\include\assimp\matrix3x3.h">
+    <ClInclude Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\assimp-3.0.1270\include\assimp\matrix3x3.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="D:\lixiaoguang_works\ogl-master\external\assimp-3.0.1270\include\assimp\matrix3x3.inl">
+    <ClInclude Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\assimp-3.0.1270\include\assimp\matrix3x3.inl">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="D:\lixiaoguang_works\ogl-master\external\assimp-3.0.1270\include\assimp\matrix4x4.h">
+    <ClInclude Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\assimp-3.0.1270\include\assimp\matrix4x4.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="D:\lixiaoguang_works\ogl-master\external\assimp-3.0.1270\include\assimp\matrix4x4.inl">
+    <ClInclude Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\assimp-3.0.1270\include\assimp\matrix4x4.inl">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="D:\lixiaoguang_works\ogl-master\external\assimp-3.0.1270\include\assimp\mesh.h">
+    <ClInclude Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\assimp-3.0.1270\include\assimp\mesh.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="D:\lixiaoguang_works\ogl-master\external\assimp-3.0.1270\include\assimp\postprocess.h">
+    <ClInclude Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\assimp-3.0.1270\include\assimp\postprocess.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="D:\lixiaoguang_works\ogl-master\external\assimp-3.0.1270\include\assimp\quaternion.h">
+    <ClInclude Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\assimp-3.0.1270\include\assimp\quaternion.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="D:\lixiaoguang_works\ogl-master\external\assimp-3.0.1270\include\assimp\quaternion.inl">
+    <ClInclude Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\assimp-3.0.1270\include\assimp\quaternion.inl">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="D:\lixiaoguang_works\ogl-master\external\assimp-3.0.1270\include\assimp\scene.h">
+    <ClInclude Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\assimp-3.0.1270\include\assimp\scene.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="D:\lixiaoguang_works\ogl-master\external\assimp-3.0.1270\include\assimp\texture.h">
+    <ClInclude Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\assimp-3.0.1270\include\assimp\texture.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="D:\lixiaoguang_works\ogl-master\external\assimp-3.0.1270\include\assimp\types.h">
+    <ClInclude Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\assimp-3.0.1270\include\assimp\types.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="D:\lixiaoguang_works\ogl-master\external\assimp-3.0.1270\include\assimp\vector2.h">
+    <ClInclude Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\assimp-3.0.1270\include\assimp\vector2.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="D:\lixiaoguang_works\ogl-master\external\assimp-3.0.1270\include\assimp\vector2.inl">
+    <ClInclude Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\assimp-3.0.1270\include\assimp\vector2.inl">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="D:\lixiaoguang_works\ogl-master\external\assimp-3.0.1270\include\assimp\vector3.h">
+    <ClInclude Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\assimp-3.0.1270\include\assimp\vector3.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="D:\lixiaoguang_works\ogl-master\external\assimp-3.0.1270\include\assimp\vector3.inl">
+    <ClInclude Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\assimp-3.0.1270\include\assimp\vector3.inl">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="D:\lixiaoguang_works\ogl-master\external\assimp-3.0.1270\include\assimp\version.h">
+    <ClInclude Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\assimp-3.0.1270\include\assimp\version.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="D:\lixiaoguang_works\ogl-master\external\assimp-3.0.1270\include\assimp\cimport.h">
+    <ClInclude Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\assimp-3.0.1270\include\assimp\cimport.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="D:\lixiaoguang_works\ogl-master\external\assimp-3.0.1270\include\assimp\importerdesc.h">
+    <ClInclude Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\assimp-3.0.1270\include\assimp\importerdesc.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="D:\lixiaoguang_works\ogl-master\external\assimp-3.0.1270\include\assimp\Importer.hpp">
+    <ClInclude Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\assimp-3.0.1270\include\assimp\Importer.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="D:\lixiaoguang_works\ogl-master\external\assimp-3.0.1270\include\assimp\ProgressHandler.hpp">
+    <ClInclude Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\assimp-3.0.1270\include\assimp\ProgressHandler.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="D:\lixiaoguang_works\ogl-master\external\assimp-3.0.1270\include\assimp\IOSystem.hpp">
+    <ClInclude Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\assimp-3.0.1270\include\assimp\IOSystem.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="D:\lixiaoguang_works\ogl-master\external\assimp-3.0.1270\include\assimp\cexport.h">
+    <ClInclude Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\assimp-3.0.1270\include\assimp\cexport.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="D:\lixiaoguang_works\ogl-master\external\assimp-3.0.1270\include\assimp\Exporter.hpp">
+    <ClInclude Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\assimp-3.0.1270\include\assimp\Exporter.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="D:\lixiaoguang_works\ogl-master\external\assimp-3.0.1270\include\assimp\Compiler\pushpack1.h">
+    <ClInclude Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\assimp-3.0.1270\include\assimp\Compiler\pushpack1.h">
       <Filter>Compiler</Filter>
     </ClInclude>
-    <ClInclude Include="D:\lixiaoguang_works\ogl-master\external\assimp-3.0.1270\include\assimp\Compiler\poppack1.h">
+    <ClInclude Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\assimp-3.0.1270\include\assimp\Compiler\poppack1.h">
       <Filter>Compiler</Filter>
     </ClInclude>
-    <ClInclude Include="D:\lixiaoguang_works\ogl-master\external\assimp-3.0.1270\code\pstdint.h">
+    <ClInclude Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\assimp-3.0.1270\code\pstdint.h">
       <Filter>Compiler</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <CustomBuild Include="D:\lixiaoguang_works\ogl-master\external\assimp-3.0.1270\code\CMakeLists.txt" />
+    <CustomBuild Include="D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\assimp-3.0.1270\code\CMakeLists.txt" />
   </ItemGroup>
   <ItemGroup>
     <Filter Include="Source Files">
-      <UniqueIdentifier>{4137E80B-F9E3-3DD0-98BA-AAB508EDA651}</UniqueIdentifier>
+      <UniqueIdentifier>{B60F2CFA-E83A-3ADA-BA21-12B5F549C2D9}</UniqueIdentifier>
     </Filter>
     <Filter Include="Header Files">
-      <UniqueIdentifier>{923656BC-BDAB-3683-8038-A4137BDD98A8}</UniqueIdentifier>
+      <UniqueIdentifier>{75A1DF3F-45B3-3383-9235-D7E78D7D63F9}</UniqueIdentifier>
     </Filter>
     <Filter Include="Compiler">
-      <UniqueIdentifier>{EDFB1FF3-22F1-32F0-9E33-03D5B6A1801E}</UniqueIdentifier>
+      <UniqueIdentifier>{3D61A5F5-80BE-302F-B151-986585C20950}</UniqueIdentifier>
     </Filter>
     <Filter Include="Boost">
-      <UniqueIdentifier>{A1DA809A-726C-3AA7-840A-CBFDBAA57C12}</UniqueIdentifier>
+      <UniqueIdentifier>{E89549D7-A597-39ED-8991-BC77DD0218B3}</UniqueIdentifier>
     </Filter>
     <Filter Include="Logging">
-      <UniqueIdentifier>{1B5D1D52-E2BC-3783-AFF2-8222F0B9F5C8}</UniqueIdentifier>
+      <UniqueIdentifier>{A30A26CA-E8B2-345A-8534-5DC1C6BE810B}</UniqueIdentifier>
     </Filter>
     <Filter Include="Common">
-      <UniqueIdentifier>{93F694E5-32FC-3581-A1BB-ED1DA5DA8599}</UniqueIdentifier>
+      <UniqueIdentifier>{F2AFB513-57AB-36B9-910C-D57A00A611D1}</UniqueIdentifier>
     </Filter>
     <Filter Include="3DS">
-      <UniqueIdentifier>{1332ABFE-D50D-30E5-9C15-9AC92A50B92F}</UniqueIdentifier>
+      <UniqueIdentifier>{5A35AC59-35B4-30FA-8E30-14CC31A69130}</UniqueIdentifier>
     </Filter>
     <Filter Include="AC">
-      <UniqueIdentifier>{38BC51D9-02A6-328A-B4B0-EAC45E6C752D}</UniqueIdentifier>
+      <UniqueIdentifier>{8886C0C2-1506-3D0C-9279-560546FDC1AF}</UniqueIdentifier>
     </Filter>
     <Filter Include="ASE">
-      <UniqueIdentifier>{B94DCBD2-D9DA-319A-BEE3-CBBD1D7D94B0}</UniqueIdentifier>
+      <UniqueIdentifier>{D4E558C1-3506-396C-8B55-76A91081FB6F}</UniqueIdentifier>
     </Filter>
     <Filter Include="B3D">
-      <UniqueIdentifier>{DEA1A0EC-5E75-3D3D-B5B3-55FD329BDB51}</UniqueIdentifier>
+      <UniqueIdentifier>{F37A3612-5489-3537-9B53-85F46FFE41DD}</UniqueIdentifier>
     </Filter>
     <Filter Include="BVH">
-      <UniqueIdentifier>{E536B723-FFA1-3FBC-A271-D90734F89938}</UniqueIdentifier>
+      <UniqueIdentifier>{234D3C0A-037D-39CB-BBC0-077EC7D083DD}</UniqueIdentifier>
     </Filter>
     <Filter Include="Collada">
-      <UniqueIdentifier>{E85A8D7F-98FB-374E-A8B0-20F0396778B2}</UniqueIdentifier>
+      <UniqueIdentifier>{D3ED8309-A20A-362F-8C70-01DD1D1D04B2}</UniqueIdentifier>
     </Filter>
     <Filter Include="DXF">
-      <UniqueIdentifier>{1B57FE5C-ABBC-35B4-A51E-A9B2BD133E8D}</UniqueIdentifier>
+      <UniqueIdentifier>{0330E7D6-4F12-39DE-AA99-F27D3EEF7AB3}</UniqueIdentifier>
     </Filter>
     <Filter Include="CSM">
-      <UniqueIdentifier>{D6728677-78AA-38A7-8311-F3AD5D7E1AA5}</UniqueIdentifier>
+      <UniqueIdentifier>{86FDC70D-F732-3924-81D1-59D943A8D956}</UniqueIdentifier>
     </Filter>
     <Filter Include="HMP">
-      <UniqueIdentifier>{C56CC082-EE9F-350B-94BF-738D016D8E80}</UniqueIdentifier>
+      <UniqueIdentifier>{D715BF51-B7AB-3DB8-BD53-261BAD2B45B1}</UniqueIdentifier>
     </Filter>
     <Filter Include="Irr">
-      <UniqueIdentifier>{BB1A9F37-D61E-3ED9-84F7-3DE1DBE25A31}</UniqueIdentifier>
+      <UniqueIdentifier>{86386857-7808-3791-9104-D8F084C4293E}</UniqueIdentifier>
     </Filter>
     <Filter Include="LWO">
-      <UniqueIdentifier>{1CD47EE6-3300-3564-9454-4BF158E4FC7E}</UniqueIdentifier>
+      <UniqueIdentifier>{77E55300-BA28-3097-B40B-F1070F36AABB}</UniqueIdentifier>
     </Filter>
     <Filter Include="LWS">
-      <UniqueIdentifier>{2E3CA3A4-29BF-3367-83BB-578288BA75FC}</UniqueIdentifier>
+      <UniqueIdentifier>{66EF242B-6CA3-340F-ABAE-80F887E4A7D0}</UniqueIdentifier>
     </Filter>
     <Filter Include="M3">
-      <UniqueIdentifier>{0BB4D1E1-7686-3442-9309-42DA13A37BC8}</UniqueIdentifier>
+      <UniqueIdentifier>{5CD7D0BE-2874-3DD0-8D76-4564953C2FE2}</UniqueIdentifier>
     </Filter>
     <Filter Include="MD2">
-      <UniqueIdentifier>{7421619C-0DD3-37A7-9127-7320F0F6BE53}</UniqueIdentifier>
+      <UniqueIdentifier>{702ECAD8-4D92-35DD-927A-E6F6FAC0FDF1}</UniqueIdentifier>
     </Filter>
     <Filter Include="MD3">
-      <UniqueIdentifier>{50887325-35D5-3D9D-B13C-A86A9900E7E0}</UniqueIdentifier>
+      <UniqueIdentifier>{094485D0-FD1C-37CC-9AAA-30EB92557A37}</UniqueIdentifier>
     </Filter>
     <Filter Include="MD5">
-      <UniqueIdentifier>{8EE3EDCB-5ADD-31AF-98E3-08F92BDCE4DF}</UniqueIdentifier>
+      <UniqueIdentifier>{A69789D7-3E15-335D-8687-FCADE1D85560}</UniqueIdentifier>
     </Filter>
     <Filter Include="MDC">
-      <UniqueIdentifier>{CE1D1DB3-CD99-3345-9990-044931678228}</UniqueIdentifier>
+      <UniqueIdentifier>{33B054D5-A590-39EA-82D8-083E07F29AE3}</UniqueIdentifier>
     </Filter>
     <Filter Include="MDL">
-      <UniqueIdentifier>{DB0E21B2-57DF-346C-88D4-2C708C41691B}</UniqueIdentifier>
+      <UniqueIdentifier>{18D872E2-1A34-3531-9ADA-F9CEB892A5C7}</UniqueIdentifier>
     </Filter>
     <Filter Include="MaterialSystem">
-      <UniqueIdentifier>{E7CAC65D-9D21-3FCF-9791-EE3AB95CCF1E}</UniqueIdentifier>
+      <UniqueIdentifier>{309386C4-4B31-351B-884B-49AA67A72F12}</UniqueIdentifier>
     </Filter>
     <Filter Include="NFF">
-      <UniqueIdentifier>{D8893069-4F16-3367-9396-508C194DB766}</UniqueIdentifier>
+      <UniqueIdentifier>{9BDF7EF8-00C4-3D78-8D90-08ECBEBD3CC3}</UniqueIdentifier>
     </Filter>
     <Filter Include="NDO">
-      <UniqueIdentifier>{D55D9D64-F671-397A-AD9E-ED736187C25C}</UniqueIdentifier>
+      <UniqueIdentifier>{1BAB6C83-1238-3BE1-BCD0-75A7316545E8}</UniqueIdentifier>
     </Filter>
     <Filter Include="OFFFormat">
-      <UniqueIdentifier>{E6840A18-BC3E-399B-863F-87DE4502A534}</UniqueIdentifier>
+      <UniqueIdentifier>{A985FA87-5E3D-3B61-835A-990EF3590802}</UniqueIdentifier>
     </Filter>
     <Filter Include="Obj">
-      <UniqueIdentifier>{112AB0D1-CF9A-39FB-B461-C4D3FEAA1295}</UniqueIdentifier>
+      <UniqueIdentifier>{D926F2D8-4ADE-3916-8263-F3AA21150050}</UniqueIdentifier>
     </Filter>
     <Filter Include="Ogre">
-      <UniqueIdentifier>{14FFB3C6-ECC7-316C-99B2-98190270D064}</UniqueIdentifier>
+      <UniqueIdentifier>{C52F61CF-E73D-3541-9F82-79216CFFEA64}</UniqueIdentifier>
     </Filter>
     <Filter Include="Ply">
-      <UniqueIdentifier>{DFEE4279-E91A-3889-8CA9-9EAC61182971}</UniqueIdentifier>
+      <UniqueIdentifier>{FE1254AE-F1E5-397C-B7FF-852010F7B8F7}</UniqueIdentifier>
     </Filter>
     <Filter Include="MS3D">
-      <UniqueIdentifier>{D34262FE-2475-3DB2-A7F4-69786041071D}</UniqueIdentifier>
+      <UniqueIdentifier>{2A195671-1B74-3987-A2FF-EC572B6899AE}</UniqueIdentifier>
     </Filter>
     <Filter Include="COB">
-      <UniqueIdentifier>{0768D4A8-802F-3B0E-9B15-BD2AF3EC64C3}</UniqueIdentifier>
+      <UniqueIdentifier>{B802AEE1-1B63-3013-A5FC-3EEE016B5A9B}</UniqueIdentifier>
     </Filter>
     <Filter Include="BLENDER">
-      <UniqueIdentifier>{43007ACA-FDEE-3B71-9EF1-EF6902A2AE5C}</UniqueIdentifier>
+      <UniqueIdentifier>{FE7BA1B5-9318-3274-A7C6-75083EBB2F27}</UniqueIdentifier>
     </Filter>
     <Filter Include="IFC">
-      <UniqueIdentifier>{ED9486AC-1FF8-3530-B927-8CAD5CD3B93A}</UniqueIdentifier>
+      <UniqueIdentifier>{43C7338A-C029-303E-B699-029978A43BB0}</UniqueIdentifier>
     </Filter>
     <Filter Include="XGL">
-      <UniqueIdentifier>{97413F61-2F48-3301-BAA6-439B7B43AF0C}</UniqueIdentifier>
+      <UniqueIdentifier>{8F6F34B9-F131-3B8B-BC49-5D13C7F8EDD1}</UniqueIdentifier>
     </Filter>
     <Filter Include="PostProcessing">
-      <UniqueIdentifier>{AA428C39-3A65-3876-8CE4-EC8B678B6159}</UniqueIdentifier>
+      <UniqueIdentifier>{201AEC51-8B89-3155-811D-878742D36FB3}</UniqueIdentifier>
     </Filter>
     <Filter Include="Q3D">
-      <UniqueIdentifier>{E1261073-5D37-3EEA-A72C-7A3D3277FDD2}</UniqueIdentifier>
+      <UniqueIdentifier>{5E0A11BD-9716-3031-81E3-4C29AA5786FA}</UniqueIdentifier>
     </Filter>
     <Filter Include="Q3BSP">
-      <UniqueIdentifier>{4530A3CB-3F5A-3D7E-9134-3CF8AC47614B}</UniqueIdentifier>
+      <UniqueIdentifier>{5A95C449-94D7-366A-BB45-621BE7CE1671}</UniqueIdentifier>
     </Filter>
     <Filter Include="Raw">
-      <UniqueIdentifier>{7436325F-8FB8-301E-A06F-E7353992FF17}</UniqueIdentifier>
+      <UniqueIdentifier>{037D210E-A056-3486-AA73-8382AB8A51BA}</UniqueIdentifier>
     </Filter>
     <Filter Include="SMD">
-      <UniqueIdentifier>{CA1FFD71-7DD7-3897-B3B7-2658296D5FC1}</UniqueIdentifier>
+      <UniqueIdentifier>{C132C964-92DE-3CDE-8168-6B6EA688353A}</UniqueIdentifier>
     </Filter>
     <Filter Include="STL">
-      <UniqueIdentifier>{7494D252-D243-3C2A-8913-9178478AA6FB}</UniqueIdentifier>
+      <UniqueIdentifier>{77F488B8-934B-3BB0-9C9C-3D58B0E46C75}</UniqueIdentifier>
     </Filter>
     <Filter Include="Unreal">
-      <UniqueIdentifier>{45AC49EF-2EC0-38B5-9822-77DD51724993}</UniqueIdentifier>
+      <UniqueIdentifier>{77C54084-16E9-36AD-918F-62B217170233}</UniqueIdentifier>
     </Filter>
     <Filter Include="XFile">
-      <UniqueIdentifier>{177C966F-A664-3EF7-90CA-B883812368B9}</UniqueIdentifier>
+      <UniqueIdentifier>{EC5E2F50-7552-327F-993E-10CC60035447}</UniqueIdentifier>
     </Filter>
     <Filter Include="Exporter">
-      <UniqueIdentifier>{1B6A9AC5-6528-31FA-8A66-AE30B7D0DA8F}</UniqueIdentifier>
+      <UniqueIdentifier>{6F5A59EA-224E-36FF-9956-F07B7BC02CC8}</UniqueIdentifier>
     </Filter>
     <Filter Include="Extra">
-      <UniqueIdentifier>{14DD064A-B8C4-3786-A23D-06B4657BD798}</UniqueIdentifier>
+      <UniqueIdentifier>{651E6CB1-1971-38F0-9618-78379368F931}</UniqueIdentifier>
     </Filter>
     <Filter Include="IrrXML">
-      <UniqueIdentifier>{04A5DD27-2D93-36A5-A364-5A44A5CBFC5A}</UniqueIdentifier>
+      <UniqueIdentifier>{59933454-3190-37DA-A27D-1E47B1F35FDF}</UniqueIdentifier>
     </Filter>
     <Filter Include="ConvertUTF">
-      <UniqueIdentifier>{974F69F4-56AB-32DE-B197-E3CCD0955497}</UniqueIdentifier>
+      <UniqueIdentifier>{4BE6302D-C9F8-35E5-A484-80E9DA324F5A}</UniqueIdentifier>
     </Filter>
     <Filter Include="Clipper">
-      <UniqueIdentifier>{B48AF407-31A0-3058-BAE9-5CF5C2219A6D}</UniqueIdentifier>
+      <UniqueIdentifier>{3A72BEC3-02BB-3238-8817-4D87F3912AAF}</UniqueIdentifier>
     </Filter>
     <Filter Include="Poly2Tri">
-      <UniqueIdentifier>{5259FB25-67BF-304C-8005-6C9BC31B48EB}</UniqueIdentifier>
+      <UniqueIdentifier>{D31E8FBA-9C09-3CA4-841A-9C85616760E1}</UniqueIdentifier>
     </Filter>
     <Filter Include="unzip">
-      <UniqueIdentifier>{ADF4CE6A-6284-3D38-A68E-7B607E47F1D0}</UniqueIdentifier>
+      <UniqueIdentifier>{E7A7D6DD-72D4-373A-909D-EA46ACF919AD}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
 </Project>

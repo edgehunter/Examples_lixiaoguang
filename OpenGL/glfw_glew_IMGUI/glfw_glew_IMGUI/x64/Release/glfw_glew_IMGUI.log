@@ -1,18 +1,52 @@
-﻿Build started 2018/1/22 11:56:15.
-     1>Project "D:\lixiaoguang_works\glfw_glew_IMGUI\glfw_glew_IMGUI\glfw_glew_IMGUI.vcxproj" on node 2 (Rebuild target(s)).
+﻿Build started 2018/3/16 9:59:29.
+     1>Project "D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\glfw_glew_IMGUI\glfw_glew_IMGUI\glfw_glew_IMGUI.vcxproj" on node 2 (Rebuild target(s)).
      1>ClCompile:
-         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\CL.exe /c /ID:\lixiaoguang_works\glfw_glew_IMGUI\glfw_glew_IMGUI\OpenGL\include /Zi /nologo /W3 /WX- /O2 /Oi /GL /D WIN32 /D NDEBUG /D _CONSOLE /D _LIB /D _UNICODE /D UNICODE /Gm- /EHsc /MD /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Fo"x64\Release\\" /Fd"x64\Release\vc120.pdb" /Gd /TP /errorReport:prompt glfw_glew_IMGUI.cpp stdafx.cpp
-         glfw_glew_IMGUI.cpp
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\CL.exe /c /IOpenGL\include /I"glm-0.9.8.5" /Zi /nologo /W3 /WX- /O2 /Oi /GL /D WIN32 /D NDEBUG /D _CONSOLE /D _LIB /D _UNICODE /D UNICODE /Gm- /EHsc /MD /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Fo"x64\Release\\" /Fd"x64\Release\vc120.pdb" /Gd /TP /errorReport:prompt src\Camera.cpp src\main.cpp src\Object.cpp src\Shader.cpp src\Triangle.cpp src\utilities.cpp stdafx.cpp
+         Camera.cpp
+         main.cpp
+     1>src\main.cpp(146): warning C4244: 'initializing' : conversion from 'double' to 'float', possible loss of data
+     1>src\main.cpp(147): warning C4244: 'initializing' : conversion from 'double' to 'float', possible loss of data
+         Object.cpp
+     1>src\Object.cpp(129): warning C4267: 'argument' : conversion from 'size_t' to 'GLsizei', possible loss of data
+     1>src\Object.cpp(386): warning C4267: 'initializing' : conversion from 'size_t' to 'int', possible loss of data
+     1>src\Object.cpp(396): warning C4267: 'initializing' : conversion from 'size_t' to 'int', possible loss of data
+         Shader.cpp
+         Triangle.cpp
+         utilities.cpp
          stdafx.cpp
        Link:
-         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\link.exe /ERRORREPORT:PROMPT /OUT:"D:\lixiaoguang_works\glfw_glew_IMGUI\x64\Release\glfw_glew_IMGUI.exe" /INCREMENTAL:NO /NOLOGO /LIBPATH:D:\lixiaoguang_works\glfw_glew_IMGUI\glfw_glew_IMGUI\OpenGL\lib\GLEW\Release\x64 /LIBPATH:D:\lixiaoguang_works\glfw_glew_IMGUI\glfw_glew_IMGUI\OpenGL\lib\GLFW\Release\x64 glfw3.lib glew32s.lib opengl32.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:\lixiaoguang_works\glfw_glew_IMGUI\x64\Release\glfw_glew_IMGUI.pdb" /SUBSYSTEM:CONSOLE /OPT:REF /OPT:ICF /LTCG /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:\lixiaoguang_works\glfw_glew_IMGUI\x64\Release\glfw_glew_IMGUI.lib" /MACHINE:X64 x64\Release\glfw_glew_IMGUI.obj
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\link.exe /ERRORREPORT:PROMPT /OUT:"D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\glfw_glew_IMGUI\x64\Release\glfw_glew_IMGUI.exe" /INCREMENTAL:NO /NOLOGO /LIBPATH:OpenGL\lib\GLEW\Release\x64 /LIBPATH:OpenGL\lib\GLFW\Release\x64 glfw3.lib opengl32.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\glfw_glew_IMGUI\x64\Release\glfw_glew_IMGUI.pdb" /SUBSYSTEM:CONSOLE /OPT:REF /OPT:ICF /LTCG /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\glfw_glew_IMGUI\x64\Release\glfw_glew_IMGUI.lib" /MACHINE:X64 x64\Release\Camera.obj
+         x64\Release\main.obj
+         x64\Release\Object.obj
+         x64\Release\Shader.obj
+         x64\Release\Triangle.obj
+         x64\Release\utilities.obj
          x64\Release\stdafx.obj
-     1>LINK : warning LNK4098: defaultlib 'LIBCMT' conflicts with use of other libs; use /NODEFAULTLIB:library
-         Generating code
-         Finished generating code
-         glfw_glew_IMGUI.vcxproj -> D:\lixiaoguang_works\glfw_glew_IMGUI\x64\Release\glfw_glew_IMGUI.exe
-     1>Done Building Project "D:\lixiaoguang_works\glfw_glew_IMGUI\glfw_glew_IMGUI\glfw_glew_IMGUI.vcxproj" (Rebuild target(s)).
+     1>main.obj : error LNK2001: unresolved external symbol __imp_glewInit
+     1>main.obj : error LNK2001: unresolved external symbol __imp___glewUniformMatrix4fv
+     1>main.obj : error LNK2001: unresolved external symbol __imp_glewExperimental
+     1>main.obj : error LNK2001: unresolved external symbol __imp___glewGetUniformLocation
+     1>Object.obj : error LNK2001: unresolved external symbol __imp___glewBindBuffer
+     1>Object.obj : error LNK2001: unresolved external symbol __imp___glewVertexAttribPointer
+     1>Object.obj : error LNK2001: unresolved external symbol __imp___glewGenVertexArrays
+     1>Object.obj : error LNK2001: unresolved external symbol __imp___glewUseProgram
+     1>Object.obj : error LNK2001: unresolved external symbol __imp___glewBufferData
+     1>Object.obj : error LNK2001: unresolved external symbol __imp___glewBindVertexArray
+     1>Object.obj : error LNK2001: unresolved external symbol __imp___glewGetAttribLocation
+     1>Object.obj : error LNK2001: unresolved external symbol __imp___glewGenBuffers
+     1>Object.obj : error LNK2001: unresolved external symbol __imp___glewEnableVertexAttribArray
+     1>Shader.obj : error LNK2001: unresolved external symbol __imp___glewCreateShader
+     1>Shader.obj : error LNK2001: unresolved external symbol __imp___glewGetShaderInfoLog
+     1>Shader.obj : error LNK2001: unresolved external symbol __imp___glewLinkProgram
+     1>Shader.obj : error LNK2001: unresolved external symbol __imp___glewCompileShader
+     1>Shader.obj : error LNK2001: unresolved external symbol __imp___glewBindFragDataLocation
+     1>Shader.obj : error LNK2001: unresolved external symbol __imp___glewShaderSource
+     1>Shader.obj : error LNK2001: unresolved external symbol __imp___glewGetShaderiv
+     1>Shader.obj : error LNK2001: unresolved external symbol __imp___glewCreateProgram
+     1>Shader.obj : error LNK2001: unresolved external symbol __imp___glewAttachShader
+     1>D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\glfw_glew_IMGUI\x64\Release\glfw_glew_IMGUI.exe : fatal error LNK1120: 22 unresolved externals
+     1>Done Building Project "D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\glfw_glew_IMGUI\glfw_glew_IMGUI\glfw_glew_IMGUI.vcxproj" (Rebuild target(s)) -- FAILED.
 
-Build succeeded.
+Build FAILED.
 
-Time Elapsed 00:00:01.97
+Time Elapsed 00:00:02.89

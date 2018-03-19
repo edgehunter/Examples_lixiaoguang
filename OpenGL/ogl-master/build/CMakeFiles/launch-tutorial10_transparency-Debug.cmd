@@ -1,9 +1,9 @@
-cd D:/lixiaoguang_works/ogl-master/tutorial10_transparency/
+cd D:/lixiaoguang_works/Examples_lixiaoguang/OpenGL/ogl-master/tutorial10_transparency/
 set 
 
 if [%1]==[--debugger] (
 	SHIFT
 )
 
-"D:\lixiaoguang_works\ogl-master\build\Debug\tutorial10_transparency.exe"  
+"D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\build\Debug\tutorial10_transparency.exe"  
 pause
