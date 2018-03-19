@@ -44,6 +44,8 @@ private:
 	// Initial Field of View
 	float InitialFoV;// = 45.0f;
 
+	float Zoom;
+
 	float KeySpeed;// = 3.0f; // 3 units / second
 	float MouseSpeed;// = 0.005f;
 

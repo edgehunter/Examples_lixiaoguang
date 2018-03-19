@@ -24,6 +24,8 @@ void Camera::Init(GLFWwindow* Window, const unsigned int Screen_Width, const uns
 	// Initial Field of View
 	InitialFoV = 45.0f;
 
+	Zoom = 0.0f;
+
 	KeySpeed = 3.0f; // 3 units / second
 	MouseSpeed = 0.005f;
 
@@ -72,6 +74,13 @@ void Camera::ComputeMatricesFromInputs(){
 		VerticalAngle += MouseSpeed * float(yPos_old - yPos);
 	}
 
+	//Zoom
+	if (glfwGetMouseButton(Window, GLFW_MOUSE_BUTTON_MIDDLE) == GLFW_PRESS)
+	{
+		//InitialFoV += 1;
+		Zoom += MouseSpeed * float(yPos_old - yPos);
+	}
+
 
 	xPos_old = xPos, yPos_old = yPos;
 
@@ -92,24 +101,39 @@ void Camera::ComputeMatricesFromInputs(){
 	// Up vector
 	glm::vec3 up = glm::cross(right, direction);
 
-	// Move forward
-	if (glfwGetKey(Window, GLFW_KEY_UP) == GLFW_PRESS){
-		Position += direction * deltaTime * KeySpeed;
+	// Strafe up
+	if (glfwGetKey(Window, GLFW_KEY_W) == GLFW_PRESS){
+		Position += up * deltaTime * KeySpeed;
 	}
-	// Move backward
-	if (glfwGetKey(Window, GLFW_KEY_DOWN) == GLFW_PRESS){
-		Position -= direction * deltaTime * KeySpeed;
+	// Strafe down
+	if (glfwGetKey(Window, GLFW_KEY_S) == GLFW_PRESS){
+		Position -= up * deltaTime * KeySpeed;
 	}
 	// Strafe right
-	if (glfwGetKey(Window, GLFW_KEY_RIGHT) == GLFW_PRESS){
+	if (glfwGetKey(Window, GLFW_KEY_D) == GLFW_PRESS){
 		Position += right * deltaTime * KeySpeed;
 	}
 	// Strafe left
-	if (glfwGetKey(Window, GLFW_KEY_LEFT) == GLFW_PRESS){
+	if (glfwGetKey(Window, GLFW_KEY_A) == GLFW_PRESS){
 		Position -= right * deltaTime * KeySpeed;
 	}
 
-	float FoV = InitialFoV;// - 5 * glfwGetMouseWheel(); // Now GLFW 3 requires setting up a callback for this. It's a bit too complicated for this beginner's tutorial, so it's disabled instead.
+
+	/**/
+
+	// Move forward
+	if (glfwGetKey(Window, GLFW_KEY_Q) == GLFW_PRESS){
+		Position += direction * deltaTime * KeySpeed;
+		//InitialFoV -= 1;
+	}
+	// Move backward
+	if (glfwGetKey(Window, GLFW_KEY_E) == GLFW_PRESS){
+		Position -= direction * deltaTime * KeySpeed;
+		//InitialFoV += 1;
+	}
+
+
+	float FoV = InitialFoV + 5*Zoom;// - 5 * glfwGetMouseWheel(); // Now GLFW 3 requires setting up a callback for this. It's a bit too complicated for this beginner's tutorial, so it's disabled instead.
 
 	// Projection matrix : 45?Field of View, 4:3 ratio, display range : 0.1 unit <-> 100 units
 	ProjectionMatrix = glm::perspective(glm::radians(FoV), 4.0f / 3.0f, 0.1f, 1000.0f);

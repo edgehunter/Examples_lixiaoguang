@@ -63,6 +63,9 @@
     <ClInclude Include="OpenGL\shader\Shader.h">
       <Filter>opengl\shader</Filter>
     </ClInclude>
+    <ClInclude Include="OpenGL\controls\Model.h">
+      <Filter>opengl\controls</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="stdafx.cpp">
@@ -91,6 +94,9 @@
     </ClCompile>
     <ClCompile Include="OpenGL\shader\Shader.cpp">
       <Filter>opengl\shader</Filter>
+    </ClCompile>
+    <ClCompile Include="OpenGL\controls\Model.cpp">
+      <Filter>opengl\controls</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

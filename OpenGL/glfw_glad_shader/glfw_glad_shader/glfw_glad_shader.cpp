@@ -26,14 +26,20 @@
 
 // controls
 #include "OpenGL/controls/Camera.h"
+#include "OpenGL/controls/Model.h"
+
+static void error_callback(int error, const char* description)
+{
+	fprintf(stderr, "Error %d: %s\n", error, description);
+}
 
 void framebuffer_size_callback(GLFWwindow* window, int width, int height);
 void scroll_callback(GLFWwindow* window, double xoffset, double yoffset);
 void processInput(GLFWwindow *window);
 
 // settings
-const unsigned int SCR_WIDTH = 600;
-const unsigned int SCR_HEIGHT = 400;
+const unsigned int SCR_WIDTH = 1280;
+const unsigned int SCR_HEIGHT = 800;
 
 /*
 
@@ -61,6 +67,8 @@ int main()
 {
 	// glfw: initialize and configure
 	// ------------------------------
+	glfwSetErrorCallback(error_callback);
+
 	glfwInit();
 	glfwWindowHint(GLFW_CONTEXT_VERSION_MAJOR, 3);
 	glfwWindowHint(GLFW_CONTEXT_VERSION_MINOR, 3);
@@ -80,12 +88,16 @@ int main()
 		glfwTerminate();
 		return -1;
 	}
+	
 	glfwMakeContextCurrent(window);
+
 	glfwSetFramebufferSizeCallback(window, framebuffer_size_callback);
 	glfwSetScrollCallback(window, scroll_callback);
 
-	glfwSetInputMode(window, GLFW_STICKY_MOUSE_BUTTONS, 1);
+	//glfwSetInputMode(window, GLFW_STICKY_MOUSE_BUTTONS, 1);
 
+	// tell GLFW to capture our mouse
+	glfwSetInputMode(window, GLFW_CURSOR, GLFW_CURSOR_DISABLED);
 
 	// glad: load all OpenGL function pointers
 	// ---------------------------------------
@@ -224,8 +236,10 @@ int main()
 	Camera m_Camera;
 	m_Camera.Init(window, SCR_WIDTH, SCR_HEIGHT);
 
-
+	//Model
 	// ---------------------------------------
+	Model m_Model;
+	m_Model.Init(window, SCR_WIDTH, SCR_HEIGHT);	
 
 
 	// Setup ImGui binding
@@ -292,10 +306,14 @@ int main()
 
 		
 		m_Camera.ComputeMatricesFromInputs();
-
 		glm::mat4 ProjectionMatrix = m_Camera.GetProjectionMatrix();
 		glm::mat4 ViewMatrix = m_Camera.GetViewMatrix();
-		glm::mat4 ModelMatrix = glm::mat4(1.0);
+
+
+		m_Model.ComputeMatricesFromInputs();
+		glm::mat4 ModelMatrix = m_Model.GetModelMatrix();
+
+
 		glm::mat4 MVP = ProjectionMatrix * ViewMatrix * ModelMatrix;
 
 		// Send our transformation to the currently bound shader, 
@@ -303,7 +321,7 @@ int main()
 		glUniformMatrix4fv(MatrixMVP, 1, GL_FALSE, &MVP[0][0]);
 
 		// update shader uniform CustomColor
-		float timeValue = glfwGetTime();
+		float timeValue = glfwGetTime() * 2;
 		float RedValue = sin(timeValue) / 2.0f + 0.5f;
 		glUniform4f(CustomColor, RedValue, 0.0f, 0.0f, 1.0f);
 
@@ -400,5 +418,6 @@ void framebuffer_size_callback(GLFWwindow* window, int width, int height)
 //A simple mouse wheel, being vertical, provides offsets along the Y - axis.
 void scroll_callback(GLFWwindow* window, double xoffset, double yoffset)
 {
+
 	printf("xoffset=(%f), yoffset=(%f) \n", xoffset, yoffset);
 }

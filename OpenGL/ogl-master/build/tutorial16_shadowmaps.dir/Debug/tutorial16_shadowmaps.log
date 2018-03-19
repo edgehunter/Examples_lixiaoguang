@@ -1,4 +1,4 @@
-﻿Build started 2018/3/13 15:23:21.
+﻿Build started 2018/3/19 11:59:50.
      1>Project "D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\build\tutorial16_shadowmaps.vcxproj" on node 9 (Rebuild target(s)).
      1>CustomBuild:
          Building Custom Rule D:/lixiaoguang_works/Examples_lixiaoguang/OpenGL/ogl-master/CMakeLists.txt
@@ -36,4 +36,4 @@
 
 Build succeeded.
 
-Time Elapsed 00:00:09.23
+Time Elapsed 00:00:06.11

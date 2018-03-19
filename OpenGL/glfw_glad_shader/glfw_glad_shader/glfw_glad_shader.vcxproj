@@ -126,7 +126,7 @@
       <WarningLevel>Level3</WarningLevel>
       <PrecompiledHeader>
       </PrecompiledHeader>
-      <Optimization>Disabled</Optimization>
+      <Optimization>Full</Optimization>
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
@@ -146,6 +146,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="OpenGL\controls\Camera.h" />
+    <ClInclude Include="OpenGL\controls\Model.h" />
     <ClInclude Include="OpenGL\shader\Shader.h" />
     <ClInclude Include="OpenGL_SDK\imgui\examples\opengl3_example\imgui_impl_glfw_gl3.h" />
     <ClInclude Include="OpenGL_SDK\imgui\imconfig.h" />
@@ -158,6 +159,7 @@
   <ItemGroup>
     <ClCompile Include="glfw_glad_shader.cpp" />
     <ClCompile Include="OpenGL\controls\Camera.cpp" />
+    <ClCompile Include="OpenGL\controls\Model.cpp" />
     <ClCompile Include="OpenGL\shader\Shader.cpp" />
     <ClCompile Include="OpenGL_SDK\imgui\examples\opengl3_example\imgui_impl_glfw_gl3.cpp" />
     <ClCompile Include="OpenGL_SDK\imgui\imgui.cpp" />

@@ -1,5 +1,5 @@
-﻿Build started 2018/3/13 15:23:11.
-     1>Project "D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\build\external\bullet-2.81-rev2613\src\BulletDynamics\BulletDynamics.vcxproj" on node 7 (Rebuild target(s)).
+﻿Build started 2018/3/19 11:59:00.
+     1>Project "D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\build\external\bullet-2.81-rev2613\src\BulletDynamics\BulletDynamics.vcxproj" on node 8 (Rebuild target(s)).
      1>CustomBuild:
          Building Custom Rule D:/lixiaoguang_works/Examples_lixiaoguang/OpenGL/ogl-master/external/bullet-2.81-rev2613/src/BulletDynamics/CMakeLists.txt
          CMake does not need to re-run because D:/lixiaoguang_works/Examples_lixiaoguang/OpenGL/ogl-master/build/external/bullet-2.81-rev2613/src/BulletDynamics/CMakeFiles/generate.stamp is up-to-date.
@@ -53,4 +53,4 @@
 
 Build succeeded.
 
-Time Elapsed 00:00:13.35
+Time Elapsed 00:00:13.38

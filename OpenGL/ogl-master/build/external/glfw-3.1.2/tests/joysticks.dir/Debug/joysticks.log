@@ -1,4 +1,4 @@
-﻿Build started 2018/3/13 15:23:27.
+﻿Build started 2018/3/19 11:59:56.
      1>Project "D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\build\external\glfw-3.1.2\tests\joysticks.vcxproj" on node 3 (Rebuild target(s)).
      1>CustomBuild:
          Building Custom Rule D:/lixiaoguang_works/Examples_lixiaoguang/OpenGL/ogl-master/external/glfw-3.1.2/tests/CMakeLists.txt
@@ -13,4 +13,4 @@
 
 Build succeeded.
 
-Time Elapsed 00:00:01.48
+Time Elapsed 00:00:02.30
