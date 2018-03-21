@@ -1,12 +1,12 @@
-﻿Build started 2018/3/19 12:00:04.
-     1>Project "D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\build\tutorial05_textured_cube.vcxproj" on node 7 (Rebuild target(s)).
+﻿Build started 2018/3/19 16:22:21.
+     1>Project "D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\build\tutorial05_textured_cube.vcxproj" on node 6 (Rebuild target(s)).
      1>CustomBuild:
          Building Custom Rule D:/lixiaoguang_works/Examples_lixiaoguang/OpenGL/ogl-master/CMakeLists.txt
          CMake does not need to re-run because D:/lixiaoguang_works/Examples_lixiaoguang/OpenGL/ogl-master/build/CMakeFiles/generate.stamp is up-to-date.
        ClCompile:
          C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\CL.exe /c /I"D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\AntTweakBar-1.16\include" /I"D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\glfw-3.1.2\include\GLFW" /I"D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\glm-0.9.7.1" /I"D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\glew-1.13.0\include" /I"D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\assimp-3.0.1270\include" /I"D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\bullet-2.81-rev2613\src" /I"D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\." /Zi /nologo /W3 /WX- /MP /Od /Ob0 /D WIN32 /D _WINDOWS /D TW_STATIC /D TW_NO_LIB_PRAGMA /D TW_NO_DIRECT3D /D GLEW_STATIC /D _CRT_SECURE_NO_WARNINGS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /GR /Fo"tutorial05_textured_cube.dir\Debug\\" /Fd"tutorial05_textured_cube.dir\Debug\vc120.pdb" /Gd /TP /errorReport:prompt "D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\tutorial05_textured_cube\tutorial05.cpp" "D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\common\shader.cpp" "D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\common\texture.cpp"
-         tutorial05.cpp
          shader.cpp
+         tutorial05.cpp
          texture.cpp
      1>D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\tutorial05_textured_cube\tutorial05.cpp : warning C4819: The file contains a character that cannot be represented in the current code page (936). Save the file in Unicode format to prevent data loss
        Link:
@@ -29,4 +29,4 @@
 
 Build succeeded.
 
-Time Elapsed 00:00:03.20
+Time Elapsed 00:00:04.53

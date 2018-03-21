@@ -1,12 +1,22 @@
 #version 330 core
 
+// Interpolated values from the vertex shaders
+in vec3 fragmentColor;
+
 // Ouput data
 out vec4 FragColor;
-uniform vec4 CustomColor;
+
+uniform float TransparencyColor;
 
 void main()
 {
-	// Output FragColor = CustomColor 
-	FragColor = CustomColor;
-
+	// Output color = color specified in the vertex shader, 
+	// interpolated between all 3 surrounding vertices
+	
+	//FragColor.rgb = fragmentColor;
+	//FragColor.a = 0;
+	//FragColor = vec4(fragmentColor, 0);//CustomColor;
+	
+	FragColor.rgb = fragmentColor;
+	FragColor.a = TransparencyColor;//0.2;
 }

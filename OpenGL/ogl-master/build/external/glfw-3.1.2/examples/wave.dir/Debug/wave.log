@@ -1,4 +1,4 @@
-﻿Build started 2018/3/19 11:59:50.
+﻿Build started 2018/3/19 16:22:01.
      1>Project "D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\build\external\glfw-3.1.2\examples\wave.vcxproj" on node 6 (Rebuild target(s)).
      1>CustomBuild:
          Building Custom Rule D:/lixiaoguang_works/Examples_lixiaoguang/OpenGL/ogl-master/external/glfw-3.1.2/examples/CMakeLists.txt
@@ -13,4 +13,4 @@
 
 Build succeeded.
 
-Time Elapsed 00:00:02.17
+Time Elapsed 00:00:01.78

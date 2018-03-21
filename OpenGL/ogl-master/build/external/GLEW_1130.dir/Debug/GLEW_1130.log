@@ -1,4 +1,4 @@
-﻿Build started 2018/3/19 11:58:59.
+﻿Build started 2018/3/19 16:21:57.
      1>Project "D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\build\external\GLEW_1130.vcxproj" on node 3 (Rebuild target(s)).
      1>CustomBuild:
          Building Custom Rule D:/lixiaoguang_works/Examples_lixiaoguang/OpenGL/ogl-master/external/CMakeLists.txt
@@ -13,4 +13,4 @@
 
 Build succeeded.
 
-Time Elapsed 00:00:03.19
+Time Elapsed 00:00:02.46

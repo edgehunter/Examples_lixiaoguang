@@ -1,5 +1,5 @@
-﻿Build started 2018/3/19 11:59:02.
-     1>Project "D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\build\external\assimp-3.0.1270\code\assimp.vcxproj" on node 4 (Rebuild target(s)).
+﻿Build started 2018/3/19 16:21:59.
+     1>Project "D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\build\external\assimp-3.0.1270\code\assimp.vcxproj" on node 3 (Rebuild target(s)).
      1>CustomBuild:
          Building Custom Rule D:/lixiaoguang_works/Examples_lixiaoguang/OpenGL/ogl-master/external/assimp-3.0.1270/code/CMakeLists.txt
          CMake does not need to re-run because D:/lixiaoguang_works/Examples_lixiaoguang/OpenGL/ogl-master/build/external/assimp-3.0.1270/code/CMakeFiles/generate.stamp is up-to-date.
@@ -23,7 +23,6 @@
          SkeletonMeshBuilder.cpp
          SplitByBoneCountProcess.cpp
          StandardShapes.cpp
-         TargetAnimation.cpp
      1>C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\xutility(2132): warning C4996: 'std::_Copy_impl': Function call with parameters that may be unsafe - this call relies on the caller to check that the passed values are correct. To disable this warning, use -D_SCL_SECURE_NO_WARNINGS. See documentation on how to use Visual C++ 'Checked Iterators' (D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\assimp-3.0.1270\code\SkeletonMeshBuilder.cpp)
                  C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\xutility(2113) : see declaration of 'std::_Copy_impl'
                  D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\assimp-3.0.1270\code\SkeletonMeshBuilder.cpp(212) : see reference to function template instantiation '_OutIt std::copy<std::_Vector_iterator<std::_Vector_val<std::_Simple_types<aiVector3t<float>>>>,aiVector3D*>(_InIt,_InIt,_OutIt)' being compiled
@@ -33,6 +32,7 @@
          ,            _InIt=std::_Vector_iterator<std::_Vector_val<std::_Simple_types<aiVector3t<float>>>>
                  ]
                  C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\xutility(2113) : see declaration of 'std::_Copy_impl'
+         TargetAnimation.cpp
          RemoveComments.cpp
          Subdivision.cpp
          DefaultLogger.cpp
@@ -73,6 +73,8 @@
          DeboneProcess.cpp
          ProcessHelper.cpp
          MakeVerboseFormat.cpp
+         3DSConverter.cpp
+         3DSLoader.cpp
      1>C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\xutility(2132): warning C4996: 'std::_Copy_impl': Function call with parameters that may be unsafe - this call relies on the caller to check that the passed values are correct. To disable this warning, use -D_SCL_SECURE_NO_WARNINGS. See documentation on how to use Visual C++ 'Checked Iterators' (D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\assimp-3.0.1270\code\OptimizeMeshes.cpp)
                  C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\xutility(2113) : see declaration of 'std::_Copy_impl'
                  D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\assimp-3.0.1270\code\OptimizeMeshes.cpp(139) : see reference to function template instantiation '_OutIt std::copy<std::_Vector_iterator<std::_Vector_val<std::_Simple_types<aiMesh *>>>,aiMesh**>(_InIt,_InIt,_OutIt)' being compiled
@@ -81,9 +83,6 @@
                      _OutIt=aiMesh **
          ,            _InIt=std::_Vector_iterator<std::_Vector_val<std::_Simple_types<aiMesh *>>>
                  ]
-         3DSConverter.cpp
-         3DSLoader.cpp
-         ACLoader.cpp
      1>C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\xutility(2132): warning C4996: 'std::_Copy_impl': Function call with parameters that may be unsafe - this call relies on the caller to check that the passed values are correct. To disable this warning, use -D_SCL_SECURE_NO_WARNINGS. See documentation on how to use Visual C++ 'Checked Iterators' (D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\assimp-3.0.1270\code\DeboneProcess.cpp)
                  C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\xutility(2113) : see declaration of 'std::_Copy_impl'
                  D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\assimp-3.0.1270\code\DeboneProcess.cpp(167) : see reference to function template instantiation '_OutIt std::copy<std::_Vector_iterator<std::_Vector_val<std::_Simple_types<aiMesh *>>>,aiMesh**>(_InIt,_InIt,_OutIt)' being compiled
@@ -93,11 +92,13 @@
          ,            _InIt=std::_Vector_iterator<std::_Vector_val<std::_Simple_types<aiMesh *>>>
                  ]
                  C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\xutility(2113) : see declaration of 'std::_Copy_impl'
+         ACLoader.cpp
          ASELoader.cpp
          ASEParser.cpp
          B3DImporter.cpp
          BVHLoader.cpp
          ColladaLoader.cpp
+         ColladaParser.cpp
      1>C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\xutility(2132): warning C4996: 'std::_Copy_impl': Function call with parameters that may be unsafe - this call relies on the caller to check that the passed values are correct. To disable this warning, use -D_SCL_SECURE_NO_WARNINGS. See documentation on how to use Visual C++ 'Checked Iterators' (D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\assimp-3.0.1270\code\BVHLoader.cpp)
                  C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\xutility(2113) : see declaration of 'std::_Copy_impl'
                  D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\assimp-3.0.1270\code\BVHLoader.cpp(224) : see reference to function template instantiation '_OutIt std::copy<std::_Vector_iterator<std::_Vector_val<std::_Simple_types<aiNode *>>>,aiNode**>(_InIt,_InIt,_OutIt)' being compiled
@@ -106,7 +107,6 @@
                      _OutIt=aiNode **
          ,            _InIt=std::_Vector_iterator<std::_Vector_val<std::_Simple_types<aiNode *>>>
                  ]
-         ColladaParser.cpp
          ColladaExporter.cpp
          DXFLoader.cpp
          CSMLoader.cpp
@@ -138,6 +138,7 @@
          LWOMaterial.cpp
          LWSLoader.cpp
          M3Importer.cpp
+         MD2Loader.cpp
      1>C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\xutility(2132): warning C4996: 'std::_Copy_impl': Function call with parameters that may be unsafe - this call relies on the caller to check that the passed values are correct. To disable this warning, use -D_SCL_SECURE_NO_WARNINGS. See documentation on how to use Visual C++ 'Checked Iterators' (D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\assimp-3.0.1270\code\LWOAnimation.cpp)
                  C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\xutility(2113) : see declaration of 'std::_Copy_impl'
                  D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\assimp-3.0.1270\code\LWOAnimation.cpp(558) : see reference to function template instantiation '_OutIt std::copy<std::_Vector_iterator<std::_Vector_val<std::_Simple_types<aiVectorKey>>>,aiVectorKey*>(_InIt,_InIt,_OutIt)' being compiled
@@ -146,11 +147,12 @@
                      _OutIt=aiVectorKey *
          ,            _InIt=std::_Vector_iterator<std::_Vector_val<std::_Simple_types<aiVectorKey>>>
                  ]
-         MD2Loader.cpp
          MD3Loader.cpp
          MD5Loader.cpp
          MD5Parser.cpp
          MDCLoader.cpp
+         MDLLoader.cpp
+         MDLMaterialLoader.cpp
      1>C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\xutility(2132): warning C4996: 'std::_Copy_impl': Function call with parameters that may be unsafe - this call relies on the caller to check that the passed values are correct. To disable this warning, use -D_SCL_SECURE_NO_WARNINGS. See documentation on how to use Visual C++ 'Checked Iterators' (D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\assimp-3.0.1270\code\LWSLoader.cpp)
                  C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\xutility(2113) : see declaration of 'std::_Copy_impl'
                  D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\assimp-3.0.1270\code\LWSLoader.cpp(891) : see reference to function template instantiation '_OutIt std::copy<std::_Vector_iterator<std::_Vector_val<std::_Simple_types<aiNodeAnim *>>>,aiNodeAnim**>(_InIt,_InIt,_OutIt)' being compiled
@@ -159,8 +161,6 @@
                      _OutIt=aiNodeAnim **
          ,            _InIt=std::_Vector_iterator<std::_Vector_val<std::_Simple_types<aiNodeAnim *>>>
                  ]
-         MDLLoader.cpp
-         MDLMaterialLoader.cpp
          MaterialSystem.cpp
          NFFLoader.cpp
          OFFLoader.cpp
@@ -184,7 +184,6 @@
      1>D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\assimp-3.0.1270\code\SMDLoader.cpp : warning C4819: The file contains a character that cannot be represented in the current code page (936). Save the file in Unicode format to prevent data loss
          STLLoader.cpp
          STLExporter.cpp
-         UnrealLoader.cpp
      1>C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\xutility(2132): warning C4996: 'std::_Copy_impl': Function call with parameters that may be unsafe - this call relies on the caller to check that the passed values are correct. To disable this warning, use -D_SCL_SECURE_NO_WARNINGS. See documentation on how to use Visual C++ 'Checked Iterators' (D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\assimp-3.0.1270\code\Q3BSPFileImporter.cpp)
                  C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\xutility(2113) : see declaration of 'std::_Copy_impl'
                  D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\assimp-3.0.1270\code\Q3BSPFileImporter.cpp(527) : see reference to function template instantiation '_OutIt std::copy<std::_Vector_iterator<std::_Vector_val<std::_Simple_types<aiTexture *>>>,aiTexture**>(_InIt,_InIt,_OutIt)' being compiled
@@ -193,6 +192,7 @@
                      _OutIt=aiTexture **
          ,            _InIt=std::_Vector_iterator<std::_Vector_val<std::_Simple_types<aiTexture *>>>
                  ]
+         UnrealLoader.cpp
          XFileImporter.cpp
          XFileParser.cpp
          MS3DLoader.cpp
@@ -212,7 +212,6 @@
          NDOLoader.cpp
          IFCLoader.cpp
          IFCReaderGen.cpp
-         IFCUtil.cpp
      1>C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\xutility(2132): warning C4996: 'std::_Copy_impl': Function call with parameters that may be unsafe - this call relies on the caller to check that the passed values are correct. To disable this warning, use -D_SCL_SECURE_NO_WARNINGS. See documentation on how to use Visual C++ 'Checked Iterators' (D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\assimp-3.0.1270\code\BlenderLoader.cpp)
                  C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\xutility(2113) : see declaration of 'std::_Copy_impl'
                  D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\assimp-3.0.1270\code\BlenderLoader.cpp(371) : see reference to function template instantiation '_OutIt std::copy<std::_Vector_iterator<std::_Vector_val<std::_Simple_types<aiMesh *>>>,aiMesh**>(_InIt,_InIt,_OutIt)' being compiled
@@ -225,6 +224,7 @@
                  C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\xutility(2113) : see declaration of 'std::_Copy_impl'
                  C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\xutility(2113) : see declaration of 'std::_Copy_impl'
                  C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\xutility(2113) : see declaration of 'std::_Copy_impl'
+         IFCUtil.cpp
          IFCGeometry.cpp
      1>C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\xutility(2132): warning C4996: 'std::_Copy_impl': Function call with parameters that may be unsafe - this call relies on the caller to check that the passed values are correct. To disable this warning, use -D_SCL_SECURE_NO_WARNINGS. See documentation on how to use Visual C++ 'Checked Iterators' (D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\external\assimp-3.0.1270\code\BlenderModifier.cpp)
                  C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\xutility(2113) : see declaration of 'std::_Copy_impl'
@@ -444,4 +444,4 @@
 
 Build succeeded.
 
-Time Elapsed 00:00:54.06
+Time Elapsed 00:01:04.29

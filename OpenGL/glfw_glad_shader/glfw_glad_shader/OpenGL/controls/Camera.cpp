@@ -13,7 +13,7 @@ Camera::~Camera()
 void Camera::Init(GLFWwindow* Window, const unsigned int Screen_Width, const unsigned int Screen_Height)
 {
 	// Initial position : on +Z
-	Position = glm::vec3(0, 0, 5);
+	Position = glm::vec3(0, 0, 20);
 
 	// Initial horizontal angle : toward -Z
 	HorizontalAngle = -3.14f;

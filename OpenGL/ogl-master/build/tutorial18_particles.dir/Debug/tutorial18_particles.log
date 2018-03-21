@@ -1,4 +1,4 @@
-﻿Build started 2018/3/19 11:59:50.
+﻿Build started 2018/3/19 16:22:01.
      1>Project "D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\build\tutorial18_particles.vcxproj" on node 5 (Rebuild target(s)).
      1>CustomBuild:
          Building Custom Rule D:/lixiaoguang_works/Examples_lixiaoguang/OpenGL/ogl-master/CMakeLists.txt
@@ -31,4 +31,4 @@
 
 Build succeeded.
 
-Time Elapsed 00:00:05.87
+Time Elapsed 00:00:06.79

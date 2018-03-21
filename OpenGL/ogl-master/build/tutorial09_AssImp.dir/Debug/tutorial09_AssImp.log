@@ -1,5 +1,5 @@
-﻿Build started 2018/3/19 12:00:07.
-     1>Project "D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\build\tutorial09_AssImp.vcxproj" on node 2 (Rebuild target(s)).
+﻿Build started 2018/3/19 16:23:04.
+     1>Project "D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\build\tutorial09_AssImp.vcxproj" on node 3 (Rebuild target(s)).
      1>CustomBuild:
          Building Custom Rule D:/lixiaoguang_works/Examples_lixiaoguang/OpenGL/ogl-master/CMakeLists.txt
          CMake does not need to re-run because D:/lixiaoguang_works/Examples_lixiaoguang/OpenGL/ogl-master/build/CMakeFiles/generate.stamp is up-to-date.
@@ -34,4 +34,4 @@
 
 Build succeeded.
 
-Time Elapsed 00:00:13.98
+Time Elapsed 00:00:04.30

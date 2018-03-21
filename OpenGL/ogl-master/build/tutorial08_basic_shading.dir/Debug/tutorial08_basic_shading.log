@@ -1,4 +1,4 @@
-﻿Build started 2018/3/19 12:00:06.
+﻿Build started 2018/3/19 16:22:24.
      1>Project "D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\build\tutorial08_basic_shading.vcxproj" on node 9 (Rebuild target(s)).
      1>CustomBuild:
          Building Custom Rule D:/lixiaoguang_works/Examples_lixiaoguang/OpenGL/ogl-master/CMakeLists.txt
@@ -33,4 +33,4 @@
 
 Build succeeded.
 
-Time Elapsed 00:00:05.11
+Time Elapsed 00:00:06.55
