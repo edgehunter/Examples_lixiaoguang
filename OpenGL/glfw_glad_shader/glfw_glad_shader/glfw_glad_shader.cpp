@@ -28,6 +28,9 @@
 #include "OpenGL/controls/Camera.h"
 #include "OpenGL/controls/Model.h"
 
+// Object
+#include "OpenGL/objects/ObjectManager.h"
+
 static void error_callback(int error, const char* description)
 {
 	fprintf(stderr, "Error %d: %s\n", error, description);
@@ -188,6 +191,10 @@ int main()
 	GLuint MatrixMVP = glGetUniformLocation(programID, "MVP");
 	GLuint TransparencyColor = glGetUniformLocation(programID, "TransparencyColor");
 
+	GLint PositionAttrib = glGetAttribLocation(programID, "vertexPosition");
+	GLint ColorAttrib = glGetAttribLocation(programID, "vertexColor");
+
+
 	/*
 
 	// Projection matrix : 45?Field of View, 4:3 ratio, display range : 0.1 unit <-> 100 units
@@ -317,14 +324,14 @@ int main()
 	glBindBuffer(GL_ARRAY_BUFFER, VBO[0]);
 	glBufferData(GL_ARRAY_BUFFER, sizeof(VerticesTriangle), VerticesTriangle, GL_STATIC_DRAW);
 
-	glEnableVertexAttribArray(0);
-	glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, 0, (void*)0);
+	glEnableVertexAttribArray(PositionAttrib);
+	glVertexAttribPointer(PositionAttrib, 3, GL_FLOAT, GL_FALSE, 0, (void*)0);
 
 	glBindBuffer(GL_ARRAY_BUFFER, VBO[1]);
 	glBufferData(GL_ARRAY_BUFFER, sizeof(ColorsTriangle), ColorsTriangle, GL_STATIC_DRAW);
 		
-	glEnableVertexAttribArray(1);
-	glVertexAttribPointer(1, 3, GL_FLOAT, GL_FALSE, 0, (void*)0);
+	glEnableVertexAttribArray(ColorAttrib);
+	glVertexAttribPointer(ColorAttrib, 3, GL_FLOAT, GL_FALSE, 0, (void*)0);
 
 	// You can unbind the VAO afterwards so other VAO calls won't accidentally modify this VAO, but this rarely happens. Modifying other
 	// VAOs requires a call to glBindVertexArray anyways so we generally don't unbind VAOs (nor VBOs) when it's not directly necessary.
@@ -340,9 +347,9 @@ int main()
 	glBindBuffer(GL_ARRAY_BUFFER, VBO[3]);
 	glBufferData(GL_ARRAY_BUFFER, sizeof(VerticesCube), VerticesCube, GL_STATIC_DRAW);
 
-	glEnableVertexAttribArray(0);
+	glEnableVertexAttribArray(PositionAttrib);
 	glVertexAttribPointer(
-		0,                  // attribute. No particular reason for 0, but must match the layout in the shader.
+		PositionAttrib,                  // attribute. No particular reason for 0, but must match the layout in the shader.
 		3,                  // size
 		GL_FLOAT,           // type
 		GL_FALSE,           // normalized?
@@ -357,9 +364,9 @@ int main()
 	glBindBuffer(GL_ARRAY_BUFFER, VBO[4]);
 	glBufferData(GL_ARRAY_BUFFER, sizeof(ColorsCube), ColorsCube, GL_STATIC_DRAW);
 
-	glEnableVertexAttribArray(1);
+	glEnableVertexAttribArray(ColorAttrib);
 	glVertexAttribPointer(
-		1,                                // attribute. No particular reason for 1, but must match the layout in the shader.
+		ColorAttrib,                                // attribute. No particular reason for 1, but must match the layout in the shader.
 		3,                                // size
 		GL_FLOAT,                         // type
 		GL_FALSE,                         // normalized?
@@ -384,6 +391,14 @@ int main()
 	Model m_Model;
 	m_Model.Init(window, SCR_WIDTH, SCR_HEIGHT);	
 
+
+	//Object
+	// ---------------------------------------
+	ObjectManager m_ObjectManager;
+	m_ObjectManager.Init(10);
+
+	//m_ObjectManager.Release();
+	m_ObjectManager.AddData2Object();
 
 	// Setup ImGui binding
 	// ---------------------------------------
@@ -464,7 +479,7 @@ int main()
 		glUniformMatrix4fv(MatrixMVP, 1, GL_FALSE, &MVP[0][0]);
 
 		// update shader uniform TransparencyColor
-		float timeValue = glfwGetTime() * 4;
+		double timeValue = glfwGetTime() * 4;
 		float RedValue = sin(timeValue) / 2.0f + 0.5f;
 		//glUniform4f(TransparencyColor, RedValue, 0.0f, 0.0f, 1.0f);
 		glUniform1f(TransparencyColor, RedValue);
