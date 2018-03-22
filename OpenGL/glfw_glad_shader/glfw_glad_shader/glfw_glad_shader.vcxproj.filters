@@ -72,8 +72,14 @@
     <ClInclude Include="OpenGL\objects\Object.h">
       <Filter>opengl\objects</Filter>
     </ClInclude>
-    <ClInclude Include="OpenGL\objects\ObjectManager.h">
+    <ClInclude Include="VaoEngine.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="OpenGL\objects\ObjectQueue.h">
       <Filter>opengl\objects</Filter>
+    </ClInclude>
+    <ClInclude Include="OpenGL\objects\VaoUnit.h">
+      <Filter>opengl\controls</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -110,8 +116,14 @@
     <ClCompile Include="OpenGL\objects\Object.cpp">
       <Filter>opengl\objects</Filter>
     </ClCompile>
-    <ClCompile Include="OpenGL\objects\ObjectManager.cpp">
+    <ClCompile Include="VaoEngine.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="OpenGL\objects\ObjectQueue.cpp">
       <Filter>opengl\objects</Filter>
+    </ClCompile>
+    <ClCompile Include="OpenGL\objects\VaoUnit.cpp">
+      <Filter>opengl\controls</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
