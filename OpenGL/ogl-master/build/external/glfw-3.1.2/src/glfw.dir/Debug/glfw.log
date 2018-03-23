@@ -1,5 +1,5 @@
-﻿Build started 2018/3/19 16:21:57.
-     1>Project "D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\build\external\glfw-3.1.2\src\glfw.vcxproj" on node 4 (Rebuild target(s)).
+﻿Build started 2018/3/23 11:20:16.
+     1>Project "D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\build\external\glfw-3.1.2\src\glfw.vcxproj" on node 5 (Rebuild target(s)).
      1>CustomBuild:
          Building Custom Rule D:/lixiaoguang_works/Examples_lixiaoguang/OpenGL/ogl-master/external/glfw-3.1.2/src/CMakeLists.txt
          CMake does not need to re-run because D:/lixiaoguang_works/Examples_lixiaoguang/OpenGL/ogl-master/build/external/glfw-3.1.2/src/CMakeFiles/generate.stamp is up-to-date.
@@ -10,8 +10,8 @@
          input.c
          monitor.c
          window.c
-         win32_init.c
          win32_monitor.c
+         win32_init.c
          win32_time.c
          win32_tls.c
          win32_window.c
@@ -35,4 +35,4 @@
 
 Build succeeded.
 
-Time Elapsed 00:00:04.16
+Time Elapsed 00:00:04.70

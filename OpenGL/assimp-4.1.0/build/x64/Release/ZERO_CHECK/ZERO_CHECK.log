@@ -1,0 +1,17 @@
+﻿Build started 2018/3/23 17:28:00.
+     1>Project "D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\assimp-4.1.0\build\ZERO_CHECK.vcxproj" on node 2 (Rebuild target(s)).
+     1>CustomBuild:
+         Checking Build System
+         CMake does not need to re-run because D:/lixiaoguang_works/Examples_lixiaoguang/OpenGL/assimp-4.1.0/build/CMakeFiles/generate.stamp is up-to-date.
+         CMake does not need to re-run because D:/lixiaoguang_works/Examples_lixiaoguang/OpenGL/assimp-4.1.0/build/contrib/zlib/CMakeFiles/generate.stamp is up-to-date.
+         CMake does not need to re-run because D:/lixiaoguang_works/Examples_lixiaoguang/OpenGL/assimp-4.1.0/build/contrib/CMakeFiles/generate.stamp is up-to-date.
+         CMake does not need to re-run because D:/lixiaoguang_works/Examples_lixiaoguang/OpenGL/assimp-4.1.0/build/contrib/irrXML/CMakeFiles/generate.stamp is up-to-date.
+         CMake does not need to re-run because D:/lixiaoguang_works/Examples_lixiaoguang/OpenGL/assimp-4.1.0/build/code/CMakeFiles/generate.stamp is up-to-date.
+         CMake does not need to re-run because D:/lixiaoguang_works/Examples_lixiaoguang/OpenGL/assimp-4.1.0/build/tools/assimp_cmd/CMakeFiles/generate.stamp is up-to-date.
+         CMake does not need to re-run because D:/lixiaoguang_works/Examples_lixiaoguang/OpenGL/assimp-4.1.0/build/test/CMakeFiles/generate.stamp is up-to-date.
+         CMake does not need to re-run because D:/lixiaoguang_works/Examples_lixiaoguang/OpenGL/assimp-4.1.0/build/test/headercheck/CMakeFiles/generate.stamp is up-to-date.
+     1>Done Building Project "D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\assimp-4.1.0\build\ZERO_CHECK.vcxproj" (Rebuild target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:00.53

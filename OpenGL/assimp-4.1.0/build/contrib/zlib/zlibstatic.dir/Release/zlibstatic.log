@@ -1,0 +1,44 @@
+﻿Build started 2018/3/23 17:28:00.
+     1>Project "D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\assimp-4.1.0\build\contrib\zlib\zlibstatic.vcxproj" on node 3 (Rebuild target(s)).
+     1>CustomBuild:
+         Building Custom Rule D:/lixiaoguang_works/Examples_lixiaoguang/OpenGL/assimp-4.1.0/contrib/zlib/CMakeLists.txt
+         CMake does not need to re-run because D:/lixiaoguang_works/Examples_lixiaoguang/OpenGL/assimp-4.1.0/build/contrib/zlib/CMakeFiles/generate.stamp is up-to-date.
+       ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\CL.exe /c /I"D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\assimp-4.1.0\." /I"D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\assimp-4.1.0\include" /I"D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\assimp-4.1.0\build" /I"D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\assimp-4.1.0\build\include" /I"D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\assimp-4.1.0\contrib\zlib" /I"D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\assimp-4.1.0\build\contrib\zlib" /I"D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\assimp-4.1.0" /nologo /W3 /WX- /MP /O2 /Ob2 /D WIN32 /D _WINDOWS /D NDEBUG /D WIN32_LEAN_AND_MEAN /D OPENDDL_NO_USE_CPP11 /D NO_FSEEKO /D _CRT_SECURE_NO_DEPRECATE /D _CRT_NONSTDC_NO_DEPRECATE /D "CMAKE_INTDIR=\"Release\"" /D _MBCS /Gm- /MD /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"zlibstatic.dir\Release\\" /Fd"zlibstatic.dir\Release\vc120.pdb" /Gd /TC /wd4351 /errorReport:prompt "D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\assimp-4.1.0\contrib\zlib\adler32.c" "D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\assimp-4.1.0\contrib\zlib\compress.c" "D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\assimp-4.1.0\contrib\zlib\crc32.c" "D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\assimp-4.1.0\contrib\zlib\deflate.c" "D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\assimp-4.1.0\contrib\zlib\gzclose.c" "D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\assimp-4.1.0\contrib\zlib\gzlib.c" "D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\assimp-4.1.0\contrib\zlib\gzread.c" "D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\assimp-4.1.0\contrib\zlib\gzwrite.c" "D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\assimp-4.1.0\contrib\zlib\inflate.c" "D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\assimp-4.1.0\contrib\zlib\infback.c" "D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\assimp-4.1.0\contrib\zlib\inftrees.c" "D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\assimp-4.1.0\contrib\zlib\inffast.c" "D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\assimp-4.1.0\contrib\zlib\trees.c" "D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\assimp-4.1.0\contrib\zlib\uncompr.c" "D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\assimp-4.1.0\contrib\zlib\zutil.c"
+         adler32.c
+         compress.c
+         crc32.c
+         deflate.c
+         gzclose.c
+         gzlib.c
+         gzread.c
+         gzwrite.c
+         inflate.c
+         infback.c
+         inftrees.c
+         inffast.c
+         trees.c
+         uncompr.c
+         zutil.c
+       Lib:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\Lib.exe /OUT:"D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\assimp-4.1.0\build\contrib\zlib\Release\zlibstatic.lib" /NOLOGO /MACHINE:X64  /machine:x64 zlibstatic.dir\Release\adler32.obj
+         zlibstatic.dir\Release\compress.obj
+         zlibstatic.dir\Release\crc32.obj
+         zlibstatic.dir\Release\deflate.obj
+         zlibstatic.dir\Release\gzclose.obj
+         zlibstatic.dir\Release\gzlib.obj
+         zlibstatic.dir\Release\gzread.obj
+         zlibstatic.dir\Release\gzwrite.obj
+         zlibstatic.dir\Release\inflate.obj
+         zlibstatic.dir\Release\infback.obj
+         zlibstatic.dir\Release\inftrees.obj
+         zlibstatic.dir\Release\inffast.obj
+         zlibstatic.dir\Release\trees.obj
+         zlibstatic.dir\Release\uncompr.obj
+         zlibstatic.dir\Release\zutil.obj
+         zlibstatic.vcxproj -> D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\assimp-4.1.0\build\contrib\zlib\Release\zlibstatic.lib
+     1>Done Building Project "D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\assimp-4.1.0\build\contrib\zlib\zlibstatic.vcxproj" (Rebuild target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:01.37

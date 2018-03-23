@@ -1,0 +1,186 @@
+﻿Build started 2018/3/23 17:26:02.
+     1>Project "D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\assimp-4.1.0\build\test\unit.vcxproj" on node 2 (Rebuild target(s)).
+     1>PreBuildEvent:
+         setlocal
+         "C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different D:/lixiaoguang_works/Examples_lixiaoguang/OpenGL/assimp-4.1.0/build/code/Debug/assimp-vc120-mt.dll D:/lixiaoguang_works/Examples_lixiaoguang/OpenGL/assimp-4.1.0/build/test/Debug
+         if %errorlevel% neq 0 goto :cmEnd
+         :cmEnd
+         endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+         :cmErrorLevel
+         exit /b %1
+         :cmDone
+         if %errorlevel% neq 0 goto :VCEnd
+         :VCEnd
+       CustomBuild:
+         Building Custom Rule D:/lixiaoguang_works/Examples_lixiaoguang/OpenGL/assimp-4.1.0/test/CMakeLists.txt
+         CMake does not need to re-run because D:/lixiaoguang_works/Examples_lixiaoguang/OpenGL/assimp-4.1.0/build/test/CMakeFiles/generate.stamp is up-to-date.
+       ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\CL.exe /c /I"D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\assimp-4.1.0\." /I"D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\assimp-4.1.0\include" /I"D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\assimp-4.1.0\build" /I"D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\assimp-4.1.0\build\include" /I"D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\assimp-4.1.0\contrib\zlib" /I"D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\assimp-4.1.0\build\contrib\zlib" /I"D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\assimp-4.1.0\test\..\contrib\gtest\include" /I"D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\assimp-4.1.0\test\..\contrib\gtest" /I"D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\assimp-4.1.0\code" /Zi /nologo /W3 /WX- /MP /Od /Ob0 /D WIN32 /D _WINDOWS /D WIN32_LEAN_AND_MEAN /D OPENDDL_NO_USE_CPP11 /D ASSIMP_BUILD_NO_C4D_IMPORTER /D "ASSIMP_TEST_MODELS_DIR=\"D:/lixiaoguang_works/Examples_lixiaoguang/OpenGL/assimp-4.1.0/test/models\"" /D _CRT_SECURE_NO_WARNINGS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /GR /Fo"unit.dir\Debug\\" /Fd"unit.dir\Debug\vc120.pdb" /Gd /TP /wd4351 /errorReport:prompt "D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\assimp-4.1.0\contrib\gtest\src\gtest-all.cc" "D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\assimp-4.1.0\test\unit\Main.cpp" "D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\assimp-4.1.0\code\Version.cpp" "D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\assimp-4.1.0\test\unit\utIOSystem.cpp" "D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\assimp-4.1.0\test\unit\utIOStreamBuffer.cpp" "D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\assimp-4.1.0\test\unit\utIssues.cpp" "D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\assimp-4.1.0\test\unit\utAnim.cpp" "D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\assimp-4.1.0\test\unit\AssimpAPITest.cpp" "D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\assimp-4.1.0\test\unit\utBatchLoader.cpp" "D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\assimp-4.1.0\test\unit\utDefaultIOStream.cpp" "D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\assimp-4.1.0\test\unit\utFastAtof.cpp" "D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\assimp-4.1.0\test\unit\utMetadata.cpp" "D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\assimp-4.1.0\test\unit\SceneDiffer.cpp" "D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\assimp-4.1.0\test\unit\AbstractImportExportBase.cpp" "D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\assimp-4.1.0\test\unit\utTypes.cpp" "D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\assimp-4.1.0\test\unit\utVersion.cpp" "D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\assimp-4.1.0\test\unit\utProfiler.cpp" "D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\assimp-4.1.0\test\unit\utSharedPPData.cpp" "D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\assimp-4.1.0\test\unit\utStringUtils.cpp" "D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\assimp-4.1.0\test\unit\utLWSImportExport.cpp" "D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\assimp-4.1.0\test\unit\utSMDImportExport.cpp" "D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\assimp-4.1.0\test\unit\utglTFImportExport.cpp" "D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\assimp-4.1.0\test\unit\utglTF2ImportExport.cpp" "D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\assimp-4.1.0\test\unit\utHMPImportExport.cpp" "D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\assimp-4.1.0\test\unit\utIFCImportExport.cpp" "D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\assimp-4.1.0\test\unit\utFBXImporterExporter.cpp" "D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\assimp-4.1.0\test\unit\utImporter.cpp" "D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\assimp-4.1.0\test\unit\ut3DImportExport.cpp" "D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\assimp-4.1.0\test\unit\ut3DSImportExport.cpp" "D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\assimp-4.1.0\test\unit\utACImportExport.cpp" "D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\assimp-4.1.0\test\unit\utAMFImportExport.cpp" "D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\assimp-4.1.0\test\unit\utASEImportExport.cpp" "D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\assimp-4.1.0\test\unit\utD3MFImportExport.cpp" "D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\assimp-4.1.0\test\unit\utQ3DImportExport.cpp" "D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\assimp-4.1.0\test\unit\utSTLImportExport.cpp" "D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\assimp-4.1.0\test\unit\utXImporterExporter.cpp" "D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\assimp-4.1.0\test\unit\utX3DImportExport.cpp" "D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\assimp-4.1.0\test\unit\utDXFImporterExporter.cpp" "D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\assimp-4.1.0\test\unit\utPMXImporter.cpp" "D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\assimp-4.1.0\test\unit\utPLYImportExport.cpp" "D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\assimp-4.1.0\test\unit\utObjImportExport.cpp" "D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\assimp-4.1.0\test\unit\utObjTools.cpp" "D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\assimp-4.1.0\test\unit\utOpenGEXImportExport.cpp" "D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\assimp-4.1.0\test\unit\utSIBImporter.cpp" "D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\assimp-4.1.0\test\unit\utBlenderIntermediate.cpp" "D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\assimp-4.1.0\test\unit\utBlendImportAreaLight.cpp" "D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\assimp-4.1.0\test\unit\utBlenderImportExport.cpp" "D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\assimp-4.1.0\test\unit\utBlendImportMaterials.cpp" "D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\assimp-4.1.0\test\unit\utBVHImportExport.cpp" "D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\assimp-4.1.0\test\unit\utColladaExportCamera.cpp" "D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\assimp-4.1.0\test\unit\utColladaExportLight.cpp" "D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\assimp-4.1.0\test\unit\utColladaImportExport.cpp" "D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\assimp-4.1.0\test\unit\utCSMImportExport.cpp" "D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\assimp-4.1.0\test\unit\utB3DImportExport.cpp" "D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\assimp-4.1.0\test\unit\utMaterialSystem.cpp" "D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\assimp-4.1.0\test\unit\utMatrix3x3.cpp" "D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\assimp-4.1.0\test\unit\utMatrix4x4.cpp" "D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\assimp-4.1.0\test\unit\utVector3.cpp" "D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\assimp-4.1.0\test\unit\utImproveCacheLocality.cpp" "D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\assimp-4.1.0\test\unit\utFixInfacingNormals.cpp" "D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\assimp-4.1.0\test\unit\utGenNormals.cpp" "D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\assimp-4.1.0\test\unit\utTriangulate.cpp" "D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\assimp-4.1.0\test\unit\utTextureTransform.cpp" "D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\assimp-4.1.0\test\unit\utRemoveRedundantMaterials.cpp" "D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\assimp-4.1.0\test\unit\utRemoveVCProcess.cpp" "D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\assimp-4.1.0\test\unit\utScaleProcess.cpp" "D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\assimp-4.1.0\test\unit\utJoinVertices.cpp" "D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\assimp-4.1.0\test\unit\utRemoveComments.cpp" "D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\assimp-4.1.0\test\unit\utRemoveComponent.cpp" "D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\assimp-4.1.0\test\unit\utVertexTriangleAdjacency.cpp" "D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\assimp-4.1.0\test\unit\utSplitLargeMeshes.cpp" "D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\assimp-4.1.0\test\unit\utFindDegenerates.cpp" "D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\assimp-4.1.0\test\unit\utFindInvalidData.cpp" "D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\assimp-4.1.0\test\unit\utLimitBoneWeights.cpp" "D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\assimp-4.1.0\test\unit\utPretransformVertices.cpp" "D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\assimp-4.1.0\test\unit\utScenePreprocessor.cpp" "D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\assimp-4.1.0\test\unit\utTargetAnimation.cpp" "D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\assimp-4.1.0\test\unit\utSortByPType.cpp" "D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\assimp-4.1.0\test\unit\utSceneCombiner.cpp"
+         gtest-all.cc
+         Main.cpp
+         Version.cpp
+         utIOSystem.cpp
+         utIOStreamBuffer.cpp
+         utIssues.cpp
+         utAnim.cpp
+         AssimpAPITest.cpp
+         utBatchLoader.cpp
+         utDefaultIOStream.cpp
+         utFastAtof.cpp
+         utMetadata.cpp
+         SceneDiffer.cpp
+         AbstractImportExportBase.cpp
+         utTypes.cpp
+         utVersion.cpp
+         utProfiler.cpp
+         utSharedPPData.cpp
+         utStringUtils.cpp
+         utLWSImportExport.cpp
+         utSMDImportExport.cpp
+         utglTFImportExport.cpp
+         utglTF2ImportExport.cpp
+         utHMPImportExport.cpp
+         utIFCImportExport.cpp
+         utFBXImporterExporter.cpp
+         utImporter.cpp
+         ut3DImportExport.cpp
+         ut3DSImportExport.cpp
+         utACImportExport.cpp
+         utAMFImportExport.cpp
+         utASEImportExport.cpp
+         utD3MFImportExport.cpp
+         utQ3DImportExport.cpp
+         utSTLImportExport.cpp
+         utXImporterExporter.cpp
+         utX3DImportExport.cpp
+         utDXFImporterExporter.cpp
+         utPMXImporter.cpp
+         utPLYImportExport.cpp
+         utObjImportExport.cpp
+         utObjTools.cpp
+         utOpenGEXImportExport.cpp
+         utSIBImporter.cpp
+         utBlenderIntermediate.cpp
+         utBlendImportAreaLight.cpp
+         utBlenderImportExport.cpp
+         utBlendImportMaterials.cpp
+         utBVHImportExport.cpp
+         utColladaExportCamera.cpp
+         utColladaExportLight.cpp
+         utColladaImportExport.cpp
+         utCSMImportExport.cpp
+         utB3DImportExport.cpp
+         utMaterialSystem.cpp
+         utMatrix3x3.cpp
+         utMatrix4x4.cpp
+         utVector3.cpp
+         utImproveCacheLocality.cpp
+         utFixInfacingNormals.cpp
+         utGenNormals.cpp
+         utTriangulate.cpp
+         utTextureTransform.cpp
+         utRemoveRedundantMaterials.cpp
+         utRemoveVCProcess.cpp
+         utScaleProcess.cpp
+         utJoinVertices.cpp
+         utRemoveComments.cpp
+         utRemoveComponent.cpp
+         utVertexTriangleAdjacency.cpp
+         utSplitLargeMeshes.cpp
+         utFindDegenerates.cpp
+         utFindInvalidData.cpp
+         utLimitBoneWeights.cpp
+         utPretransformVertices.cpp
+         utScenePreprocessor.cpp
+         utTargetAnimation.cpp
+         utSortByPType.cpp
+         utSceneCombiner.cpp
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\CL.exe /c /I"D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\assimp-4.1.0\." /I"D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\assimp-4.1.0\include" /I"D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\assimp-4.1.0\build" /I"D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\assimp-4.1.0\build\include" /I"D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\assimp-4.1.0\contrib\zlib" /I"D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\assimp-4.1.0\build\contrib\zlib" /I"D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\assimp-4.1.0\test\..\contrib\gtest\include" /I"D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\assimp-4.1.0\test\..\contrib\gtest" /I"D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\assimp-4.1.0\code" /Zi /nologo /W3 /WX- /MP /Od /Ob0 /D WIN32 /D _WINDOWS /D WIN32_LEAN_AND_MEAN /D OPENDDL_NO_USE_CPP11 /D ASSIMP_BUILD_NO_C4D_IMPORTER /D "ASSIMP_TEST_MODELS_DIR=\"D:/lixiaoguang_works/Examples_lixiaoguang/OpenGL/assimp-4.1.0/test/models\"" /D _CRT_SECURE_NO_WARNINGS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /GR /Fo"unit.dir\Debug\\" /Fd"unit.dir\Debug\vc120.pdb" /Gd /TC /wd4351 /errorReport:prompt "D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\assimp-4.1.0\test\unit\CCompilerTest.c"
+         CCompilerTest.c
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\link.exe /ERRORREPORT:PROMPT /OUT:"D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\assimp-4.1.0\build\test\Debug\unit.exe" /INCREMENTAL /NOLOGO /LIBPATH:"D:/lixiaoguang_works/Examples_lixiaoguang/OpenGL/assimp-4.1.0/build" /LIBPATH:"D:/lixiaoguang_works/Examples_lixiaoguang/OpenGL/assimp-4.1.0/build/Debug" /LIBPATH:/lib /LIBPATH:/lib/Debug "..\code\Debug\assimp-vc120-mt.lib" ..\contrib\zlib\Debug\zlibstaticd.lib ..\contrib\irrXML\Debug\IrrXML.lib kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:/lixiaoguang_works/Examples_lixiaoguang/OpenGL/assimp-4.1.0/build/test/Debug/unit.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:/lixiaoguang_works/Examples_lixiaoguang/OpenGL/assimp-4.1.0/build/test/Debug/unit.lib" /MACHINE:X64  /machine:x64 "unit.dir\Debug\gtest-all.obj"
+         unit.dir\Debug\CCompilerTest.obj
+         unit.dir\Debug\Main.obj
+         unit.dir\Debug\Version.obj
+         unit.dir\Debug\utIOSystem.obj
+         unit.dir\Debug\utIOStreamBuffer.obj
+         unit.dir\Debug\utIssues.obj
+         unit.dir\Debug\utAnim.obj
+         unit.dir\Debug\AssimpAPITest.obj
+         unit.dir\Debug\utBatchLoader.obj
+         unit.dir\Debug\utDefaultIOStream.obj
+         unit.dir\Debug\utFastAtof.obj
+         unit.dir\Debug\utMetadata.obj
+         unit.dir\Debug\SceneDiffer.obj
+         unit.dir\Debug\AbstractImportExportBase.obj
+         unit.dir\Debug\utTypes.obj
+         unit.dir\Debug\utVersion.obj
+         unit.dir\Debug\utProfiler.obj
+         unit.dir\Debug\utSharedPPData.obj
+         unit.dir\Debug\utStringUtils.obj
+         unit.dir\Debug\utLWSImportExport.obj
+         unit.dir\Debug\utSMDImportExport.obj
+         unit.dir\Debug\utglTFImportExport.obj
+         unit.dir\Debug\utglTF2ImportExport.obj
+         unit.dir\Debug\utHMPImportExport.obj
+         unit.dir\Debug\utIFCImportExport.obj
+         unit.dir\Debug\utFBXImporterExporter.obj
+         unit.dir\Debug\utImporter.obj
+         unit.dir\Debug\ut3DImportExport.obj
+         unit.dir\Debug\ut3DSImportExport.obj
+         unit.dir\Debug\utACImportExport.obj
+         unit.dir\Debug\utAMFImportExport.obj
+         unit.dir\Debug\utASEImportExport.obj
+         unit.dir\Debug\utD3MFImportExport.obj
+         unit.dir\Debug\utQ3DImportExport.obj
+         unit.dir\Debug\utSTLImportExport.obj
+         unit.dir\Debug\utXImporterExporter.obj
+         unit.dir\Debug\utX3DImportExport.obj
+         unit.dir\Debug\utDXFImporterExporter.obj
+         unit.dir\Debug\utPMXImporter.obj
+         unit.dir\Debug\utPLYImportExport.obj
+         unit.dir\Debug\utObjImportExport.obj
+         unit.dir\Debug\utObjTools.obj
+         unit.dir\Debug\utOpenGEXImportExport.obj
+         unit.dir\Debug\utSIBImporter.obj
+         unit.dir\Debug\utBlenderIntermediate.obj
+         unit.dir\Debug\utBlendImportAreaLight.obj
+         unit.dir\Debug\utBlenderImportExport.obj
+         unit.dir\Debug\utBlendImportMaterials.obj
+         unit.dir\Debug\utBVHImportExport.obj
+         unit.dir\Debug\utColladaExportCamera.obj
+         unit.dir\Debug\utColladaExportLight.obj
+         unit.dir\Debug\utColladaImportExport.obj
+         unit.dir\Debug\utCSMImportExport.obj
+         unit.dir\Debug\utB3DImportExport.obj
+         unit.dir\Debug\utMaterialSystem.obj
+         unit.dir\Debug\utMatrix3x3.obj
+         unit.dir\Debug\utMatrix4x4.obj
+         unit.dir\Debug\utVector3.obj
+         unit.dir\Debug\utImproveCacheLocality.obj
+         unit.dir\Debug\utFixInfacingNormals.obj
+         unit.dir\Debug\utGenNormals.obj
+         unit.dir\Debug\utTriangulate.obj
+         unit.dir\Debug\utTextureTransform.obj
+         unit.dir\Debug\utRemoveRedundantMaterials.obj
+         unit.dir\Debug\utRemoveVCProcess.obj
+         unit.dir\Debug\utScaleProcess.obj
+         unit.dir\Debug\utJoinVertices.obj
+         unit.dir\Debug\utRemoveComments.obj
+         unit.dir\Debug\utRemoveComponent.obj
+         unit.dir\Debug\utVertexTriangleAdjacency.obj
+         unit.dir\Debug\utSplitLargeMeshes.obj
+         unit.dir\Debug\utFindDegenerates.obj
+         unit.dir\Debug\utFindInvalidData.obj
+         unit.dir\Debug\utLimitBoneWeights.obj
+         unit.dir\Debug\utPretransformVertices.obj
+         unit.dir\Debug\utScenePreprocessor.obj
+         unit.dir\Debug\utTargetAnimation.obj
+         unit.dir\Debug\utSortByPType.obj
+         unit.dir\Debug\utSceneCombiner.obj
+         unit.vcxproj -> D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\assimp-4.1.0\build\test\Debug\unit.exe
+     1>Done Building Project "D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\assimp-4.1.0\build\test\unit.vcxproj" (Rebuild target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:20.01

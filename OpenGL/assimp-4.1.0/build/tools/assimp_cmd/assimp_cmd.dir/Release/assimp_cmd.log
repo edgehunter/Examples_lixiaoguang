@@ -1,0 +1,40 @@
+﻿Build started 2018/3/23 17:29:20.
+     1>Project "D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\assimp-4.1.0\build\tools\assimp_cmd\assimp_cmd.vcxproj" on node 2 (Rebuild target(s)).
+     1>PreBuildEvent:
+         setlocal
+         "C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different D:/lixiaoguang_works/Examples_lixiaoguang/OpenGL/assimp-4.1.0/build/code/Release/assimp-vc120-mt.dll D:/lixiaoguang_works/Examples_lixiaoguang/OpenGL/assimp-4.1.0/build/tools/assimp_cmd/Release
+         if %errorlevel% neq 0 goto :cmEnd
+         :cmEnd
+         endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+         :cmErrorLevel
+         exit /b %1
+         :cmDone
+         if %errorlevel% neq 0 goto :VCEnd
+         :VCEnd
+       CustomBuild:
+         Building Custom Rule D:/lixiaoguang_works/Examples_lixiaoguang/OpenGL/assimp-4.1.0/tools/assimp_cmd/CMakeLists.txt
+         CMake does not need to re-run because D:/lixiaoguang_works/Examples_lixiaoguang/OpenGL/assimp-4.1.0/build/tools/assimp_cmd/CMakeFiles/generate.stamp is up-to-date.
+       ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\CL.exe /c /I"D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\assimp-4.1.0\." /I"D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\assimp-4.1.0\include" /I"D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\assimp-4.1.0\build" /I"D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\assimp-4.1.0\build\include" /I"D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\assimp-4.1.0\contrib\zlib" /I"D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\assimp-4.1.0\build\contrib\zlib" /I"D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\assimp-4.1.0\code" /nologo /W3 /WX- /MP /O2 /Ob2 /D WIN32 /D _WINDOWS /D NDEBUG /D WIN32_LEAN_AND_MEAN /D OPENDDL_NO_USE_CPP11 /D ASSIMP_BUILD_NO_C4D_IMPORTER /D "CMAKE_INTDIR=\"Release\"" /D _MBCS /Gm- /EHsc /MD /GS /fp:precise /Zc:wchar_t /Zc:forScope /GR /Fo"assimp_cmd.dir\Release\\" /Fd"assimp_cmd.dir\Release\vc120.pdb" /Gd /TP /wd4351 /errorReport:prompt "D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\assimp-4.1.0\tools\assimp_cmd\CompareDump.cpp" "D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\assimp-4.1.0\tools\assimp_cmd\ImageExtractor.cpp" "D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\assimp-4.1.0\tools\assimp_cmd\Main.cpp" "D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\assimp-4.1.0\tools\assimp_cmd\WriteDumb.cpp" "D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\assimp-4.1.0\tools\assimp_cmd\Info.cpp" "D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\assimp-4.1.0\tools\assimp_cmd\Export.cpp"
+         CompareDump.cpp
+         ImageExtractor.cpp
+         Main.cpp
+         WriteDumb.cpp
+         Info.cpp
+         Export.cpp
+       ResourceCompile:
+         C:\Program Files (x86)\Windows Kits\8.1\bin\x86\rc.exe /D WIN32 /D _WINDOWS /D NDEBUG /D WIN32_LEAN_AND_MEAN /D OPENDDL_NO_USE_CPP11 /D ASSIMP_BUILD_NO_C4D_IMPORTER /D "CMAKE_INTDIR=\\\"Release\\\"" /l"0x0409" /I"D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\assimp-4.1.0\." /I"D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\assimp-4.1.0\include" /I"D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\assimp-4.1.0\build" /I"D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\assimp-4.1.0\build\include" /I"D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\assimp-4.1.0\contrib\zlib" /I"D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\assimp-4.1.0\build\contrib\zlib" /I"D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\assimp-4.1.0\code" /nologo /fo"assimp_cmd.dir\Release\assimp_cmd.res" D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\assimp-4.1.0\tools\assimp_cmd\assimp_cmd.rc 
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\link.exe /ERRORREPORT:PROMPT /OUT:"D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\assimp-4.1.0\build\tools\assimp_cmd\Release\assimp.exe" /INCREMENTAL:NO /NOLOGO /LIBPATH:"D:/lixiaoguang_works/Examples_lixiaoguang/OpenGL/assimp-4.1.0/build" /LIBPATH:"D:/lixiaoguang_works/Examples_lixiaoguang/OpenGL/assimp-4.1.0/build/Release" /LIBPATH:"D:/lixiaoguang_works/Examples_lixiaoguang/OpenGL/assimp-4.1.0/build/lib" /LIBPATH:"D:/lixiaoguang_works/Examples_lixiaoguang/OpenGL/assimp-4.1.0/build/lib/Release" "..\..\code\Release\assimp-vc120-mt.lib" ..\..\contrib\zlib\Release\zlibstatic.lib ..\..\contrib\irrXML\Release\IrrXML.lib kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /PDB:"D:/lixiaoguang_works/Examples_lixiaoguang/OpenGL/assimp-4.1.0/build/tools/assimp_cmd/Release/assimp.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:/lixiaoguang_works/Examples_lixiaoguang/OpenGL/assimp-4.1.0/build/tools/assimp_cmd/Release/assimp.lib" /MACHINE:X64  /machine:x64 assimp_cmd.dir\Release\assimp_cmd.res
+         assimp_cmd.dir\Release\CompareDump.obj
+         assimp_cmd.dir\Release\ImageExtractor.obj
+         assimp_cmd.dir\Release\Main.obj
+         assimp_cmd.dir\Release\WriteDumb.obj
+         assimp_cmd.dir\Release\Info.obj
+         assimp_cmd.dir\Release\Export.obj
+         assimp_cmd.vcxproj -> D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\assimp-4.1.0\build\tools\assimp_cmd\Release\assimp.exe
+     1>Done Building Project "D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\assimp-4.1.0\build\tools\assimp_cmd\assimp_cmd.vcxproj" (Rebuild target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:06.78

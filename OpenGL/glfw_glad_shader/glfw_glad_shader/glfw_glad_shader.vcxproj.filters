@@ -81,6 +81,9 @@
     <ClInclude Include="OpenGL\objects\VaoUnit.h">
       <Filter>opengl\controls</Filter>
     </ClInclude>
+    <ClInclude Include="OpenGL\objects\ObjLoader.h">
+      <Filter>opengl\objects</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="stdafx.cpp">
@@ -124,6 +127,9 @@
     </ClCompile>
     <ClCompile Include="OpenGL\objects\VaoUnit.cpp">
       <Filter>opengl\controls</Filter>
+    </ClCompile>
+    <ClCompile Include="OpenGL\objects\ObjLoader.cpp">
+      <Filter>opengl\objects</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

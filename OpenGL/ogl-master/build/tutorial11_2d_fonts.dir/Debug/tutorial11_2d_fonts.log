@@ -1,5 +1,5 @@
-﻿Build started 2018/3/19 16:22:27.
-     1>Project "D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\build\tutorial11_2d_fonts.vcxproj" on node 4 (Rebuild target(s)).
+﻿Build started 2018/3/23 11:20:50.
+     1>Project "D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\build\tutorial11_2d_fonts.vcxproj" on node 9 (Rebuild target(s)).
      1>CustomBuild:
          Building Custom Rule D:/lixiaoguang_works/Examples_lixiaoguang/OpenGL/ogl-master/CMakeLists.txt
          CMake does not need to re-run because D:/lixiaoguang_works/Examples_lixiaoguang/OpenGL/ogl-master/build/CMakeFiles/generate.stamp is up-to-date.
@@ -39,4 +39,4 @@
 
 Build succeeded.
 
-Time Elapsed 00:00:07.27
+Time Elapsed 00:00:07.21

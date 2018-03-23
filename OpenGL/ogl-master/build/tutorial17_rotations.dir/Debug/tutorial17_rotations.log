@@ -1,5 +1,5 @@
-﻿Build started 2018/3/19 16:22:35.
-     1>Project "D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\build\tutorial17_rotations.vcxproj" on node 4 (Rebuild target(s)).
+﻿Build started 2018/3/23 11:20:59.
+     1>Project "D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\build\tutorial17_rotations.vcxproj" on node 6 (Rebuild target(s)).
      1>CustomBuild:
          Building Custom Rule D:/lixiaoguang_works/Examples_lixiaoguang/OpenGL/ogl-master/CMakeLists.txt
          CMake does not need to re-run because D:/lixiaoguang_works/Examples_lixiaoguang/OpenGL/ogl-master/build/CMakeFiles/generate.stamp is up-to-date.
@@ -10,9 +10,9 @@
          controls.cpp
          texture.cpp
          objloader.cpp
-     1>D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\tutorial17_rotations\tutorial17.cpp : warning C4819: The file contains a character that cannot be represented in the current code page (936). Save the file in Unicode format to prevent data loss
          vboindexer.cpp
          quaternion_utils.cpp
+     1>D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\tutorial17_rotations\tutorial17.cpp : warning C4819: The file contains a character that cannot be represented in the current code page (936). Save the file in Unicode format to prevent data loss
      1>D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\common\quaternion_utils.cpp : warning C4819: The file contains a character that cannot be represented in the current code page (936). Save the file in Unicode format to prevent data loss
      1>D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\tutorial17_rotations\tutorial17.cpp(289): warning C4267: 'argument' : conversion from 'size_t' to 'GLsizei', possible loss of data
      1>D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\tutorial17_rotations\tutorial17.cpp(326): warning C4267: 'argument' : conversion from 'size_t' to 'GLsizei', possible loss of data
@@ -40,4 +40,4 @@
 
 Build succeeded.
 
-Time Elapsed 00:00:05.25
+Time Elapsed 00:00:06.41

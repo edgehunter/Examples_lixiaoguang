@@ -1,4 +1,4 @@
-﻿Build started 2018/3/19 16:21:57.
+﻿Build started 2018/3/23 11:20:16.
      1>Project "D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\build\external\bullet-2.81-rev2613\src\BulletCollision\BulletCollision.vcxproj" on node 6 (Rebuild target(s)).
      1>CustomBuild:
          Building Custom Rule D:/lixiaoguang_works/Examples_lixiaoguang/OpenGL/ogl-master/external/bullet-2.81-rev2613/src/BulletCollision/CMakeLists.txt
@@ -195,4 +195,4 @@
 
 Build succeeded.
 
-Time Elapsed 00:00:22.06
+Time Elapsed 00:00:25.92

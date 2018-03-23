@@ -20,7 +20,7 @@ void Object::Init(int VaoUnitNumber, int Index)
 		p_VaoUnit = new VaoUnit(i);
 		VaoUnitVectorIdle.emplace_back (p_VaoUnit);
 
-		printf("VaoUnitNumber idx = %d \n", i);
+		//printf("VaoUnitNumber idx = %d \n", i);
 	}
 
 	InitSampleData();

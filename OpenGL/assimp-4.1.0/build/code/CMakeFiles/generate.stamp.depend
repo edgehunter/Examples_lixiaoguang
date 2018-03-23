@@ -1,0 +1,5 @@
+# CMake generation dependency list for this directory.
+D:/lixiaoguang_works/Examples_lixiaoguang/OpenGL/assimp-4.1.0/code/CMakeLists.txt
+D:/lixiaoguang_works/Examples_lixiaoguang/OpenGL/assimp-4.1.0/cmake-modules/FindRT.cmake
+C:/Program Files/CMake/share/cmake-3.10/Modules/FindPackageHandleStandardArgs.cmake
+C:/Program Files/CMake/share/cmake-3.10/Modules/FindPackageMessage.cmake

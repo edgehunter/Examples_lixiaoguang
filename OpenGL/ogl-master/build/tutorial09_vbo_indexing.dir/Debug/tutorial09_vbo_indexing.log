@@ -1,5 +1,5 @@
-﻿Build started 2018/3/19 16:22:25.
-     1>Project "D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\build\tutorial09_vbo_indexing.vcxproj" on node 2 (Rebuild target(s)).
+﻿Build started 2018/3/23 11:20:50.
+     1>Project "D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\build\tutorial09_vbo_indexing.vcxproj" on node 7 (Rebuild target(s)).
      1>CustomBuild:
          Building Custom Rule D:/lixiaoguang_works/Examples_lixiaoguang/OpenGL/ogl-master/CMakeLists.txt
          CMake does not need to re-run because D:/lixiaoguang_works/Examples_lixiaoguang/OpenGL/ogl-master/build/CMakeFiles/generate.stamp is up-to-date.
@@ -35,4 +35,4 @@
 
 Build succeeded.
 
-Time Elapsed 00:00:06.86
+Time Elapsed 00:00:07.58

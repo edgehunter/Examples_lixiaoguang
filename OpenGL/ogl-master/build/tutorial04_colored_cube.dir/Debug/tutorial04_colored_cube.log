@@ -1,5 +1,5 @@
-﻿Build started 2018/3/19 16:22:20.
-     1>Project "D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\build\tutorial04_colored_cube.vcxproj" on node 5 (Rebuild target(s)).
+﻿Build started 2018/3/23 11:20:45.
+     1>Project "D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\build\tutorial04_colored_cube.vcxproj" on node 6 (Rebuild target(s)).
      1>CustomBuild:
          Building Custom Rule D:/lixiaoguang_works/Examples_lixiaoguang/OpenGL/ogl-master/CMakeLists.txt
          CMake does not need to re-run because D:/lixiaoguang_works/Examples_lixiaoguang/OpenGL/ogl-master/build/CMakeFiles/generate.stamp is up-to-date.
@@ -26,4 +26,4 @@
 
 Build succeeded.
 
-Time Elapsed 00:00:03.71
+Time Elapsed 00:00:06.26

@@ -1,4 +1,4 @@
-﻿Build started 2018/3/19 16:22:03.
+﻿Build started 2018/3/23 11:20:28.
      1>Project "D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\build\external\glfw-3.1.2\tests\windows.vcxproj" on node 7 (Rebuild target(s)).
      1>CustomBuild:
          Building Custom Rule D:/lixiaoguang_works/Examples_lixiaoguang/OpenGL/ogl-master/external/glfw-3.1.2/tests/CMakeLists.txt
@@ -13,4 +13,4 @@
 
 Build succeeded.
 
-Time Elapsed 00:00:01.24
+Time Elapsed 00:00:02.24

@@ -1,5 +1,5 @@
-﻿Build started 2018/3/19 16:22:12.
-     1>Project "D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\build\external\glfw-3.1.2\tests\joysticks.vcxproj" on node 3 (Rebuild target(s)).
+﻿Build started 2018/3/23 11:20:35.
+     1>Project "D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\ogl-master\build\external\glfw-3.1.2\tests\joysticks.vcxproj" on node 5 (Rebuild target(s)).
      1>CustomBuild:
          Building Custom Rule D:/lixiaoguang_works/Examples_lixiaoguang/OpenGL/ogl-master/external/glfw-3.1.2/tests/CMakeLists.txt
          CMake does not need to re-run because D:/lixiaoguang_works/Examples_lixiaoguang/OpenGL/ogl-master/build/external/glfw-3.1.2/tests/CMakeFiles/generate.stamp is up-to-date.
@@ -13,4 +13,4 @@
 
 Build succeeded.
 
-Time Elapsed 00:00:01.23
+Time Elapsed 00:00:01.86

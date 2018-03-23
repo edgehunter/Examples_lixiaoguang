@@ -126,7 +126,7 @@
       <WarningLevel>Level3</WarningLevel>
       <PrecompiledHeader>
       </PrecompiledHeader>
-      <Optimization>Full</Optimization>
+      <Optimization>Disabled</Optimization>
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
@@ -149,6 +149,7 @@
     <ClInclude Include="OpenGL\controls\Model.h" />
     <ClInclude Include="OpenGL\objects\Object.h" />
     <ClInclude Include="OpenGL\objects\ObjectQueue.h" />
+    <ClInclude Include="OpenGL\objects\ObjLoader.h" />
     <ClInclude Include="OpenGL\objects\VaoUnit.h" />
     <ClInclude Include="OpenGL\shader\Shader.h" />
     <ClInclude Include="OpenGL_SDK\imgui\examples\opengl3_example\imgui_impl_glfw_gl3.h" />
@@ -166,6 +167,7 @@
     <ClCompile Include="OpenGL\controls\Model.cpp" />
     <ClCompile Include="OpenGL\objects\Object.cpp" />
     <ClCompile Include="OpenGL\objects\ObjectQueue.cpp" />
+    <ClCompile Include="OpenGL\objects\ObjLoader.cpp" />
     <ClCompile Include="OpenGL\objects\VaoUnit.cpp" />
     <ClCompile Include="OpenGL\shader\Shader.cpp" />
     <ClCompile Include="OpenGL_SDK\imgui\examples\opengl3_example\imgui_impl_glfw_gl3.cpp" />
