@@ -1,0 +1,11 @@
+﻿Build started 2018/3/26 9:28:49.
+     1>Project "D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\assimp-4.1.0\samples\SimpleOpenGL\SimpleOpenGL.vcxproj" on node 2 (Rebuild target(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /I..\glut /I..\..\include /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TC /analyze- /errorReport:prompt Sample_SimpleOpenGL.c
+         Sample_SimpleOpenGL.c
+     1>d:\lixiaoguang_works\examples_lixiaoguang\opengl\assimp-4.1.0\include\assimp\defs.h(52): fatal error C1083: Cannot open include file: 'assimp/config.h': No such file or directory
+     1>Done Building Project "D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\assimp-4.1.0\samples\SimpleOpenGL\SimpleOpenGL.vcxproj" (Rebuild target(s)) -- FAILED.
+
+Build FAILED.
+
+Time Elapsed 00:00:00.20

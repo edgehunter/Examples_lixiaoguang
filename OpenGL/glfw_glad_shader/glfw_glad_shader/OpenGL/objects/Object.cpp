@@ -334,7 +334,7 @@ void Object::BindData2VaoUnit()
 	glBindVertexArray(p_VaoUnit->GetVao()[0]);
 
 	glBindBuffer(GL_ARRAY_BUFFER, p_VaoUnit->GetVbo()[0]);
-	glBufferData(GL_ARRAY_BUFFER, sizeof(VerticesCube_T), VerticesCube_T, GL_STATIC_DRAW);
+	glBufferData(GL_ARRAY_BUFFER, sizeof(VerticesCube_T), VerticesCube_T, GL_DYNAMIC_DRAW);
 
 	glEnableVertexAttribArray(0);
 	glVertexAttribPointer(
@@ -351,11 +351,11 @@ void Object::BindData2VaoUnit()
 	// 2nd attribute buffer : colors
 
 	glBindBuffer(GL_ARRAY_BUFFER, p_VaoUnit->GetVbo()[1]);
-	glBufferData(GL_ARRAY_BUFFER, sizeof(ColorsCube_T), ColorsCube_T, GL_STATIC_DRAW);
+	glBufferData(GL_ARRAY_BUFFER, sizeof(ColorsCube_T), ColorsCube_T, GL_DYNAMIC_DRAW);
 
-	glEnableVertexAttribArray(1);
+	glEnableVertexAttribArray(3);
 	glVertexAttribPointer(
-		1,                                // attribute. No particular reason for 1, but must match the layout in the shader.
+		3,                                // attribute. No particular reason for 1, but must match the layout in the shader.
 		3,                                // size
 		GL_FLOAT,                         // type
 		GL_FALSE,                         // normalized?

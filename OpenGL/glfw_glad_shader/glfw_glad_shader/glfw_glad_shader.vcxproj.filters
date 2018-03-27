@@ -34,6 +34,9 @@
     <Filter Include="opengl\objects">
       <UniqueIdentifier>{dc236e1d-3e91-4c61-a2b2-da1ca4895ada}</UniqueIdentifier>
     </Filter>
+    <Filter Include="opengl\objects\assimp">
+      <UniqueIdentifier>{683755f3-f73a-4cb3-a9cf-701dbf2a2e04}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <Text Include="ReadMe.txt" />
@@ -57,14 +60,8 @@
     <ClInclude Include="OpenGL_SDK\imgui\imgui_internal.h">
       <Filter>imgui</Filter>
     </ClInclude>
-    <ClInclude Include="OpenGL_SDK\include\glad\include\glad\glad.h">
-      <Filter>glad</Filter>
-    </ClInclude>
     <ClInclude Include="OpenGL\controls\Camera.h">
       <Filter>opengl\controls</Filter>
-    </ClInclude>
-    <ClInclude Include="OpenGL\shader\Shader.h">
-      <Filter>opengl\shader</Filter>
     </ClInclude>
     <ClInclude Include="OpenGL\controls\Model.h">
       <Filter>opengl\controls</Filter>
@@ -83,6 +80,21 @@
     </ClInclude>
     <ClInclude Include="OpenGL\objects\ObjLoader.h">
       <Filter>opengl\objects</Filter>
+    </ClInclude>
+    <ClInclude Include="OpenGL_SDK\glad\include\glad\glad.h">
+      <Filter>glad</Filter>
+    </ClInclude>
+    <ClInclude Include="OpenGL\objects\assimp\mesh.h">
+      <Filter>opengl\objects\assimp</Filter>
+    </ClInclude>
+    <ClInclude Include="OpenGL\shader\Shader_lixiaoguang.h">
+      <Filter>opengl\shader</Filter>
+    </ClInclude>
+    <ClInclude Include="OpenGL\shader\shader.h">
+      <Filter>opengl\shader</Filter>
+    </ClInclude>
+    <ClInclude Include="OpenGL\objects\assimp\MeshModel.h">
+      <Filter>opengl\objects\assimp</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -104,14 +116,8 @@
     <ClCompile Include="OpenGL_SDK\imgui\imgui_draw.cpp">
       <Filter>imgui</Filter>
     </ClCompile>
-    <ClCompile Include="OpenGL_SDK\include\glad\src\glad.c">
-      <Filter>glad</Filter>
-    </ClCompile>
     <ClCompile Include="OpenGL\controls\Camera.cpp">
       <Filter>opengl\controls</Filter>
-    </ClCompile>
-    <ClCompile Include="OpenGL\shader\Shader.cpp">
-      <Filter>opengl\shader</Filter>
     </ClCompile>
     <ClCompile Include="OpenGL\controls\Model.cpp">
       <Filter>opengl\controls</Filter>
@@ -131,12 +137,24 @@
     <ClCompile Include="OpenGL\objects\ObjLoader.cpp">
       <Filter>opengl\objects</Filter>
     </ClCompile>
+    <ClCompile Include="OpenGL_SDK\glad\src\glad.c">
+      <Filter>glad</Filter>
+    </ClCompile>
+    <ClCompile Include="OpenGL\shader\Shader_lixiaoguang.cpp">
+      <Filter>opengl\shader</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <None Include="OpenGL\shader\SimpleTransform.vertexshader">
       <Filter>opengl\shader</Filter>
     </None>
     <None Include="OpenGL\shader\SingleColor.fragmentshader">
+      <Filter>opengl\shader</Filter>
+    </None>
+    <None Include="OpenGL\shader\1.model_loading.fragmentshader">
+      <Filter>opengl\shader</Filter>
+    </None>
+    <None Include="OpenGL\shader\1.model_loading.vertexshader">
       <Filter>opengl\shader</Filter>
     </None>
   </ItemGroup>

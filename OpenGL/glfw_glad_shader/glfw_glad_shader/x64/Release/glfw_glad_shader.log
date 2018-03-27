@@ -1,38 +1,39 @@
-﻿Build started 2018/3/23 17:22:01.
+﻿Build started 2018/3/27 11:35:28.
      1>Project "D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\glfw_glad_shader\glfw_glad_shader\glfw_glad_shader.vcxproj" on node 2 (Rebuild target(s)).
      1>ClCompile:
-         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\CL.exe /c /IOpenGL_SDK\include /IOpenGL_SDK\include\glad\include /IOpenGL_SDK\imgui /IOpenGL_SDK\imgui\examples\opengl3_example /I"OpenGL_SDK\glm-0.9.8.5" /Zi /nologo /W3 /WX- /Od /Oi /GL /D WIN32 /D NDEBUG /D _CONSOLE /D _LIB /D _UNICODE /D UNICODE /Gm- /EHsc /MD /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Fo"x64\Release\\" /Fd"x64\Release\vc120.pdb" /Gd /TP /errorReport:prompt glfw_glad_shader.cpp OpenGL\controls\Camera.cpp OpenGL\controls\Model.cpp OpenGL\objects\Object.cpp OpenGL\objects\ObjectQueue.cpp OpenGL\objects\ObjLoader.cpp OpenGL\objects\VaoUnit.cpp OpenGL\shader\Shader.cpp OpenGL_SDK\imgui\examples\opengl3_example\imgui_impl_glfw_gl3.cpp OpenGL_SDK\imgui\imgui.cpp OpenGL_SDK\imgui\imgui_demo.cpp OpenGL_SDK\imgui\imgui_draw.cpp stdafx.cpp VaoEngine.cpp
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\CL.exe /c /IOpenGL_SDK\include /IOpenGL_SDK\glad\include /IOpenGL_SDK\imgui /IOpenGL_SDK\imgui\examples\opengl3_example /I"OpenGL_SDK\glm-0.9.8.5" /I"OpenGL_SDK\assimp-4.1.0\include" /IOpenGL_SDK\stb /Zi /nologo /W3 /WX- /Ox /Oi /GL /D WIN32 /D NDEBUG /D _CONSOLE /D _LIB /D _UNICODE /D UNICODE /Gm- /EHsc /MD /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Fo"x64\Release\\" /Fd"x64\Release\vc120.pdb" /Gd /TP /errorReport:prompt glfw_glad_shader.cpp OpenGL\controls\Camera.cpp OpenGL\controls\Model.cpp OpenGL\objects\Object.cpp OpenGL\objects\ObjectQueue.cpp OpenGL\objects\ObjLoader.cpp OpenGL\objects\VaoUnit.cpp OpenGL\shader\Shader_lixiaoguang.cpp OpenGL_SDK\imgui\examples\opengl3_example\imgui_impl_glfw_gl3.cpp OpenGL_SDK\imgui\imgui.cpp OpenGL_SDK\imgui\imgui_demo.cpp OpenGL_SDK\imgui\imgui_draw.cpp stdafx.cpp VaoEngine.cpp
          glfw_glad_shader.cpp
-     1>glfw_glad_shader.cpp(384): warning C4244: 'initializing' : conversion from 'double' to 'float', possible loss of data
+     1>d:\lixiaoguang_works\examples_lixiaoguang\opengl\glfw_glad_shader\glfw_glad_shader\OpenGL/shader/shader.h(64): warning C4101: 'success' : unreferenced local variable
+     1>d:\lixiaoguang_works\examples_lixiaoguang\opengl\glfw_glad_shader\glfw_glad_shader\OpenGL/shader/shader.h(65): warning C4101: 'infoLog' : unreferenced local variable
          Camera.cpp
          Model.cpp
          Object.cpp
          ObjectQueue.cpp
          ObjLoader.cpp
          VaoUnit.cpp
-         Shader.cpp
+         Shader_lixiaoguang.cpp
          imgui_impl_glfw_gl3.cpp
          imgui.cpp
          imgui_demo.cpp
          imgui_draw.cpp
          stdafx.cpp
          VaoEngine.cpp
-         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\CL.exe /c /IOpenGL_SDK\include /IOpenGL_SDK\include\glad\include /IOpenGL_SDK\imgui /IOpenGL_SDK\imgui\examples\opengl3_example /I"OpenGL_SDK\glm-0.9.8.5" /Zi /nologo /W3 /WX- /Od /Oi /GL /D WIN32 /D NDEBUG /D _CONSOLE /D _LIB /D _UNICODE /D UNICODE /Gm- /EHsc /MD /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Fo"x64\Release\\" /Fd"x64\Release\vc120.pdb" /Gd /TC /errorReport:prompt OpenGL_SDK\include\glad\src\glad.c
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\CL.exe /c /IOpenGL_SDK\include /IOpenGL_SDK\glad\include /IOpenGL_SDK\imgui /IOpenGL_SDK\imgui\examples\opengl3_example /I"OpenGL_SDK\glm-0.9.8.5" /I"OpenGL_SDK\assimp-4.1.0\include" /IOpenGL_SDK\stb /Zi /nologo /W3 /WX- /Ox /Oi /GL /D WIN32 /D NDEBUG /D _CONSOLE /D _LIB /D _UNICODE /D UNICODE /Gm- /EHsc /MD /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Fo"x64\Release\\" /Fd"x64\Release\vc120.pdb" /Gd /TC /errorReport:prompt OpenGL_SDK\glad\src\glad.c
          glad.c
        Link:
-         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\link.exe /ERRORREPORT:PROMPT /OUT:"D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\glfw_glad_shader\x64\Release\glfw_glad_shader.exe" /INCREMENTAL:NO /NOLOGO /LIBPATH:OpenGL_SDK\lib\GLFW\Release\x64 glfw3.lib opengl32.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\glfw_glad_shader\x64\Release\glfw_glad_shader.pdb" /SUBSYSTEM:CONSOLE /OPT:REF /OPT:ICF /LTCG /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\glfw_glad_shader\x64\Release\glfw_glad_shader.lib" /MACHINE:X64 x64\Release\glfw_glad_shader.obj
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\link.exe /ERRORREPORT:PROMPT /OUT:"D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\glfw_glad_shader\x64\Release\glfw_glad_shader.exe" /INCREMENTAL:NO /NOLOGO /LIBPATH:OpenGL_SDK\lib\GLFW\Release\x64 /LIBPATH:"OpenGL_SDK\assimp-4.1.0\Release\x64" glfw3.lib opengl32.lib "assimp-vc120-mt.lib" kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\glfw_glad_shader\x64\Release\glfw_glad_shader.pdb" /SUBSYSTEM:CONSOLE /OPT:REF /OPT:ICF /LTCG /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\glfw_glad_shader\x64\Release\glfw_glad_shader.lib" /MACHINE:X64 x64\Release\glfw_glad_shader.obj
          x64\Release\Camera.obj
          x64\Release\Model.obj
          x64\Release\Object.obj
          x64\Release\ObjectQueue.obj
          x64\Release\ObjLoader.obj
          x64\Release\VaoUnit.obj
-         x64\Release\Shader.obj
+         x64\Release\Shader_lixiaoguang.obj
+         x64\Release\glad.obj
          x64\Release\imgui_impl_glfw_gl3.obj
          x64\Release\imgui.obj
          x64\Release\imgui_demo.obj
          x64\Release\imgui_draw.obj
-         x64\Release\glad.obj
          x64\Release\stdafx.obj
          x64\Release\VaoEngine.obj
          Generating code
@@ -42,4 +43,4 @@
 
 Build succeeded.
 
-Time Elapsed 00:00:09.98
+Time Elapsed 00:00:26.53

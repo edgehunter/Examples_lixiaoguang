@@ -2,15 +2,18 @@
 
 // Interpolated values from the vertex shaders
 in vec3 fragmentColor;
-in vec2 UV;
+in vec2 TexCoords;
 
 // Ouput data
 out vec4 FragColor;
 
 uniform float TransparencyColor;
+uniform sampler2D texture_diffuse1;
 
 void main()
 {
+	//FragColor = texture(texture_diffuse1, TexCoords);
+
 	// Output color = color specified in the vertex shader, 
 	// interpolated between all 3 surrounding vertices
 	
@@ -18,6 +21,6 @@ void main()
 	//FragColor.a = 0;
 	//FragColor = vec4(fragmentColor, 0);//CustomColor;
 	
-	FragColor.rgb = vec3(1.0f,0.0f,0.0f);//fragmentColor;
+	FragColor.rgb = fragmentColor;//vec3(1.0f,0.0f,0.0f);//
 	FragColor.a = TransparencyColor;//0.2;
 }

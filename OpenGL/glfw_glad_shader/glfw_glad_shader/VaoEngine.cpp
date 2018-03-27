@@ -125,16 +125,16 @@ void VaoEngine::Init()
 	glBindVertexArray(VAO[0]);
 
 	glBindBuffer(GL_ARRAY_BUFFER, VBO[0]);
-	glBufferData(GL_ARRAY_BUFFER, sizeof(VerticesTriangleEngine), VerticesTriangleEngine, GL_STATIC_DRAW);
+	glBufferData(GL_ARRAY_BUFFER, sizeof(VerticesTriangleEngine), VerticesTriangleEngine, GL_DYNAMIC_DRAW);
 
 	glEnableVertexAttribArray(0);
 	glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, 0, (void*)0);
 
 	glBindBuffer(GL_ARRAY_BUFFER, VBO[1]);
-	glBufferData(GL_ARRAY_BUFFER, sizeof(ColorsTriangleEngine), ColorsTriangleEngine, GL_STATIC_DRAW);
+	glBufferData(GL_ARRAY_BUFFER, sizeof(ColorsTriangleEngine), ColorsTriangleEngine, GL_DYNAMIC_DRAW);
 
-	glEnableVertexAttribArray(1);
-	glVertexAttribPointer(1, 3, GL_FLOAT, GL_FALSE, 0, (void*)0);
+	glEnableVertexAttribArray(3);
+	glVertexAttribPointer(3, 3, GL_FLOAT, GL_FALSE, 0, (void*)0);
 
 	// You can unbind the VAO afterwards so other VAO calls won't accidentally modify this VAO, but this rarely happens. Modifying other
 	// VAOs requires a call to glBindVertexArray anyways so we generally don't unbind VAOs (nor VBOs) when it's not directly necessary.
@@ -148,7 +148,7 @@ void VaoEngine::Init()
 	glBindVertexArray(VAO[1]);
 
 	glBindBuffer(GL_ARRAY_BUFFER, VBO[3]);
-	glBufferData(GL_ARRAY_BUFFER, sizeof(VerticesCubeEngine), VerticesCubeEngine, GL_STATIC_DRAW);
+	glBufferData(GL_ARRAY_BUFFER, sizeof(VerticesCubeEngine), VerticesCubeEngine, GL_DYNAMIC_DRAW);
 
 	glEnableVertexAttribArray(0);
 	glVertexAttribPointer(
@@ -165,11 +165,11 @@ void VaoEngine::Init()
 	// 2nd attribute buffer : colors
 
 	glBindBuffer(GL_ARRAY_BUFFER, VBO[4]);
-	glBufferData(GL_ARRAY_BUFFER, sizeof(ColorsCubeEngine), ColorsCubeEngine, GL_STATIC_DRAW);
+	glBufferData(GL_ARRAY_BUFFER, sizeof(ColorsCubeEngine), ColorsCubeEngine, GL_DYNAMIC_DRAW);
 
-	glEnableVertexAttribArray(1);
+	glEnableVertexAttribArray(3);
 	glVertexAttribPointer(
-		1,                                // attribute. No particular reason for 1, but must match the layout in the shader.
+		3,                                // attribute. No particular reason for 1, but must match the layout in the shader.
 		3,                                // size
 		GL_FLOAT,                         // type
 		GL_FALSE,                         // normalized?

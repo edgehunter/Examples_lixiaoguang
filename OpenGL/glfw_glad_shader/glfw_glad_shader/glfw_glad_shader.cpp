@@ -5,6 +5,7 @@
 
 #include <iostream>
 #include <cmath>
+#include <iostream>
 
 // glad
 #include <glad/glad.h>
@@ -22,6 +23,7 @@
 //using namespace glm;
 
 // shader
+//#include "OpenGL/shader/Shader_lixiaoguang.h"
 #include "OpenGL/shader/shader.h"
 
 // controls
@@ -30,10 +32,13 @@
 
 // Object
 #include "OpenGL/objects/ObjectQueue.h"
-#include "OpenGL/objects/ObjLoader.h"
 
 // Vao Engine
 #include "VaoEngine.h"
+
+#include "OpenGL/objects/assimp/mesh.h"
+#include "OpenGL/objects/assimp/MeshModel.h"
+
 
 static void error_callback(int error, const char* description)
 {
@@ -185,11 +190,11 @@ int main()
 
 	//Shader
 	// ---------------------------------------
-
-	Shader m_Shader;
+	/*
+	Shader_lixiaoguang m_Shader_lixiaoguang;
 
 	// Create and compile our GLSL program from the shaders
-	GLuint programID = m_Shader.LoadShaders("OpenGL/shader/SimpleTransform.vertexshader", "OpenGL/shader/SingleColor.fragmentshader");
+	GLuint programID = m_Shader_lixiaoguang.LoadShaders("OpenGL/shader/SimpleTransform.vertexshader", "OpenGL/shader/SingleColor.fragmentshader");
 
 	// Get a handle for our "MVP" uniform
 	GLuint MatrixMVP = glGetUniformLocation(programID, "MVP");
@@ -197,7 +202,15 @@ int main()
 
 	GLint PositionAttrib = glGetAttribLocation(programID, "vertexPosition");
 	GLint ColorAttrib = glGetAttribLocation(programID, "vertexColor");
+	*/
 
+	// build and compile shaders
+	// -------------------------
+	Shader m_Shader("OpenGL/shader/SimpleTransform.vertexshader", "OpenGL/shader/SingleColor.fragmentshader");
+
+	// load models
+	// -----------
+	MeshModel m_MeshModel(std::string("OpenGL/data/car.obj"));//"OpenGL/data/nanosuit/nanosuit.obj"
 
 	/*
 
@@ -233,64 +246,6 @@ int main()
 	// ---------------------------------------
 	Model m_Model;
 	m_Model.Init(window, SCR_WIDTH, SCR_HEIGHT);	
-
-	// 3DMax Obj
-	// ---------------------------------------
-	
-	// Read our .obj file
-	std::vector<glm::vec3> vertices;
-	std::vector<glm::vec2> uvs;
-	std::vector<glm::vec3> normals; // Won't be used at the moment.
-	bool res = loadOBJ("OpenGL/data/cube.obj", vertices, uvs, normals);
-
-	// Init VAO VBO
-	GLuint vertexarray;
-	glGenVertexArrays(1, &vertexarray);
-
-	GLuint vertexbuffer;
-	glGenBuffers(1, &vertexbuffer);
-
-	GLuint uvbuffer;
-	glGenBuffers(1, &uvbuffer);
-
-	// bind the Vertex Array Object first, then bind and set vertex buffer(s), and then configure vertex attributes(s).
-	glBindVertexArray(vertexarray);
-
-	// Load it into a VBO
-	glBindBuffer(GL_ARRAY_BUFFER, vertexbuffer);
-	glBufferData(GL_ARRAY_BUFFER, vertices.size() * sizeof(glm::vec3), &vertices[0], GL_STATIC_DRAW);
-
-	// 1rst attribute buffer : vertices
-	glEnableVertexAttribArray(0);
-	glBindBuffer(GL_ARRAY_BUFFER, vertexbuffer);
-	glVertexAttribPointer(
-		0,                  // attribute
-		3,                  // size
-		GL_FLOAT,           // type
-		GL_FALSE,           // normalized?
-		0,                  // stride
-		(void*)0            // array buffer offset
-		);
-
-	glBindBuffer(GL_ARRAY_BUFFER, uvbuffer);
-	glBufferData(GL_ARRAY_BUFFER, uvs.size() * sizeof(glm::vec2), &uvs[0], GL_STATIC_DRAW);
-
-	// 2nd attribute buffer : UVs
-	glEnableVertexAttribArray(2);
-	glBindBuffer(GL_ARRAY_BUFFER, uvbuffer);
-	glVertexAttribPointer(
-		2,                                // attribute
-		2,                                // size
-		GL_FLOAT,                         // type
-		GL_FALSE,                         // normalized?
-		0,                                // stride
-		(void*)0                          // array buffer offset
-		);
-
-
-	// You can unbind the VAO afterwards so other VAO calls won't accidentally modify this VAO, but this rarely happens. Modifying other
-	// VAOs requires a call to glBindVertexArray anyways so we generally don't unbind VAOs (nor VBOs) when it's not directly necessary.
-	glBindVertexArray(0);
 
 
 	//Object
@@ -359,46 +314,53 @@ int main()
 		*/
 
 		// Use our shader
-		glUseProgram(programID);
+		//glUseProgram(programID);
 
 		// Compute the MVP matrix from keyboard and mouse input
 
-		
 		m_Camera.ComputeMatricesFromInputs();
 		glm::mat4 ProjectionMatrix = m_Camera.GetProjectionMatrix();
 		glm::mat4 ViewMatrix = m_Camera.GetViewMatrix();
 
-
 		m_Model.ComputeMatricesFromInputs();
 		glm::mat4 ModelMatrix = m_Model.GetModelMatrix();
-
 
 		glm::mat4 MVP = ProjectionMatrix * ViewMatrix * ModelMatrix;
 
 		// Send our transformation to the currently bound shader, 
 		// in the "MVP" uniform
-		glUniformMatrix4fv(MatrixMVP, 1, GL_FALSE, &MVP[0][0]);
+		//glUniformMatrix4fv(MatrixMVP, 1, GL_FALSE, &MVP[0][0]);
 
 		// update shader uniform TransparencyColor
 		double timeValue = glfwGetTime() * 4;
-		float RedValue = sin(timeValue) / 2.0f + 0.5f;
-		//glUniform4f(TransparencyColor, RedValue, 0.0f, 0.0f, 1.0f);
-		glUniform1f(TransparencyColor, RedValue);
+		float RedValue = (float)sin(timeValue) / 2.0f + 0.5f;
+		////glUniform4f(TransparencyColor, RedValue, 0.0f, 0.0f, 1.0f);
+		//glUniform1f(TransparencyColor, RedValue);
+
+		// don't forget to enable shader before setting uniforms
+		m_Shader.use();
+
+		// view/projection transformations
+		m_Shader.setMat4("MVP", MVP);
+		m_Shader.setFloat("TransparencyColor", RedValue);
+
+
+		/*
+
+		// render the loaded model
+		glm::mat4 model;
+		model = glm::translate(model, glm::vec3(0.0f, -1.75f, 0.0f)); // translate it down so it's at the center of the scene
+		model = glm::scale(model, glm::vec3(0.2f, 0.2f, 0.2f));	// it's a bit too big for our scene, so scale it down
+		ourShader.setMat4("model", model);
+		ourModel.Draw(ourShader);
+
+		*/
 
 		
-		//m_VaoEngine.Render();
+		m_VaoEngine.Render();
 		//m_ObjectQueue.RenderObject();
 		//m_ObjectQueue.AddData2Object();
-
-
-		// bind the VAO
-		glBindVertexArray(vertexarray);
-
-		// Draw the triangle !
-		glDrawArrays(GL_TRIANGLES, 0, (GLsizei)vertices.size());
-
-		// unbind the VAO
-		glBindVertexArray(0);
+		m_MeshModel.Draw(m_Shader);
 
 		
 		// ImGui

@@ -126,19 +126,19 @@
       <WarningLevel>Level3</WarningLevel>
       <PrecompiledHeader>
       </PrecompiledHeader>
-      <Optimization>Disabled</Optimization>
+      <Optimization>Full</Optimization>
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>OpenGL_SDK\include;OpenGL_SDK\include\glad\include;OpenGL_SDK\imgui;OpenGL_SDK\imgui\examples\opengl3_example;OpenGL_SDK\glm-0.9.8.5;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>OpenGL_SDK\include;OpenGL_SDK\glad\include;OpenGL_SDK\imgui;OpenGL_SDK\imgui\examples\opengl3_example;OpenGL_SDK\glm-0.9.8.5;OpenGL_SDK\assimp-4.1.0\include;OpenGL_SDK\stb;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
-      <AdditionalLibraryDirectories>OpenGL_SDK\lib\GLFW\Release\x64;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
-      <AdditionalDependencies>glfw3.lib;opengl32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>OpenGL_SDK\lib\GLFW\Release\x64;OpenGL_SDK\assimp-4.1.0\Release\x64;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>glfw3.lib;opengl32.lib;assimp-vc120-mt.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
@@ -147,16 +147,19 @@
   <ItemGroup>
     <ClInclude Include="OpenGL\controls\Camera.h" />
     <ClInclude Include="OpenGL\controls\Model.h" />
+    <ClInclude Include="OpenGL\objects\assimp\mesh.h" />
+    <ClInclude Include="OpenGL\objects\assimp\MeshModel.h" />
     <ClInclude Include="OpenGL\objects\Object.h" />
     <ClInclude Include="OpenGL\objects\ObjectQueue.h" />
     <ClInclude Include="OpenGL\objects\ObjLoader.h" />
     <ClInclude Include="OpenGL\objects\VaoUnit.h" />
-    <ClInclude Include="OpenGL\shader\Shader.h" />
+    <ClInclude Include="OpenGL\shader\shader.h" />
+    <ClInclude Include="OpenGL\shader\Shader_lixiaoguang.h" />
+    <ClInclude Include="OpenGL_SDK\glad\include\glad\glad.h" />
     <ClInclude Include="OpenGL_SDK\imgui\examples\opengl3_example\imgui_impl_glfw_gl3.h" />
     <ClInclude Include="OpenGL_SDK\imgui\imconfig.h" />
     <ClInclude Include="OpenGL_SDK\imgui\imgui.h" />
     <ClInclude Include="OpenGL_SDK\imgui\imgui_internal.h" />
-    <ClInclude Include="OpenGL_SDK\include\glad\include\glad\glad.h" />
     <ClInclude Include="stdafx.h" />
     <ClInclude Include="targetver.h" />
     <ClInclude Include="VaoEngine.h" />
@@ -169,16 +172,18 @@
     <ClCompile Include="OpenGL\objects\ObjectQueue.cpp" />
     <ClCompile Include="OpenGL\objects\ObjLoader.cpp" />
     <ClCompile Include="OpenGL\objects\VaoUnit.cpp" />
-    <ClCompile Include="OpenGL\shader\Shader.cpp" />
+    <ClCompile Include="OpenGL\shader\Shader_lixiaoguang.cpp" />
+    <ClCompile Include="OpenGL_SDK\glad\src\glad.c" />
     <ClCompile Include="OpenGL_SDK\imgui\examples\opengl3_example\imgui_impl_glfw_gl3.cpp" />
     <ClCompile Include="OpenGL_SDK\imgui\imgui.cpp" />
     <ClCompile Include="OpenGL_SDK\imgui\imgui_demo.cpp" />
     <ClCompile Include="OpenGL_SDK\imgui\imgui_draw.cpp" />
-    <ClCompile Include="OpenGL_SDK\include\glad\src\glad.c" />
     <ClCompile Include="stdafx.cpp" />
     <ClCompile Include="VaoEngine.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="OpenGL\shader\1.model_loading.fragmentshader" />
+    <None Include="OpenGL\shader\1.model_loading.vertexshader" />
     <None Include="OpenGL\shader\SimpleTransform.vertexshader" />
     <None Include="OpenGL\shader\SingleColor.fragmentshader" />
   </ItemGroup>
