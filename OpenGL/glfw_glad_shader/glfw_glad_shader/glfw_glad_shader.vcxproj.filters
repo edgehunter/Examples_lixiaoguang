@@ -37,6 +37,9 @@
     <Filter Include="opengl\objects\assimp">
       <UniqueIdentifier>{683755f3-f73a-4cb3-a9cf-701dbf2a2e04}</UniqueIdentifier>
     </Filter>
+    <Filter Include="DataProcess">
+      <UniqueIdentifier>{6a95694e-8b4d-4f7a-b28b-1ebd35f1623e}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <Text Include="ReadMe.txt" />
@@ -63,9 +66,6 @@
     <ClInclude Include="OpenGL\controls\Camera.h">
       <Filter>opengl\controls</Filter>
     </ClInclude>
-    <ClInclude Include="OpenGL\controls\Model.h">
-      <Filter>opengl\controls</Filter>
-    </ClInclude>
     <ClInclude Include="OpenGL\objects\Object.h">
       <Filter>opengl\objects</Filter>
     </ClInclude>
@@ -75,26 +75,26 @@
     <ClInclude Include="OpenGL\objects\ObjectQueue.h">
       <Filter>opengl\objects</Filter>
     </ClInclude>
-    <ClInclude Include="OpenGL\objects\VaoUnit.h">
-      <Filter>opengl\controls</Filter>
-    </ClInclude>
-    <ClInclude Include="OpenGL\objects\ObjLoader.h">
-      <Filter>opengl\objects</Filter>
-    </ClInclude>
     <ClInclude Include="OpenGL_SDK\glad\include\glad\glad.h">
       <Filter>glad</Filter>
     </ClInclude>
     <ClInclude Include="OpenGL\objects\assimp\mesh.h">
       <Filter>opengl\objects\assimp</Filter>
     </ClInclude>
-    <ClInclude Include="OpenGL\shader\Shader_lixiaoguang.h">
-      <Filter>opengl\shader</Filter>
-    </ClInclude>
     <ClInclude Include="OpenGL\shader\shader.h">
       <Filter>opengl\shader</Filter>
     </ClInclude>
     <ClInclude Include="OpenGL\objects\assimp\MeshModel.h">
       <Filter>opengl\objects\assimp</Filter>
+    </ClInclude>
+    <ClInclude Include="OpenGL\objects\VaoUnit.h">
+      <Filter>opengl\objects</Filter>
+    </ClInclude>
+    <ClInclude Include="OpenGL\controls\WorldModel.h">
+      <Filter>opengl\controls</Filter>
+    </ClInclude>
+    <ClInclude Include="DataProcess\BufferCPU.h">
+      <Filter>DataProcess</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -119,9 +119,6 @@
     <ClCompile Include="OpenGL\controls\Camera.cpp">
       <Filter>opengl\controls</Filter>
     </ClCompile>
-    <ClCompile Include="OpenGL\controls\Model.cpp">
-      <Filter>opengl\controls</Filter>
-    </ClCompile>
     <ClCompile Include="OpenGL\objects\Object.cpp">
       <Filter>opengl\objects</Filter>
     </ClCompile>
@@ -131,17 +128,17 @@
     <ClCompile Include="OpenGL\objects\ObjectQueue.cpp">
       <Filter>opengl\objects</Filter>
     </ClCompile>
-    <ClCompile Include="OpenGL\objects\VaoUnit.cpp">
-      <Filter>opengl\controls</Filter>
-    </ClCompile>
-    <ClCompile Include="OpenGL\objects\ObjLoader.cpp">
-      <Filter>opengl\objects</Filter>
-    </ClCompile>
     <ClCompile Include="OpenGL_SDK\glad\src\glad.c">
       <Filter>glad</Filter>
     </ClCompile>
-    <ClCompile Include="OpenGL\shader\Shader_lixiaoguang.cpp">
-      <Filter>opengl\shader</Filter>
+    <ClCompile Include="OpenGL\objects\VaoUnit.cpp">
+      <Filter>opengl\objects</Filter>
+    </ClCompile>
+    <ClCompile Include="OpenGL\controls\WorldModel.cpp">
+      <Filter>opengl\controls</Filter>
+    </ClCompile>
+    <ClCompile Include="DataProcess\BufferCPU.cpp">
+      <Filter>DataProcess</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

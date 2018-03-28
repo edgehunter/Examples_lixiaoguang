@@ -9,11 +9,11 @@ public:
 	ObjectQueue();
 	~ObjectQueue();
 
-	void Init(int ObjectNumber, int VaoUnitNumber = 100);
+	void Init(int ObjectNumber, int VaoUnitNumber = 10);
 	bool Release();
 	void AddObject(int AddNumber);
 
-	void AddData2Object();
+	void AddData2Object(char* DataPoints, char* DataColors);
 
 	void RenderObject();
 

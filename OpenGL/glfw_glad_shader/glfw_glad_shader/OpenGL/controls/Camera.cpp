@@ -10,7 +10,7 @@ Camera::~Camera()
 {
 }
 
-void Camera::Init(GLFWwindow* Window, const unsigned int Screen_Width, const unsigned int Screen_Height)
+void Camera::Init(Shader* p_Shader, GLFWwindow* Window, const unsigned int Screen_Width, const unsigned int Screen_Height)
 {
 	// Initial position : on +Z
 	Position = glm::vec3(0, 0, 20);
@@ -26,7 +26,7 @@ void Camera::Init(GLFWwindow* Window, const unsigned int Screen_Width, const uns
 
 	Zoom = 0.0f;
 
-	KeySpeed = 3.0f; // 3 units / second
+	KeySpeed = 30.0f; // 3 units / second
 	MouseSpeed = 0.005f;
 
 	// Get mouse position
@@ -36,14 +36,31 @@ void Camera::Init(GLFWwindow* Window, const unsigned int Screen_Width, const uns
 	xPos_old = Screen_Width / 2;
 	yPos_old = Screen_Height / 2;
 
+	this->p_Shader = p_Shader;
 	this->Window = Window;
 }
 
-glm::mat4 Camera::GetViewMatrix(){
+glm::mat4 Camera::GetViewMatrix()
+{
 	return ViewMatrix;
 }
-glm::mat4 Camera::GetProjectionMatrix(){
+
+void Camera::UpdateViewMatrix()
+{
+	// view transformations
+	p_Shader->setMat4("View", ViewMatrix);
+}
+
+glm::mat4 Camera::GetProjectionMatrix()
+{
 	return ProjectionMatrix;
+}
+
+void Camera::UpdateProjectionMatrix()
+{
+	// projection transformations
+	p_Shader->setMat4("Projection", ProjectionMatrix);
+	
 }
 
 void Camera::ComputeMatricesFromInputs(){
@@ -136,7 +153,7 @@ void Camera::ComputeMatricesFromInputs(){
 	float FoV = InitialFoV + 5*Zoom;// - 5 * glfwGetMouseWheel(); // Now GLFW 3 requires setting up a callback for this. It's a bit too complicated for this beginner's tutorial, so it's disabled instead.
 
 	// Projection matrix : 45?Field of View, 4:3 ratio, display range : 0.1 unit <-> 100 units
-	ProjectionMatrix = glm::perspective(glm::radians(FoV), 4.0f / 3.0f, 0.1f, 1000.0f);
+	ProjectionMatrix = glm::perspective(glm::radians(FoV), 16.0f / 9.0f, 0.1f, 1000.0f);
 	// Camera matrix
 	ViewMatrix = glm::lookAt(
 		Position,           // Camera is here

@@ -5,10 +5,13 @@
 
 #include <iostream>
 #include <cmath>
-#include <iostream>
+#include <Strsafe.h>
+#include <time.h>
 
 // glad
 #include <glad/glad.h>
+
+#include "OpenGL/shader/shader.h"
 
 // glfw
 #include <GLFW/glfw3.h>
@@ -22,13 +25,9 @@
 #include <glm/gtc/matrix_transform.hpp>
 //using namespace glm;
 
-// shader
-//#include "OpenGL/shader/Shader_lixiaoguang.h"
-#include "OpenGL/shader/shader.h"
-
 // controls
 #include "OpenGL/controls/Camera.h"
-#include "OpenGL/controls/Model.h"
+#include "OpenGL/controls/WorldModel.h"
 
 // Object
 #include "OpenGL/objects/ObjectQueue.h"
@@ -39,44 +38,469 @@
 #include "OpenGL/objects/assimp/mesh.h"
 #include "OpenGL/objects/assimp/MeshModel.h"
 
+// Buffer
+#include "DataProcess/BufferCPU.h"
+
+
+
+// Sample custom data structure for threads to use.
+// This is passed by void pointer so it can be any data type
+// that can be passed using a single void pointer (LPVOID).
+
+#define BUF_SIZE 255
+#define MAX_THREADS 2
+
+struct ThreadParam
+{
+	GLFWwindow* Window;
+	const char* Title;
+	DWORD ThreadID;
+	//HANDLE  ThreadHandle;
+	int Value;
+
+	int DataNum;
+	int PerDataSize_Points;
+	int PerDataSize_Colors;
+	int SemaphoreSize;//信号量最大值
+
+	BufferCPU* p_BufferCPU_Points;
+	BufferCPU* p_BufferCPU_Colors;
+
+	HANDLE ghSemaphore_Empty;
+	HANDLE ghSemaphore_Full;
+};
+
+bool running = true;
+
 
 static void error_callback(int error, const char* description)
 {
 	fprintf(stderr, "Error %d: %s\n", error, description);
 }
 
-void framebuffer_size_callback(GLFWwindow* window, int width, int height);
-void scroll_callback(GLFWwindow* window, double xoffset, double yoffset);
+
 void processInput(GLFWwindow *window);
-
-// settings
-const unsigned int SCR_WIDTH = 1280;
-const unsigned int SCR_HEIGHT = 800;
-
-/*
-
-const char *vertexShaderSource = 
-"#version 330 core\n"
-"layout (location = 0) in vec3 aPos;\n"
-"void main()\n"
-"{\n"
-"   gl_Position = vec4(aPos, 1.0);\n"
-"}\0";
-
-const char *fragmentShaderSource = 
-"#version 330 core\n"
-"out vec4 FragColor;\n"
-"uniform vec4 ourColor;\n"
-"void main()\n"
-"{\n"
-"   FragColor = ourColor;\n"
-"}\n\0";
-
-*/
+void scroll_callback(GLFWwindow* window, double xoffset, double yoffset);
+void framebuffer_size_callback(GLFWwindow* window, int width, int height);
 
 
-int main()
+void ErrorHandler(LPTSTR lpszFunction);
+DWORD WINAPI ThreadFunction_GeneratePoints(LPVOID lpParam);
+DWORD WINAPI ThreadFunction_OpenGLRendering(LPVOID lpParam);
+
+
+//////////////////////////////////////////////////////////////////////////
+//
+// main
+//
+//////////////////////////////////////////////////////////////////////////
+
+int main(void)
 {
+	int DataNum = 128 * 128;//共128*128个数据点
+	int PerDataSize_Points = 3;//每个数据点坐标包含3个float，x、y、z
+	int PerDataSize_Colors = 4;//每个数据点颜色包含3个float，r、g、b、a
+	int SemaphoreSize = 10;//信号量最大值
+
+	// Buffer
+	BufferCPU* p_BufferCPU_Points;
+	p_BufferCPU_Points = new BufferCPU(SemaphoreSize, DataNum*PerDataSize_Points* sizeof(float));
+	p_BufferCPU_Points->CreateList();
+
+	BufferCPU* p_BufferCPU_Colors;
+	p_BufferCPU_Colors = new BufferCPU(SemaphoreSize, DataNum*PerDataSize_Colors* sizeof(float));
+	p_BufferCPU_Colors->CreateList();
+
+
+	// Semaphore
+	HANDLE ghSemaphore_Empty;
+	HANDLE ghSemaphore_Full;
+
+
+	// Create a semaphore with initial and max counts of MAX_SEM_COUNT
+
+	ghSemaphore_Empty = CreateSemaphore(
+						NULL,           // default security attributes
+						SemaphoreSize,  // initial count
+						SemaphoreSize,  // maximum count
+						NULL);          // unnamed semaphore
+
+	if (ghSemaphore_Empty == NULL)
+	{
+		printf("CreateSemaphore error: %d\n", GetLastError());
+		return 1;
+	}
+
+
+	// Create a semaphore with initial and max counts of 0
+
+	ghSemaphore_Full = CreateSemaphore(
+						NULL,           // default security attributes
+						0,				// initial count
+						SemaphoreSize,  // maximum count
+						NULL);          // unnamed semaphore
+
+	if (ghSemaphore_Full == NULL)
+	{
+		printf("CreateSemaphore error: %d\n", GetLastError());
+		return 1;
+	}
+
+
+
+
+
+
+
+	// Init worker threads Handles.
+	ThreadParam* pDataArray[MAX_THREADS];
+	HANDLE  hThreadArray[MAX_THREADS];
+
+	// Create MAX_THREADS worker threads.
+
+	for (int i = 0; i < MAX_THREADS; i++)
+	{
+		// Allocate memory for thread data.
+
+		pDataArray[i] = (ThreadParam*)HeapAlloc(GetProcessHeap(), HEAP_ZERO_MEMORY,
+			sizeof(ThreadParam));
+
+		if (pDataArray[i] == NULL)
+		{
+			// If the array allocation fails, the system is out of memory
+			// so there is no point in trying to print an error message.
+			// Just terminate execution.
+			ExitProcess(2);
+		}
+
+		// Generate unique data for each thread to work with.
+
+		switch (i)
+		{
+		case 0:
+			{
+				pDataArray[i]->Value = i;
+
+				// Create glfw Context
+				pDataArray[i]->Window = NULL;
+
+				// Create glfw Title
+				pDataArray[i]->Title = NULL;
+
+				//
+				pDataArray[i]->DataNum = DataNum;
+				pDataArray[i]->PerDataSize_Points = PerDataSize_Points;
+				pDataArray[i]->PerDataSize_Colors = PerDataSize_Colors;
+				pDataArray[i]->SemaphoreSize = SemaphoreSize;
+
+				pDataArray[i]->p_BufferCPU_Points = p_BufferCPU_Points;
+				pDataArray[i]->p_BufferCPU_Colors = p_BufferCPU_Colors;
+
+				pDataArray[i]->ghSemaphore_Empty = ghSemaphore_Empty;
+				pDataArray[i]->ghSemaphore_Full = ghSemaphore_Full;
+
+				// Create the thread to begin execution on its own.
+
+				hThreadArray[i] = CreateThread(
+					NULL,                   // default security attributes
+					0,                      // use default stack size  
+					ThreadFunction_GeneratePoints,       // thread function name
+					pDataArray[i],          // argument to thread function 
+					0,                      // use default creation flags 
+					&pDataArray[i]->ThreadID);   // returns the thread identifier 
+
+				break;
+			}
+
+
+		case 1:
+			{
+
+				pDataArray[i]->Value = i;
+
+				// Create glfw Context
+				pDataArray[i]->Window = NULL;
+
+				// Create glfw Title
+				pDataArray[i]->Title = NULL;
+
+				//
+				pDataArray[i]->DataNum = DataNum;
+				pDataArray[i]->PerDataSize_Points = PerDataSize_Points;
+				pDataArray[i]->PerDataSize_Colors = PerDataSize_Colors;
+				pDataArray[i]->SemaphoreSize = SemaphoreSize;
+
+				pDataArray[i]->p_BufferCPU_Points = p_BufferCPU_Points;
+				pDataArray[i]->p_BufferCPU_Colors = p_BufferCPU_Colors;
+
+				pDataArray[i]->ghSemaphore_Empty = ghSemaphore_Empty;
+				pDataArray[i]->ghSemaphore_Full = ghSemaphore_Full;
+
+				// Create the thread to begin execution on its own.
+
+				hThreadArray[i] = CreateThread(
+					NULL,                   // default security attributes
+					0,                      // use default stack size  
+					ThreadFunction_OpenGLRendering,       // thread function name
+					pDataArray[i],          // argument to thread function 
+					0,                      // use default creation flags 
+					&pDataArray[i]->ThreadID);   // returns the thread identifier 
+
+				break;
+			}
+			
+
+		default:
+			break;
+		}
+
+
+		// Check the return value for success.
+		// If CreateThread fails, terminate execution. 
+		// This will automatically clean up threads and memory. 
+
+		if (hThreadArray[i] == NULL)
+		{
+			ErrorHandler(TEXT("CreateThread"));
+			ExitProcess(3);
+		}
+	} // End of main thread creation loop.
+
+
+	//system("pause");
+
+	// Wait until all threads have terminated.
+
+	WaitForMultipleObjects(MAX_THREADS, hThreadArray, TRUE, INFINITE);
+
+	// Close all thread handles and free memory allocations.
+
+	for (int i = 0; i < MAX_THREADS; i++)
+	{
+		CloseHandle(hThreadArray[i]);
+		if (pDataArray[i] != NULL)
+		{
+			HeapFree(GetProcessHeap(), 0, pDataArray[i]);
+			pDataArray[i] = NULL;    // Ensure address is not reused.
+		}
+	}
+
+	p_BufferCPU_Points->ReleaseList();
+	delete p_BufferCPU_Points;
+
+	p_BufferCPU_Colors->ReleaseList();
+	delete p_BufferCPU_Colors;
+
+	CloseHandle(ghSemaphore_Empty);
+	CloseHandle(ghSemaphore_Full);
+
+	return 0;
+}
+
+
+// process all input: query GLFW whether relevant keys are pressed/released this frame and react accordingly
+// ---------------------------------------------------------------------------------------------------------
+void processInput(GLFWwindow *window)
+{
+	if (glfwGetKey(window, GLFW_KEY_ESCAPE) == GLFW_PRESS)
+		glfwSetWindowShouldClose(window, true);
+}
+
+
+//The callback function receives two - dimensional scroll offsets.
+//A simple mouse wheel, being vertical, provides offsets along the Y - axis.
+void scroll_callback(GLFWwindow* window, double xoffset, double yoffset)
+{
+
+	printf("xoffset=(%f), yoffset=(%f) \n", xoffset, yoffset);
+}
+
+// glfw: whenever the window size changed (by OS or user resize) this callback function executes
+// ---------------------------------------------------------------------------------------------
+void framebuffer_size_callback(GLFWwindow* window, int width, int height)
+{
+	// make sure the viewport matches the new window dimensions; note that width and 
+	// height will be significantly larger than specified on retina displays.
+	glViewport(0, 0, width, height);
+
+	printf("width=(%d), height=(%d) \n", width, height);
+}
+
+
+void ErrorHandler(LPTSTR lpszFunction)
+{
+	// Retrieve the system error message for the last-error code.
+
+	LPVOID lpMsgBuf;
+	LPVOID lpDisplayBuf;
+	DWORD dw = GetLastError();
+
+	FormatMessage(
+		FORMAT_MESSAGE_ALLOCATE_BUFFER |
+		FORMAT_MESSAGE_FROM_SYSTEM |
+		FORMAT_MESSAGE_IGNORE_INSERTS,
+		NULL,
+		dw,
+		MAKELANGID(LANG_NEUTRAL, SUBLANG_DEFAULT),
+		(LPTSTR)&lpMsgBuf,
+		0, NULL);
+
+	// Display the error message.
+
+	lpDisplayBuf = (LPVOID)LocalAlloc(LMEM_ZEROINIT,
+		(lstrlen((LPCTSTR)lpMsgBuf) + lstrlen((LPCTSTR)lpszFunction) + 40) * sizeof(TCHAR));
+	StringCchPrintf((LPTSTR)lpDisplayBuf,
+		LocalSize(lpDisplayBuf) / sizeof(TCHAR),
+		TEXT("%s failed with error %d: %s"),
+		lpszFunction, dw, lpMsgBuf);
+	MessageBox(NULL, (LPCTSTR)lpDisplayBuf, TEXT("Error"), MB_OK);
+
+	// Free error-handling buffer allocations.
+
+	LocalFree(lpMsgBuf);
+	LocalFree(lpDisplayBuf);
+}
+
+DWORD WINAPI ThreadFunction_GeneratePoints(LPVOID lpParam)
+{
+	HANDLE hStdout;
+	ThreadParam* pDataArray;
+
+	TCHAR msgBuf[BUF_SIZE];
+	size_t cchStringSize;
+	DWORD dwChars;
+
+	// Make sure there is a console to receive output results. 
+
+	hStdout = GetStdHandle(STD_OUTPUT_HANDLE);
+	if (hStdout == INVALID_HANDLE_VALUE)
+		return 1;
+
+	// Cast the parameter to the correct data type.
+	// The pointer is known to be valid because 
+	// it was checked for NULL before the thread was created.
+
+	pDataArray = (ThreadParam*)lpParam;
+
+	// Print the parameter values using thread-safe functions.
+	StringCchPrintf(msgBuf, BUF_SIZE, TEXT("Parameters = %d, %d, %s, %d, %d, %d, %d\n"),
+		pDataArray->ThreadID, pDataArray->Value, pDataArray->Title, pDataArray->DataNum, pDataArray->PerDataSize_Points, pDataArray->PerDataSize_Colors, pDataArray->SemaphoreSize);
+	StringCchLength(msgBuf, BUF_SIZE, &cchStringSize);
+	WriteConsole(hStdout, msgBuf, (DWORD)cchStringSize, &dwChars, NULL);
+
+
+	// 数据进入队列
+
+	DWORD dwWaitResult;
+	int BufferDataCount = 0;
+	float* BufferData_Points = new float[pDataArray->DataNum* pDataArray->PerDataSize_Points];
+	float* BufferData_Colors = new float[pDataArray->DataNum* pDataArray->PerDataSize_Colors];
+
+	while (running)
+	{
+
+		// Try to enter the semaphore gate.
+
+		dwWaitResult = WaitForSingleObject(
+			pDataArray->ghSemaphore_Empty,   // handle to semaphore
+			0L);           // zero-second time-out interval
+
+		switch (dwWaitResult)
+		{
+			// The semaphore object was signaled.
+		case WAIT_OBJECT_0:
+			
+			// TODO: Perform task
+			//printf("Thread %d: wait succeeded\n", GetCurrentThreadId());
+
+
+			// Simulate thread spending time on task
+
+			srand(unsigned(time(0)));   //获取系统时间 
+			
+			for (size_t i = 0; i < pDataArray->DataNum; i++)
+			{
+				BufferData_Points[i * 3] = (float)(rand() % 80);
+				BufferData_Points[i * 3 + 1] = (float)(rand() % 80);
+				BufferData_Points[i * 3 + 2] = (float)(rand() % 80);
+
+
+				BufferData_Colors[i * 4] = (float)(rand() % 80 / (double)80);
+				BufferData_Colors[i * 4 + 1] = (float)(rand() % 80 / (double)80);
+				BufferData_Colors[i * 4 + 2] = (float)(rand() % 80 / (double)80);
+				BufferData_Colors[i * 4 + 3] = 1.0f;// rand() % 80 / (double)80;
+
+				
+				//printf("VerticesPoints[%d] = %f \n", i, VerticesPoints[i]);
+			}
+
+			pDataArray->p_BufferCPU_Points->EnList((char*)BufferData_Points);
+			pDataArray->p_BufferCPU_Colors->EnList((char*)BufferData_Colors);
+			//printf("EnList BufferData %d \n", ++BufferDataCount);
+
+			Sleep(5);
+
+			// Release the semaphore when task is finished
+
+			if (!ReleaseSemaphore(
+				pDataArray->ghSemaphore_Full,  // handle to semaphore
+				1,            // increase count by one
+				NULL))       // not interested in previous count
+			{
+				printf("ReleaseSemaphore error: %d\n", GetLastError());
+			}
+			break;
+
+			// The semaphore was nonsignaled, so a time-out occurred.
+		case WAIT_TIMEOUT:
+			//printf("Thread %d: wait timed out\n", GetCurrentThreadId());
+			break;
+		}
+
+	}
+
+	delete BufferData_Points;
+	delete BufferData_Colors;
+
+	return 0;
+}
+
+DWORD WINAPI ThreadFunction_OpenGLRendering(LPVOID lpParam)
+{
+
+	HANDLE hStdout;
+	ThreadParam* pDataArray;
+
+	TCHAR msgBuf[BUF_SIZE];
+	size_t cchStringSize;
+	DWORD dwChars;
+
+	// Make sure there is a console to receive output results. 
+
+	hStdout = GetStdHandle(STD_OUTPUT_HANDLE);
+	if (hStdout == INVALID_HANDLE_VALUE)
+		return 1;
+
+	// Cast the parameter to the correct data type.
+	// The pointer is known to be valid because 
+	// it was checked for NULL before the thread was created.
+
+	pDataArray = (ThreadParam*)lpParam;
+
+	// Print the parameter values using thread-safe functions.
+	StringCchPrintf(msgBuf, BUF_SIZE, TEXT("Parameters = %d, %d, %s\n"),
+		pDataArray->ThreadID, pDataArray->Value, pDataArray->Title);
+	StringCchLength(msgBuf, BUF_SIZE, &cchStringSize);
+	WriteConsole(hStdout, msgBuf, (DWORD)cchStringSize, &dwChars, NULL);
+
+
+	DWORD dwWaitResult;
+	float* BufferData_Points = new float[pDataArray->DataNum* pDataArray->PerDataSize_Points];
+	float* BufferData_Colors = new float[pDataArray->DataNum* pDataArray->PerDataSize_Colors];
+	int BufferDataCount = 0;
+	//////////////////////////////////////////////////////////////////////////
+
+
 	// glfw: initialize and configure
 	// ------------------------------
 	glfwSetErrorCallback(error_callback);
@@ -92,6 +516,10 @@ int main()
 
 	// glfw window creation
 	// --------------------
+	// settings
+	unsigned int SCR_WIDTH = 1280;
+	unsigned int SCR_HEIGHT = 720;
+
 	//GLFWwindow* window = glfwCreateWindow(SCR_WIDTH, SCR_HEIGHT, "LearnOpenGL", NULL, NULL);
 	GLFWwindow* window = glfwCreateWindow(SCR_WIDTH, SCR_HEIGHT, "LearnOpenGL", NULL, NULL);
 	if (window == NULL)
@@ -100,7 +528,7 @@ int main()
 		glfwTerminate();
 		return -1;
 	}
-	
+
 	glfwMakeContextCurrent(window);
 
 	glfwSetFramebufferSizeCallback(window, framebuffer_size_callback);
@@ -139,70 +567,6 @@ int main()
 	glEnable(GL_BLEND);
 	glBlendFunc(GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA);
 
-	/*
-
-	// build and compile our shader program
-	// ------------------------------------
-	// vertex shader
-	int vertexShader = glCreateShader(GL_VERTEX_SHADER);
-	glShaderSource(vertexShader, 1, &vertexShaderSource, NULL);
-	glCompileShader(vertexShader);
-
-	// check for shader compile errors
-	int success;
-	char infoLog[512];
-	glGetShaderiv(vertexShader, GL_COMPILE_STATUS, &success);
-	if (!success)
-	{
-		glGetShaderInfoLog(vertexShader, 512, NULL, infoLog);
-		std::cout << "ERROR::SHADER::VERTEX::COMPILATION_FAILED\n" << infoLog << std::endl;
-	}
-
-	// fragment shader
-	int fragmentShader = glCreateShader(GL_FRAGMENT_SHADER);
-	glShaderSource(fragmentShader, 1, &fragmentShaderSource, NULL);
-	glCompileShader(fragmentShader);
-
-	// check for shader compile errors
-	glGetShaderiv(fragmentShader, GL_COMPILE_STATUS, &success);
-	if (!success)
-	{
-		glGetShaderInfoLog(fragmentShader, 512, NULL, infoLog);
-		std::cout << "ERROR::SHADER::FRAGMENT::COMPILATION_FAILED\n" << infoLog << std::endl;
-	}
-
-	// link shaders
-	int shaderProgram = glCreateProgram();
-	glAttachShader(shaderProgram, vertexShader);
-	glAttachShader(shaderProgram, fragmentShader);
-	glLinkProgram(shaderProgram);
-
-	// check for linking errors
-	glGetProgramiv(shaderProgram, GL_LINK_STATUS, &success);
-	if (!success) {
-		glGetProgramInfoLog(shaderProgram, 512, NULL, infoLog);
-		std::cout << "ERROR::SHADER::PROGRAM::LINKING_FAILED\n" << infoLog << std::endl;
-	}
-	glDeleteShader(vertexShader);
-	glDeleteShader(fragmentShader);
-
-	*/
-
-	//Shader
-	// ---------------------------------------
-	/*
-	Shader_lixiaoguang m_Shader_lixiaoguang;
-
-	// Create and compile our GLSL program from the shaders
-	GLuint programID = m_Shader_lixiaoguang.LoadShaders("OpenGL/shader/SimpleTransform.vertexshader", "OpenGL/shader/SingleColor.fragmentshader");
-
-	// Get a handle for our "MVP" uniform
-	GLuint MatrixMVP = glGetUniformLocation(programID, "MVP");
-	GLuint TransparencyColor = glGetUniformLocation(programID, "TransparencyColor");
-
-	GLint PositionAttrib = glGetAttribLocation(programID, "vertexPosition");
-	GLint ColorAttrib = glGetAttribLocation(programID, "vertexColor");
-	*/
 
 	// build and compile shaders
 	// -------------------------
@@ -212,46 +576,27 @@ int main()
 	// -----------
 	MeshModel m_MeshModel(std::string("OpenGL/data/car.obj"));//"OpenGL/data/nanosuit/nanosuit.obj"
 
-	/*
-
-	// Projection matrix : 45?Field of View, 4:3 ratio, display range : 0.1 unit <-> 100 units
-	glm::mat4 Projection = glm::perspective(glm::radians(45.0f), 4.0f / 3.0f, 0.1f, 1000.0f);
-	// Or, for an ortho camera :
-	//glm::mat4 Projection = glm::ortho(-10.0f,10.0f,-10.0f,10.0f,0.0f,100.0f); // In world coordinates
-
-	// Camera matrix
-	glm::mat4 View = glm::lookAt(
-		glm::vec3(6, 6, 6), // Camera is at (6,6,6), in World Space
-		glm::vec3(0, 0, 0), // and looks at the origin
-		glm::vec3(0, 1, 0)  // Head is up (set to 0,-1,0 to look upside-down)
-		);
-	// Model matrix : an identity matrix (model will be at the origin)
-	glm::mat4 Model = glm::mat4(1.0f);
-	// Our ModelViewProjection : multiplication of our 3 matrices
-	glm::mat4 MVP = Projection * View * Model; // Remember, matrix multiplication is the other way around
-
-	*/
 
 	// Vao Engine
 	// ---------------------------------------
 	VaoEngine m_VaoEngine;
-	m_VaoEngine.Init();
-	
+	m_VaoEngine.Init(&m_Shader);
+
 	//Camera
 	// ---------------------------------------
 	Camera m_Camera;
-	m_Camera.Init(window, SCR_WIDTH, SCR_HEIGHT);
+	m_Camera.Init(&m_Shader, window, SCR_WIDTH, SCR_HEIGHT);
 
 	//Model
 	// ---------------------------------------
-	Model m_Model;
-	m_Model.Init(window, SCR_WIDTH, SCR_HEIGHT);	
+	WorldModel m_WorldModel;
+	m_WorldModel.Init(&m_Shader, window, SCR_WIDTH, SCR_HEIGHT);
 
 
 	//Object
 	// ---------------------------------------
 	ObjectQueue m_ObjectQueue;
-	m_ObjectQueue.Init(1000);
+	m_ObjectQueue.Init(10);
 
 	//m_ObjectQueue.Release();
 	//m_ObjectQueue.AddData2Object();
@@ -295,74 +640,95 @@ int main()
 		processInput(window);
 
 		// render
-		// ------
-		//glClearColor(clear_color.x, clear_color.y, clear_color.z, clear_color.w);
-		//glClear(GL_COLOR_BUFFER_BIT);
 
 		// Clear the screen
 		glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
 
-		/*
-		// be sure to activate the shader before any calls to glUniform
-		glUseProgram(shaderProgram);
-
-		// update shader uniform
-		float timeValue = glfwGetTime();
-		float greenValue = sin(timeValue) / 2.0f + 0.5f;
-		int vertexColorLocation = glGetUniformLocation(shaderProgram, "ourColor");
-		glUniform4f(vertexColorLocation, 0.0f, greenValue, 0.0f, 1.0f);
-		*/
-
 		// Use our shader
-		//glUseProgram(programID);
+		m_Shader.use();
 
-		// Compute the MVP matrix from keyboard and mouse input
+		// Compute the matrix from keyboard and mouse input
 
 		m_Camera.ComputeMatricesFromInputs();
-		glm::mat4 ProjectionMatrix = m_Camera.GetProjectionMatrix();
-		glm::mat4 ViewMatrix = m_Camera.GetViewMatrix();
+		m_Camera.UpdateProjectionMatrix();
+		m_Camera.UpdateViewMatrix();
 
-		m_Model.ComputeMatricesFromInputs();
-		glm::mat4 ModelMatrix = m_Model.GetModelMatrix();
+		m_WorldModel.ComputeMatricesFromInputs();
+		m_WorldModel.UpdateModelMatrix();
 
-		glm::mat4 MVP = ProjectionMatrix * ViewMatrix * ModelMatrix;
 
-		// Send our transformation to the currently bound shader, 
-		// in the "MVP" uniform
-		//glUniformMatrix4fv(MatrixMVP, 1, GL_FALSE, &MVP[0][0]);
+		/*
 
 		// update shader uniform TransparencyColor
 		double timeValue = glfwGetTime() * 4;
 		float RedValue = (float)sin(timeValue) / 2.0f + 0.5f;
-		////glUniform4f(TransparencyColor, RedValue, 0.0f, 0.0f, 1.0f);
-		//glUniform1f(TransparencyColor, RedValue);
 
-		// don't forget to enable shader before setting uniforms
-		m_Shader.use();
-
-		// view/projection transformations
-		m_Shader.setMat4("MVP", MVP);
+		// TransparencyColor uniforms
 		m_Shader.setFloat("TransparencyColor", RedValue);
-
-
-		/*
-
-		// render the loaded model
-		glm::mat4 model;
-		model = glm::translate(model, glm::vec3(0.0f, -1.75f, 0.0f)); // translate it down so it's at the center of the scene
-		model = glm::scale(model, glm::vec3(0.2f, 0.2f, 0.2f));	// it's a bit too big for our scene, so scale it down
-		ourShader.setMat4("model", model);
-		ourModel.Draw(ourShader);
 
 		*/
 
-		
-		m_VaoEngine.Render();
-		//m_ObjectQueue.RenderObject();
-		//m_ObjectQueue.AddData2Object();
-		m_MeshModel.Draw(m_Shader);
+
+		// 数据出队列
+
+		// Try to enter the semaphore gate.
+
+		dwWaitResult = WaitForSingleObject(
+			pDataArray->ghSemaphore_Full,   // handle to semaphore
+			0L);           // zero-second time-out interval
+
+		switch (dwWaitResult)
+		{
+			// The semaphore object was signaled.
+		case WAIT_OBJECT_0:
+			
+			// TODO: Perform task
+			//printf("Thread %d: wait succeeded\n", GetCurrentThreadId());
+
+
+			// Simulate thread spending time on task
+
+			pDataArray->p_BufferCPU_Points->DeList((char*)BufferData_Points);
+			pDataArray->p_BufferCPU_Colors->DeList((char*)BufferData_Colors);
+
+			m_ObjectQueue.AddData2Object((char*)BufferData_Points, (char*)BufferData_Colors);
+
+			//for (size_t i = 0; i < pDataArray->DataNum; i++)
+			//{
+			//	printf("Points(%d) [%f, %f, %f] \n", i, BufferData_Points[i * 3], BufferData_Points[i * 3 + 1], BufferData_Points[i * 3 + 2]);
+			//	printf("Colors(%d) [%f, %f, %f, %f] \n", i, BufferData_Colors[i * 4], BufferData_Colors[i * 4 + 1], BufferData_Colors[i * 4 + 2], BufferData_Colors[i * 4 + 3]);
+			//}
+
+			printf("DeList BufferData %d Size(%d, %d)\n", ++BufferDataCount, pDataArray->p_BufferCPU_Points->LengthList(), pDataArray->p_BufferCPU_Colors->LengthList());
+
+			// Release the semaphore when task is finished
+
+			if (!ReleaseSemaphore(
+				pDataArray->ghSemaphore_Empty,  // handle to semaphore
+				1,            // increase count by one
+				NULL))       // not interested in previous count
+			{
+				printf("ReleaseSemaphore error: %d\n", GetLastError());
+			}
+			break;
+
+			// The semaphore was nonsignaled, so a time-out occurred.
+		case WAIT_TIMEOUT:
+			//printf("Thread %d: wait timed out\n", GetCurrentThreadId());
+			break;
+		}
+
+
+
+
+		//m_VaoEngine.Render();
 
 		
+		m_ObjectQueue.RenderObject();
+
+		m_MeshModel.Draw(m_Shader);
+
+
 		// ImGui
 		// ------
 		ImGui_ImplGlfwGL3_NewFrame();
@@ -409,6 +775,7 @@ int main()
 	// optional: de-allocate all resources once they've outlived their purpose:
 	// ------------------------------------------------------------------------
 	m_VaoEngine.Release();
+	m_ObjectQueue.Release();
 
 	// ImGui Shutdown
 	// ------------------------------------------------------------------
@@ -417,34 +784,13 @@ int main()
 	// glfw: terminate, clearing all previously allocated GLFW resources.
 	// ------------------------------------------------------------------
 	glfwTerminate();
+
+
+	// 全局变量
+	running = false;
+
+	delete BufferData_Points;
+	delete BufferData_Colors;
+
 	return 0;
-}
-
-// process all input: query GLFW whether relevant keys are pressed/released this frame and react accordingly
-// ---------------------------------------------------------------------------------------------------------
-void processInput(GLFWwindow *window)
-{
-	if (glfwGetKey(window, GLFW_KEY_ESCAPE) == GLFW_PRESS)
-		glfwSetWindowShouldClose(window, true);
-}
-
-// glfw: whenever the window size changed (by OS or user resize) this callback function executes
-// ---------------------------------------------------------------------------------------------
-void framebuffer_size_callback(GLFWwindow* window, int width, int height)
-{
-	// make sure the viewport matches the new window dimensions; note that width and 
-	// height will be significantly larger than specified on retina displays.
-	glViewport(0, 0, width, height);
-
-	printf("width=(%d), height=(%d) \n", width, height);
-}
-
-
-
-//The callback function receives two - dimensional scroll offsets.
-//A simple mouse wheel, being vertical, provides offsets along the Y - axis.
-void scroll_callback(GLFWwindow* window, double xoffset, double yoffset)
-{
-
-	printf("xoffset=(%f), yoffset=(%f) \n", xoffset, yoffset);
 }

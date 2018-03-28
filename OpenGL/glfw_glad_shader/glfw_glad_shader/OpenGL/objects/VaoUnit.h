@@ -40,9 +40,10 @@ struct EdgePoint
 class VaoUnit
 {
 public:
-	VaoUnit(int index);
+	VaoUnit();
 	~VaoUnit();
 
+	void Init(int index);
 	void Release();
 
 	unsigned int *GetVao();

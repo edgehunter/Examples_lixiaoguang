@@ -16,23 +16,23 @@ void ObjectQueue::Init(int ObjectNumber, int VaoUnitNumber)
 	//一个物体由多个VAO组合完成，这里假设一个物体由VaoUnitNumber个VAO组合完成。
 	this->VaoUnitNumber = VaoUnitNumber;
 
-//ObjectNumber，对象的个数根据需要扩充
-this->ObjectNumber = ObjectNumber;// 10;
+	//ObjectNumber，对象的个数根据需要扩充
+	this->ObjectNumber = ObjectNumber;// 10;
 
 
 
-for (int i = 0; i < ObjectNumber; i++)
-{
+	for (int i = 0; i < ObjectNumber; i++)
+	{
 
-	p_Object = new Object();
-	p_Object->Init(VaoUnitNumber, i);
+		p_Object = new Object();
+		p_Object->Init(VaoUnitNumber, i);
 
-	ObjectDeque.emplace_back(p_Object);
+		ObjectDeque.emplace_back(p_Object);
 
-	printf("ObjectNumber idx = %d \n", i);
-}
+		printf("ObjectNumber idx = %d \n", i);
+	}
 
-Usage = 0;
+	Usage = 0;
 
 }
 
@@ -79,7 +79,7 @@ void ObjectQueue::AddObject(int AddNumber)
 	VaoUnitNumber += AddNumber;
 }
 
-void ObjectQueue::AddData2Object()
+void ObjectQueue::AddData2Object(char* DataPoints, char* DataColors)
 {
 	bool IsFull = true;
 
@@ -88,7 +88,7 @@ void ObjectQueue::AddData2Object()
 	{
 		if (!(*it)->IsFull())
 		{
-			(*it)->AddData2VaoUnit();
+			(*it)->AddData2VaoUnit(DataPoints, DataColors);
 			IsFull = false;
 			Usage++;
 			break;
@@ -97,14 +97,12 @@ void ObjectQueue::AddData2Object()
 
 	if (!IsFull)
 	{
-		printf("ObjectDeque Size[%d] Usage[%d] \n", ObjectDeque.size(), Usage);
+		//printf("ObjectDeque Size[%d] Usage[%d] \n", ObjectDeque.size(), Usage);
 	}
 	else
 	{
 		printf("ObjectDeque Size[%d] Usage[%d] FULL! \n", ObjectDeque.size(), Usage);
 	}
-	//p_Object = ObjectDeque.front();
-	//p_Object->AddData2VaoUnit();
 
 }
 

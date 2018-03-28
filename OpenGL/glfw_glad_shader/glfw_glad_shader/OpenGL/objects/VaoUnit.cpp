@@ -1,18 +1,24 @@
 #include "VaoUnit.h"
 
 
-VaoUnit::VaoUnit(int index)
+VaoUnit::VaoUnit()
 {
+
+}
+
+VaoUnit::~VaoUnit()
+{
+}
+
+void VaoUnit::Init(int index)
+{
+
 	this->index = index;
 	this->m_EdgePoint = EdgePoint();
 	this->IsCurrentMeasure = false;
 
 	glGenVertexArrays(1, VAO);
 	glGenBuffers(5, VBO);
-}
-
-VaoUnit::~VaoUnit()
-{
 }
 
 void VaoUnit::Release()

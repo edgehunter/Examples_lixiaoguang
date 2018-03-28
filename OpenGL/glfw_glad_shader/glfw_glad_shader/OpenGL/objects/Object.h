@@ -18,7 +18,7 @@ public:
 
 	//目前使用模拟数据，需要采用真实数据，由指针传入
 	//Idle出栈，Show入栈
-	bool AddData2VaoUnit();
+	bool AddData2VaoUnit(char* DataPoints, char* DataColors);
 	bool IsFull();
 	bool IsEmpty();
 	
@@ -28,7 +28,7 @@ protected:
 	void InitSampleData();
 	void ReleaseSampleData();
 
-	void BindData2VaoUnit();
+	void BindData2VaoUnit(char* DataPoints, char* DataColors);
 
 private:
 

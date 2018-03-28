@@ -24,7 +24,7 @@ struct Vertex {
 	glm::vec2 TexCoords;
 
 	//colors
-	glm::vec3 color;
+	glm::vec4 color;
 
 	// tangent
 	glm::vec3 Tangent;
@@ -134,7 +134,7 @@ private:
 
 		// vertex texture color
 		glEnableVertexAttribArray(3);
-		glVertexAttribPointer(3, 3, GL_FLOAT, GL_FALSE, sizeof(Vertex), (void*)offsetof(Vertex, color));
+		glVertexAttribPointer(3, 4, GL_FLOAT, GL_FALSE, sizeof(Vertex), (void*)offsetof(Vertex, color));
 
 		/*
 

@@ -2,6 +2,9 @@
 
 #include <stdio.h>
 
+//shader
+#include "../shader/shader.h"
+
 // Include GLFW
 #include <GLFW/glfw3.h>
 
@@ -9,7 +12,6 @@
 #include <glm/glm.hpp>
 #include <glm/gtc/matrix_transform.hpp>
 
-//using namespace glm;
 
 class Camera
 {
@@ -17,16 +19,19 @@ public:
 	Camera();
 	~Camera();
 	
-	void Init(GLFWwindow* Window, const unsigned int Screen_Width, const unsigned int Screen_Height);
+	void Init(Shader* p_Shader, GLFWwindow* Window, const unsigned int Screen_Width, const unsigned int Screen_Height);
 
 	glm::mat4 GetViewMatrix();
+	void UpdateViewMatrix();
 
 	glm::mat4 GetProjectionMatrix();
+	void UpdateProjectionMatrix();
 
 	void ComputeMatricesFromInputs();
 
 private:
 
+	Shader* p_Shader;
 	GLFWwindow* Window;
 
 	glm::mat4 ViewMatrix;

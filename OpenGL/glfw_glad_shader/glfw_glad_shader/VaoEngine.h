@@ -1,5 +1,8 @@
 #pragma once
 
+//shader
+#include "OpenGL/shader/shader.h"
+
 // glad
 #include <glad/glad.h>
 
@@ -16,16 +19,20 @@ public:
 	VaoEngine();
 	~VaoEngine();
 
-	void Init();
+	void Init(Shader* p_Shader);
 	void Release();
 
 	void Render();
 
 private:
 
-	unsigned int VBO[6], VAO[2];
-	
-	float *VerticesCubeEngine;
-	float *ColorsCubeEngine;
+	unsigned int VBO[9], VAO[3];
+
+	Shader* p_Shader;
+
+
+	int pointNum;// = 128 * 128;
+	float *VerticesPoints;
+	float *ColorsPoints;
 };
 

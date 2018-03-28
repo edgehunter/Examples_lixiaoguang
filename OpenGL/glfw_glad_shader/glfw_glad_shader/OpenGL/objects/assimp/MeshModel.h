@@ -1,7 +1,6 @@
 ﻿#ifndef MeshModel_H
 #define MeshModel_H
 
-#include <glad/glad.h> 
 
 #include <glm/glm.hpp>
 #include <glm/gtc/matrix_transform.hpp>
@@ -154,11 +153,14 @@ private:
 
 			if (AI_SUCCESS == aiGetMaterialColor(material, AI_MATKEY_COLOR_DIFFUSE, &diffuse))
 			{
+				glm::vec4 color;
 				// color
-				vector.x = diffuse.r;//mesh->mBitangents[i].x;
-				vector.y = diffuse.g;//mesh->mBitangents[i].y;
-				vector.z = diffuse.b;//mesh->mBitangents[i].z;
-				vertex.color = vector;
+				color.x = diffuse.r;//mesh->mBitangents[i].x;
+				color.y = diffuse.g;//mesh->mBitangents[i].y;
+				color.z = diffuse.b;//mesh->mBitangents[i].z;
+				color.a = 0.9f;
+
+				vertex.color = color;
 			}
 
 
@@ -257,8 +259,6 @@ private:
 		f[1] = p_aiColor4D->g;
 		f[2] = p_aiColor4D->b;
 		f[3] = p_aiColor4D->a;
-
-		printf("material color (%f, %f, %f, %f) \n", f[0], f[1], f[2], f[3]);
 	}
 
 	void set_float4(float f[4], float a, float b, float c, float d)
