@@ -32,7 +32,7 @@ void ObjectQueue::Init(int ObjectNumber, int VaoUnitNumber)
 		printf("ObjectNumber idx = %d \n", i);
 	}
 
-	Usage = 0;
+	FrameCount = 0;
 
 }
 
@@ -90,18 +90,35 @@ void ObjectQueue::AddData2Object(char* DataPoints, char* DataColors)
 		{
 			(*it)->AddData2VaoUnit(DataPoints, DataColors);
 			IsFull = false;
-			Usage++;
+			FrameCount++;
 			break;
 		}
 	}
 
 	if (!IsFull)
 	{
-		//printf("ObjectDeque Size[%d] Usage[%d] \n", ObjectDeque.size(), Usage);
+		printf("ObjectDeque Size[%d] FrameCount[%d] \n", ObjectDeque.size(), FrameCount);
 	}
 	else
 	{
-		printf("ObjectDeque Size[%d] Usage[%d] FULL! \n", ObjectDeque.size(), Usage);
+		p_Object = ObjectDeque.front();
+
+		if (p_Object->Reset())
+		{
+			p_Object->AddData2VaoUnit(DataPoints, DataColors);
+			IsFull = false;
+			FrameCount++;
+
+			ObjectDeque.pop_front();
+			ObjectDeque.emplace_back(p_Object);
+
+			printf("ObjectDeque Size[%d] FrameCount[%d] FULL & Reset! \n", ObjectDeque.size(), FrameCount);
+		}
+		else
+		{
+			printf("ObjectDeque Size[%d] FrameCount[%d] FULL & Reset Error! \n", ObjectDeque.size(), FrameCount);
+		}
+		
 	}
 
 }

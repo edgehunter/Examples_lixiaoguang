@@ -43,8 +43,24 @@ public:
 	VaoUnit();
 	~VaoUnit();
 
-	void Init(int index);
+	void Init(int index, int FrameCountMax = 5);
 	void Release();
+
+	// 绑定数据到VAO
+	void BindData2VaoUnit(char* DataPoints, char* DataColors);
+
+	// 渲染当前VAO
+	void RanderVAO();
+
+	// 获取当前VAO已载入帧数
+	int Get_FrameCount();
+
+	// 当前VAO 重置
+	void Reset();
+
+	// 判断 当前VAO已载入帧数，是否达到最大值
+	bool IsFull();
+
 
 	unsigned int *GetVao();
 	unsigned int *GetVbo();
@@ -54,13 +70,25 @@ public:
 
 private:
 
-	// 默认使用VAO1个，VBO使用3个
+	// 默认使用VAO1个，VBO使用5个
 	unsigned int VBO[5], VAO[1];
+
+	// 当前VAO边缘数据点坐标
 	EdgePoint m_EdgePoint;
+
+	// 当前VAO是否存在数据测量
 	bool IsCurrentMeasure;
 
 	//当前VaoUnit对象在Vector中的编号
 	int index;
 
+	// FrameCountMax，每一个VAO承载的帧数总量
+	int FrameCountMax;
+
+	// FrameCount，每一个VAO承载的帧数当前量
+	int FrameCount;
+
+	// CurrentBytes，当前数据量（字节）
+	int CurrentBytes;
 };
 

@@ -9,7 +9,7 @@ public:
 	ObjectQueue();
 	~ObjectQueue();
 
-	void Init(int ObjectNumber, int VaoUnitNumber = 10);
+	void Init(int ObjectNumber, int VaoUnitNumber = 4);
 	bool Release();
 	void AddObject(int AddNumber);
 
@@ -29,6 +29,6 @@ private:
 
 	//使用队列，Double ended queue
 	std::deque<Object *> ObjectDeque;
-	unsigned int Usage;
+	unsigned int FrameCount;
 };
 

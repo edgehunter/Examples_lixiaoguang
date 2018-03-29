@@ -23,12 +23,8 @@ public:
 	bool IsEmpty();
 	
 	void RenderVaoUnit();
+	bool Reset();
 
-protected:
-	void InitSampleData();
-	void ReleaseSampleData();
-
-	void BindData2VaoUnit(char* DataPoints, char* DataColors);
 
 private:
 
@@ -44,9 +40,5 @@ private:
 
 	//当前对象在Queue中的编号
 	int Index;
-
-	//Cube例子，用于测试VAO队列
-	float* VerticesCubeSample;
-	float* ColorsCubeSample;
 };
 

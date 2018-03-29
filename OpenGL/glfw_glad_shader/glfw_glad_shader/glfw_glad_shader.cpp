@@ -393,12 +393,12 @@ DWORD WINAPI ThreadFunction_GeneratePoints(LPVOID lpParam)
 
 	DWORD dwWaitResult;
 	int BufferDataCount = 0;
+	float Xoffset = 0;
 	float* BufferData_Points = new float[pDataArray->DataNum* pDataArray->PerDataSize_Points];
 	float* BufferData_Colors = new float[pDataArray->DataNum* pDataArray->PerDataSize_Colors];
 
 	while (running)
 	{
-
 		// Try to enter the semaphore gate.
 
 		dwWaitResult = WaitForSingleObject(
@@ -416,11 +416,13 @@ DWORD WINAPI ThreadFunction_GeneratePoints(LPVOID lpParam)
 
 			// Simulate thread spending time on task
 
+			Xoffset += 1.0f;
+
 			srand(unsigned(time(0)));   //获取系统时间 
 			
 			for (size_t i = 0; i < pDataArray->DataNum; i++)
 			{
-				BufferData_Points[i * 3] = (float)(rand() % 80);
+				BufferData_Points[i * 3] = (float)(rand() % 80) + Xoffset;
 				BufferData_Points[i * 3 + 1] = (float)(rand() % 80);
 				BufferData_Points[i * 3 + 2] = (float)(rand() % 80);
 
@@ -438,7 +440,11 @@ DWORD WINAPI ThreadFunction_GeneratePoints(LPVOID lpParam)
 			pDataArray->p_BufferCPU_Colors->EnList((char*)BufferData_Colors);
 			//printf("EnList BufferData %d \n", ++BufferDataCount);
 
-			Sleep(5);
+
+			if (BufferDataCount > 2000)
+			{
+				running = false;
+			}
 
 			// Release the semaphore when task is finished
 
@@ -693,13 +699,13 @@ DWORD WINAPI ThreadFunction_OpenGLRendering(LPVOID lpParam)
 
 			m_ObjectQueue.AddData2Object((char*)BufferData_Points, (char*)BufferData_Colors);
 
-			//for (size_t i = 0; i < pDataArray->DataNum; i++)
+			//for (size_t i = 0; i < 10; i++)//pDataArray->DataNum
 			//{
 			//	printf("Points(%d) [%f, %f, %f] \n", i, BufferData_Points[i * 3], BufferData_Points[i * 3 + 1], BufferData_Points[i * 3 + 2]);
 			//	printf("Colors(%d) [%f, %f, %f, %f] \n", i, BufferData_Colors[i * 4], BufferData_Colors[i * 4 + 1], BufferData_Colors[i * 4 + 2], BufferData_Colors[i * 4 + 3]);
 			//}
 
-			printf("DeList BufferData %d Size(%d, %d)\n", ++BufferDataCount, pDataArray->p_BufferCPU_Points->LengthList(), pDataArray->p_BufferCPU_Colors->LengthList());
+			//printf("DeList BufferData %d Size(%d, %d)\n", ++BufferDataCount, pDataArray->p_BufferCPU_Points->LengthList(), pDataArray->p_BufferCPU_Colors->LengthList());
 
 			// Release the semaphore when task is finished
 
@@ -726,7 +732,7 @@ DWORD WINAPI ThreadFunction_OpenGLRendering(LPVOID lpParam)
 		
 		m_ObjectQueue.RenderObject();
 
-		m_MeshModel.Draw(m_Shader);
+		//m_MeshModel.Draw(m_Shader);
 
 
 		// ImGui

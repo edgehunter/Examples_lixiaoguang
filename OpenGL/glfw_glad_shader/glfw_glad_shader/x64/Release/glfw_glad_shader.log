@@ -1,4 +1,4 @@
-﻿Build started 2018/3/28 18:27:53.
+﻿Build started 2018/3/29 18:26:56.
      1>Project "D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\glfw_glad_shader\glfw_glad_shader\glfw_glad_shader.vcxproj" on node 2 (Rebuild target(s)).
      1>ClCompile:
          C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\CL.exe /c /IOpenGL_SDK\include /IOpenGL_SDK\glad\include /IOpenGL_SDK\imgui /IOpenGL_SDK\imgui\examples\opengl3_example /I"OpenGL_SDK\glm-0.9.8.5" /I"OpenGL_SDK\assimp-4.1.0\include" /IOpenGL_SDK\stb /Zi /nologo /W3 /WX- /Od /Oi /GL /D WIN32 /D NDEBUG /D _CONSOLE /D _LIB /D _UNICODE /D UNICODE /Gm- /EHsc /MD /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Fo"x64\Release\\" /Fd"x64\Release\vc120.pdb" /Gd /TP /errorReport:prompt DataProcess\BufferCPU.cpp glfw_glad_shader.cpp OpenGL\controls\Camera.cpp OpenGL\controls\WorldModel.cpp OpenGL\objects\Object.cpp OpenGL\objects\ObjectQueue.cpp OpenGL\objects\VaoUnit.cpp OpenGL_SDK\imgui\examples\opengl3_example\imgui_impl_glfw_gl3.cpp OpenGL_SDK\imgui\imgui.cpp OpenGL_SDK\imgui\imgui_demo.cpp OpenGL_SDK\imgui\imgui_draw.cpp stdafx.cpp VaoEngine.cpp
@@ -47,4 +47,4 @@
 
 Build succeeded.
 
-Time Elapsed 00:00:07.56
+Time Elapsed 00:00:07.52
