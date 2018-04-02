@@ -10,26 +10,22 @@ ObjectQueue::~ObjectQueue()
 {
 }
 
-void ObjectQueue::Init(int ObjectNumber, int VaoUnitNumber)
+void ObjectQueue::Init(int QueueLength, int VaoUnitSize)
 {
-
-	//一个物体由多个VAO组合完成，这里假设一个物体由VaoUnitNumber个VAO组合完成。
-	this->VaoUnitNumber = VaoUnitNumber;
-
-	//ObjectNumber，对象的个数根据需要扩充
-	this->ObjectNumber = ObjectNumber;// 10;
+	this->VaoUnitSize = VaoUnitSize;
+	this->QueueLength = QueueLength;
 
 
 
-	for (int i = 0; i < ObjectNumber; i++)
+	for (int i = 0; i < QueueLength; i++)
 	{
 
-		p_Object = new Object();
-		p_Object->Init(VaoUnitNumber, i);
+		p_VaoUnit = new VaoUnit();
+		p_VaoUnit->Init(i, VaoUnitSize);
 
-		ObjectDeque.emplace_back(p_Object);
+		ObjectDeque.emplace_back(p_VaoUnit);
 
-		printf("ObjectNumber idx = %d \n", i);
+		printf("p_VaoUnit idx = %d \n", i);
 	}
 
 	FrameCount = 0;
@@ -39,7 +35,7 @@ void ObjectQueue::Init(int ObjectNumber, int VaoUnitNumber)
 bool ObjectQueue::Release()
 {
 
-	for (std::deque<Object *>::iterator it = ObjectDeque.begin(); it != ObjectDeque.end(); ++it)
+	for (std::deque<VaoUnit *>::iterator it = ObjectDeque.begin(); it != ObjectDeque.end(); ++it)
 	{
 
 		if (!(*it)->Release())
@@ -64,19 +60,19 @@ bool ObjectQueue::Release()
 
 }
 
-void ObjectQueue::AddObject(int AddNumber)
+void ObjectQueue::AddObject2Queue(int AddLength)
 {
 
-	for (int i = VaoUnitNumber; i < VaoUnitNumber + AddNumber; i++)
+	for (int i = QueueLength; i < QueueLength + AddLength; i++)
 	{
 
-		p_Object = new Object();
-		p_Object->Init(VaoUnitNumber, i);
+		p_VaoUnit = new VaoUnit();
+		p_VaoUnit->Init(i, VaoUnitSize);
 
-		ObjectDeque.emplace_back(p_Object);
+		ObjectDeque.emplace_back(p_VaoUnit);
 	}
 
-	VaoUnitNumber += AddNumber;
+	QueueLength += AddLength;
 }
 
 void ObjectQueue::AddData2Object(char* DataPoints, char* DataColors)
@@ -84,16 +80,26 @@ void ObjectQueue::AddData2Object(char* DataPoints, char* DataColors)
 	bool IsFull = true;
 
 
-	for (std::deque<Object *>::iterator it = ObjectDeque.begin(); it != ObjectDeque.end(); ++it)
+	for (std::deque<VaoUnit *>::iterator it = ObjectDeque.begin(); it != ObjectDeque.end(); ++it)
 	{
 		if (!(*it)->IsFull())
 		{
-			(*it)->AddData2VaoUnit(DataPoints, DataColors);
+			(*it)->BindData2VaoUnit(DataPoints, DataColors);
 			IsFull = false;
 			FrameCount++;
 			break;
 		}
 	}
+
+	//if (!IsFull)
+	//{
+	//	printf("ObjectDeque Size[%d] FrameCount[%d] \n", ObjectDeque.size(), FrameCount);
+	//}
+	//else
+	//{
+	//	printf("ObjectDeque Size[%d] FrameCount[%d] FULL \n", ObjectDeque.size(), FrameCount);
+	//}
+	
 
 	if (!IsFull)
 	{
@@ -101,16 +107,15 @@ void ObjectQueue::AddData2Object(char* DataPoints, char* DataColors)
 	}
 	else
 	{
-		p_Object = ObjectDeque.front();
+		p_VaoUnit = ObjectDeque.front();
 
-		if (p_Object->Reset())
+		if (p_VaoUnit->Reset())
 		{
-			p_Object->AddData2VaoUnit(DataPoints, DataColors);
-			IsFull = false;
+			p_VaoUnit->BindData2VaoUnit(DataPoints, DataColors);
 			FrameCount++;
 
 			ObjectDeque.pop_front();
-			ObjectDeque.emplace_back(p_Object);
+			ObjectDeque.emplace_back(p_VaoUnit);
 
 			printf("ObjectDeque Size[%d] FrameCount[%d] FULL & Reset! \n", ObjectDeque.size(), FrameCount);
 		}
@@ -118,21 +123,17 @@ void ObjectQueue::AddData2Object(char* DataPoints, char* DataColors)
 		{
 			printf("ObjectDeque Size[%d] FrameCount[%d] FULL & Reset Error! \n", ObjectDeque.size(), FrameCount);
 		}
-		
 	}
 
 }
 
 void ObjectQueue::RenderObject()
 {
-	//p_Object = ObjectDeque.front();
-	//p_Object->RenderVaoUnit();
-
 	for (auto it = ObjectDeque.cbegin(); it != ObjectDeque.cend(); ++it)
 	{
 		if (!(*it)->IsEmpty())
 		{
-			(*it)->RenderVaoUnit();
+			(*it)->RanderVAO();
 		}
 		else
 		{

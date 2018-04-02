@@ -1,7 +1,7 @@
 #pragma once
 
 #include <deque>
-#include "Object.h"
+#include "VaoUnit.h"
 
 class ObjectQueue
 {
@@ -9,9 +9,9 @@ public:
 	ObjectQueue();
 	~ObjectQueue();
 
-	void Init(int ObjectNumber, int VaoUnitNumber = 4);
+	void Init(int QueueLength, int VaoUnitNumber = 4);
 	bool Release();
-	void AddObject(int AddNumber);
+	void AddObject2Queue(int AddLength);
 
 	void AddData2Object(char* DataPoints, char* DataColors);
 
@@ -19,16 +19,18 @@ public:
 
 private:
 
-	//一个物体由多个VAO组合完成，这里假设一个物体由VaoUnitNumber个VAO组合完成。
-	int VaoUnitNumber;
-	Object* p_Object;
+	//一个VAO由多帧数据组合完成，一个VAO大小VaoUnitSize
+	int VaoUnitSize;
 
-	//ObjectNumber，对象的个数根据需要扩充
-	int ObjectNumber;
+	// 每一个对象，封装成VaoUnit
+	VaoUnit* p_VaoUnit;
+
+	//QueueLength，队列长度
+	int QueueLength;
 
 
 	//使用队列，Double ended queue
-	std::deque<Object *> ObjectDeque;
+	std::deque<VaoUnit *> ObjectDeque;
 	unsigned int FrameCount;
 };
 

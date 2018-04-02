@@ -43,8 +43,8 @@ public:
 	VaoUnit();
 	~VaoUnit();
 
-	void Init(int index, int FrameCountMax = 5);
-	void Release();
+	void Init(int index, int FrameCountMax);
+	bool Release();
 
 	// 绑定数据到VAO
 	void BindData2VaoUnit(char* DataPoints, char* DataColors);
@@ -56,11 +56,13 @@ public:
 	int Get_FrameCount();
 
 	// 当前VAO 重置
-	void Reset();
+	bool Reset();
 
 	// 判断 当前VAO已载入帧数，是否达到最大值
 	bool IsFull();
 
+	// 判断 当前VAO是否为空
+	bool IsEmpty();
 
 	unsigned int *GetVao();
 	unsigned int *GetVbo();
@@ -72,6 +74,15 @@ private:
 
 	// 默认使用VAO1个，VBO使用5个
 	unsigned int VBO[5], VAO[1];
+
+	// Points缓存
+	char* Points;
+
+	// colors 缓存
+	char* Colors;
+
+	//char* ptr_Points;
+	//char* ptr_Colors;
 
 	// 当前VAO边缘数据点坐标
 	EdgePoint m_EdgePoint;
