@@ -147,6 +147,8 @@
   <ItemGroup>
     <ClInclude Include="DataProcess\BufferCPU.h" />
     <ClInclude Include="OpenGL\controls\Camera.h" />
+    <ClInclude Include="OpenGL\controls\ControlBase.h" />
+    <ClInclude Include="OpenGL\controls\PseudoColor.h" />
     <ClInclude Include="OpenGL\controls\WorldModel.h" />
     <ClInclude Include="OpenGL\objects\assimp\mesh.h" />
     <ClInclude Include="OpenGL\objects\assimp\MeshModel.h" />
@@ -166,6 +168,8 @@
     <ClCompile Include="DataProcess\BufferCPU.cpp" />
     <ClCompile Include="glfw_glad_shader.cpp" />
     <ClCompile Include="OpenGL\controls\Camera.cpp" />
+    <ClCompile Include="OpenGL\controls\ControlBase.cpp" />
+    <ClCompile Include="OpenGL\controls\PseudoColor.cpp" />
     <ClCompile Include="OpenGL\controls\WorldModel.cpp" />
     <ClCompile Include="OpenGL\objects\ObjectQueue.cpp" />
     <ClCompile Include="OpenGL\objects\VaoUnit.cpp" />
@@ -178,8 +182,6 @@
     <ClCompile Include="VaoEngine.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="OpenGL\shader\1.model_loading.fragmentshader" />
-    <None Include="OpenGL\shader\1.model_loading.vertexshader" />
     <None Include="OpenGL\shader\SimpleTransform.vertexshader" />
     <None Include="OpenGL\shader\SingleColor.fragmentshader" />
   </ItemGroup>

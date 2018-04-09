@@ -1,10 +1,10 @@
 #version 330 core
 
 // Input vertex data, different for all executions of this shader.
-layout(location = 0) in vec3 vertexPosition;
+layout(location = 0) in vec4 vertexPosition;
 layout(location = 1) in vec3 vertexNormal;
 layout(location = 2) in vec2 vertexTexCoords;
-layout(location = 3) in vec4 vertexColor;
+layout(location = 3) in vec3 vertexColor;
 
 // Output data ; will be interpolated for each fragment.
 out vec4 fragmentColor;
@@ -17,21 +17,256 @@ uniform mat4 Projection;
 uniform mat4 View;
 uniform mat4 WorldModel;
 
+uniform int PseudoColorIndex;
+uniform float PseudoColorStride;
+
+uniform bool IsStrengthPseudoColor;//未使用
+uniform float ThresholdValue;
+
+//当前帧 保持坐标在原点
+uniform vec3 MotionCompensation;
+
+// pseudo color
+vec4 transform_rainbow(float x, float PseudoColorStride);
+vec4 MATLAB_autumn(float x, float PseudoColorStride);
+vec4 MATLAB_jet(float x, float PseudoColorStride);
+vec4 MATLAB_hsv(float x, float PseudoColorStride);
+vec4 MATLAB_hot(float x, float PseudoColorStride);
+vec4 MATLAB_winter(float x, float PseudoColorStride);
+
 void main()
 {
 
 	// Output position of the vertex, in clip space : MVP * position
 	//gl_Position =  MVP * vec4(vertexPosition,1);
-	gl_Position = Projection * View * WorldModel *vec4(vertexPosition,1);
+	gl_Position = Projection * View * WorldModel *vec4(vertexPosition.xyz,1);
 
 
 
 	// The color of each vertex will be interpolated
 	// to produce the color of each fragment
-	fragmentColor = vertexColor;
+	//fragmentColor = vertexColor;
+
+	//区分模型、点云
+	if(vertexPosition.z > -20)
+	{
+		switch (PseudoColorIndex)
+		{
+			case 0:
+				{
+					fragmentColor = transform_rainbow(vertexPosition.y, PseudoColorStride);
+				}
+			break;
+
+			case 1:
+				{
+					fragmentColor = MATLAB_jet(vertexPosition.y, PseudoColorStride);
+				}
+			break;
+
+			case 2:
+				{
+					fragmentColor = MATLAB_hsv(vertexPosition.y, PseudoColorStride);
+				}
+
+			break;
+
+			case 3:
+				{
+					fragmentColor = MATLAB_autumn(vertexPosition.y, PseudoColorStride);
+				}
+
+			break;
+
+			case 4:
+				{
+					fragmentColor = MATLAB_hot(vertexPosition.y, PseudoColorStride);
+				}
+
+			break;
+
+			case 5:
+				{
+					fragmentColor = MATLAB_winter(vertexPosition.y, PseudoColorStride);
+				}
+
+			break;
+
+			default:
+				{
+					fragmentColor = MATLAB_jet(vertexPosition.y, PseudoColorStride);
+				}
+			break;
+		}
+
+		if(vertexPosition.w < ThresholdValue )
+		{
+			fragmentColor.a = 0;
+		}
+		else
+		{
+			fragmentColor.a = vertexPosition.w;
+		}
+		
+	}
+	else
+	{
+
+		fragmentColor = vec4(vertexColor, 1.0);
+	}
+
+	
 
 	// TexCoords. No special space for this one.
 	TexCoords = vertexTexCoords;
 
 }
 
+
+vec4 transform_rainbow(float x, float PseudoColorStride) 
+{
+
+	x = mod(x, PseudoColorStride);
+	x = x / PseudoColorStride;
+	
+    float r = 0.0, g = 0.0, b = 0.0;
+
+    if (x < 0.0) {
+        r = 127.0 / 255.0;
+    } else if (x <= 1.0 / 9.0) {
+        r = 1147.5 * (1.0 / 9.0 - x) / 255.0;
+    } else if (x <= 5.0 / 9.0) {
+        r = 0.0;
+    } else if (x <= 7.0 / 9.0) {
+        r = 1147.5 * (x - 5.0 / 9.0) / 255.0;
+    } else {
+        r = 1.0;
+    }
+
+    if (x <= 1.0 / 9.0) {
+        g = 0.0;
+    } else if (x <= 3.0 / 9.0) {
+        g = 1147.5 * (x - 1.0 / 9.0) / 255.0;
+    } else if (x <= 7.0 / 9.0) {
+        g = 1.0;
+    } else if (x <= 1.0) {
+        g = 1.0 - 1147.5 * (x - 7.0 / 9.0) / 255.0;
+    } else {
+        g = 0.0;
+    }
+
+    if (x <= 3.0 / 9.0) {
+        b = 1.0;
+    } else if (x <= 5.0 / 9.0) {
+        b = 1.0 - 1147.5 * (x - 3.0 / 9.0) / 255.0;
+    } else {
+        b = 0.0;
+    }
+
+    return vec4(r, g, b, 1.0);
+}
+
+vec4 MATLAB_autumn(float x, float PseudoColorStride) 
+{
+
+	x = mod(x, PseudoColorStride);
+	x = x / PseudoColorStride;
+
+    float g = clamp(x, 0.0, 1.0);
+    return vec4(1.0, g, 0.0, 1.0);
+}
+
+float MATLAB_jet_red(float x) {
+    if (x < 0.7) {
+        return 4.0 * x - 1.5;
+    } else {
+        return -4.0 * x + 4.5;
+    }
+}
+
+float MATLAB_jet_green(float x) {
+    if (x < 0.5) {
+        return 4.0 * x - 0.5;
+    } else {
+        return -4.0 * x + 3.5;
+    }
+}
+
+float MATLAB_jet_blue(float x) {
+    if (x < 0.3) {
+       return 4.0 * x + 0.5;
+    } else {
+       return -4.0 * x + 2.5;
+    }
+}
+
+vec4 MATLAB_jet(float x, float PseudoColorStride) 
+{
+
+	x = mod(x, PseudoColorStride);
+	x = x / PseudoColorStride;
+
+    float r = clamp(MATLAB_jet_red(x), 0.0, 1.0);
+    float g = clamp(MATLAB_jet_green(x), 0.0, 1.0);
+    float b = clamp(MATLAB_jet_blue(x), 0.0, 1.0);
+    return vec4(r, g, b, 1.0);
+}
+
+
+float MATLAB_hsv_red(float x) {
+    if (x < 0.5) {
+        return -6.0 * x + 67.0 / 32.0;
+    } else {
+        return 6.0 * x - 79.0 / 16.0;
+    }
+}
+
+float MATLAB_hsv_green(float x) {
+    if (x < 0.4) {
+        return 6.0 * x - 3.0 / 32.0;
+    } else {
+        return -6.0 * x + 79.0 / 16.0;
+    }
+}
+
+float MATLAB_hsv_blue(float x) {
+    if (x < 0.7) {
+       return 6.0 * x - 67.0 / 32.0;
+    } else {
+       return -6.0 * x + 195.0 / 32.0;
+    }
+}
+
+vec4 MATLAB_hsv(float x, float PseudoColorStride) 
+{
+
+	x = mod(x, PseudoColorStride);
+	x = x / PseudoColorStride;
+
+    float r = clamp(MATLAB_hsv_red(x), 0.0, 1.0);
+    float g = clamp(MATLAB_hsv_green(x), 0.0, 1.0);
+    float b = clamp(MATLAB_hsv_blue(x), 0.0, 1.0);
+    return vec4(r, g, b, 1.0);
+}
+
+vec4 MATLAB_hot(float x, float PseudoColorStride) 
+{
+
+	x = mod(x, PseudoColorStride);
+	x = x / PseudoColorStride;
+
+    float r = clamp(8.0 / 3.0 * x, 0.0, 1.0);
+    float g = clamp(8.0 / 3.0 * x - 1.0, 0.0, 1.0);
+    float b = clamp(4.0 * x - 3.0, 0.0, 1.0);
+    return vec4(r, g, b, 1.0);
+}
+
+
+vec4 MATLAB_winter(float x, float PseudoColorStride) 
+{
+
+	x = mod(x, PseudoColorStride);
+	x = x / PseudoColorStride;
+
+    return vec4(0.0, clamp(x, 0.0, 1.0), clamp(-0.5 * x + 1.0, 0.0, 1.0), 1.0);
+}

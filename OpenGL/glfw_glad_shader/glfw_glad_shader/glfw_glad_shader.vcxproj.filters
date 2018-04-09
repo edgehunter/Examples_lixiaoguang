@@ -93,6 +93,12 @@
     <ClInclude Include="DataProcess\BufferCPU.h">
       <Filter>DataProcess</Filter>
     </ClInclude>
+    <ClInclude Include="OpenGL\controls\PseudoColor.h">
+      <Filter>opengl\controls</Filter>
+    </ClInclude>
+    <ClInclude Include="OpenGL\controls\ControlBase.h">
+      <Filter>opengl\controls</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="stdafx.cpp">
@@ -134,18 +140,18 @@
     <ClCompile Include="DataProcess\BufferCPU.cpp">
       <Filter>DataProcess</Filter>
     </ClCompile>
+    <ClCompile Include="OpenGL\controls\PseudoColor.cpp">
+      <Filter>opengl\controls</Filter>
+    </ClCompile>
+    <ClCompile Include="OpenGL\controls\ControlBase.cpp">
+      <Filter>opengl\controls</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <None Include="OpenGL\shader\SimpleTransform.vertexshader">
       <Filter>opengl\shader</Filter>
     </None>
     <None Include="OpenGL\shader\SingleColor.fragmentshader">
-      <Filter>opengl\shader</Filter>
-    </None>
-    <None Include="OpenGL\shader\1.model_loading.fragmentshader">
-      <Filter>opengl\shader</Filter>
-    </None>
-    <None Include="OpenGL\shader\1.model_loading.vertexshader">
       <Filter>opengl\shader</Filter>
     </None>
   </ItemGroup>

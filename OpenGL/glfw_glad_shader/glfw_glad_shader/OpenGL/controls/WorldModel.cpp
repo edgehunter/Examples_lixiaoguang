@@ -13,18 +13,21 @@ WorldModel::~WorldModel()
 
 void WorldModel::Init(Shader* p_Shader, GLFWwindow* Window, const unsigned int Screen_Width, const unsigned int Screen_Height)
 {
-	this->p_Shader = p_Shader;
-	this->Window = Window;
 
-	KeySpeed = 3.0f; // 3 units / second
-	MouseSpeed = 0.005f;
+	ControlBase::Init(p_Shader, Window, Screen_Width, Screen_Height);
 
-	// Get mouse position
-	xPos = Screen_Width / 2;
-	yPos = Screen_Height / 2;
+	//this->p_Shader = p_Shader;
+	//this->Window = Window;
 
-	xPos_old = Screen_Width / 2;
-	yPos_old = Screen_Height / 2;
+	//KeySpeed = 3.0f; // 3 units / second
+	//MouseSpeed = 0.005f;
+
+	//// Get mouse position
+	//xPos = Screen_Width / 2;
+	//yPos = Screen_Height / 2;
+
+	//xPos_old = Screen_Width / 2;
+	//yPos_old = Screen_Height / 2;
 
 
 	//Scale by factor 1.0

@@ -110,7 +110,7 @@ private:
 			// positions
 			vector.x = mesh->mVertices[i].x;
 			vector.y = mesh->mVertices[i].y;
-			vector.z = mesh->mVertices[i].z;
+			vector.z = mesh->mVertices[i].z - 20;
 			vertex.Position = vector;
 			// normals
 			vector.x = mesh->mNormals[i].x;
@@ -153,12 +153,12 @@ private:
 
 			if (AI_SUCCESS == aiGetMaterialColor(material, AI_MATKEY_COLOR_DIFFUSE, &diffuse))
 			{
-				glm::vec4 color;
+				glm::vec3 color;
 				// color
 				color.x = diffuse.r;//mesh->mBitangents[i].x;
 				color.y = diffuse.g;//mesh->mBitangents[i].y;
 				color.z = diffuse.b;//mesh->mBitangents[i].z;
-				color.a = 0.9f;
+				//color.a = 1.0f;
 
 				vertex.color = color;
 			}

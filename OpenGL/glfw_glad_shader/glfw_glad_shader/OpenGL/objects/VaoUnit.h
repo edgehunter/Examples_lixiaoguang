@@ -47,7 +47,7 @@ public:
 	bool Release();
 
 	// 绑定数据到VAO
-	void BindData2VaoUnit(char* DataPoints, char* DataColors);
+	void BindData2VaoUnit(char* DataPoints);
 
 	// 渲染当前VAO
 	void RanderVAO();
@@ -73,13 +73,13 @@ public:
 private:
 
 	// 默认使用VAO1个，VBO使用5个
-	unsigned int VBO[5], VAO[1];
+	unsigned int VBO[2], VAO[1];
 
 	// Points缓存
 	char* Points;
 
 	// colors 缓存
-	char* Colors;
+	//char* Colors;
 
 	//char* ptr_Points;
 	//char* ptr_Colors;

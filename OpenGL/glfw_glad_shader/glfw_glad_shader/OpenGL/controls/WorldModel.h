@@ -1,21 +1,8 @@
 #pragma once
 
-#include <stdio.h>
+#include"ControlBase.h"
 
-//shader
-#include "../shader/shader.h"
-
-// Include GLFW
-#include <GLFW/glfw3.h>
-
-// Include GLM
-#include <glm/glm.hpp>
-#include <glm/gtc/matrix_transform.hpp>
-
-
-
-
-class WorldModel
+class WorldModel:public ControlBase
 {
 public:
 	WorldModel();
@@ -33,18 +20,18 @@ public:
 
 private:
 
-	Shader* p_Shader;
-	GLFWwindow* Window;
+	//Shader* p_Shader;
+	//GLFWwindow* Window;
 
-	float KeySpeed;// = 3.0f; // 3 units / second
-	float MouseSpeed;// = 0.005f;
+	//float KeySpeed;// = 3.0f; // 3 units / second
+	//float MouseSpeed;// = 0.005f;
 
-	// Get mouse position
-	double xPos;// = 600 / 2;
-	double yPos;// = 400 / 2;
+	//// Get mouse position
+	//double xPos;// = 600 / 2;
+	//double yPos;// = 400 / 2;
 
-	double xPos_old;// = 600 / 2;
-	double yPos_old;// = 400 / 2;
+	//double xPos_old;// = 600 / 2;
+	//double yPos_old;// = 400 / 2;
 
 
 	glm::mat4 ModelMatrix;// = glm::mat4(1.0);
@@ -65,5 +52,7 @@ private:
 
 	glm::mat4 RotationMatrix;// = glm::rotate(ModelTranslateMatrix, 0.9f, glm::vec3(0.0f, 1.0f, 0.0f)); // where x, y, z is axis of rotation (e.g. 0 1 0)
 
+	//运动补偿，当前帧 保持坐标在原点
+	glm::vec3 MotionCompensation;
 };
 

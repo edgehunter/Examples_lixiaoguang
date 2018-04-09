@@ -1,19 +1,8 @@
 #pragma once
 
-#include <stdio.h>
+#include"ControlBase.h"
 
-//shader
-#include "../shader/shader.h"
-
-// Include GLFW
-#include <GLFW/glfw3.h>
-
-// Include GLM
-#include <glm/glm.hpp>
-#include <glm/gtc/matrix_transform.hpp>
-
-
-class Camera
+class Camera:public ControlBase
 {
 public:
 	Camera();
@@ -31,14 +20,25 @@ public:
 
 private:
 
-	Shader* p_Shader;
-	GLFWwindow* Window;
+	//Shader* p_Shader;
+	//GLFWwindow* Window;
+
+	//float KeySpeed;// = 3.0f; // 3 units / second
+	//float MouseSpeed;// = 0.005f;
+
+	//// Get mouse position
+	//double xPos;// = 600 / 2;
+	//double yPos;// = 400 / 2;
+
+	//double xPos_old;// = 600 / 2;
+	//double yPos_old;// = 400 / 2;
+
 
 	glm::mat4 ViewMatrix;
 	glm::mat4 ProjectionMatrix;
 
 	// Initial position : on +Z
-	glm::vec3 Position;// = glm::vec3(0, 0, 5);
+	glm::vec3 Position;
 	
 	// Initial horizontal angle : toward -Z
 	float HorizontalAngle;// = -3.14f;
@@ -50,16 +50,6 @@ private:
 	float InitialFoV;// = 45.0f;
 
 	float Zoom;
-
-	float KeySpeed;// = 3.0f; // 3 units / second
-	float MouseSpeed;// = 0.005f;
-
-	// Get mouse position
-	double xPos;// = 600 / 2;
-	double yPos;// = 400 / 2;
-
-	double xPos_old;// = 600 / 2;
-	double yPos_old;// = 400 / 2;
 
 };
 

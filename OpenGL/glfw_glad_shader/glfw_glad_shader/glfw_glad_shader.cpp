@@ -28,18 +28,20 @@
 // controls
 #include "OpenGL/controls/Camera.h"
 #include "OpenGL/controls/WorldModel.h"
+#include "OpenGL/controls/PseudoColor.h"
 
 // Object
 #include "OpenGL/objects/ObjectQueue.h"
 
 // Vao Engine
-#include "VaoEngine.h"
+//#include "VaoEngine.h"
 
 #include "OpenGL/objects/assimp/mesh.h"
 #include "OpenGL/objects/assimp/MeshModel.h"
 
 // Buffer
 #include "DataProcess/BufferCPU.h"
+
 
 
 
@@ -60,11 +62,9 @@ struct ThreadParam
 
 	int DataNum;
 	int PerDataSize_Points;
-	int PerDataSize_Colors;
 	int SemaphoreSize;//信号量最大值
 
 	BufferCPU* p_BufferCPU_Points;
-	BufferCPU* p_BufferCPU_Colors;
 
 	HANDLE ghSemaphore_Empty;
 	HANDLE ghSemaphore_Full;
@@ -98,18 +98,13 @@ DWORD WINAPI ThreadFunction_OpenGLRendering(LPVOID lpParam);
 int main(void)
 {
 	int DataNum = 128 * 128;//共128*128个数据点
-	int PerDataSize_Points = 3;//每个数据点坐标包含3个float，x、y、z
-	int PerDataSize_Colors = 4;//每个数据点颜色包含3个float，r、g、b、a
+	int PerDataSize_Points = 4;//每个数据点坐标包含3个float，x、y、z、w
 	int SemaphoreSize = 10;//信号量最大值
 
 	// Buffer
 	BufferCPU* p_BufferCPU_Points;
 	p_BufferCPU_Points = new BufferCPU(SemaphoreSize, DataNum*PerDataSize_Points* sizeof(float));
 	p_BufferCPU_Points->CreateList();
-
-	BufferCPU* p_BufferCPU_Colors;
-	p_BufferCPU_Colors = new BufferCPU(SemaphoreSize, DataNum*PerDataSize_Colors* sizeof(float));
-	p_BufferCPU_Colors->CreateList();
 
 
 	// Semaphore
@@ -190,11 +185,9 @@ int main(void)
 				//
 				pDataArray[i]->DataNum = DataNum;
 				pDataArray[i]->PerDataSize_Points = PerDataSize_Points;
-				pDataArray[i]->PerDataSize_Colors = PerDataSize_Colors;
 				pDataArray[i]->SemaphoreSize = SemaphoreSize;
 
 				pDataArray[i]->p_BufferCPU_Points = p_BufferCPU_Points;
-				pDataArray[i]->p_BufferCPU_Colors = p_BufferCPU_Colors;
 
 				pDataArray[i]->ghSemaphore_Empty = ghSemaphore_Empty;
 				pDataArray[i]->ghSemaphore_Full = ghSemaphore_Full;
@@ -227,11 +220,9 @@ int main(void)
 				//
 				pDataArray[i]->DataNum = DataNum;
 				pDataArray[i]->PerDataSize_Points = PerDataSize_Points;
-				pDataArray[i]->PerDataSize_Colors = PerDataSize_Colors;
 				pDataArray[i]->SemaphoreSize = SemaphoreSize;
 
 				pDataArray[i]->p_BufferCPU_Points = p_BufferCPU_Points;
-				pDataArray[i]->p_BufferCPU_Colors = p_BufferCPU_Colors;
 
 				pDataArray[i]->ghSemaphore_Empty = ghSemaphore_Empty;
 				pDataArray[i]->ghSemaphore_Full = ghSemaphore_Full;
@@ -287,9 +278,6 @@ int main(void)
 
 	p_BufferCPU_Points->ReleaseList();
 	delete p_BufferCPU_Points;
-
-	p_BufferCPU_Colors->ReleaseList();
-	delete p_BufferCPU_Colors;
 
 	CloseHandle(ghSemaphore_Empty);
 	CloseHandle(ghSemaphore_Full);
@@ -384,7 +372,7 @@ DWORD WINAPI ThreadFunction_GeneratePoints(LPVOID lpParam)
 
 	// Print the parameter values using thread-safe functions.
 	StringCchPrintf(msgBuf, BUF_SIZE, TEXT("Parameters = %d, %d, %s, %d, %d, %d, %d\n"),
-		pDataArray->ThreadID, pDataArray->Value, pDataArray->Title, pDataArray->DataNum, pDataArray->PerDataSize_Points, pDataArray->PerDataSize_Colors, pDataArray->SemaphoreSize);
+		pDataArray->ThreadID, pDataArray->Value, pDataArray->Title, pDataArray->DataNum, pDataArray->PerDataSize_Points, pDataArray->SemaphoreSize);
 	StringCchLength(msgBuf, BUF_SIZE, &cchStringSize);
 	WriteConsole(hStdout, msgBuf, (DWORD)cchStringSize, &dwChars, NULL);
 
@@ -395,7 +383,6 @@ DWORD WINAPI ThreadFunction_GeneratePoints(LPVOID lpParam)
 	int BufferDataCount = 0;
 	float Xoffset = 0;
 	float* BufferData_Points = new float[pDataArray->DataNum* pDataArray->PerDataSize_Points];
-	float* BufferData_Colors = new float[pDataArray->DataNum* pDataArray->PerDataSize_Colors];
 
 	while (running)
 	{
@@ -422,22 +409,15 @@ DWORD WINAPI ThreadFunction_GeneratePoints(LPVOID lpParam)
 			
 			for (size_t i = 0; i < pDataArray->DataNum; i++)
 			{
-				BufferData_Points[i * 3] = (float)(rand() % 80) + Xoffset;
-				BufferData_Points[i * 3 + 1] = (float)(rand() % 80);
-				BufferData_Points[i * 3 + 2] = (float)(rand() % 80);
+				BufferData_Points[i * 4] = (float)(rand() % 80) + Xoffset;
+				BufferData_Points[i * 4 + 1] = (float)(rand() % 80);
+				BufferData_Points[i * 4 + 2] = (float)(rand() % 80);
+				BufferData_Points[i * 4 + 3] = (float)(rand() % 80);
 
-
-				BufferData_Colors[i * 4] = (float)(rand() % 80 / (double)80);
-				BufferData_Colors[i * 4 + 1] = (float)(rand() % 80 / (double)80);
-				BufferData_Colors[i * 4 + 2] = (float)(rand() % 80 / (double)80);
-				BufferData_Colors[i * 4 + 3] = 1.0f;//(float)(rand() % 80 / (double)80); //1.0f;//
-
-				
 				//printf("VerticesPoints[%d] = %f \n", i, VerticesPoints[i]);
 			}
 
 			pDataArray->p_BufferCPU_Points->EnList((char*)BufferData_Points);
-			pDataArray->p_BufferCPU_Colors->EnList((char*)BufferData_Colors);
 			//printf("EnList BufferData %d \n", ++BufferDataCount);
 
 
@@ -466,7 +446,6 @@ DWORD WINAPI ThreadFunction_GeneratePoints(LPVOID lpParam)
 	}
 
 	delete BufferData_Points;
-	delete BufferData_Colors;
 
 	return 0;
 }
@@ -502,7 +481,7 @@ DWORD WINAPI ThreadFunction_OpenGLRendering(LPVOID lpParam)
 
 	DWORD dwWaitResult;
 	float* BufferData_Points = new float[pDataArray->DataNum* pDataArray->PerDataSize_Points];
-	float* BufferData_Colors = new float[pDataArray->DataNum* pDataArray->PerDataSize_Colors];
+
 	int BufferDataCount = 0;
 	//////////////////////////////////////////////////////////////////////////
 
@@ -568,10 +547,13 @@ DWORD WINAPI ThreadFunction_OpenGLRendering(LPVOID lpParam)
 	glDepthFunc(GL_LESS);
 
 	// Cull triangles which normal is not towards the camera
-	glEnable(GL_CULL_FACE); // cull face
+	//glEnable(GL_CULL_FACE); // cull face
 
-	glCullFace(GL_BACK); // cull back face
-	glFrontFace(GL_CW); // GL_CCW for counter clock-wise
+	// cull back face
+	//glCullFace(GL_BACK); 
+
+	// GL_CCW for counter clock-wise
+	//glFrontFace(GL_CW);
 
 	glEnable(GL_BLEND);
 	glBlendFunc(GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA);
@@ -588,8 +570,8 @@ DWORD WINAPI ThreadFunction_OpenGLRendering(LPVOID lpParam)
 
 	// Vao Engine
 	// ---------------------------------------
-	VaoEngine m_VaoEngine;
-	m_VaoEngine.Init(&m_Shader);
+	//VaoEngine m_VaoEngine;
+	//m_VaoEngine.Init(&m_Shader);
 
 	//Camera
 	// ---------------------------------------
@@ -601,11 +583,15 @@ DWORD WINAPI ThreadFunction_OpenGLRendering(LPVOID lpParam)
 	WorldModel m_WorldModel;
 	m_WorldModel.Init(&m_Shader, window, SCR_WIDTH, SCR_HEIGHT);
 
+	//pseudo color
+	// ---------------------------------------
+	PseudoColor m_PseudoColor;
+	m_PseudoColor.Init(&m_Shader, window, SCR_WIDTH, SCR_HEIGHT);
 
 	//Object
 	// ---------------------------------------
 	ObjectQueue m_ObjectQueue;
-	m_ObjectQueue.Init(10, 100);
+	m_ObjectQueue.Init(20, 100);
 
 	//m_ObjectQueue.Release();
 	//m_ObjectQueue.AddData2Object();
@@ -666,7 +652,7 @@ DWORD WINAPI ThreadFunction_OpenGLRendering(LPVOID lpParam)
 	while (!glfwWindowShouldClose(window))
 	{
 
-		TimeStart_Input_And_Clear = GetTickCount();
+		TimeStart_Input_And_Clear = glfwGetTime() * 1000;
 		
 		// input
 		// -----
@@ -677,10 +663,10 @@ DWORD WINAPI ThreadFunction_OpenGLRendering(LPVOID lpParam)
 		// Clear the screen
 		glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
 
-		TimeEnd_Input_And_Clear = GetTickCount();
+		TimeEnd_Input_And_Clear = glfwGetTime() * 1000;
 		cout << "Time Input_And_Clear:" << TimeEnd_Input_And_Clear - TimeStart_Input_And_Clear << endl;
 
-		TimeStart_Shader = GetTickCount();
+		TimeStart_Shader = glfwGetTime() * 1000;
 
 		// Use our shader
 		m_Shader.use();
@@ -695,21 +681,16 @@ DWORD WINAPI ThreadFunction_OpenGLRendering(LPVOID lpParam)
 		m_WorldModel.UpdateModelMatrix();
 
 
-		TimeEnd_Shader = GetTickCount();
+		TimeEnd_Shader = glfwGetTime() * 1000;
 		cout << "Time Shader:" << TimeEnd_Shader - TimeStart_Shader << endl;
 
-		/*
+		m_PseudoColor.UpdateThreshold();
+		m_PseudoColor.UpdatePseudoColor();
 
-		// update shader uniform TransparencyColor
-		double timeValue = glfwGetTime() * 4;
-		float RedValue = (float)sin(timeValue) / 2.0f + 0.5f;
 
-		// TransparencyColor uniforms
-		m_Shader.setFloat("TransparencyColor", RedValue);
 
-		*/
-		TimeStart_While = GetTickCount();
-		TimeStart_Object_Add = GetTickCount();
+		TimeStart_While = glfwGetTime() * 1000;
+		TimeStart_Object_Add = glfwGetTime() * 1000;
 
 		// 数据出队列
 
@@ -726,29 +707,17 @@ DWORD WINAPI ThreadFunction_OpenGLRendering(LPVOID lpParam)
 			
 			// TODO: Perform task
 			//printf("Thread %d: wait succeeded\n", GetCurrentThreadId());
-
-
-			
 			
 			// Simulate thread spending time on task
 
 
 			pDataArray->p_BufferCPU_Points->DeList((char*)BufferData_Points);
-			pDataArray->p_BufferCPU_Colors->DeList((char*)BufferData_Colors);
 
-			m_ObjectQueue.AddData2Object((char*)BufferData_Points, (char*)BufferData_Colors);
-
+			m_ObjectQueue.AddData2Object((char*)BufferData_Points);
 
 
 
-
-			//for (size_t i = 0; i < 10; i++)//pDataArray->DataNum
-			//{
-			//	printf("Points(%d) [%f, %f, %f] \n", i, BufferData_Points[i * 3], BufferData_Points[i * 3 + 1], BufferData_Points[i * 3 + 2]);
-			//	printf("Colors(%d) [%f, %f, %f, %f] \n", i, BufferData_Colors[i * 4], BufferData_Colors[i * 4 + 1], BufferData_Colors[i * 4 + 2], BufferData_Colors[i * 4 + 3]);
-			//}
-
-			//printf("DeList BufferData %d Size(%d, %d)\n", ++BufferDataCount, pDataArray->p_BufferCPU_Points->LengthList(), pDataArray->p_BufferCPU_Colors->LengthList());
+			//printf("DeList BufferData %d Size(%d)\n", ++BufferDataCount, pDataArray->p_BufferCPU_Points->LengthList());
 
 			// Release the semaphore when task is finished
 
@@ -767,22 +736,22 @@ DWORD WINAPI ThreadFunction_OpenGLRendering(LPVOID lpParam)
 			break;
 		}
 
-		TimeEnd_Object_Add = GetTickCount();
+		TimeEnd_Object_Add = glfwGetTime() * 1000;
 		cout << "Time Object_Add:" << TimeEnd_Object_Add - TimeStart_Object_Add << endl;
-		TimeStart_Object_Render = GetTickCount();
+		TimeStart_Object_Render = glfwGetTime() * 1000;
 
 		//m_VaoEngine.Render();
 
 		m_ObjectQueue.RenderObject();
 
-		//m_MeshModel.Draw(m_Shader);
+		m_MeshModel.Draw(m_Shader);
 
-		TimeEnd_Object_Render = GetTickCount();
+		TimeEnd_Object_Render = glfwGetTime() * 1000;
 		cout << "Time Object_Render:" << TimeEnd_Object_Render - TimeStart_Object_Render << endl;
 
-		TimeStart_IMGUI = GetTickCount();
+		TimeStart_IMGUI = glfwGetTime() * 1000;
 
-		/*
+		
 
 		// ImGui
 		// ------
@@ -820,11 +789,11 @@ DWORD WINAPI ThreadFunction_OpenGLRendering(LPVOID lpParam)
 		// ImGui Render
 		ImGui::Render();
 
-		*/
+		
 
-		TimeEnd_IMGUI = GetTickCount();
+		TimeEnd_IMGUI = glfwGetTime() * 1000;
 		cout << "Time IMGUI:" << TimeEnd_IMGUI - TimeStart_IMGUI << endl;
-		TimeStart_SwapBuffers = GetTickCount();
+		TimeStart_SwapBuffers = glfwGetTime() * 1000;
 
 
 		// glfw: swap buffers and poll IO events (keys pressed/released, mouse moved etc.)
@@ -832,16 +801,16 @@ DWORD WINAPI ThreadFunction_OpenGLRendering(LPVOID lpParam)
 		glfwSwapBuffers(window);
 		glfwPollEvents();
 
-		TimeEnd_SwapBuffers = GetTickCount();
+		TimeEnd_SwapBuffers = glfwGetTime() * 1000;
 		cout << "Time glfwSwapBuffers:" << TimeEnd_SwapBuffers - TimeStart_SwapBuffers << endl;
 
-		TimeEnd_While = GetTickCount();
+		TimeEnd_While = glfwGetTime() * 1000;
 		cout << "Time While:" << TimeEnd_While - TimeStart_While << endl;
 	}
 
 	// optional: de-allocate all resources once they've outlived their purpose:
 	// ------------------------------------------------------------------------
-	m_VaoEngine.Release();
+	//m_VaoEngine.Release();
 	m_ObjectQueue.Release();
 
 	// ImGui Shutdown
@@ -857,7 +826,6 @@ DWORD WINAPI ThreadFunction_OpenGLRendering(LPVOID lpParam)
 	running = false;
 
 	delete BufferData_Points;
-	delete BufferData_Colors;
 
 	return 0;
 }

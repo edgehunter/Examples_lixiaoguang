@@ -75,7 +75,7 @@ void ObjectQueue::AddObject2Queue(int AddLength)
 	QueueLength += AddLength;
 }
 
-void ObjectQueue::AddData2Object(char* DataPoints, char* DataColors)
+void ObjectQueue::AddData2Object(char* DataPoints)
 {
 	bool IsFull = true;
 
@@ -84,7 +84,7 @@ void ObjectQueue::AddData2Object(char* DataPoints, char* DataColors)
 	{
 		if (!(*it)->IsFull())
 		{
-			(*it)->BindData2VaoUnit(DataPoints, DataColors);
+			(*it)->BindData2VaoUnit(DataPoints);
 			IsFull = false;
 			FrameCount++;
 			break;
@@ -111,7 +111,7 @@ void ObjectQueue::AddData2Object(char* DataPoints, char* DataColors)
 
 		if (p_VaoUnit->Reset())
 		{
-			p_VaoUnit->BindData2VaoUnit(DataPoints, DataColors);
+			p_VaoUnit->BindData2VaoUnit(DataPoints);
 			FrameCount++;
 
 			ObjectDeque.pop_front();

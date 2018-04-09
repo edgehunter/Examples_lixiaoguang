@@ -13,7 +13,7 @@ public:
 	bool Release();
 	void AddObject2Queue(int AddLength);
 
-	void AddData2Object(char* DataPoints, char* DataColors);
+	void AddData2Object(char* DataPoints);
 
 	void RenderObject();
 

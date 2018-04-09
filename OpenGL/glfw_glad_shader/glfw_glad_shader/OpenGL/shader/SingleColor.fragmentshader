@@ -7,7 +7,7 @@ in vec2 TexCoords;
 // Ouput data
 out vec4 FragColor;
 
-uniform float TransparencyColor;
+
 uniform sampler2D texture_diffuse1;
 
 void main()
@@ -21,6 +21,8 @@ void main()
 	//FragColor.a = 0;
 	//FragColor = vec4(fragmentColor, 0);//CustomColor;
 	
-	FragColor = fragmentColor;//vec3(1.0f,0.0f,0.0f);//
-	//FragColor.a = TransparencyColor;//0.2;
+	FragColor = fragmentColor;
+
 }
+
+
