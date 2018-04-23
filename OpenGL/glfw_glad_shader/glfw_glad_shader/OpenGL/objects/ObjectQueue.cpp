@@ -28,6 +28,7 @@ void ObjectQueue::Init(int QueueLength, int VaoUnitSize)
 		printf("p_VaoUnit idx = %d \n", i);
 	}
 
+	IsMultipleFrame = true;
 	FrameCount = 0;
 
 }
@@ -41,6 +42,10 @@ bool ObjectQueue::Release()
 		if (!(*it)->Release())
 		{
 			return false;
+		}
+		else
+		{
+			delete (*it);
 		}
 
 	}
@@ -75,35 +80,84 @@ void ObjectQueue::AddObject2Queue(int AddLength)
 	QueueLength += AddLength;
 }
 
-void ObjectQueue::AddData2Object(char* DataPoints)
+bool ObjectQueue::SubtractObject2Queue(int SubtractLength)
 {
-	bool IsFull = true;
-
-
-	for (std::deque<VaoUnit *>::iterator it = ObjectDeque.begin(); it != ObjectDeque.end(); ++it)
+	if (SubtractLength > 0 && QueueLength - SubtractLength > 5)
 	{
-		if (!(*it)->IsFull())
+		QueueLength -= SubtractLength;
+
+		while (SubtractLength > 0)
 		{
-			(*it)->BindData2VaoUnit(DataPoints);
-			IsFull = false;
-			FrameCount++;
-			break;
+			p_VaoUnit = ObjectDeque.front();
+			ObjectDeque.pop_front();
+
+			if (!p_VaoUnit->Release())
+			{
+				return false;
+			}
+			else
+			{
+				delete p_VaoUnit;
+			}
+
+			SubtractLength--;
 		}
+
+		printf("ObjectDeque Size[%d] \n", ObjectDeque.size());
+		return true;
+
+	} 
+	else
+	{
+		printf("Error! SubtractLength must greater than zero! \n");
+		return false;
 	}
 
-	//if (!IsFull)
-	//{
-	//	printf("ObjectDeque Size[%d] FrameCount[%d] \n", ObjectDeque.size(), FrameCount);
-	//}
-	//else
-	//{
-	//	printf("ObjectDeque Size[%d] FrameCount[%d] FULL \n", ObjectDeque.size(), FrameCount);
-	//}
-	
+}
 
-	if (!IsFull)
+
+void ObjectQueue::AddData2Object(char* DataPoints)
+{
+
+	if (IsMultipleFrame)
 	{
-		printf("ObjectDeque Size[%d] FrameCount[%d] \n", ObjectDeque.size(), FrameCount);
+		bool IsFull = true;
+
+
+		for (std::deque<VaoUnit *>::iterator it = ObjectDeque.begin(); it != ObjectDeque.end(); ++it)
+		{
+			if (!(*it)->IsFull())
+			{
+				(*it)->BindData2VaoUnit(DataPoints);
+				IsFull = false;
+				FrameCount++;
+				break;
+			}
+		}
+
+		if (!IsFull)
+		{
+			printf("ObjectDeque Size[%d] FrameCount[%d] \n", ObjectDeque.size(), FrameCount);
+		}
+		else
+		{
+			p_VaoUnit = ObjectDeque.front();
+
+			if (p_VaoUnit->Reset())
+			{
+				p_VaoUnit->BindData2VaoUnit(DataPoints);
+				FrameCount++;
+
+				ObjectDeque.pop_front();
+				ObjectDeque.emplace_back(p_VaoUnit);
+
+				printf("ObjectDeque Size[%d] FrameCount[%d] FULL & Reset! \n", ObjectDeque.size(), FrameCount);
+			}
+			else
+			{
+				printf("ObjectDeque Size[%d] FrameCount[%d] FULL & Reset Error! \n", ObjectDeque.size(), FrameCount);
+			}
+		}
 	}
 	else
 	{
@@ -114,21 +168,16 @@ void ObjectQueue::AddData2Object(char* DataPoints)
 			p_VaoUnit->BindData2VaoUnit(DataPoints);
 			FrameCount++;
 
-			ObjectDeque.pop_front();
-			ObjectDeque.emplace_back(p_VaoUnit);
+			printf("ObjectDeque Size[%d] FrameCount[%d] Single Frame! \n", ObjectDeque.size(), FrameCount);
+		}
 
-			printf("ObjectDeque Size[%d] FrameCount[%d] FULL & Reset! \n", ObjectDeque.size(), FrameCount);
-		}
-		else
-		{
-			printf("ObjectDeque Size[%d] FrameCount[%d] FULL & Reset Error! \n", ObjectDeque.size(), FrameCount);
-		}
 	}
 
 }
 
 void ObjectQueue::RenderObject()
 {
+
 	for (auto it = ObjectDeque.cbegin(); it != ObjectDeque.cend(); ++it)
 	{
 		if (!(*it)->IsEmpty())
@@ -141,4 +190,55 @@ void ObjectQueue::RenderObject()
 		}
 	}
 
+}
+
+void ObjectQueue::SetMultipleFrame(bool Val)
+{
+
+	IsMultipleFrame = Val;
+
+	if (!IsMultipleFrame)
+	{
+		for (auto it = ObjectDeque.cbegin(); it != ObjectDeque.cend(); ++it)
+		{
+			if (!(*it)->IsEmpty())
+			{
+				(*it)->Reset();
+			}
+			else
+			{
+				break;
+			}			
+		}
+
+	} 
+}
+
+
+void ObjectQueue::UpdateFromInputs(GLFWwindow* Window)
+{
+
+	// GLFW_KEY_0
+	if (glfwGetKey(Window, GLFW_KEY_0) == GLFW_PRESS)
+	{
+		SubtractObject2Queue(1);
+	}
+
+	// GLFW_KEY_9
+	if (glfwGetKey(Window, GLFW_KEY_9) == GLFW_PRESS)
+	{
+		AddObject2Queue(1);
+	}
+
+	// GLFW_KEY_M
+	if (glfwGetKey(Window, GLFW_KEY_M) == GLFW_PRESS)
+	{
+		SetMultipleFrame(true);
+	}
+
+	// GLFW_KEY_N
+	if (glfwGetKey(Window, GLFW_KEY_N) == GLFW_PRESS)
+	{
+		SetMultipleFrame(false);
+	}
 }

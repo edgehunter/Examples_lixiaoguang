@@ -1,0 +1,125 @@
+The system is: Windows - 10.0.16299 - AMD64
+Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+Compiler:  
+Build flags: 
+Id flags:  
+
+The output was:
+0
+Microsoft(R) Éú³ÉÒıÇæ°æ±¾ 12.0.40629.0
+[Microsoft .NET Framework °æ±¾ 4.0.30319.42000]
+°æÈ¨ËùÓĞ (C) Microsoft Corporation¡£±£ÁôËùÓĞÈ¨Àû¡£
+
+Éú³ÉÆô¶¯Ê±¼äÎª 2018/4/19 15:08:14¡£
+½Úµã 1 ÉÏµÄÏîÄ¿¡°D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\glfw-3.2.1\build\CMakeFiles\3.10.1\CompilerIdC\CompilerIdC.vcxproj¡±(Ä¬ÈÏÄ¿±ê)¡£
+PrepareForBuild:
+  ÕıÔÚ´´½¨Ä¿Â¼¡°Debug\¡±¡£
+  ÕıÔÚ´´½¨Ä¿Â¼¡°Debug\CompilerIdC.tlog\¡±¡£
+InitializeBuildStatus:
+  ÕıÔÚ´´½¨¡°Debug\CompilerIdC.tlog\unsuccessfulbuild¡±£¬ÒòÎªÒÑÖ¸¶¨¡°AlwaysCreate¡±¡£
+ClCompile:
+  C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\CL.exe /c /nologo /W0 /WX- /Od /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TC /errorReport:queue CMakeCCompilerId.c
+  CMakeCCompilerId.c
+Link:
+  C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\link.exe /ERRORREPORT:QUEUE /OUT:".\CompilerIdC.exe" /INCREMENTAL:NO /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /PDB:".\CompilerIdC.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:".\CompilerIdC.lib" /MACHINE:X64 Debug\CMakeCCompilerId.obj
+  CompilerIdC.vcxproj -> D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\glfw-3.2.1\build\CMakeFiles\3.10.1\CompilerIdC\.\CompilerIdC.exe
+PostBuildEvent:
+  for %%i in (cl.exe) do @echo CMAKE_C_COMPILER=%%~$PATH:i
+  :VCEnd
+  CMAKE_C_COMPILER=C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\cl.exe
+FinalizeBuildStatus:
+  ÕıÔÚÉ¾³ıÎÄ¼ş¡°Debug\CompilerIdC.tlog\unsuccessfulbuild¡±¡£
+  ÕıÔÚ¶Ô¡°Debug\CompilerIdC.tlog\CompilerIdC.lastbuildstate¡±Ö´ĞĞ Touch ÈÎÎñ¡£
+ÒÑÍê³ÉÉú³ÉÏîÄ¿¡°D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\glfw-3.2.1\build\CMakeFiles\3.10.1\CompilerIdC\CompilerIdC.vcxproj¡±(Ä¬ÈÏÄ¿±ê)µÄ²Ù×÷¡£
+
+ÒÑ³É¹¦Éú³É¡£
+    0 ¸ö¾¯¸æ
+    0 ¸ö´íÎó
+
+ÒÑÓÃÊ±¼ä 00:00:00.61
+
+
+Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CompilerIdC.exe"
+
+Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CompilerIdC.vcxproj"
+
+The C compiler identification is MSVC, found in "D:/lixiaoguang_works/Examples_lixiaoguang/OpenGL/glfw-3.2.1/build/CMakeFiles/3.10.1/CompilerIdC/CompilerIdC.exe"
+
+Determining if the C compiler works passed with the following output:
+Change Dir: D:/lixiaoguang_works/Examples_lixiaoguang/OpenGL/glfw-3.2.1/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"C:/Program Files (x86)/MSBuild/12.0/bin/MSBuild.exe" "cmTC_8d740.vcxproj" "/p:Configuration=Debug" "/p:VisualStudioVersion=12.0"
+Microsoft(R) ç”Ÿæˆå¼•æ“ç‰ˆæœ¬ 12.0.40629.0
+[Microsoft .NET Framework ç‰ˆæœ¬ 4.0.30319.42000]
+ç‰ˆæƒæ‰€æœ‰ (C) Microsoft Corporationã€‚ä¿ç•™æ‰€æœ‰æƒåˆ©ã€‚
+
+ç”Ÿæˆå¯åŠ¨æ—¶é—´ä¸º 2018/4/19 15:08:15ã€‚
+èŠ‚ç‚¹ 1 ä¸Šçš„é¡¹ç›®â€œD:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\glfw-3.2.1\build\CMakeFiles\CMakeTmp\cmTC_8d740.vcxprojâ€(é»˜è®¤ç›®æ ‡)ã€‚
+PrepareForBuild:
+  æ­£åœ¨åˆ›å»ºç›®å½•â€œcmTC_8d740.dir\Debug\â€ã€‚
+  æ­£åœ¨åˆ›å»ºç›®å½•â€œD:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\glfw-3.2.1\build\CMakeFiles\CMakeTmp\Debug\â€ã€‚
+  æ­£åœ¨åˆ›å»ºç›®å½•â€œcmTC_8d740.dir\Debug\cmTC_8d740.tlog\â€ã€‚
+InitializeBuildStatus:
+  æ­£åœ¨åˆ›å»ºâ€œcmTC_8d740.dir\Debug\cmTC_8d740.tlog\unsuccessfulbuildâ€ï¼Œå› ä¸ºå·²æŒ‡å®šâ€œAlwaysCreateâ€ã€‚
+ClCompile:
+  C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\CL.exe /c /Zi /W3 /WX- /Od /Ob0 /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"cmTC_8d740.dir\Debug\\" /Fd"cmTC_8d740.dir\Debug\vc120.pdb" /Gd /TC /errorReport:queue "D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\glfw-3.2.1\build\CMakeFiles\CMakeTmp\testCCompiler.c"
+  Microsoft (R) C/C++ Optimizing Compiler Version 18.00.40629 for x64
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  
+  cl /c /Zi /W3 /WX- /Od /Ob0 /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"cmTC_8d740.dir\Debug\\" /Fd"cmTC_8d740.dir\Debug\vc120.pdb" /Gd /TC /errorReport:queue "D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\glfw-3.2.1\build\CMakeFiles\CMakeTmp\testCCompiler.c"
+  
+  testCCompiler.c
+Link:
+  C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\link.exe /ERRORREPORT:QUEUE /OUT:"D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\glfw-3.2.1\build\CMakeFiles\CMakeTmp\Debug\cmTC_8d740.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:/lixiaoguang_works/Examples_lixiaoguang/OpenGL/glfw-3.2.1/build/CMakeFiles/CMakeTmp/Debug/cmTC_8d740.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:/lixiaoguang_works/Examples_lixiaoguang/OpenGL/glfw-3.2.1/build/CMakeFiles/CMakeTmp/Debug/cmTC_8d740.lib" /MACHINE:X64  /machine:x64 cmTC_8d740.dir\Debug\testCCompiler.obj
+  cmTC_8d740.vcxproj -> D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\glfw-3.2.1\build\CMakeFiles\CMakeTmp\Debug\cmTC_8d740.exe
+FinalizeBuildStatus:
+  æ­£åœ¨åˆ é™¤æ–‡ä»¶â€œcmTC_8d740.dir\Debug\cmTC_8d740.tlog\unsuccessfulbuildâ€ã€‚
+  æ­£åœ¨å¯¹â€œcmTC_8d740.dir\Debug\cmTC_8d740.tlog\cmTC_8d740.lastbuildstateâ€æ‰§è¡Œ Touch ä»»åŠ¡ã€‚
+å·²å®Œæˆç”Ÿæˆé¡¹ç›®â€œD:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\glfw-3.2.1\build\CMakeFiles\CMakeTmp\cmTC_8d740.vcxprojâ€(é»˜è®¤ç›®æ ‡)çš„æ“ä½œã€‚
+
+å·²æˆåŠŸç”Ÿæˆã€‚
+    0 ä¸ªè­¦å‘Š
+    0 ä¸ªé”™è¯¯
+
+å·²ç”¨æ—¶é—´ 00:00:00.69
+
+
+Detecting C compiler ABI info compiled with the following output:
+Change Dir: D:/lixiaoguang_works/Examples_lixiaoguang/OpenGL/glfw-3.2.1/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"C:/Program Files (x86)/MSBuild/12.0/bin/MSBuild.exe" "cmTC_e96a5.vcxproj" "/p:Configuration=Debug" "/p:VisualStudioVersion=12.0"
+Microsoft(R) ç”Ÿæˆå¼•æ“ç‰ˆæœ¬ 12.0.40629.0
+[Microsoft .NET Framework ç‰ˆæœ¬ 4.0.30319.42000]
+ç‰ˆæƒæ‰€æœ‰ (C) Microsoft Corporationã€‚ä¿ç•™æ‰€æœ‰æƒåˆ©ã€‚
+
+ç”Ÿæˆå¯åŠ¨æ—¶é—´ä¸º 2018/4/19 15:08:16ã€‚
+èŠ‚ç‚¹ 1 ä¸Šçš„é¡¹ç›®â€œD:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\glfw-3.2.1\build\CMakeFiles\CMakeTmp\cmTC_e96a5.vcxprojâ€(é»˜è®¤ç›®æ ‡)ã€‚
+PrepareForBuild:
+  æ­£åœ¨åˆ›å»ºç›®å½•â€œcmTC_e96a5.dir\Debug\â€ã€‚
+  æ­£åœ¨åˆ›å»ºç›®å½•â€œD:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\glfw-3.2.1\build\CMakeFiles\CMakeTmp\Debug\â€ã€‚
+  æ­£åœ¨åˆ›å»ºç›®å½•â€œcmTC_e96a5.dir\Debug\cmTC_e96a5.tlog\â€ã€‚
+InitializeBuildStatus:
+  æ­£åœ¨åˆ›å»ºâ€œcmTC_e96a5.dir\Debug\cmTC_e96a5.tlog\unsuccessfulbuildâ€ï¼Œå› ä¸ºå·²æŒ‡å®šâ€œAlwaysCreateâ€ã€‚
+ClCompile:
+  C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\CL.exe /c /Zi /W3 /WX- /Od /Ob0 /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"cmTC_e96a5.dir\Debug\\" /Fd"cmTC_e96a5.dir\Debug\vc120.pdb" /Gd /TC /errorReport:queue "C:\Program Files\CMake\share\cmake-3.10\Modules\CMakeCCompilerABI.c"
+  Microsoft (R) C/C++ Optimizing Compiler Version 18.00.40629 for x64
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  
+  cl /c /Zi /W3 /WX- /Od /Ob0 /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"cmTC_e96a5.dir\Debug\\" /Fd"cmTC_e96a5.dir\Debug\vc120.pdb" /Gd /TC /errorReport:queue "C:\Program Files\CMake\share\cmake-3.10\Modules\CMakeCCompilerABI.c"
+  
+  CMakeCCompilerABI.c
+Link:
+  C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\link.exe /ERRORREPORT:QUEUE /OUT:"D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\glfw-3.2.1\build\CMakeFiles\CMakeTmp\Debug\cmTC_e96a5.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:/lixiaoguang_works/Examples_lixiaoguang/OpenGL/glfw-3.2.1/build/CMakeFiles/CMakeTmp/Debug/cmTC_e96a5.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:/lixiaoguang_works/Examples_lixiaoguang/OpenGL/glfw-3.2.1/build/CMakeFiles/CMakeTmp/Debug/cmTC_e96a5.lib" /MACHINE:X64  /machine:x64 cmTC_e96a5.dir\Debug\CMakeCCompilerABI.obj
+  cmTC_e96a5.vcxproj -> D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\glfw-3.2.1\build\CMakeFiles\CMakeTmp\Debug\cmTC_e96a5.exe
+FinalizeBuildStatus:
+  æ­£åœ¨åˆ é™¤æ–‡ä»¶â€œcmTC_e96a5.dir\Debug\cmTC_e96a5.tlog\unsuccessfulbuildâ€ã€‚
+  æ­£åœ¨å¯¹â€œcmTC_e96a5.dir\Debug\cmTC_e96a5.tlog\cmTC_e96a5.lastbuildstateâ€æ‰§è¡Œ Touch ä»»åŠ¡ã€‚
+å·²å®Œæˆç”Ÿæˆé¡¹ç›®â€œD:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\glfw-3.2.1\build\CMakeFiles\CMakeTmp\cmTC_e96a5.vcxprojâ€(é»˜è®¤ç›®æ ‡)çš„æ“ä½œã€‚
+
+å·²æˆåŠŸç”Ÿæˆã€‚
+    0 ä¸ªè­¦å‘Š
+    0 ä¸ªé”™è¯¯
+
+å·²ç”¨æ—¶é—´ 00:00:00.68
+
+

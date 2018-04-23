@@ -1,4 +1,4 @@
-// glfw_glad_shader.cpp : Defines the entry point for the console application.
+Ôªø// glfw_glad_shader.cpp : Defines the entry point for the console application.
 //
 
 #include "stdafx.h"
@@ -16,33 +16,24 @@
 // glfw
 #include <GLFW/glfw3.h>
 
-// imgui
-#include <imgui.h>
-#include "imgui_impl_glfw_gl3.h"
-
-// GLM
-#include <glm/glm.hpp>
-#include <glm/gtc/matrix_transform.hpp>
-//using namespace glm;
-
 // controls
 #include "OpenGL/controls/Camera.h"
+#include "OpenGL/controls/MouseClick.h"
 #include "OpenGL/controls/WorldModel.h"
 #include "OpenGL/controls/PseudoColor.h"
+#include "OpenGL/controls/ImguiControl.h"
 
 // Object
 #include "OpenGL/objects/ObjectQueue.h"
 
-// Vao Engine
-//#include "VaoEngine.h"
+// AuxiliaryModel
+#include "OpenGL/objects/Auxiliary/AuxiliaryModel.h"
 
 #include "OpenGL/objects/assimp/mesh.h"
 #include "OpenGL/objects/assimp/MeshModel.h"
 
 // Buffer
 #include "DataProcess/BufferCPU.h"
-
-
 
 
 // Sample custom data structure for threads to use.
@@ -62,7 +53,7 @@ struct ThreadParam
 
 	int DataNum;
 	int PerDataSize_Points;
-	int SemaphoreSize;//–≈∫≈¡ø◊Ó¥Û÷µ
+	int SemaphoreSize;//‰ø°Âè∑ÈáèÊúÄÂ§ßÂÄº
 
 	BufferCPU* p_BufferCPU_Points;
 
@@ -97,13 +88,13 @@ DWORD WINAPI ThreadFunction_OpenGLRendering(LPVOID lpParam);
 
 int main(void)
 {
-	int DataNum = 128 * 128;//π≤128*128∏ˆ ˝æ›µ„
-	int PerDataSize_Points = 4;//√ø∏ˆ ˝æ›µ„◊¯±Í∞¸∫¨3∏ˆfloat£¨x°¢y°¢z°¢w
-	int SemaphoreSize = 10;//–≈∫≈¡ø◊Ó¥Û÷µ
+	int DataNum = 128 * 128;//ÂÖ±128*128‰∏™Êï∞ÊçÆÁÇπ
+	int PerDataSize_Points = 4;//ÊØè‰∏™Êï∞ÊçÆÁÇπÂùêÊ†áÂåÖÂê´3‰∏™floatÔºåx„ÄÅy„ÄÅz„ÄÅw
+	int SemaphoreSize = 10;//‰ø°Âè∑ÈáèÊúÄÂ§ßÂÄº
 
 	// Buffer
 	BufferCPU* p_BufferCPU_Points;
-	p_BufferCPU_Points = new BufferCPU(SemaphoreSize, DataNum*PerDataSize_Points* sizeof(float));
+	p_BufferCPU_Points = new BufferCPU(SemaphoreSize, DataNum*PerDataSize_Points* sizeof(float) + sizeof(OpenGLHeader));
 	p_BufferCPU_Points->CreateList();
 
 
@@ -377,12 +368,14 @@ DWORD WINAPI ThreadFunction_GeneratePoints(LPVOID lpParam)
 	WriteConsole(hStdout, msgBuf, (DWORD)cchStringSize, &dwChars, NULL);
 
 
-	//  ˝æ›Ω¯»Î∂”¡–
+	// Êï∞ÊçÆËøõÂÖ•ÈòüÂàó
 
 	DWORD dwWaitResult;
-	int BufferDataCount = 0;
+	//int BufferDataCount = 0;
 	float Xoffset = 0;
-	float* BufferData_Points = new float[pDataArray->DataNum* pDataArray->PerDataSize_Points];
+
+	char* BufferData_Points = new char[pDataArray->DataNum* pDataArray->PerDataSize_Points* sizeof(float) + sizeof(OpenGLHeader)];
+	OpenGLHeader* p_OpenGLHeader = new OpenGLHeader();
 
 	while (running)
 	{
@@ -403,28 +396,33 @@ DWORD WINAPI ThreadFunction_GeneratePoints(LPVOID lpParam)
 
 			// Simulate thread spending time on task
 
+			BufferData_Points += sizeof(OpenGLHeader);
+
 			Xoffset += 1.0f;
 
-			srand(unsigned(time(0)));   //ªÒ»°œµÕ≥ ±º‰ 
+			srand(unsigned(time(0)));   //Ëé∑ÂèñÁ≥ªÁªüÊó∂Èó¥ 
 			
 			for (size_t i = 0; i < pDataArray->DataNum; i++)
 			{
-				BufferData_Points[i * 4] = (float)(rand() % 80) + Xoffset;
-				BufferData_Points[i * 4 + 1] = (float)(rand() % 80);
-				BufferData_Points[i * 4 + 2] = (float)(rand() % 80);
-				BufferData_Points[i * 4 + 3] = (float)(rand() % 80);
+				((float*)BufferData_Points)[i * 4] = (float)(rand() % 80) + Xoffset;
+				((float*)BufferData_Points)[i * 4 + 1] = (float)(rand() % 80);
+				((float*)BufferData_Points)[i * 4 + 2] = (float)(rand() % 80);
+				((float*)BufferData_Points)[i * 4 + 3] = (float)(rand() % 80);
 
 				//printf("VerticesPoints[%d] = %f \n", i, VerticesPoints[i]);
 			}
 
-			pDataArray->p_BufferCPU_Points->EnList((char*)BufferData_Points);
+			
+			p_OpenGLHeader->mMotionVector.CurrentPosition.x = ((float*)BufferData_Points)[0];
+			p_OpenGLHeader->mMotionVector.CurrentPosition.y = 0;// ((float*)BufferData_Points)[1];
+			p_OpenGLHeader->mMotionVector.CurrentPosition.z = 0;// ((float*)BufferData_Points)[2];
+
+
+			BufferData_Points -= sizeof(OpenGLHeader);
+			memcpy(BufferData_Points, p_OpenGLHeader,sizeof(OpenGLHeader));
+
+			pDataArray->p_BufferCPU_Points->EnList(BufferData_Points);
 			//printf("EnList BufferData %d \n", ++BufferDataCount);
-
-
-			//if (BufferDataCount++ > 4000)
-			//{
-			//	running = false;
-			//}
 
 			// Release the semaphore when task is finished
 
@@ -446,6 +444,7 @@ DWORD WINAPI ThreadFunction_GeneratePoints(LPVOID lpParam)
 	}
 
 	delete BufferData_Points;
+	delete p_OpenGLHeader;
 
 	return 0;
 }
@@ -480,9 +479,8 @@ DWORD WINAPI ThreadFunction_OpenGLRendering(LPVOID lpParam)
 
 
 	DWORD dwWaitResult;
-	float* BufferData_Points = new float[pDataArray->DataNum* pDataArray->PerDataSize_Points];
+	char* BufferData_Points = new char[pDataArray->DataNum* pDataArray->PerDataSize_Points* sizeof(float) + sizeof(OpenGLHeader)];
 
-	int BufferDataCount = 0;
 	//////////////////////////////////////////////////////////////////////////
 
 
@@ -494,6 +492,11 @@ DWORD WINAPI ThreadFunction_OpenGLRendering(LPVOID lpParam)
 	glfwWindowHint(GLFW_CONTEXT_VERSION_MAJOR, 4);
 	glfwWindowHint(GLFW_CONTEXT_VERSION_MINOR, 4);
 	glfwWindowHint(GLFW_OPENGL_PROFILE, GLFW_OPENGL_CORE_PROFILE);
+
+
+	glfwWindowHint(GLFW_DECORATED, GLFW_FALSE);
+	glfwWindowHint(GLFW_VISIBLE, GLFW_TRUE);
+
 
 #ifdef __APPLE__
 	glfwWindowHint(GLFW_OPENGL_FORWARD_COMPAT, GL_TRUE); // uncomment this statement to fix compilation on OS X
@@ -538,13 +541,16 @@ DWORD WINAPI ThreadFunction_OpenGLRendering(LPVOID lpParam)
 
 
 	// Dark blue background
-	//glClearColor(0.0f, 0.0f, 0.4f, 0.0f);
+	glClearColor(0.0f, 0.0f, 0.2f, 0.0f);
 
-	// Enable depth test
-	glEnable(GL_DEPTH_TEST);
+	glClearDepth(1.0f);         //  Ê∑±Â∫¶ÁºìÂ≠òËÆæÁΩÆ
+	
+	glEnable(GL_DEPTH_TEST);       //  ÊâìÂºÄÊ∑±Â∫¶ÊµãËØï
+	
+	glDepthFunc(GL_LEQUAL);        //  ËÆæÁΩÆÊ∑±Â∫¶ÊµãËØïÁ±ªÂûã
 
-	// Accept fragment if it closer to the camera than the former one
-	glDepthFunc(GL_LESS);
+	//¬†Really¬†Nice¬†Perspective¬†Calculations
+	glHint(GL_PERSPECTIVE_CORRECTION_HINT, GL_NICEST);
 
 	// Cull triangles which normal is not towards the camera
 	//glEnable(GL_CULL_FACE); // cull face
@@ -561,22 +567,32 @@ DWORD WINAPI ThreadFunction_OpenGLRendering(LPVOID lpParam)
 
 	// build and compile shaders
 	// -------------------------
-	Shader m_Shader("OpenGL/shader/SimpleTransform.vertexshader", "OpenGL/shader/SingleColor.fragmentshader");
+	Shader m_Shader("OpenGL/shader/SimpleTransform.vertexshader", //D:/lixiaoguang_works/Examples_lixiaoguang/OpenGL/glfw_glad_shader/glfw_glad_shader/
+		"OpenGL/shader/SingleColor.fragmentshader");
 
 	// load models
 	// -----------
-	MeshModel m_MeshModel(std::string("OpenGL/data/car.obj"));//"OpenGL/data/nanosuit/nanosuit.obj"
+	MeshModel m_MeshModel(std::string("OpenGL/data/car.obj"));//D:/lixiaoguang_works/Examples_lixiaoguang/OpenGL/glfw_glad_shader/glfw_glad_shader/
 
-
-	// Vao Engine
+	// AuxiliaryModel
 	// ---------------------------------------
-	//VaoEngine m_VaoEngine;
-	//m_VaoEngine.Init(&m_Shader);
+	AuxiliaryModel m_AuxiliaryModel;
+	m_AuxiliaryModel.Init();
+
+	// OpenGLHeader
+	// ---------------------------------------
+	OpenGLHeader m_OpenGLHeader;
+	m_OpenGLHeader = OpenGLHeader();
 
 	//Camera
 	// ---------------------------------------
 	Camera m_Camera;
 	m_Camera.Init(&m_Shader, window, SCR_WIDTH, SCR_HEIGHT);
+
+	//MouseClick
+	// ---------------------------------------
+	MouseClick m_MouseClick;
+	m_MouseClick.Init(&m_Shader, window, SCR_WIDTH, SCR_HEIGHT);
 
 	//Model
 	// ---------------------------------------
@@ -588,47 +604,17 @@ DWORD WINAPI ThreadFunction_OpenGLRendering(LPVOID lpParam)
 	PseudoColor m_PseudoColor;
 	m_PseudoColor.Init(&m_Shader, window, SCR_WIDTH, SCR_HEIGHT);
 
+	//ImguiControl
+	// ---------------------------------------
+	ImguiControl m_ImguiControl;
+	m_ImguiControl.Init(&m_Shader, window, SCR_WIDTH, SCR_HEIGHT);
+
 	//Object
 	// ---------------------------------------
 	ObjectQueue m_ObjectQueue;
 	m_ObjectQueue.Init(20, 100);
 
-	//m_ObjectQueue.Release();
-	//m_ObjectQueue.AddData2Object();
-
-	// Setup ImGui binding
-	// ---------------------------------------
-	ImGui_ImplGlfwGL3_Init(window, true);
-
-	// Setup style
-	// ---------------------------------------
-	ImGui::StyleColorsClassic();
-	//ImGui::StyleColorsDark();
-
-	// Load Fonts
-	// - If no fonts are loaded, dear imgui will use the default font. You can also load multiple fonts and use ImGui::PushFont()/PopFont() to select them. 
-	// - AddFontFromFileTTF() will return the ImFont* so you can store it if you need to select the font among multiple. 
-	// - If the file cannot be loaded, the function will return NULL. Please handle those errors in your application (e.g. use an assertion, or display an error and quit).
-	// - The fonts will be rasterized at a given size (w/ oversampling) and stored into a texture when calling ImFontAtlas::Build()/GetTexDataAsXXXX(), which ImGui_ImplXXXX_NewFrame below will call.
-	// - Read 'extra_fonts/README.txt' for more instructions and details.
-	// - Remember that in C/C++ if you want to include a backslash \ in a string literal you need to write a double backslash \\ !
-	//ImGuiIO& io = ImGui::GetIO();
-	//io.Fonts->AddFontDefault();
-	//io.Fonts->AddFontFromFileTTF("../../extra_fonts/Roboto-Medium.ttf", 16.0f);
-	//io.Fonts->AddFontFromFileTTF("../../extra_fonts/Cousine-Regular.ttf", 15.0f);
-	//io.Fonts->AddFontFromFileTTF("../../extra_fonts/DroidSans.ttf", 16.0f);
-	//io.Fonts->AddFontFromFileTTF("../../extra_fonts/ProggyTiny.ttf", 10.0f);
-	//ImFont* font = io.Fonts->AddFontFromFileTTF("c:\\Windows\\Fonts\\ArialUni.ttf", 18.0f, NULL, io.Fonts->GetGlyphRangesJapanese());
-	//IM_ASSERT(font != NULL);
-
-	bool show_demo_window = true;
-	bool show_another_window = false;
-	ImVec4 clear_color = ImVec4(0.45f, 0.55f, 0.60f, 1.00f);
-
-
-	double TimeStart_IMGUI;
-	double TimeEnd_IMGUI;
-
+	
 	double TimeStart_SwapBuffers;
 	double TimeEnd_SwapBuffers;
 
@@ -638,61 +624,58 @@ DWORD WINAPI ThreadFunction_OpenGLRendering(LPVOID lpParam)
 	double TimeStart_Object_Render;
 	double TimeEnd_Object_Render;
 
-	double TimeStart_While;
-	double TimeEnd_While;
-
 	double TimeStart_Shader;
 	double TimeEnd_Shader;
 
-	double TimeStart_Input_And_Clear;
-	double TimeEnd_Input_And_Clear;
+
+	//int FramebufferSizeWidth, FramebufferSizeHeight;
+	//glfwGetFramebufferSize(window, &FramebufferSizeWidth, &FramebufferSizeHeight);
 
 	// render loop
 	// -----------
 	while (!glfwWindowShouldClose(window))
 	{
 
-		TimeStart_Input_And_Clear = glfwGetTime() * 1000;
-		
 		// input
-		// -----
 		processInput(window);
-
-		// render
 
 		// Clear the screen
 		glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
 
-		TimeEnd_Input_And_Clear = glfwGetTime() * 1000;
-		cout << "Time Input_And_Clear:" << TimeEnd_Input_And_Clear - TimeStart_Input_And_Clear << endl;
-
+		// Time
+		//*********
 		TimeStart_Shader = glfwGetTime() * 1000;
 
 		// Use our shader
 		m_Shader.use();
 
-		// Compute the matrix from keyboard and mouse input
-
+		// Compute Camera matrix from keyboard and mouse input
 		m_Camera.ComputeMatricesFromInputs();
 		m_Camera.UpdateProjectionMatrix();
 		m_Camera.UpdateViewMatrix();
+		m_Camera.UpdataViewPort();
 
+		// Compute WorldModel matrix from keyboard and mouse input
 		m_WorldModel.ComputeMatricesFromInputs();
 		m_WorldModel.UpdateModelMatrix();
 
-
+		// Time
+		//*********
 		TimeEnd_Shader = glfwGetTime() * 1000;
 		cout << "Time Shader:" << TimeEnd_Shader - TimeStart_Shader << endl;
 
+		// PseudoColor
 		m_PseudoColor.UpdateThreshold();
 		m_PseudoColor.UpdatePseudoColor();
 
-
-
-		TimeStart_While = glfwGetTime() * 1000;
+		// Time
+		//*********
 		TimeStart_Object_Add = glfwGetTime() * 1000;
 
-		//  ˝æ›≥ˆ∂”¡–
+		// ObjectQueue
+		m_ObjectQueue.UpdateFromInputs(window);
+
+		// Êï∞ÊçÆÂá∫ÈòüÂàó
 
 		// Try to enter the semaphore gate.
 
@@ -708,16 +691,13 @@ DWORD WINAPI ThreadFunction_OpenGLRendering(LPVOID lpParam)
 			// TODO: Perform task
 			//printf("Thread %d: wait succeeded\n", GetCurrentThreadId());
 			
-			// Simulate thread spending time on task
+			pDataArray->p_BufferCPU_Points->DeList(BufferData_Points);
+			memcpy(&m_OpenGLHeader, BufferData_Points, sizeof(OpenGLHeader));
 
+			// ObjectQueue
+			m_ObjectQueue.AddData2Object(BufferData_Points + sizeof(OpenGLHeader));
 
-			pDataArray->p_BufferCPU_Points->DeList((char*)BufferData_Points);
-
-			m_ObjectQueue.AddData2Object((char*)BufferData_Points);
-
-
-
-			//printf("DeList BufferData %d Size(%d)\n", ++BufferDataCount, pDataArray->p_BufferCPU_Points->LengthList());
+			m_WorldModel.UpdateMotionCompensation(&m_OpenGLHeader);
 
 			// Release the semaphore when task is finished
 
@@ -736,63 +716,33 @@ DWORD WINAPI ThreadFunction_OpenGLRendering(LPVOID lpParam)
 			break;
 		}
 
+
+		// Time
+		//*********
 		TimeEnd_Object_Add = glfwGetTime() * 1000;
 		cout << "Time Object_Add:" << TimeEnd_Object_Add - TimeStart_Object_Add << endl;
 		TimeStart_Object_Render = glfwGetTime() * 1000;
 
-		//m_VaoEngine.Render();
-
+		// ObjectQueue
 		m_ObjectQueue.RenderObject();
 
+		// MeshModel
 		m_MeshModel.Draw(m_Shader);
 
+		// AuxiliaryModel
+		m_AuxiliaryModel.RanderVAO();
+
+		// MouseClick
+		m_MouseClick.Click(m_WorldModel.GetModelMatrix(), m_Camera.GetViewMatrix(), m_Camera.GetProjectionMatrix());
+
+		// ImguiControl
+		m_ImguiControl.Render();
+
+
+		// Time
+		//*********
 		TimeEnd_Object_Render = glfwGetTime() * 1000;
 		cout << "Time Object_Render:" << TimeEnd_Object_Render - TimeStart_Object_Render << endl;
-
-		TimeStart_IMGUI = glfwGetTime() * 1000;
-
-		
-
-		// ImGui
-		// ------
-		ImGui_ImplGlfwGL3_NewFrame();
-
-		// 1. Show a simple window.
-		// Tip: if we don't call ImGui::Begin()/ImGui::End() the widgets automatically appears in a window called "Debug".
-		{
-			static float f = 0.0f;
-			ImGui::Text("Hello, world!");                           // Some text (you can use a format string too)
-			ImGui::SliderFloat("float", &f, 0.0f, 1.0f);            // Edit 1 float as a slider from 0.0f to 1.0f
-			ImGui::ColorEdit3("clear color", (float*)&clear_color); // Edit 3 floats as a color
-			if (ImGui::Button("Demo Window"))                       // Use buttons to toggle our bools. We could use Checkbox() as well.
-				show_demo_window ^= 1;
-			if (ImGui::Button("Another Window"))
-				show_another_window ^= 1;
-			ImGui::Text("Application average %.3f ms/frame (%.1f FPS)", 1000.0f / ImGui::GetIO().Framerate, ImGui::GetIO().Framerate);
-		}
-
-		// 2. Show another simple window. In most cases you will use an explicit Begin/End pair to name the window.
-		if (show_another_window)
-		{
-			ImGui::Begin("Another Window", &show_another_window);
-			ImGui::Text("Hello from another window!");
-			ImGui::End();
-		}
-
-		// 3. Show the ImGui demo window. Most of the sample code is in ImGui::ShowDemoWindow().
-		if (show_demo_window)
-		{
-			ImGui::SetNextWindowPos(ImVec2(650, 20), ImGuiCond_FirstUseEver); // Normally user code doesn't need/want to call this because positions are saved in .ini file anyway. Here we just want to make the demo initial state a bit more friendly!
-			ImGui::ShowDemoWindow(&show_demo_window);
-		}
-
-		// ImGui Render
-		ImGui::Render();
-
-		
-
-		TimeEnd_IMGUI = glfwGetTime() * 1000;
-		cout << "Time IMGUI:" << TimeEnd_IMGUI - TimeStart_IMGUI << endl;
 		TimeStart_SwapBuffers = glfwGetTime() * 1000;
 
 
@@ -801,28 +751,34 @@ DWORD WINAPI ThreadFunction_OpenGLRendering(LPVOID lpParam)
 		glfwSwapBuffers(window);
 		glfwPollEvents();
 
+
+		// Time
+		//*********
 		TimeEnd_SwapBuffers = glfwGetTime() * 1000;
 		cout << "Time glfwSwapBuffers:" << TimeEnd_SwapBuffers - TimeStart_SwapBuffers << endl;
-
-		TimeEnd_While = glfwGetTime() * 1000;
-		cout << "Time While:" << TimeEnd_While - TimeStart_While << endl;
 	}
 
 	// optional: de-allocate all resources once they've outlived their purpose:
 	// ------------------------------------------------------------------------
-	//m_VaoEngine.Release();
+	
+	// ObjectQueue
 	m_ObjectQueue.Release();
 
-	// ImGui Shutdown
-	// ------------------------------------------------------------------
-	ImGui_ImplGlfwGL3_Shutdown();
+	// AuxiliaryModel
+	m_AuxiliaryModel.Release();
+
+	// MouseClick
+	m_MouseClick.Release();
+
+	// ImguiControl
+	m_ImguiControl.Shutdown();
 
 	// glfw: terminate, clearing all previously allocated GLFW resources.
 	// ------------------------------------------------------------------
 	glfwTerminate();
 
 
-	// »´æ÷±‰¡ø
+	// ÂÖ®Â±ÄÂèòÈáè
 	running = false;
 
 	delete BufferData_Points;

@@ -1,13 +1,18 @@
-﻿Build started 2018/4/8 18:00:09.
+﻿Build started 2018/4/20 16:40:36.
      1>Project "D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\glfw_glad_shader\glfw_glad_shader\glfw_glad_shader.vcxproj" on node 2 (Rebuild target(s)).
      1>ClCompile:
-         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\CL.exe /c /IOpenGL_SDK\include /IOpenGL_SDK\glad\include /IOpenGL_SDK\imgui /IOpenGL_SDK\imgui\examples\opengl3_example /I"OpenGL_SDK\glm-0.9.8.5" /I"OpenGL_SDK\assimp-4.1.0\include" /IOpenGL_SDK\stb /Zi /nologo /W3 /WX- /Ox /Oi /GL /D WIN32 /D NDEBUG /D _CONSOLE /D _LIB /D _UNICODE /D UNICODE /Gm- /EHsc /MD /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Fo"x64\Release\\" /Fd"x64\Release\vc120.pdb" /Gd /TP /errorReport:prompt DataProcess\BufferCPU.cpp glfw_glad_shader.cpp OpenGL\controls\Camera.cpp OpenGL\controls\ControlBase.cpp OpenGL\controls\PseudoColor.cpp OpenGL\controls\WorldModel.cpp OpenGL\objects\ObjectQueue.cpp OpenGL\objects\VaoUnit.cpp OpenGL_SDK\imgui\examples\opengl3_example\imgui_impl_glfw_gl3.cpp OpenGL_SDK\imgui\imgui.cpp OpenGL_SDK\imgui\imgui_demo.cpp OpenGL_SDK\imgui\imgui_draw.cpp stdafx.cpp VaoEngine.cpp
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\CL.exe /c /IOpenGL_SDK\include /IOpenGL_SDK\glad\include /IOpenGL_SDK\imgui /IOpenGL_SDK\imgui\examples\opengl3_example /I"OpenGL_SDK\glm-0.9.8.5" /I"OpenGL_SDK\assimp-4.1.0\include" /IOpenGL_SDK\stb /Zi /nologo /W3 /WX- /Od /Oi /GL /D WIN32 /D NDEBUG /D _CONSOLE /D _LIB /D _UNICODE /D UNICODE /Gm- /EHsc /MD /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Fo"x64\Release\\" /Fd"x64\Release\vc120.pdb" /Gd /TP /errorReport:prompt DataProcess\BufferCPU.cpp glfw_glad_shader.cpp OpenGL\controls\Camera.cpp OpenGL\controls\ControlBase.cpp OpenGL\controls\ImguiControl.cpp OpenGL\controls\MouseClick.cpp OpenGL\controls\PseudoColor.cpp OpenGL\controls\WorldModel.cpp OpenGL\objects\Auxiliary\AuxiliaryModel.cpp OpenGL\objects\ObjectQueue.cpp OpenGL\objects\VaoUnit.cpp OpenGL_SDK\imgui\examples\opengl3_example\imgui_impl_glfw_gl3.cpp OpenGL_SDK\imgui\imgui.cpp OpenGL_SDK\imgui\imgui_demo.cpp OpenGL_SDK\imgui\imgui_draw.cpp stdafx.cpp VaoEngine.cpp
          BufferCPU.cpp
          glfw_glad_shader.cpp
          Camera.cpp
          ControlBase.cpp
+         ImguiControl.cpp
+         MouseClick.cpp
+     1>OpenGL\controls\MouseClick.cpp(61): warning C4244: '=' : conversion from 'size_t' to 'float', possible loss of data
+     1>OpenGL\controls\MouseClick.cpp(62): warning C4244: '=' : conversion from 'size_t' to 'float', possible loss of data
          PseudoColor.cpp
          WorldModel.cpp
+         AuxiliaryModel.cpp
          ObjectQueue.cpp
          VaoUnit.cpp
          imgui_impl_glfw_gl3.cpp
@@ -16,15 +21,18 @@
          imgui_draw.cpp
          stdafx.cpp
          VaoEngine.cpp
-         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\CL.exe /c /IOpenGL_SDK\include /IOpenGL_SDK\glad\include /IOpenGL_SDK\imgui /IOpenGL_SDK\imgui\examples\opengl3_example /I"OpenGL_SDK\glm-0.9.8.5" /I"OpenGL_SDK\assimp-4.1.0\include" /IOpenGL_SDK\stb /Zi /nologo /W3 /WX- /Ox /Oi /GL /D WIN32 /D NDEBUG /D _CONSOLE /D _LIB /D _UNICODE /D UNICODE /Gm- /EHsc /MD /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Fo"x64\Release\\" /Fd"x64\Release\vc120.pdb" /Gd /TC /errorReport:prompt OpenGL_SDK\glad\src\glad.c
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\CL.exe /c /IOpenGL_SDK\include /IOpenGL_SDK\glad\include /IOpenGL_SDK\imgui /IOpenGL_SDK\imgui\examples\opengl3_example /I"OpenGL_SDK\glm-0.9.8.5" /I"OpenGL_SDK\assimp-4.1.0\include" /IOpenGL_SDK\stb /Zi /nologo /W3 /WX- /Od /Oi /GL /D WIN32 /D NDEBUG /D _CONSOLE /D _LIB /D _UNICODE /D UNICODE /Gm- /EHsc /MD /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Fo"x64\Release\\" /Fd"x64\Release\vc120.pdb" /Gd /TC /errorReport:prompt OpenGL_SDK\glad\src\glad.c
          glad.c
        Link:
          C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\link.exe /ERRORREPORT:PROMPT /OUT:"D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\glfw_glad_shader\x64\Release\glfw_glad_shader.exe" /INCREMENTAL:NO /NOLOGO /LIBPATH:OpenGL_SDK\lib\GLFW\Release\x64 /LIBPATH:"OpenGL_SDK\assimp-4.1.0\Release\x64" glfw3.lib opengl32.lib "assimp-vc120-mt.lib" kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\glfw_glad_shader\x64\Release\glfw_glad_shader.pdb" /SUBSYSTEM:CONSOLE /OPT:REF /OPT:ICF /LTCG /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\glfw_glad_shader\x64\Release\glfw_glad_shader.lib" /MACHINE:X64 x64\Release\BufferCPU.obj
          x64\Release\glfw_glad_shader.obj
          x64\Release\Camera.obj
          x64\Release\ControlBase.obj
+         x64\Release\ImguiControl.obj
+         x64\Release\MouseClick.obj
          x64\Release\PseudoColor.obj
          x64\Release\WorldModel.obj
+         x64\Release\AuxiliaryModel.obj
          x64\Release\ObjectQueue.obj
          x64\Release\VaoUnit.obj
          x64\Release\glad.obj
@@ -41,4 +49,4 @@
 
 Build succeeded.
 
-Time Elapsed 00:00:28.91
+Time Elapsed 00:00:10.29

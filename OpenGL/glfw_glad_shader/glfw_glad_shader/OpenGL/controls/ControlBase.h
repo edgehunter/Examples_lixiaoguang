@@ -19,7 +19,7 @@ public:
 	ControlBase();
 	~ControlBase();
 
-	void Init(Shader* p_Shader, GLFWwindow* Window, const unsigned int Screen_Width, const unsigned int Screen_Height);
+	void Init(Shader* p_Shader, GLFWwindow* Window, const int Screen_Width, const int Screen_Height);
 
 protected:
 
@@ -35,5 +35,8 @@ protected:
 
 	double xPos_old;
 	double yPos_old;
+
+	int Screen_Width;
+	int Screen_Height;
 };
 

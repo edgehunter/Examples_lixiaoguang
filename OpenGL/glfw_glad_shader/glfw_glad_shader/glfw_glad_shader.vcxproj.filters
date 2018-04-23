@@ -40,6 +40,9 @@
     <Filter Include="DataProcess">
       <UniqueIdentifier>{6a95694e-8b4d-4f7a-b28b-1ebd35f1623e}</UniqueIdentifier>
     </Filter>
+    <Filter Include="opengl\objects\Auxiliary">
+      <UniqueIdentifier>{1551d9e2-4634-40db-a78a-634a734783be}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <Text Include="ReadMe.txt" />
@@ -99,6 +102,15 @@
     <ClInclude Include="OpenGL\controls\ControlBase.h">
       <Filter>opengl\controls</Filter>
     </ClInclude>
+    <ClInclude Include="OpenGL\objects\Auxiliary\AuxiliaryModel.h">
+      <Filter>opengl\objects\Auxiliary</Filter>
+    </ClInclude>
+    <ClInclude Include="OpenGL\controls\MouseClick.h">
+      <Filter>opengl\controls</Filter>
+    </ClInclude>
+    <ClInclude Include="OpenGL\controls\ImguiControl.h">
+      <Filter>opengl\controls</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="stdafx.cpp">
@@ -144,6 +156,15 @@
       <Filter>opengl\controls</Filter>
     </ClCompile>
     <ClCompile Include="OpenGL\controls\ControlBase.cpp">
+      <Filter>opengl\controls</Filter>
+    </ClCompile>
+    <ClCompile Include="OpenGL\objects\Auxiliary\AuxiliaryModel.cpp">
+      <Filter>opengl\objects\Auxiliary</Filter>
+    </ClCompile>
+    <ClCompile Include="OpenGL\controls\MouseClick.cpp">
+      <Filter>opengl\controls</Filter>
+    </ClCompile>
+    <ClCompile Include="OpenGL\controls\ImguiControl.cpp">
       <Filter>opengl\controls</Filter>
     </ClCompile>
   </ItemGroup>

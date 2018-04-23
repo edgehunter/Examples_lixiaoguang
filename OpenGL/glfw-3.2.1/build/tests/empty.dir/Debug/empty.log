@@ -1,0 +1,21 @@
+﻿Build started 2018/4/19 15:45:12.
+     1>Project "D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\glfw-3.2.1\build\tests\empty.vcxproj" on node 3 (Rebuild target(s)).
+     1>CustomBuild:
+         Building Custom Rule D:/lixiaoguang_works/Examples_lixiaoguang/OpenGL/glfw-3.2.1/tests/CMakeLists.txt
+         CMake does not need to re-run because D:/lixiaoguang_works/Examples_lixiaoguang/OpenGL/glfw-3.2.1/build/tests/CMakeFiles/generate.stamp is up-to-date.
+       ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\CL.exe /c /I"D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\glfw-3.2.1\deps" /I"D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\glfw-3.2.1\include" /Zi /nologo /W3 /WX- /Od /Ob0 /D WIN32 /D _WINDOWS /D _CRT_SECURE_NO_WARNINGS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"empty.dir\Debug\\" /Fd"empty.dir\Debug\vc120.pdb" /Gd /TC /errorReport:prompt "D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\glfw-3.2.1\tests\empty.c" "D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\glfw-3.2.1\deps\tinycthread.c" "D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\glfw-3.2.1\deps\glad.c"
+         empty.c
+         tinycthread.c
+         glad.c
+         Generating Code...
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\link.exe /ERRORREPORT:PROMPT /OUT:"D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\glfw-3.2.1\build\tests\Debug\empty.exe" /INCREMENTAL /NOLOGO ..\src\Debug\glfw3.lib kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:/lixiaoguang_works/Examples_lixiaoguang/OpenGL/glfw-3.2.1/build/tests/Debug/empty.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /ENTRY:"mainCRTStartup" /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:/lixiaoguang_works/Examples_lixiaoguang/OpenGL/glfw-3.2.1/build/tests/Debug/empty.lib" /MACHINE:X64  /machine:x64 empty.dir\Debug\empty.obj
+         empty.dir\Debug\tinycthread.obj
+         empty.dir\Debug\glad.obj
+         empty.vcxproj -> D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\glfw-3.2.1\build\tests\Debug\empty.exe
+     1>Done Building Project "D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\glfw-3.2.1\build\tests\empty.vcxproj" (Rebuild target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:02.52

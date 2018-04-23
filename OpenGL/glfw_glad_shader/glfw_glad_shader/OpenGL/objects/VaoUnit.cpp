@@ -114,6 +114,7 @@ bool VaoUnit::Release()
 	glDeleteVertexArrays(1, VAO);
 	glDeleteBuffers(2, VBO);
 
+	delete Points;
 	return true;
 }
 

@@ -11,24 +11,10 @@ WorldModel::~WorldModel()
 }
 
 
-void WorldModel::Init(Shader* p_Shader, GLFWwindow* Window, const unsigned int Screen_Width, const unsigned int Screen_Height)
+void WorldModel::Init(Shader* p_Shader, GLFWwindow* Window, const int Screen_Width, const int Screen_Height)
 {
 
 	ControlBase::Init(p_Shader, Window, Screen_Width, Screen_Height);
-
-	//this->p_Shader = p_Shader;
-	//this->Window = Window;
-
-	//KeySpeed = 3.0f; // 3 units / second
-	//MouseSpeed = 0.005f;
-
-	//// Get mouse position
-	//xPos = Screen_Width / 2;
-	//yPos = Screen_Height / 2;
-
-	//xPos_old = Screen_Width / 2;
-	//yPos_old = Screen_Height / 2;
-
 
 	//Scale by factor 1.0
 	ScaleFactor = 1.0f;
@@ -38,6 +24,9 @@ void WorldModel::Init(Shader* p_Shader, GLFWwindow* Window, const unsigned int S
 	ModelTranslateMatrix = glm::translate(glm::mat4(), glm::vec3(0.0f, 0.0f, 0.0f));
 
 	Rotate = glm::vec3(0.0f, 0.0f, 0.0f);
+
+	MotionCompensationValue = glm::vec3(0.0f, 0.0f, 0.0f);
+	MotionCompensationFactor = 1.0f;
 
 }
 
@@ -89,7 +78,7 @@ void WorldModel::ComputeMatricesFromInputs()
 
 	if (glfwGetKey(Window, GLFW_KEY_LEFT_CONTROL) == GLFW_PRESS)
 	{
-		Rotate.z -= MouseSpeed * float(xPos_old - xPos);
+		Rotate.z -= MouseSpeed * float(yPos_old - yPos);
 
 		//printf("Rotate=(%f,%f,%f) \n", Rotate.x, Rotate.y, Rotate.z);
 	}
@@ -140,4 +129,27 @@ void WorldModel::ComputeMatricesFromInputs()
 
 	ModelMatrix = RotationMatrix*ModelScaleMatrix;
 
+}
+
+
+void WorldModel::UpdateMotionCompensation(OpenGLHeader* p_OpenGLHeader)
+{
+
+	// GLFW_KEY_RIGHT
+	if (glfwGetKey(Window, GLFW_KEY_RIGHT) == GLFW_PRESS)
+	{
+		MotionCompensationFactor += 0.01f;
+	}
+
+	// GLFW_KEY_LEFT
+	if (glfwGetKey(Window, GLFW_KEY_LEFT) == GLFW_PRESS)
+	{
+		MotionCompensationFactor -= 0.01f;
+	}
+
+	MotionCompensationValue = p_OpenGLHeader->mMotionVector.CurrentPosition* MotionCompensationFactor;
+	MotionCompensationValueOffset = MotionCompensationValue - p_OpenGLHeader->mMotionVector.CurrentPosition;
+
+	p_Shader->setVec3("MotionCompensation", MotionCompensationValue);
+	p_Shader->setVec3("MotionCompensationOffset", MotionCompensationValueOffset);
 }

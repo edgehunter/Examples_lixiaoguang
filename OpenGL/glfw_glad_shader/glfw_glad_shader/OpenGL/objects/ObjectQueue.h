@@ -3,6 +3,9 @@
 #include <deque>
 #include "VaoUnit.h"
 
+// Include GLFW
+#include <GLFW/glfw3.h>
+
 class ObjectQueue
 {
 public:
@@ -11,9 +14,14 @@ public:
 
 	void Init(int QueueLength, int VaoUnitNumber = 4);
 	bool Release();
+
 	void AddObject2Queue(int AddLength);
 
+	bool SubtractObject2Queue(int SubtractLength);
 	void AddData2Object(char* DataPoints);
+	void SetMultipleFrame(bool Val);
+	void UpdateFromInputs(GLFWwindow* Window);
+
 
 	void RenderObject();
 
@@ -28,6 +36,8 @@ private:
 	//QueueLength，队列长度
 	int QueueLength;
 
+	// 单/多帧切换
+	bool IsMultipleFrame;
 
 	//使用队列，Double ended queue
 	std::deque<VaoUnit *> ObjectDeque;

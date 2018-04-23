@@ -2,21 +2,51 @@
 
 #include"ControlBase.h"
 
+struct MotionVector
+{
+	//当前帧，位置坐标值（第一个数据点）
+	glm::vec3 CurrentPosition;
+
+	//相对上一帧，运动偏移量
+	glm::vec3 RelativeValue;
+
+	MotionVector()
+	{
+		CurrentPosition = glm::vec3(0.0f, 0.0f, 0.0f);
+		RelativeValue = glm::vec3(0.0f, 0.0f, 0.0f);
+	}
+
+};
+
+struct OpenGLHeader
+{
+	MotionVector mMotionVector;
+
+
+	OpenGLHeader()
+	{
+		mMotionVector = MotionVector();
+
+	}
+};
+
+
 class WorldModel:public ControlBase
 {
 public:
 	WorldModel();
 	~WorldModel();
 
-	void Init(Shader* p_Shader, GLFWwindow* Window, const unsigned int Screen_Width, const unsigned int Screen_Height);
+	void Init(Shader* p_Shader, GLFWwindow* Window, const int Screen_Width, const int Screen_Height);
 	void SetRotate(glm::vec3 Rotate);
 	void SetScaleFactor(float ScaleFactor);
 
-	glm::mat4 GetModelMatrix();
+	void ComputeMatricesFromInputs();
 	void UpdateModelMatrix();
 
-	void ComputeMatricesFromInputs();
+	glm::mat4 GetModelMatrix();
 
+	void UpdateMotionCompensation(OpenGLHeader* p_OpenGLHeader);
 
 private:
 
@@ -53,6 +83,13 @@ private:
 	glm::mat4 RotationMatrix;// = glm::rotate(ModelTranslateMatrix, 0.9f, glm::vec3(0.0f, 1.0f, 0.0f)); // where x, y, z is axis of rotation (e.g. 0 1 0)
 
 	//运动补偿，当前帧 保持坐标在原点
-	glm::vec3 MotionCompensation;
+	glm::vec3 MotionCompensationValue;
+
+	// 模型运动补偿
+	glm::vec3 MotionCompensationValueOffset;
+
+	// 运动补偿因子
+	float MotionCompensationFactor;
+
 };
 

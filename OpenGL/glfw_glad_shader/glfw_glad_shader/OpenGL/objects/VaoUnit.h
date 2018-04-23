@@ -72,7 +72,7 @@ public:
 
 private:
 
-	// 默认使用VAO1个，VBO使用5个
+	// 默认使用VAO1个，VBO使用2个
 	unsigned int VBO[2], VAO[1];
 
 	// Points缓存

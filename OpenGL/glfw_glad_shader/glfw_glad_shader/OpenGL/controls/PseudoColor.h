@@ -9,7 +9,7 @@ public:
 	PseudoColor();
 	~PseudoColor();
 
-	void Init(Shader* p_Shader, GLFWwindow* Window, const unsigned int Screen_Width, const unsigned int Screen_Height);
+	void Init(Shader* p_Shader, GLFWwindow* Window, const int Screen_Width, const int Screen_Height);
 
 
 	// update shader uniform TransparencyColor
@@ -19,9 +19,12 @@ public:
 
 private:
 		
+	bool IsStrengthPseudoColor;
 	float ThresholdValue;
 
 	int PseudoColorIndex;
-	float PseudoColorStride;
+	float AltitudePseudoColorStride;
+
+	float StrengthPseudoColorStride;
 };
 

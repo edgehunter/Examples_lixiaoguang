@@ -1,0 +1,22 @@
+﻿Build started 2018/4/19 15:09:23.
+     1>Project "D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\glfw-3.2.1\build\examples\splitview.vcxproj" on node 4 (Rebuild target(s)).
+     1>CustomBuild:
+         Building Custom Rule D:/lixiaoguang_works/Examples_lixiaoguang/OpenGL/glfw-3.2.1/examples/CMakeLists.txt
+         CMake does not need to re-run because D:/lixiaoguang_works/Examples_lixiaoguang/OpenGL/glfw-3.2.1/build/examples/CMakeFiles/generate.stamp is up-to-date.
+       ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\CL.exe /c /I"D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\glfw-3.2.1\deps" /I"D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\glfw-3.2.1\include" /nologo /W3 /WX- /O2 /Ob2 /D WIN32 /D _WINDOWS /D NDEBUG /D _CRT_SECURE_NO_WARNINGS /D "CMAKE_INTDIR=\"Release\"" /D _MBCS /Gm- /MD /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"splitview.dir\Release\\" /Fd"splitview.dir\Release\vc120.pdb" /Gd /TC /errorReport:prompt "D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\glfw-3.2.1\examples\splitview.c" "D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\glfw-3.2.1\deps\glad.c"
+         splitview.c
+         glad.c
+         Generating Code...
+       ResourceCompile:
+         C:\Program Files (x86)\Windows Kits\8.1\bin\x86\rc.exe /D WIN32 /D _WINDOWS /D NDEBUG /D _CRT_SECURE_NO_WARNINGS /D "CMAKE_INTDIR=\\\"Release\\\"" /l"0x0409" /I"D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\glfw-3.2.1\deps" /I"D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\glfw-3.2.1\include" /nologo /fo"splitview.dir\Release\glfw.res" D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\glfw-3.2.1\examples\glfw.rc 
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\link.exe /ERRORREPORT:PROMPT /OUT:"D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\glfw-3.2.1\build\examples\Release\splitview.exe" /INCREMENTAL:NO /NOLOGO ..\src\Release\glfw3.lib kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /PDB:"D:/lixiaoguang_works/Examples_lixiaoguang/OpenGL/glfw-3.2.1/build/examples/Release/splitview.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /ENTRY:"mainCRTStartup" /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:/lixiaoguang_works/Examples_lixiaoguang/OpenGL/glfw-3.2.1/build/examples/Release/splitview.lib" /MACHINE:X64  /machine:x64 splitview.dir\Release\glfw.res
+         splitview.dir\Release\splitview.obj
+         splitview.dir\Release\glad.obj
+         splitview.vcxproj -> D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\glfw-3.2.1\build\examples\Release\splitview.exe
+     1>Done Building Project "D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\glfw-3.2.1\build\examples\splitview.vcxproj" (Rebuild target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:01.04

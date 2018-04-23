@@ -50,6 +50,7 @@ public:
 			meshes[i].Draw(shader);
 	}
 
+
 private:
 	/*  Functions   */
 	// loads a model with supported ASSIMP extensions from file and stores the resulting meshes in the meshes vector.
@@ -108,9 +109,9 @@ private:
 			Vertex vertex;
 			glm::vec3 vector; // we declare a placeholder vector since assimp uses its own vector class that doesn't directly convert to glm's vec3 class so we transfer the data to this placeholder glm::vec3 first.
 			// positions
-			vector.x = mesh->mVertices[i].x;
-			vector.y = mesh->mVertices[i].y;
-			vector.z = mesh->mVertices[i].z - 20;
+			vector.x = mesh->mVertices[i].x * 7;
+			vector.y = mesh->mVertices[i].y * 7;
+			vector.z = mesh->mVertices[i].z * 7 + 180;
 			vertex.Position = vector;
 			// normals
 			vector.x = mesh->mNormals[i].x;
@@ -155,9 +156,9 @@ private:
 			{
 				glm::vec3 color;
 				// color
-				color.x = diffuse.r;//mesh->mBitangents[i].x;
-				color.y = diffuse.g;//mesh->mBitangents[i].y;
-				color.z = diffuse.b;//mesh->mBitangents[i].z;
+				color.x = diffuse.r;
+				color.y = diffuse.g;
+				color.z = diffuse.b;
 				//color.a = 1.0f;
 
 				vertex.color = color;

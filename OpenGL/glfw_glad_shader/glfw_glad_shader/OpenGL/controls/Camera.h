@@ -8,7 +8,7 @@ public:
 	Camera();
 	~Camera();
 	
-	void Init(Shader* p_Shader, GLFWwindow* Window, const unsigned int Screen_Width, const unsigned int Screen_Height);
+	void Init(Shader* p_Shader, GLFWwindow* Window, const int Screen_Width, const int Screen_Height);
 
 	glm::mat4 GetViewMatrix();
 	void UpdateViewMatrix();
@@ -18,21 +18,9 @@ public:
 
 	void ComputeMatricesFromInputs();
 
+	void UpdataViewPort();
+
 private:
-
-	//Shader* p_Shader;
-	//GLFWwindow* Window;
-
-	//float KeySpeed;// = 3.0f; // 3 units / second
-	//float MouseSpeed;// = 0.005f;
-
-	//// Get mouse position
-	//double xPos;// = 600 / 2;
-	//double yPos;// = 400 / 2;
-
-	//double xPos_old;// = 600 / 2;
-	//double yPos_old;// = 400 / 2;
-
 
 	glm::mat4 ViewMatrix;
 	glm::mat4 ProjectionMatrix;
@@ -51,5 +39,6 @@ private:
 
 	float Zoom;
 
+	int SCR_Left, SCR_Top;
 };
 

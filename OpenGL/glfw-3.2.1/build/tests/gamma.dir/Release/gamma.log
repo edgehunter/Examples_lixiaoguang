@@ -1,0 +1,21 @@
+﻿Build started 2018/4/19 15:09:20.
+     1>Project "D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\glfw-3.2.1\build\tests\gamma.vcxproj" on node 4 (Rebuild target(s)).
+     1>CustomBuild:
+         Building Custom Rule D:/lixiaoguang_works/Examples_lixiaoguang/OpenGL/glfw-3.2.1/tests/CMakeLists.txt
+         CMake does not need to re-run because D:/lixiaoguang_works/Examples_lixiaoguang/OpenGL/glfw-3.2.1/build/tests/CMakeFiles/generate.stamp is up-to-date.
+       ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\CL.exe /c /I"D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\glfw-3.2.1\deps" /I"D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\glfw-3.2.1\include" /nologo /W3 /WX- /O2 /Ob2 /D WIN32 /D _WINDOWS /D NDEBUG /D _CRT_SECURE_NO_WARNINGS /D "CMAKE_INTDIR=\"Release\"" /D _MBCS /Gm- /MD /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"gamma.dir\Release\\" /Fd"gamma.dir\Release\vc120.pdb" /Gd /TC /errorReport:prompt "D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\glfw-3.2.1\tests\gamma.c" "D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\glfw-3.2.1\deps\getopt.c" "D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\glfw-3.2.1\deps\glad.c"
+         gamma.c
+         getopt.c
+         glad.c
+         Generating Code...
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\link.exe /ERRORREPORT:PROMPT /OUT:"D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\glfw-3.2.1\build\tests\Release\gamma.exe" /INCREMENTAL:NO /NOLOGO ..\src\Release\glfw3.lib kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /PDB:"D:/lixiaoguang_works/Examples_lixiaoguang/OpenGL/glfw-3.2.1/build/tests/Release/gamma.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /ENTRY:"mainCRTStartup" /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:/lixiaoguang_works/Examples_lixiaoguang/OpenGL/glfw-3.2.1/build/tests/Release/gamma.lib" /MACHINE:X64  /machine:x64 gamma.dir\Release\gamma.obj
+         gamma.dir\Release\getopt.obj
+         gamma.dir\Release\glad.obj
+         gamma.vcxproj -> D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\glfw-3.2.1\build\tests\Release\gamma.exe
+     1>Done Building Project "D:\lixiaoguang_works\Examples_lixiaoguang\OpenGL\glfw-3.2.1\build\tests\gamma.vcxproj" (Rebuild target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:01.59

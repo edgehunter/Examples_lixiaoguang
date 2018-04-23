@@ -4,7 +4,7 @@
 layout(location = 0) in vec4 vertexPosition;
 layout(location = 1) in vec3 vertexNormal;
 layout(location = 2) in vec2 vertexTexCoords;
-layout(location = 3) in vec3 vertexColor;
+layout(location = 3) in vec4 vertexColor;
 
 // Output data ; will be interpolated for each fragment.
 out vec4 fragmentColor;
@@ -18,28 +18,35 @@ uniform mat4 View;
 uniform mat4 WorldModel;
 
 uniform int PseudoColorIndex;
-uniform float PseudoColorStride;
+uniform float AltitudePseudoColorStride;
+uniform float StrengthPseudoColorStride;
 
-uniform bool IsStrengthPseudoColor;//未使用
+//默认海拔伪彩色，及IsStrengthPseudoColor = false
+uniform bool IsStrengthPseudoColor;
 uniform float ThresholdValue;
 
 //当前帧 保持坐标在原点
 uniform vec3 MotionCompensation;
 
+//模型运动补偿
+uniform vec3 MotionCompensationOffset;
+
 // pseudo color
-vec4 transform_rainbow(float x, float PseudoColorStride);
-vec4 MATLAB_autumn(float x, float PseudoColorStride);
-vec4 MATLAB_jet(float x, float PseudoColorStride);
-vec4 MATLAB_hsv(float x, float PseudoColorStride);
-vec4 MATLAB_hot(float x, float PseudoColorStride);
-vec4 MATLAB_winter(float x, float PseudoColorStride);
+vec4 transform_rainbow(vec4 vertexPosition, float AltitudePseudoColorStride, bool IsStrengthPseudoColor, float ThresholdValue, float StrengthPseudoColorStride);
+vec4 MATLAB_autumn(vec4 vertexPosition, float AltitudePseudoColorStride, bool IsStrengthPseudoColor, float ThresholdValue, float StrengthPseudoColorStride);
+vec4 MATLAB_jet(vec4 vertexPosition, float AltitudePseudoColorStride, bool IsStrengthPseudoColor, float ThresholdValue, float StrengthPseudoColorStride);
+vec4 MATLAB_hsv(vec4 vertexPosition, float AltitudePseudoColorStride, bool IsStrengthPseudoColor, float ThresholdValue, float StrengthPseudoColorStride);
+vec4 MATLAB_hot(vec4 vertexPosition, float AltitudePseudoColorStride, bool IsStrengthPseudoColor, float ThresholdValue, float StrengthPseudoColorStride);
+vec4 MATLAB_winter(vec4 vertexPosition, float AltitudePseudoColorStride, bool IsStrengthPseudoColor, float ThresholdValue, float StrengthPseudoColorStride);
 
 void main()
 {
 
 	// Output position of the vertex, in clip space : MVP * position
 	//gl_Position =  MVP * vec4(vertexPosition,1);
-	gl_Position = Projection * View * WorldModel *vec4(vertexPosition.xyz,1);
+
+
+	gl_Position = Projection * View * WorldModel *vec4(vertexPosition.xyz - MotionCompensation,1);
 
 
 
@@ -48,53 +55,55 @@ void main()
 	//fragmentColor = vertexColor;
 
 	//区分模型、点云
-	if(vertexPosition.z > -20)
+	if(vertexPosition.z < 100)
 	{
+		gl_Position = Projection * View * WorldModel *vec4(vertexPosition.xyz - MotionCompensation,1);
+		
 		switch (PseudoColorIndex)
 		{
 			case 0:
 				{
-					fragmentColor = transform_rainbow(vertexPosition.y, PseudoColorStride);
+					fragmentColor = transform_rainbow(vertexPosition, AltitudePseudoColorStride, IsStrengthPseudoColor, ThresholdValue, StrengthPseudoColorStride);
 				}
 			break;
 
 			case 1:
 				{
-					fragmentColor = MATLAB_jet(vertexPosition.y, PseudoColorStride);
+					fragmentColor = MATLAB_jet(vertexPosition, AltitudePseudoColorStride, IsStrengthPseudoColor, ThresholdValue, StrengthPseudoColorStride);
 				}
 			break;
 
 			case 2:
 				{
-					fragmentColor = MATLAB_hsv(vertexPosition.y, PseudoColorStride);
+					fragmentColor = MATLAB_hsv(vertexPosition, AltitudePseudoColorStride, IsStrengthPseudoColor, ThresholdValue, StrengthPseudoColorStride);
 				}
 
 			break;
 
 			case 3:
 				{
-					fragmentColor = MATLAB_autumn(vertexPosition.y, PseudoColorStride);
+					fragmentColor = MATLAB_autumn(vertexPosition, AltitudePseudoColorStride, IsStrengthPseudoColor, ThresholdValue, StrengthPseudoColorStride);
 				}
 
 			break;
 
 			case 4:
 				{
-					fragmentColor = MATLAB_hot(vertexPosition.y, PseudoColorStride);
+					fragmentColor = MATLAB_hot(vertexPosition, AltitudePseudoColorStride, IsStrengthPseudoColor, ThresholdValue, StrengthPseudoColorStride);
 				}
 
 			break;
 
 			case 5:
 				{
-					fragmentColor = MATLAB_winter(vertexPosition.y, PseudoColorStride);
+					fragmentColor = MATLAB_winter(vertexPosition, AltitudePseudoColorStride, IsStrengthPseudoColor, ThresholdValue, StrengthPseudoColorStride);
 				}
 
 			break;
 
 			default:
 				{
-					fragmentColor = MATLAB_jet(vertexPosition.y, PseudoColorStride);
+					fragmentColor = transform_rainbow(vertexPosition, AltitudePseudoColorStride, IsStrengthPseudoColor, ThresholdValue, StrengthPseudoColorStride);
 				}
 			break;
 		}
@@ -111,8 +120,8 @@ void main()
 	}
 	else
 	{
-
-		fragmentColor = vec4(vertexColor, 1.0);
+		gl_Position = Projection * View * WorldModel *vec4(vertexPosition.xyz - MotionCompensationOffset,1);
+		fragmentColor = vertexColor;//vec4(vertexColor, 1.0);
 	}
 
 	
@@ -123,11 +132,20 @@ void main()
 }
 
 
-vec4 transform_rainbow(float x, float PseudoColorStride) 
+vec4 transform_rainbow(vec4 vertexPosition, float AltitudePseudoColorStride, bool IsStrengthPseudoColor, float ThresholdValue, float StrengthPseudoColorStride) 
 {
+	float x;
 
-	x = mod(x, PseudoColorStride);
-	x = x / PseudoColorStride;
+	if(IsStrengthPseudoColor)
+	{
+		x = (vertexPosition.w - ThresholdValue) / StrengthPseudoColorStride;
+	}
+	else
+	{
+		x = mod(vertexPosition.y, AltitudePseudoColorStride);
+		x = x / AltitudePseudoColorStride;
+	}
+	
 	
     float r = 0.0, g = 0.0, b = 0.0;
 
@@ -166,11 +184,19 @@ vec4 transform_rainbow(float x, float PseudoColorStride)
     return vec4(r, g, b, 1.0);
 }
 
-vec4 MATLAB_autumn(float x, float PseudoColorStride) 
+vec4 MATLAB_autumn(vec4 vertexPosition, float AltitudePseudoColorStride, bool IsStrengthPseudoColor, float ThresholdValue, float StrengthPseudoColorStride) 
 {
+	float x;
 
-	x = mod(x, PseudoColorStride);
-	x = x / PseudoColorStride;
+	if(IsStrengthPseudoColor)
+	{
+		x = (vertexPosition.w - ThresholdValue) / StrengthPseudoColorStride;
+	}
+	else
+	{
+		x = mod(vertexPosition.y, AltitudePseudoColorStride);
+		x = x / AltitudePseudoColorStride;
+	}
 
     float g = clamp(x, 0.0, 1.0);
     return vec4(1.0, g, 0.0, 1.0);
@@ -200,11 +226,19 @@ float MATLAB_jet_blue(float x) {
     }
 }
 
-vec4 MATLAB_jet(float x, float PseudoColorStride) 
+vec4 MATLAB_jet(vec4 vertexPosition, float AltitudePseudoColorStride, bool IsStrengthPseudoColor, float ThresholdValue, float StrengthPseudoColorStride) 
 {
+	float x;
 
-	x = mod(x, PseudoColorStride);
-	x = x / PseudoColorStride;
+	if(IsStrengthPseudoColor)
+	{
+		x = (vertexPosition.w - ThresholdValue) / StrengthPseudoColorStride;
+	}
+	else
+	{
+		x = mod(vertexPosition.y, AltitudePseudoColorStride);
+		x = x / AltitudePseudoColorStride;
+	}
 
     float r = clamp(MATLAB_jet_red(x), 0.0, 1.0);
     float g = clamp(MATLAB_jet_green(x), 0.0, 1.0);
@@ -237,11 +271,19 @@ float MATLAB_hsv_blue(float x) {
     }
 }
 
-vec4 MATLAB_hsv(float x, float PseudoColorStride) 
+vec4 MATLAB_hsv(vec4 vertexPosition, float AltitudePseudoColorStride, bool IsStrengthPseudoColor, float ThresholdValue, float StrengthPseudoColorStride) 
 {
+	float x;
 
-	x = mod(x, PseudoColorStride);
-	x = x / PseudoColorStride;
+	if(IsStrengthPseudoColor)
+	{
+		x = (vertexPosition.w - ThresholdValue) / StrengthPseudoColorStride;
+	}
+	else
+	{
+		x = mod(vertexPosition.y, AltitudePseudoColorStride);
+		x = x / AltitudePseudoColorStride;
+	}
 
     float r = clamp(MATLAB_hsv_red(x), 0.0, 1.0);
     float g = clamp(MATLAB_hsv_green(x), 0.0, 1.0);
@@ -249,11 +291,19 @@ vec4 MATLAB_hsv(float x, float PseudoColorStride)
     return vec4(r, g, b, 1.0);
 }
 
-vec4 MATLAB_hot(float x, float PseudoColorStride) 
+vec4 MATLAB_hot(vec4 vertexPosition, float AltitudePseudoColorStride, bool IsStrengthPseudoColor, float ThresholdValue, float StrengthPseudoColorStride) 
 {
+	float x;
 
-	x = mod(x, PseudoColorStride);
-	x = x / PseudoColorStride;
+	if(IsStrengthPseudoColor)
+	{
+		x = (vertexPosition.w - ThresholdValue) / StrengthPseudoColorStride;
+	}
+	else
+	{
+		x = mod(vertexPosition.y, AltitudePseudoColorStride);
+		x = x / AltitudePseudoColorStride;
+	}
 
     float r = clamp(8.0 / 3.0 * x, 0.0, 1.0);
     float g = clamp(8.0 / 3.0 * x - 1.0, 0.0, 1.0);
@@ -262,11 +312,19 @@ vec4 MATLAB_hot(float x, float PseudoColorStride)
 }
 
 
-vec4 MATLAB_winter(float x, float PseudoColorStride) 
+vec4 MATLAB_winter(vec4 vertexPosition, float AltitudePseudoColorStride, bool IsStrengthPseudoColor, float ThresholdValue, float StrengthPseudoColorStride) 
 {
+	float x;
 
-	x = mod(x, PseudoColorStride);
-	x = x / PseudoColorStride;
+	if(IsStrengthPseudoColor)
+	{
+		x = (vertexPosition.w - ThresholdValue) / StrengthPseudoColorStride;
+	}
+	else
+	{
+		x = mod(vertexPosition.y, AltitudePseudoColorStride);
+		x = x / AltitudePseudoColorStride;
+	}
 
     return vec4(0.0, clamp(x, 0.0, 1.0), clamp(-0.5 * x + 1.0, 0.0, 1.0), 1.0);
 }
